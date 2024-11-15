@@ -1,0 +1,10 @@
+---
+permalink: /robots.txt
+---
+User-agent: *
+{% if site.env == "production" %}
+Allow: /
+Sitemap: {{ site.url }}/sitemap.xml
+{% else %}
+Disallow: /
+{% endif %}
