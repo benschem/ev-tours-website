@@ -1,0 +1,83 @@
+{
+  "hero": {
+    "title": "Exceptional bus tours and charter",
+    "caption": "Hassle-free, reliable bus transport across Victoria and interstate.",
+    "button": "Book now",
+    "button-link": "",
+    "image": ""
+  },
+  "services-hero": {
+    "title": "We’ve got the wheels to take you where you need to go.",
+    "caption": "Need a bus? We’ve got you covered. Our dedicated team will ensure your trip is hassle-free with outstanding service from start to finish.",
+    "button": "View fleet",
+    "button-link": "",
+    "image": ""
+  },
+  "services": [
+    {
+      "icon": "",
+      "service": "Corporate charters",
+      "description": "Professional transport options ensure that your staff arrive on time and in comfort for conferences, team-building trips and corporate events."
+    },
+    {
+      "icon": "",
+      "service": "Scenic tours",
+      "description": "Explore Victoria’s iconic landscapes, including wineries, breweries, Puffing Billy, the Phillip Island penguins and the Great Ocean Road."
+    },
+    {
+      "icon": "",
+      "service": "Airport transfer",
+      "description": "Ensure you arrive at the airport on time and stress-free, whether you're departing or arriving."
+    },
+    {
+      "icon": "",
+      "service": "Major event transport",
+      "description": "Get to and from sporting events, festivals, horse races, expos and trade shows in comfort and style."
+    },
+    {
+      "icon": "",
+      "service": "School charters",
+      "description": "Safe, reliable transport for school camps, excursions, and regular school routes."
+    },
+    {
+      "icon": "",
+      "service": "Special occasions",
+      "description": "From weddings to hens parties and golf trips, we make sure your group travels together in style and comfort."
+    }
+  ],
+  "points of difference": {
+    "heading": "The EV Tours & Charter difference",
+    "differences": [
+      {
+        "name": "Family owned",
+        "description": "As a family business, we’re all about putting a personal touch on every trip. You’re not just a booking to us - we’re here to make your journey as enjoyable as possible."
+      },
+      {
+        "name": "Exceptional service",
+        "description": "From start to finish, we focus on giving you the best experience - easy, friendly, and reliable - so you can sit back and enjoy the ride."
+      },
+      {
+        "name": "Local expertise",
+        "description": "Our local knowledge means we don’t just know the way, we know the best routes, stops, and hidden gems, making your journey that much more memorable."
+      },
+      {
+        "name": "Personal touch",
+        "description": "We shape each trip around you, taking the time to understand your needs and adding those extra touches that make all the difference."
+      }
+    ]
+  },
+  "testimonials": [
+    "“The day on the bus was amazing, John was the best. Made the day easy and more enjoyable!! Could not recommend you enough :)”",
+    "“Seamless transport and not a dull moment. Elyce is an amazing host ... never leaving anything lacking. Couldn’t recommend more.”",
+    "“Amazing winery tour with Elyce and John making sure we all got there safely. Everything was planned perfectly. 11/10”",
+    "“Elyce was an incredibly competent host. There was great variety in the wineries visited. Such a good vibe. Highly recommend.”"
+  ],
+  "call to action": {
+    "heading": "Book your transport now",
+    "description-1": "Our diverse fleet and professional drivers are ready to provide you with a comfortable and enjoyable travel experience.",
+    "description-2": "Whether it's for business or leisure, let us take care of your transport needs so you can focus on what matters most.",
+    "description-3": "Get started on your booking now!",
+    "primary-button": "Book now",
+    "secondary-button": "Learn more"
+  }
+}
