@@ -1,0 +1,104 @@
+---
+layout: base
+title: EV Tours & Charter
+description: ""
+---
+
+<section class="hero">
+  <div>
+    <h1>{{ home.hero.title }}</h1>
+    <p>{{ home.hero.caption }}</p>
+    <a
+      href="{{ home.hero.button-link }}"
+      class="btn btn-primary"
+      >{{ home.hero.button }}</a
+    >
+  </div>
+  <img
+    src="{{ home.hero.image }}"
+    alt="{{ home.hero.image-alt }}"
+  />
+</section>
+
+<div class="partner-logos">
+  <img src="" alt="Logo for Tanglewood Estate">
+  <img src="" alt="Logo for Dromana Estate">
+  <img src="" alt="Logo for Camp Australia">
+  <img src="" alt="Logo for Winery Day Tours">
+  <img src="" alt="Logo for Jackalope">
+</div>
+
+<section class="services">
+  <div class="hero">
+    <h2>{{ home.services-hero.title }}</h2>
+    <p>{{ home.services-hero.caption }}</h2>
+    <a
+      href="{{ home.services-hero.button-link }}"
+      class="btn btn-primary"
+      >{{ home.hero.button }}</a
+    >
+    <img
+      src="{{ home.services-hero.image }}"
+      alt="{{ home.services-hero.image-alt }}"
+    />
+  </div>
+  <div class="cards">
+    <ul role="list" class="services">
+      {% for service in home.services %}
+      <li class="card">
+        <!-- {{ service.icon }}" -->
+        <h3>{{ service.title }}</h3>
+        <p>{{ service.description }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="difference">
+  <img
+    src="{{ home.points-of-difference.image }}"
+    alt="{{ home.points-of-difference.image-alt }}"
+  />
+  <div>
+    <h2>{{ home.points-of-difference.heading }}</h2>
+    <ul role="list" class="differences">
+      {% for difference in home.differences %}
+      <li>
+        <!-- icon -->
+        <h3>{{ difference.name }}</h3>
+        <p>{{ difference.description }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="testimonials">
+  <ul role="list" class="testimonials">
+    {% for testimonial in home.testimonals %}
+    <li>
+      <p>{{ testimonial }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+</section>
+
+<section class="cta">
+  <div>
+    <h2>{{ home.call-to-action.heading }}</h2>
+    <p>{{ home.call-to-action.description-1 }}</p>
+    <p>{{ home.call-to-action.description-2 }}</p>
+    <p>{{ home.call-to-action.description-3 }}</p>
+    <a
+      href="{{ home.call-to-action.primary-button-link }}"
+      class="btn btn-primary"
+      >{{ home.call-to-action.primary-button-link }}</a
+    >
+    <a
+      href="{{ home.call-to-action.secondary-button-link }}"
+      class="btn btn-secondary"
+      >{{ home.call-to-action.secondary-button-text }}</a
+    >
+  </div>
+</section>
