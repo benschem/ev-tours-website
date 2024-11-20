@@ -1,0 +1,86 @@
+/* -------------------------------------------------------------------------- */
+/*                                  CSS RESET                                 */
+/* -------------------------------------------------------------------------- */
+
+/* Use a more-intuitive box-sizing model. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box; /* default is content-box */
+}
+
+/* Remove browser default margin */
+* {
+  margin: 0; /* default adds extra margin to h1 etc */
+}
+
+html {
+  /* Scroll to internal link instead of jump */
+  scroll-behavior: smooth;
+  /* Fix text resizing in landscape on mobile Safari and Firefox */
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Apply smooth scrolling. :focus-within means search jumps quickly instead */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Web Content Accessibility Guidelines states that line-height for body text should be at least 1.5. */
+body {
+  min-height: 100vh; /* in case browser does not support SVH */
+  min-height: 100svh; /* SVH instead of DVH so it ins't janky */
+  line-height: 1.5; /* default is usually 1.2 */
+  -webkit-font-smoothing: antialiased; /* Better font smoothing on webkit browsers */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  line-height: 1.2; /* 1.5 is a bit much for headings */
+}
+
+/* If a line doesn't have any soft wrap opportunities, and it doesn't fit, it will cause the text to overflow: */
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word; /* default is to softwrap */
+}
+
+/* Display images etc in a more intuitive way */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block; /* default is inline weirdly */
+  max-width: 100%; /* auto resize based on parent */
+}
+
+/* Make it so form controls inherit typographical styles from their parents */
+input,
+button,
+textarea,
+select {
+  font: inherit; /* they don't by default */
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+  padding-inline-start: 0px;
+  margin-block-start: 0px;
+  margin-block-end: 0px;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
