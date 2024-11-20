@@ -1,20 +1,24 @@
 {
   "links": [
     {
-      "name": "",
-      "link": ""
+      "name": "Home",
+      "link": "/"
     },
     {
-      "name": "",
-      "link": ""
+      "name": "About",
+      "link": "/about"
     },
     {
-      "name": "",
-      "link": ""
+      "name": "Services",
+      "link": "/services"
     },
     {
-      "name": "",
-      "link": ""
+      "name": "Fleet",
+      "link": "/fleet"
+    },
+    {
+      "name": "Contact",
+      "link": "/contact"
     }
   ]
 }

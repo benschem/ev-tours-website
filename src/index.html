@@ -63,7 +63,7 @@ description: ""
   <div>
     <h2>{{ home.points-of-difference.heading }}</h2>
     <ul role="list" class="differences">
-      {% for difference in home.differences %}
+      {% for difference in home.points-of-difference.differences %}
       <li>
         <!-- icon -->
         <h3>{{ difference.name }}</h3>
@@ -93,7 +93,7 @@ description: ""
     <a
       href="{{ home.call-to-action.primary-button-link }}"
       class="btn btn-primary"
-      >{{ home.call-to-action.primary-button-link }}</a
+      >{{ home.call-to-action.primary-button-text }}</a
     >
     <a
       href="{{ home.call-to-action.secondary-button-link }}"

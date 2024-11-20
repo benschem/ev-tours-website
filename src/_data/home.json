@@ -45,7 +45,7 @@
       "description": "From weddings to hens parties and golf trips, we make sure your group travels together in style and comfort."
     }
   ],
-  "points of difference": {
+  "points-of-difference": {
     "heading": "The EV Tours & Charter difference",
     "differences": [
       {
@@ -72,12 +72,14 @@
     "“Amazing winery tour with Elyce and John making sure we all got there safely. Everything was planned perfectly. 11/10”",
     "“Elyce was an incredibly competent host. There was great variety in the wineries visited. Such a good vibe. Highly recommend.”"
   ],
-  "call to action": {
+  "call-to-action": {
     "heading": "Book your transport now",
     "description-1": "Our diverse fleet and professional drivers are ready to provide you with a comfortable and enjoyable travel experience.",
     "description-2": "Whether it's for business or leisure, let us take care of your transport needs so you can focus on what matters most.",
     "description-3": "Get started on your booking now!",
-    "primary-button": "Book now",
-    "secondary-button": "Learn more"
+    "primary-button-text": "Book now",
+    "primary-button-link": "",
+    "secondary-button-text": "Learn more",
+    "secondary-button-link": ""
   }
 }

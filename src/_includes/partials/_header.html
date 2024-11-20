@@ -11,7 +11,7 @@
     class="menu"
   >
     <ul role="list">
-      {% for link in links %}
+      {% for link in nav.links %}
       <li>
         <a href="{{ link.link }}"> {{ link.name | toUppercase }} </a>
       </li>
@@ -28,13 +28,13 @@
       id="moon-icon"
       class="icon moon-icon hide"
     >
-      <!-- {% heroicon "outline", "moon", "Activate dark mode." %} -->
+      <!-- {# heroicon "outline", "moon", "Activate dark mode." #} -->
     </span>
     <span
       id="sun-icon"
       class="icon sun-icon"
     >
-      <!-- {% heroicon "outline", "sun", "Activate light mode." %} -->
+      <!-- {# heroicon "outline", "sun", "Activate light mode." #} -->
     </span>
   </button>
 
