@@ -5,6 +5,14 @@ const cssnano = require("cssnano");
 const postcssImport = require("postcss-import");
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addFilter("toUppercase", function (string) {
+    try {
+      return string.toUpperCase();
+    } catch (error) {
+      console.error(error);
+    }
+  });
+
   const cssSourceFileDirectory = "./src/assets/css/";
   const cssSourceFileName = "main.css";
   const cssSourceFilePath = cssSourceFileDirectory + cssSourceFileName;
@@ -61,14 +69,15 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/assets/js");
 
   return {
-    dir: {
-      input: "src",
-      includes: "_includes",
-      data: "_data",
-      output: "public",
-    },
     markdownTemplateEngine: "liquid",
     htmlTemplateEngine: "liquid",
     dataTemplateEngine: "liquid",
+    dir: {
+      input: "src",
+      output: "public",
+      data: "_data",
+      includes: "_includes/partials",
+      layouts: "_includes/layouts",
+    },
   };
 };

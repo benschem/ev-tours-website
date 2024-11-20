@@ -1,0 +1,47 @@
+<header>
+  <a href="/">
+    <img
+      src=""
+      alt="Logo for Ev Tours & Charter"
+    />
+  </a>
+
+  <nav
+    id="menu"
+    class="menu"
+  >
+    <ul role="list">
+      {% for link in links %}
+      <li>
+        <a href="{{ link.link }}"> {{ link.name | toUppercase }} </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </nav>
+
+  <button
+    id="dark-mode-toggle"
+    class="toggle-switch push-end"
+    aria-label="dark mode toggle"
+  >
+    <span
+      id="moon-icon"
+      class="icon moon-icon hide"
+    >
+      <!-- {% heroicon "outline", "moon", "Activate dark mode." %} -->
+    </span>
+    <span
+      id="sun-icon"
+      class="icon sun-icon"
+    >
+      <!-- {% heroicon "outline", "sun", "Activate light mode." %} -->
+    </span>
+  </button>
+
+  <a
+    href=""
+    class="btn btn-primary"
+  >
+    {{ business.phone }}
+  </a>
+</header>
