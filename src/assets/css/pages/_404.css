@@ -1,0 +1,7 @@
+.not-found {
+  min-height: 50vh;
+}
+
+.not-found p {
+  padding-block-end: 1rem;
+}
