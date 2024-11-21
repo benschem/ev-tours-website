@@ -1,0 +1,11 @@
+@import "./base/_reset.css";
+@import "./utilities/_colors.css";
+@import "./utilities/_spacing.css";
+@import "./utilities/_typography.css";
+
+@import "./components/_header.css";
+@import "./components/_footer.css";
+@import "./components/_buttons.css";
+
+@import "./pages/_home.css";
+@import "./pages/_404.css";
