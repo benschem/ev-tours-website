@@ -1,0 +1,41 @@
+footer {
+  padding: var(--space-sm);
+  justify-content: space-between;
+  background-color: var(--color-secondary);
+  color: var(--white);
+}
+
+footer div:nth-of-type(1) {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--space-sm);
+}
+
+footer nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+footer nav ul li a {
+  text-decoration: none;
+  color: var(--white);
+}
+footer nav ul li a:visited {
+  color: var(--white);
+}
+footer nav ul li a:hover {
+  color: var(--color-primary);
+}
+footer nav ul li a:active {
+  color: var(--color-primary);
+}
+
+footer .details {
+  padding: var(--space-sm);
+}
+
+footer .rocketzip {
+  text-align: end;
+}

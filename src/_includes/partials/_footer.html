@@ -1,0 +1,41 @@
+<footer>
+  <div>
+    <a href="/">
+      <img
+        src=""
+        alt="Logo for Ev Tours & Charter"
+      />
+    </a>
+
+    <nav
+      id="menu"
+      class="menu"
+    >
+      <ul role="list">
+        {% for link in nav.links %}
+        <li>
+          <!-- <a href="{{ link.link }}"> {{ link.name | toUppercase }} </a> -->
+          <a href="{{ link.link }}"> {{ link.name }} </a>
+        </li>
+        {% endfor %}
+      </ul>
+    </nav>
+  </div>
+  <div class="details">
+    <p>{{ business.copyright }}</p>
+    <p>{{ business.address.line-1 }}</p>
+    <p>{{ business.address.line-2 }}</p>
+    <p>{{ business.phone }}</p>
+    <p>{{ business.email }}</p>
+    <p>ABN: {{ business.abn }}</p>
+    <p class="rocketzip">
+      Website by
+      <a
+        href="https://rocketzip.com.au"
+        target="_blank"
+      >
+        Rocketzip
+      </a>
+    </p>
+  </div>
+</footer>

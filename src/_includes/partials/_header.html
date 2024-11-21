@@ -13,7 +13,8 @@
     <ul role="list">
       {% for link in nav.links %}
       <li>
-        <a href="{{ link.link }}"> {{ link.name | toUppercase }} </a>
+        <!-- <a href="{{ link.link }}"> {{ link.name | toUppercase }} </a> -->
+        <a href="{{ link.link }}"> {{ link.name }} </a>
       </li>
       {% endfor %}
     </ul>
@@ -24,6 +25,7 @@
     class="toggle-switch push-end"
     aria-label="dark mode toggle"
   >
+    dark mode
     <span
       id="moon-icon"
       class="icon moon-icon hide"
