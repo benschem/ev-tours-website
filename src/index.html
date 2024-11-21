@@ -6,7 +6,12 @@ description: ""
 
 <section class="hero">
   <div>
-    <h1>{{ home.hero.title }}</h1>
+    <h1>
+      {% assign parts = home.hero.heading | split: home.hero.highlight %} {{ parts[0] }}<span class="highlight"
+        >{{ home.hero.highlight }}</span
+      >{{ parts[1] }}
+    </h1>
+
     <p>{{ home.hero.caption }}</p>
     <a
       href="{{ home.hero.button-link }}"
@@ -14,55 +19,86 @@ description: ""
       >{{ home.hero.button }}</a
     >
   </div>
-  <img
-    src="{{ home.hero.image }}"
-    alt="{{ home.hero.image-alt }}"
-  />
-</section>
-
-<div class="partner-logos">
-  <img src="" alt="Logo for Tanglewood Estate">
-  <img src="" alt="Logo for Dromana Estate">
-  <img src="" alt="Logo for Camp Australia">
-  <img src="" alt="Logo for Winery Day Tours">
-  <img src="" alt="Logo for Jackalope">
-</div>
-
-<section class="services">
-  <div class="hero">
-    <h2>{{ home.services-hero.title }}</h2>
-    <p>{{ home.services-hero.caption }}</h2>
-    <a
-      href="{{ home.services-hero.button-link }}"
-      class="btn btn-primary"
-      >{{ home.hero.button }}</a
-    >
+  <div class="image">
     <img
-      src="{{ home.services-hero.image }}"
-      alt="{{ home.services-hero.image-alt }}"
+      src="/assets/img/placeholder-image.webp"
+      alt="{{ home.hero.image-alt }}"
     />
   </div>
-  <div class="cards">
-    <ul role="list" class="services">
-      {% for service in home.services %}
-      <li class="card">
-        <!-- {{ service.icon }}" -->
-        <h3>{{ service.title }}</h3>
-        <p>{{ service.description }}</p>
-      </li>
-      {% endfor %}
-    </ul>
+</section>
+
+<figure class="partner-logos">
+  <img
+    src=""
+    alt="Logo for Tanglewood Estate"
+  />
+  <img
+    src=""
+    alt="Logo for Dromana Estate"
+  />
+  <img
+    src=""
+    alt="Logo for Camp Australia"
+  />
+  <img
+    src=""
+    alt="Logo for Winery Day Tours"
+  />
+  <img
+    src=""
+    alt="Logo for Jackalope"
+  />
+</figure>
+
+<section class="hero-2">
+  <h2>{{ home.services-hero.heading }}</h2>
+  <div>
+    <div>
+      <p>{{ home.services-hero.caption }}</p>
+      <a
+        href="{{ home.services-hero.button-link }}"
+        class="btn btn-primary"
+        >{{ home.hero.button }}</a
+      >
+    </div>
+    <div class="image">
+      <img
+        src="assets/img/placeholder-image.webp"
+        alt="{{ home.services-hero.image-alt }}"
+      />
+    </div>
   </div>
+</section>
+
+<section class="services">
+  <h2>Our services</h2>
+  <ul
+    role="list"
+    class="cards"
+  >
+    {% for service in home.services %}
+    <li class="card">
+      <!-- {{ service.icon }}" -->
+      <h3>{{ service.heading }}</h3>
+      <p>{{ service.description }}</p>
+    </li>
+    {% endfor %}
+  </ul>
 </section>
 
 <section class="difference">
-  <img
-    src="{{ home.points-of-difference.image }}"
-    alt="{{ home.points-of-difference.image-alt }}"
-  />
-  <div>
+  <div class="image">
+    <img
+      src="assets/img/placeholder-image.webp"
+      alt="{{ home.points-of-difference.image-alt }}"
+    />
+  </div>
+  <div class="content">
     <h2>{{ home.points-of-difference.heading }}</h2>
-    <ul role="list" class="differences">
+    <ul
+      role="list"
+      class="differences"
+    >
       {% for difference in home.points-of-difference.differences %}
       <li>
         <!-- icon -->
@@ -75,8 +111,11 @@ description: ""
 </section>
 
 <section class="testimonials">
-  <ul role="list" class="testimonials">
-    {% for testimonial in home.testimonals %}
+  <ul
+    role="list"
+    class="testimonials"
+  >
+    {% for testimonial in home.testimonials %}
     <li>
       <p>{{ testimonial }}</p>
     </li>
@@ -90,15 +129,23 @@ description: ""
     <p>{{ home.call-to-action.description-1 }}</p>
     <p>{{ home.call-to-action.description-2 }}</p>
     <p>{{ home.call-to-action.description-3 }}</p>
-    <a
-      href="{{ home.call-to-action.primary-button-link }}"
-      class="btn btn-primary"
-      >{{ home.call-to-action.primary-button-text }}</a
-    >
-    <a
-      href="{{ home.call-to-action.secondary-button-link }}"
-      class="btn btn-secondary"
-      >{{ home.call-to-action.secondary-button-text }}</a
-    >
+    <div class="buttons">
+      <a
+        href="{{ home.call-to-action.primary-button-link }}"
+        class="btn btn-primary"
+        >{{ home.call-to-action.primary-button-text }}</a
+      >
+      <a
+        href="{{ home.call-to-action.secondary-button-link }}"
+        class="btn btn-secondary"
+        >{{ home.call-to-action.secondary-button-text }}</a
+      >
+    </div>
+  </div>
+  <div class="image">
+    <img
+      src="assets/img/placeholder-image.webp"
+      alt="{{ home.call-to-action.image-alt }}"
+    />
   </div>
 </section>

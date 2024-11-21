@@ -1,47 +1,50 @@
 {
   "hero": {
-    "title": "Exceptional bus tours and charter",
+    "heading": "Exceptional bus tours and charter",
+    "highlight": "bus tours",
     "caption": "Hassle-free, reliable bus transport across Victoria and interstate.",
     "button": "Book now",
     "button-link": "",
-    "image": ""
+    "image": "",
+    "image-alt": ""
   },
   "services-hero": {
-    "title": "We’ve got the wheels to take you where you need to go.",
+    "heading": "We’ve got the wheels to take you where you need to go.",
     "caption": "Need a bus? We’ve got you covered. Our dedicated team will ensure your trip is hassle-free with outstanding service from start to finish.",
     "button": "View fleet",
     "button-link": "",
-    "image": ""
+    "image": "",
+    "image-alt": ""
   },
   "services": [
     {
       "icon": "",
-      "service": "Corporate charters",
+      "heading": "Corporate charters",
       "description": "Professional transport options ensure that your staff arrive on time and in comfort for conferences, team-building trips and corporate events."
     },
     {
       "icon": "",
-      "service": "Scenic tours",
+      "heading": "Scenic tours",
       "description": "Explore Victoria’s iconic landscapes, including wineries, breweries, Puffing Billy, the Phillip Island penguins and the Great Ocean Road."
     },
     {
       "icon": "",
-      "service": "Airport transfer",
+      "heading": "Airport transfer",
       "description": "Ensure you arrive at the airport on time and stress-free, whether you're departing or arriving."
     },
     {
       "icon": "",
-      "service": "Major event transport",
+      "heading": "Major event transport",
       "description": "Get to and from sporting events, festivals, horse races, expos and trade shows in comfort and style."
     },
     {
       "icon": "",
-      "service": "School charters",
+      "heading": "School charters",
       "description": "Safe, reliable transport for school camps, excursions, and regular school routes."
     },
     {
       "icon": "",
-      "service": "Special occasions",
+      "heading": "Special occasions",
       "description": "From weddings to hens parties and golf trips, we make sure your group travels together in style and comfort."
     }
   ],
@@ -64,7 +67,9 @@
         "name": "Personal touch",
         "description": "We shape each trip around you, taking the time to understand your needs and adding those extra touches that make all the difference."
       }
-    ]
+    ],
+    "image": "",
+    "image-alt": ""
   },
   "testimonials": [
     "“The day on the bus was amazing, John was the best. Made the day easy and more enjoyable!! Could not recommend you enough :)”",
@@ -80,6 +85,8 @@
     "primary-button-text": "Book now",
     "primary-button-link": "",
     "secondary-button-text": "Learn more",
-    "secondary-button-link": ""
+    "secondary-button-link": "",
+    "image": "",
+    "image-alt": ""
   }
 }

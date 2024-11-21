@@ -1,0 +1,133 @@
+section {
+  padding-inline: var(--space-sm);
+  padding-block: var(--space-lg);
+}
+
+.hero {
+  min-height: 82vh;
+  display: flex;
+}
+
+.hero div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero div p {
+  padding-block-end: var(--space-sm);
+}
+
+.hero .image {
+  max-width: 50%;
+}
+
+.hero img {
+}
+
+.partner-logos {
+  padding-block: var(--space-sm);
+  background-color: var(--color-primary-light);
+  display: flex;
+  flex-direction: row;
+  aligns-items: center;
+  justify-content: flex-start;
+  overflow-x: hidden;
+}
+
+.partner-logos img {
+  padding-inline: var(--space-sm);
+  animation: ticker 10s linear infinite;
+}
+
+@keyframes ticker {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.hero-2 > div {
+  display: flex;
+  gap: 2rem;
+}
+
+.hero-2 p {
+  padding-block-end: var(--space-sm);
+}
+
+.hero-2 > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-2 > div .image {
+  max-width: 50%;
+}
+
+.services .cards {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: var(--space-sm);
+}
+
+.services .card {
+  padding: 2rem;
+  border-radius: var(--rounded-3xl);
+  background-color: var(--color-primary-light);
+}
+
+.difference {
+  background-color: var(--color-primary);
+  padding-block: unset;
+  padding-inline: unset;
+  display: flex;
+  flex-direction: row;
+}
+
+.difference .image {
+  display: flex;
+  flex-direction: column;
+  max-width: 70%;
+  justify-content: flex-end;
+}
+.difference .content {
+  padding-inline-start: 2rem;
+  padding-block-start: 8rem;
+}
+
+.difference .content p {
+  padding-block-end: var(--space-lg);
+}
+
+.testimonials {
+  background-color: var(--color-primary-light);
+  display: flex;
+  gap: 2rem;
+  overflow-x: hidden;
+}
+
+.testimonials li {
+  min-width: 300px;
+  animation: ticker 10s linear infinite;
+}
+
+.cta {
+  /* padding-block: var(--space-lg); */
+  display: flex;
+  gap: var(--space-sm);
+}
+
+.cta .image {
+  max-width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta p {
+  padding-block-end: var(--space-sm);
+}
