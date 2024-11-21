@@ -1,0 +1,37 @@
+---
+layout: base
+title: EV Tours & Charter
+description: ""
+---
+
+<section>
+  <h1>{{ about.hero.heading }}</h1>
+  <p>{{ about.hero.text }}</p>
+</section>
+
+<section>
+  <h2>{{ about.story.heading }}</h2>
+  {% for section in about.story.sections %}
+  <h3>{{ section.heading }}</h3>
+  {% for paragraph in section.text %}
+  <p>{{ paragraph }}</p>
+  {% endfor %} {% endfor %}
+</section>
+
+<section>
+  <h2>{{ about.difference.heading }}</h2>
+  {% for section in about.difference.sections %}
+  <h3>{{ section.heading }}</h3>
+  {% if section.text contains 'string' %}
+  <p>{{ section.text }}</p>
+  {% else %} {% for paragraph in section.text %}
+  <p>{{ paragraph }}</p>
+  {% endfor %} {% endif %} {% endfor %}
+</section>
+
+<section>
+  <h2>{{ about.cta.heading }}</h2>
+  {% for paragraph in about.cta.text %}
+  <p>{{ paragraph }}</p>
+  {% endfor %}
+</section>

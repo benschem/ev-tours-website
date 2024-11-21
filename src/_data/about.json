@@ -1,0 +1,59 @@
+{
+  "hero": {
+    "heading": "About us",
+    "text": "EV Tours & Charter is a family business dedicated to providing you with exceptional transport experiences tailored to your needs."
+  },
+  "story": {
+    "heading": "Our story",
+    "sections": [
+      {
+        "heading": "Passion project turned professional",
+        "text": [
+          "EV Tours & Charter was founded by the Director Elyce, who got her start organising winery tours and hens party outings for her friends.",
+          "Elyce’s knack for logistics, attention to detail, and extensive local knowledge earned her rave reviews, prompting her to turn her passion into a professional venture."
+        ]
+      },
+      {
+        "heading": "From a single bus to a fleet",
+        "text": [
+          "What started as a single bus operation blossomed into a fleet of buses, with Elyce’s extended family all stepping in to contribute to the success of the business.",
+          "EV Tours & Charter quickly grew to be the preferred charter service for the Mornington Peninsula, and have since expanded to service all of Victoria as well as offering interstate travel."
+        ]
+      },
+      {
+        "heading": "Onward and upward",
+        "text": [
+          "As we look to the future, we are excited to continue expanding our services and exploring new destinations.",
+          "We’re all about keeping the focus on you as we grow, making sure we continue providing the same personal touch that has made us a favourite, even as we add new services."
+        ]
+      }
+    ]
+  },
+  "difference": {
+    "heading": "What sets us apart",
+    "sections": [
+      {
+        "heading": "Family owned and operated",
+        "text": [
+          "Our family-oriented approach means you can expect personalised attention and care in every booking.",
+          "We offer a transport experience that goes beyond just getting you from point A to point B."
+        ]
+      },
+      {
+        "heading": "Our experience and expertise",
+        "text": "With years of experience in the transport industry, we blend youthful energy with reliable service."
+      },
+      {
+        "heading": "Personalised service",
+        "text": "Our commitment to quality and customer satisfaction sets us apart, making us the preferred choice as your travel partner."
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Let us help you with your next trip",
+    "text": [
+      "With our dedicated team and family-focused approach, we’re here to ensure your journey is smooth and memorable.",
+      "Whether you're planning a winery tour, a special event, or a day out with friends, we can’t wait to help you create lasting memories."
+    ]
+  }
+}
