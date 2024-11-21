@@ -13,6 +13,11 @@ module.exports = function (eleventyConfig) {
     }
   });
 
+  // CSS Pipeline
+  // ||- Bundling
+  // ||- Prefixing
+  // ||- Minification
+
   const cssSourceFileDirectory = "./src/assets/css/";
   const cssSourceFileName = "main.css";
   const cssSourceFilePath = cssSourceFileDirectory + cssSourceFileName;
@@ -60,8 +65,13 @@ module.exports = function (eleventyConfig) {
   // Watch the css for development
   eleventyConfig.addWatchTarget(cssSourceFileDirectory);
 
+  // Sets global data site.env
+  // - used in robots.txt so search engines
+  //   don't crawl the demo site
   eleventyConfig.addGlobalData("site", {
-    env: process.env.CONTEXT || "development", // for site.env => process.env.CONTEXT comes from netlify
+    // process.env.CONTEXT comes from Netlify,
+    // if it's not there - you're in development.
+    env: process.env.CONTEXT || "development",
   });
 
   eleventyConfig.addPassthroughCopy("./src/assets/fonts");
