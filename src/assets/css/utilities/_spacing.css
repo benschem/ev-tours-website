@@ -1,0 +1,8 @@
+:root {
+  --rounded-full: 9999px;
+  --rounded-3xl: 1.5rem;
+
+  --space-xs: 0.25rem;
+  --space-sm: 1rem;
+  --space-lg: 4rem;
+}

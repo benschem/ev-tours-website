@@ -84,3 +84,8 @@ ol[role="list"] {
   margin-inline-start: 0px;
   margin-inline-end: 0px;
 }
+
+/* Stop whitespace when scrolling past top or bottom */
+body {
+  overscroll-behavior: none;
+}
