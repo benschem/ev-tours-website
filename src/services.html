@@ -1,0 +1,37 @@
+---
+layout: base
+title: Tailored Bus Tours & Charter Services | EV Tours & Charter
+description: Explore our range of bus charter services, including school transport, winery tours, corporate transfers, and interstate travel. Reliable and flexible solutions for every need.
+---
+
+<section>
+  <h1>{{ services.hero.heading }}</h1>
+  <p>{{ services.hero.text }}</p>
+  <p>{{ services.hero.subheading }}</p>
+  <ul role="list">
+    {% for service in services.hero.services %}
+    <li>{{ service }}</li>
+    {% endfor %}
+  </ul>
+</section>
+
+{% for service in services.services %}
+<section>
+  <h2>{{ service.heading }}</h2>
+  <p>{{ service.text }}</p>
+  {% if service.points %}
+  <ul role="list">
+    {% for point in service.points %}
+    <li>{{ point }}</li>
+    {% endfor %}
+  </ul>
+  {% endif %}
+</section>
+{% endfor %}
+
+<section>
+  <h2>{{ services.cta.heading }}</h2>
+  {% for paragraph in services.cta.text %}
+  <p>{{ paragraph }}</p>
+  {% endfor %}
+</section>
