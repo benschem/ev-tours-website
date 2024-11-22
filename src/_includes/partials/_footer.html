@@ -2,7 +2,7 @@
   <div>
     <a href="/">
       <img
-        src=""
+        src="/assets/img/EV-tours-logo-white.png"
         alt="Logo for Ev Tours & Charter"
       />
     </a>
@@ -39,3 +39,16 @@
     </p>
   </div>
 </footer>
+
+<!-- TODO: move this to it's own js file -->
+<script>
+  const setActiveLink = () => {
+    const currentLocation = window.location.pathname;
+    const links = document.querySelectorAll("nav ul li a");
+    links.forEach((link) => {
+      if (link.getAttribute("href") === currentLocation) {
+        link.classList.add("active");
+      }
+    });
+  };
+</script>

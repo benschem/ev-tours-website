@@ -1,7 +1,7 @@
 <header>
   <a href="/">
     <img
-      src=""
+      src="/assets/img/EV-tours-logo-white.png"
       alt="Logo for Ev Tours & Charter"
     />
   </a>
@@ -13,37 +13,43 @@
     <ul role="list">
       {% for link in nav.links %}
       <li>
-        <!-- <a href="{{ link.link }}"> {{ link.name | toUppercase }} </a> -->
-        <a href="{{ link.link }}"> {{ link.name }} </a>
+        <a
+          href="{{ link.link }}"
+          class="{% if page.url == link.link %}active{% endif %}"
+        >
+          {{ link.name }}
+        </a>
       </li>
       {% endfor %}
     </ul>
   </nav>
 
-  <button
-    id="dark-mode-toggle"
-    class="toggle-switch push-end"
-    aria-label="dark mode toggle"
-  >
-    dark mode
-    <span
-      id="moon-icon"
-      class="icon moon-icon hide"
+  <div class="header-buttons">
+    <button
+      id="dark-mode-toggle"
+      class="toggle-switch push-end"
+      aria-label="dark mode toggle"
     >
-      <!-- {# heroicon "outline", "moon", "Activate dark mode." #} -->
-    </span>
-    <span
-      id="sun-icon"
-      class="icon sun-icon"
-    >
-      <!-- {# heroicon "outline", "sun", "Activate light mode." #} -->
-    </span>
-  </button>
+      dark mode
+      <span
+        id="moon-icon"
+        class="icon moon-icon hide"
+      >
+        <!-- {# heroicon "outline", "moon", "Activate dark mode." #} -->
+      </span>
+      <span
+        id="sun-icon"
+        class="icon sun-icon"
+      >
+        <!-- {# heroicon "outline", "sun", "Activate light mode." #} -->
+      </span>
+    </button>
 
-  <a
-    href=""
-    class="btn btn-primary"
-  >
-    {{ business.phone }}
-  </a>
+    <a
+      href="tel:{{ business.phone }}"
+      class="btn btn-primary"
+    >
+      {{ business.phone }}
+    </a>
+  </div>
 </header>
