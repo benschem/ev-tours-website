@@ -27,29 +27,18 @@
   <div class="header-buttons">
     <button
       id="dark-mode-toggle"
-      class="toggle-switch push-end"
+      class="btn toggle-switch"
       aria-label="dark mode toggle"
     >
-      dark mode
-      <span
-        id="moon-icon"
-        class="icon moon-icon hide"
-      >
-        <!-- {# heroicon "outline", "moon", "Activate dark mode." #} -->
-      </span>
-      <span
-        id="sun-icon"
-        class="icon sun-icon"
-      >
-        <!-- {# heroicon "outline", "sun", "Activate light mode." #} -->
-      </span>
+      {% include "icon.liquid", name: "sun", class: "icon pink sun-icon hide", tooltip: "Activate light mode." %} {%
+      include "icon.liquid", name: "moon", class: "icon pink moon-icon", title: "Activate dark mode." %}
     </button>
 
     <a
       href="tel:{{ business.phone }}"
       class="btn btn-primary"
     >
-      {{ business.phone }}
+      {% include "icon.liquid", name: "phone", class: "icon", aria_hidden: true %} {{ business.phone }}
     </a>
   </div>
 </header>

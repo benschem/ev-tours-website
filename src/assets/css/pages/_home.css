@@ -80,6 +80,10 @@ section {
   background-color: var(--color-primary-light);
 }
 
+.services .card span {
+  margin-block-end: 2rem;
+}
+
 .difference {
   background-color: var(--color-primary);
   padding-block: unset;

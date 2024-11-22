@@ -78,7 +78,8 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
   >
     {% for service in home.services %}
     <li class="card">
-      <!-- {{ service.icon }}" -->
+      {% if service.icon != "" %} {% include "icon.liquid", name: service.icon, class: "icon-md pink", aria_hidden: true
+      %} {% endif %}
       <h3>{{ service.heading }}</h3>
       <p>{{ service.description }}</p>
     </li>
@@ -100,10 +101,12 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
       class="differences"
     >
       {% for difference in home.points-of-difference.differences %}
-      <li>
-        <!-- icon -->
-        <h3>{{ difference.name }}</h3>
-        <p>{{ difference.description }}</p>
+      <li style="display: flex; gap: 1rem">
+        {% include "icon.liquid", name: "circle-check", class: "icon", aria_hidden: true %}
+        <div>
+          <h3>{{ difference.name }}</h3>
+          <p>{{ difference.description }}</p>
+        </div>
       </li>
       {% endfor %}
     </ul>
@@ -117,6 +120,12 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
   >
     {% for testimonial in home.testimonials %}
     <li>
+      <div class="stars">
+        {% include "icon.liquid", name: "star", class: "icon-xs pink", aria_hidden: true %} {% include "icon.liquid",
+        name: "star", class: "icon-xs pink", aria_hidden: true %} {% include "icon.liquid", name: "star", class:
+        "icon-xs pink", aria_hidden: true %} {% include "icon.liquid", name: "star", class: "icon-xs pink", aria_hidden:
+        true %} {% include "icon.liquid", name: "star", class: "icon-xs pink", aria_hidden: true %}
+      </div>
       <p>{{ testimonial }}</p>
     </li>
     {% endfor %}

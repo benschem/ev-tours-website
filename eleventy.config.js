@@ -86,7 +86,7 @@ module.exports = function (eleventyConfig) {
       input: "src",
       output: "public",
       data: "_data",
-      includes: "_includes/partials",
+      includes: "_includes",
       layouts: "_includes/layouts",
     },
   };

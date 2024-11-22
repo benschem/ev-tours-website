@@ -18,32 +18,32 @@
   },
   "services": [
     {
-      "icon": "",
+      "icon": "briefcase",
       "heading": "Corporate charters",
       "description": "Professional transport options ensure that your staff arrive on time and in comfort for conferences, team-building trips and corporate events."
     },
     {
-      "icon": "",
+      "icon": "image",
       "heading": "Scenic tours",
       "description": "Explore Victoria’s iconic landscapes, including wineries, breweries, Puffing Billy, the Phillip Island penguins and the Great Ocean Road."
     },
     {
-      "icon": "",
+      "icon": "plane",
       "heading": "Airport transfer",
       "description": "Ensure you arrive at the airport on time and stress-free, whether you're departing or arriving."
     },
     {
-      "icon": "",
+      "icon": "calendar-day",
       "heading": "Major event transport",
       "description": "Get to and from sporting events, festivals, horse races, expos and trade shows in comfort and style."
     },
     {
-      "icon": "",
+      "icon": "graduation-cap",
       "heading": "School charters",
       "description": "Safe, reliable transport for school camps, excursions, and regular school routes."
     },
     {
-      "icon": "",
+      "icon": "champagne-glasses",
       "heading": "Special occasions",
       "description": "From weddings to hens parties and golf trips, we make sure your group travels together in style and comfort."
     }

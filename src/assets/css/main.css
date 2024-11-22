@@ -7,6 +7,7 @@
 @import "./components/_footer.css";
 @import "./components/_buttons.css";
 @import "./components/_nav.css";
+@import "./components/_icons.css";
 
 @import "./pages/_home.css";
 @import "./pages/_404.css";
