@@ -3,3 +3,45 @@ layout: base
 title: Contact EV Tours & Charter | Book Your Next Journey
 description: Ready to book your bus tour or charter? Get in touch with EV Tours & Charter for friendly assistance and hassle-free booking for your next trip.
 ---
+
+<section>
+  <h1>{{ contact.hero.heading }}</h1>
+  {% for paragraph in contact.hero.text %}
+  <p>{{ paragraph }}</p>
+  {% endfor %}
+</section>
+
+<section>
+  <h2>{{ contact.phone.heading }}</h2>
+  <p>{{ contact.phone.text }}</p>
+  <a href="tel:{{ business.phone }}"> {{ business.phone }} </a>
+</section>
+
+<section>
+  <h2>{{ contact.email.heading }}</h2>
+  <p>{{ contact.email.text }}</p>
+  <a href="mailto:{{ business.email }}"> {{ business.email }} </a>
+</section>
+
+<section>
+  <h2>{{ contact.address.heading }}</h2>
+  <p>{{ contact.address.text }}</p>
+  <p>{{ business.address.line-1 }}</p>
+  <p>{{ business.address.line-2 }}</p>
+</section>
+
+<section>
+  <h2>{{ contact.hours.heading }}</h2>
+  <p>{{ contact.hours.text }}</p>
+  {% for day in contact.hours.days %}
+  <p>{{ day }}</p>
+  {% endfor %}
+</section>
+
+<section>
+  <h2>{{ contact.socials.heading }}</h2>
+  <p>{{ contact.socials.text }}</p>
+  {% for social in business.socials %}
+  <a href="{{ social.link }}"> {{ social.platform }} </a>
+  {% endfor %}
+</section>

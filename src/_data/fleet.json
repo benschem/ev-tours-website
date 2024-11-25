@@ -1,0 +1,56 @@
+{
+  "hero": {
+    "heading": "Our fleet",
+    "text": [
+      "Our diverse and well-maintained fleet of vehicles is designed to meet all your transport needs.",
+      "From comfortable minibuses for intimate group outings to spacious coaches for larger events, each vehicle is equipped with modern amenities to ensure a smooth and enjoyable ride.",
+      "No matter the occasion, our fleet is ready to take you wherever you need to go!"
+    ]
+  },
+  "buses": [
+    {
+      "model": "Mercedes",
+      "capacity": "20",
+      "features": [
+        "air con",
+        "toilet",
+        "radio"
+      ]
+    }
+  ],
+  "safety": {
+    "heading": "Your safety is our top priority",
+    "text": "We understand that safety is a crucial aspect of your travel experience. That’s why we implement strict safety measures and protocols to ensure that every journey is secure and worry-free.",
+    "sections": [
+      {
+        "heading": "Vehicle maintenance",
+        "text": [
+          "We pride ourselves on the condition of our fleet. Each vehicle undergoes regular inspections and maintenance to ensure it meets our high safety standards.",
+          "Our commitment to keeping our buses in peak condition helps prevent issues and ensures a smooth ride for all passengers."
+        ]
+      },
+      {
+        "heading": "Trained drivers",
+        "text": [
+          "All our drivers are thoroughly trained and vetted to provide you with a safe travel experience.",
+          "They are not only skilled behind the wheel but also knowledgeable about the routes and best practices for passenger safety."
+        ]
+      },
+      {
+        "heading": "Saftey protocols",
+        "text": [
+          "We have comprehensive safety protocols that include regular safety briefings for our drivers and GPS tracking of our fleet.",
+          "From seatbelt use to emergency procedures, we ensure that every aspect of your journey is covered so you can relax and enjoy the ride."
+        ]
+      }
+    ]
+  },
+  "cta": {
+    "heading": "Ready to choose your ride?",
+    "text": [
+      "Explore our fleet and find the perfect bus for your next adventure!",
+      "Whether you need transport for a school trip, corporate event, or a special occasion, we have the right vehicle to meet your needs.",
+      "Contact us today to book your bus."
+    ]
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "hero": {
+    "heading": "Contact us",
+    "text": [
+      "We’re here to help with all your transport needs, whether it’s a school charter, corporate event, or scenic tour.",
+      "Have a question or special request? Don’t hesitate to reach out - we’re happy to assist you in any way we can."
+    ]
+  },
+  "phone": {
+    "heading": "Phone",
+    "text": "Prefer to speak directly? Give us a call and one of our friendly team members will assist you."
+  },
+  "email": {
+    "heading": "Email",
+    "text": "Send us an email, and we’ll respond within 24 hours or the next business day."
+  },
+  "address": {
+    "heading": "Head office",
+    "text": "Our head office and main depot are located at:"
+  },
+  "hours": {
+    "heading": "Opening hours",
+    "days": [
+      "Monday – Friday: 9:00AM – 5:00PM",
+      "Saturday: 9:00AM – 5:00PM",
+      "Sunday: Closed"
+    ]
+  },
+  "socials":{
+    "heading": "Follow us",
+    "text": "Stay up to date on all the latest news, promotions, and updates by following us on social media."
+  }
+}
