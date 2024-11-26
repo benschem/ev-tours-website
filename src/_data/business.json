@@ -10,8 +10,14 @@
   "abn": "6863 7231 942",
   "socials": [
     {
+      "icon": "facebook",
       "platform": "Facebook",
       "link": "https://www.facebook.com/EVTOURSCHARTER"
+    },
+    {
+      "icon": "instagram",
+      "platform": "Instagram",
+      "link": "https://www.instagram.com/evtours_charter"
     }
   ]
 }

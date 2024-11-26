@@ -24,3 +24,7 @@ footer .details {
 footer .rocketzip {
   text-align: end;
 }
+
+footer .rocketzip a:hover {
+  color: var(--color-primary);
+}
