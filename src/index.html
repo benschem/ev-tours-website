@@ -5,20 +5,20 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
 ---
 
 <section class="hero">
-  <div>
+  <div class="copy">
     <h1>
       {% assign parts = home.hero.heading | split: home.hero.highlight %} {{ parts[0] }}<span class="highlight"
         >{{ home.hero.highlight }}</span
       >{{ parts[1] }}
     </h1>
-
     <p>{{ home.hero.caption }}</p>
     <a
       href="{{ home.hero.button-link }}"
-      class="btn btn-primary"
+      class="btn btn-primary hero-cta"
       >{{ home.hero.button }}</a
     >
   </div>
+
   <div class="image">
     <img
       src="/assets/img/placeholder-image.webp"
@@ -27,28 +27,24 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
   </div>
 </section>
 
-<figure class="partner-logos">
-  <img
-    src=""
-    alt="Logo for Tanglewood Estate"
-  />
-  <img
-    src=""
-    alt="Logo for Dromana Estate"
-  />
-  <img
-    src=""
-    alt="Logo for Camp Australia"
-  />
-  <img
-    src=""
-    alt="Logo for Winery Day Tours"
-  />
-  <img
-    src=""
-    alt="Logo for Jackalope"
-  />
-</figure>
+<div class="partner-logos-wrapper">
+  <div class="partner-logos group-1">
+    {% for logo in partners.logos %}
+    <img
+      src="{{ logo.src }}"
+      alt="{{ logo.alt }}"
+    />
+    {% endfor %}
+  </div>
+  <div class="partner-logos group-2">
+    {% for logo in partners.logos %}
+    <img
+      src="{{ logo.src }}"
+      alt="{{ logo.alt }}"
+    />
+    {% endfor %}
+  </div>
+</div>
 
 <section class="hero-2">
   <h2>{{ home.services-hero.heading }}</h2>
@@ -64,34 +60,36 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
     <div class="image">
       <img
         src="assets/img/placeholder-image.webp"
-        alt="{{ home.services-hero.image-alt }}"
+        alt=""
       />
     </div>
   </div>
 </section>
 
 <section class="services">
-  <h2>Our services</h2>
-  <ul
-    role="list"
-    class="cards"
-  >
-    {% for service in home.services %}
-    <li class="card">
-      {% if service.icon != "" %} {% include "icon.liquid", name: service.icon, class: "icon-md pink", aria_hidden: true
-      %} {% endif %}
-      <h3>{{ service.heading }}</h3>
-      <p>{{ service.description }}</p>
-    </li>
-    {% endfor %}
-  </ul>
+  <div class="width-wrapper">
+    <h2>Our services</h2>
+    <ul
+      role="list"
+      class="cards"
+    >
+      {% for service in home.services %}
+      <li class="card">
+        {% if service.icon != "" %} {% include "icon.liquid", name: service.icon, class: "icon-md pink", aria_hidden:
+        true %} {% endif %}
+        <h3>{{ service.heading }}</h3>
+        <p>{{ service.description }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
 </section>
 
 <section class="difference">
   <div class="image">
     <img
-      src="assets/img/placeholder-image.webp"
-      alt="{{ home.points-of-difference.image-alt }}"
+      src="./assets/img/placeholder-image.webp"
+      alt=""
     />
   </div>
   <div class="content">

@@ -1,0 +1,83 @@
+/* <section class="hero">
+    <div class="copy">
+      <h1>
+        <span class="highlight"></span>
+      </h1>
+      <p></p>
+      <a class="btn btn-primary"></a>
+    </div>
+
+    <div class="image">
+      <img />
+    </div>
+</section> */
+
+.hero {
+  --screen-height-minus-nav-bar: 82vh;
+
+  min-height: var(--screen-height-minus-nav-bar);
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+    "copy copy copy copy copy copy"
+    "img img img img img img";
+  gap: var(--space-lg) var(--space-sm);
+  justify-content: center;
+  align-items: center;
+}
+
+.hero > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero .copy {
+  grid-area: copy;
+  max-width: 40ch;
+}
+
+.hero .copy h1 {
+}
+
+.hero .hero-cta {
+  margin-block-start: var(--space-md);
+}
+
+.hero .image {
+  grid-area: img;
+  align-items: center;
+}
+
+.hero .image img {
+  /* max-width: 50%; */
+}
+
+@media screen and (width > 630px) {
+  .hero {
+    grid-template-areas: "copy copy copy copy img img";
+  }
+}
+@media screen and (width > 768px) {
+  .hero {
+    grid-template-areas: "copy copy copy img img img";
+  }
+}
+@media screen and (width > 1100px) {
+  .hero .copy {
+    max-width: 75ch;
+  }
+  .hero .hero-cta {
+    margin-block-start: var(--space-lg);
+  }
+}
+@media screen and (width > 1500px) {
+  .hero {
+    grid-template-areas: ". copy copy img img .";
+  }
+  .hero .copy {
+    max-width: 95ch;
+  }
+}

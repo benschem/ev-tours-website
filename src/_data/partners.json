@@ -1,0 +1,25 @@
+{
+  "logos": [
+    {
+      "src": "/assets/img/partners/camp-austalia.png",
+      "alt": "Logo for Camp Australia"
+    },
+    {
+      "src": "/assets/img/partners/tanglewood-estate.png",
+      "alt": "Logo for Tanglewood Estate"
+    },
+    {
+      "src": "/assets/img/partners/dromana-estate.png",
+      "alt": "Logo for Dromana Estate"
+    },
+    {
+      "src": "/assets/img/partners/winery-day-tours.png",
+      "alt": "Logo for Winery Day Tours"
+    },
+    {
+      "src": "/assets/img/partners/jackalope.png",
+      "alt": "Logo for Jackalope"
+    }
+  ]
+
+}
