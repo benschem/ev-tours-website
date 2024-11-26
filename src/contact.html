@@ -41,7 +41,8 @@ description: Ready to book your bus tour or charter? Get in touch with EV Tours 
 <section>
   <h2>{{ contact.socials.heading }}</h2>
   <p>{{ contact.socials.text }}</p>
-  {% for social in business.socials %}
+  {% for social in business.socials %} {% include "icon.liquid", name: social.icon, class: "icon-md pink", aria_hidden:
+  true %}
   <a href="{{ social.link }}"> {{ social.platform }} </a>
   {% endfor %}
 </section>
