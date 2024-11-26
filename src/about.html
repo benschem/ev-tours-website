@@ -4,29 +4,53 @@ title: About EV Tours & Charter | Family-Owned Bus Tours & Charter
 description: Discover our story at EV Tours & Charter, where a passion for transport turned into a family-run business. Learn how we’ve grown from a single bus to a trusted fleet serving Victoria and beyond.
 ---
 
-<section>
-  <h1>{{ about.hero.heading }}</h1>
-  <p>{{ about.hero.text }}</p>
+<section class="hero">
+  <div class="copy">
+    <h1>{{ about.hero.heading }}</h1>
+    <p>{{ about.hero.text }}</p>
+    <a
+      href="{{ home.hero.button-link }}"
+      class="btn btn-primary hero-cta"
+      >{{ home.hero.button }}</a
+    >
+  </div>
+  <div class="image">
+    <img
+      src="/assets/img/placeholder-image.webp"
+      alt="{{ home.hero.image-alt }}"
+    />
+  </div>
 </section>
 
-<section>
+<section class="story">
   <h2>{{ about.story.heading }}</h2>
   {% for section in about.story.sections %}
-  <h3>{{ section.heading }}</h3>
-  {% for paragraph in section.text %}
-  <p>{{ paragraph }}</p>
-  {% endfor %} {% endfor %}
+  <div>
+    <h3>{{ section.heading }}</h3>
+    {% for paragraph in section.text %}
+    <p>{{ paragraph }}</p>
+    {% endfor %}
+  </div>
+  {% endfor %}
 </section>
 
-<section>
-  <h2>{{ about.difference.heading }}</h2>
-  {% for section in about.difference.sections %}
-  <h3>{{ section.heading }}</h3>
-  {% if section.text contains 'string' %}
-  <p>{{ section.text }}</p>
-  {% else %} {% for paragraph in section.text %}
-  <p>{{ paragraph }}</p>
-  {% endfor %} {% endif %} {% endfor %}
+<section class="difference">
+  <div class="image">
+    <img
+      src="/assets/img/placeholder-image.webp"
+      alt="{{ home.points-of-difference.image-alt }}"
+    />
+  </div>
+  <div class="content">
+    <h2>{{ about.difference.heading }}</h2>
+    {% for section in about.difference.sections %}
+    <h3>{{ section.heading }}</h3>
+    {% if section.text contains 'string' %}
+    <p>{{ section.text }}</p>
+    {% else %} {% for paragraph in section.text %}
+    <p>{{ paragraph }}</p>
+    {% endfor %} {% endif %} {% endfor %}
+  </div>
 </section>
 
 <section>
@@ -34,4 +58,16 @@ description: Discover our story at EV Tours & Charter, where a passion for trans
   {% for paragraph in about.cta.text %}
   <p>{{ paragraph }}</p>
   {% endfor %}
+  <div class="buttons">
+    <a
+      href="{{ home.call-to-action.primary-button-link }}"
+      class="btn btn-primary"
+      >{{ home.call-to-action.primary-button-text }}</a
+    >
+    <a
+      href="{{ home.call-to-action.secondary-button-link }}"
+      class="btn btn-secondary"
+      >{{ home.call-to-action.secondary-button-text }}</a
+    >
+  </div>
 </section>
