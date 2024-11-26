@@ -23,6 +23,11 @@
     Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   font-weight: 900;
   font-size: small;
+  transition: all 100ms linear;
+}
+
+.btn *:hover {
+  cursor: pointer;
 }
 
 .btn:focus-visible {
@@ -38,12 +43,15 @@
   padding: 0.5rem 3rem;
 }
 
-.button-primary:hover {
-  /* TODO */
+.btn-primary:hover {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  transform: translate(-2px, -2px);
 }
 
-.button-primary:active {
+.btn-primary:active {
   /* TODO */
+  box-shadow: none;
+  transform: translate(2px, 2px);
 }
 
 .btn-secondary {
@@ -52,10 +60,12 @@
   padding: 0.5rem 3rem;
 }
 
-.button-secondary:hover {
+.btn-secondary:hover {
+  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  transform: translate(-2px, -2px);
   /* TODO */
 }
 
-.button-secondary:active {
+.btn-secondary:active {
   /* TODO */
 }

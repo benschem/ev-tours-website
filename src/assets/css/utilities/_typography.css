@@ -106,7 +106,7 @@ h3 {
   font-size: var(--h3-font-size);
   letter-spacing: var(--h3-letter-spacing);
   font-weight: 900;
-  padding-block-end: var(--space-xs);
+  padding-block-end: var(--space-sm);
 }
 p,
 a,
