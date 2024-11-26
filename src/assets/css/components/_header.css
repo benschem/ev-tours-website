@@ -19,9 +19,15 @@ header .header-buttons {
   align-items: center;
   justify-content: center;
 }
-header .header-buttons a {
+header .nav-cta {
   padding-inline-start: 2rem;
   display: flex;
   align-items: center;
   gap: 1rem;
+}
+
+@media screen and (width < 1000px) {
+  header .nav-cta {
+    display: none;
+  }
 }
