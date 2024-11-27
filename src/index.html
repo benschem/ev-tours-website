@@ -26,8 +26,8 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
   </div>
 </section>
 
-<div class="partner-logos-wrapper">
-  <div class="partner-logos group-1">
+<div class="partner-logos">
+  <div class="logo-group group-1">
     {% for logo in partners.logos %}
     <img
       src="{{ logo.src }}"
@@ -35,7 +35,15 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
     />
     {% endfor %}
   </div>
-  <div class="partner-logos group-2">
+  <div class="logo-group group-2">
+    {% for logo in partners.logos %}
+    <img
+      src="{{ logo.src }}"
+      alt="{{ logo.alt }}"
+    />
+    {% endfor %}
+  </div>
+  <div class="logo-group group-3">
     {% for logo in partners.logos %}
     <img
       src="{{ logo.src }}"
@@ -45,27 +53,30 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
   </div>
 </div>
 
-<section>
-  <h2>{{ home.services-hero.heading }}</h2>
-  <div class="hero">
-    <div class="copy">
-      <p>{{ home.services-hero.caption }}</p>
-      <a
-        href="{{ home.services-hero.button-link }}"
-        class="btn btn-primary hero-cta"
-        >{{ home.hero.button }}</a
-      >
-    </div>
-    <div class="image">
+<section class="services">
+  <div class="services-hero">
+    <div class="flex">
+      <div class="align-center">
+        <h2>
+          {% assign parts = home.services-hero.heading | split: home.services-hero.highlight %} {{ parts[0] }}<span
+            class="highlight"
+            >{{ home.services-hero.highlight }}</span
+          >{{ parts[1] }}
+        </h2>
+        <p>{{ home.services-hero.caption }}</p>
+        <a
+          href="{{ home.services-hero.button-link }}"
+          class="btn btn-primary hero-cta"
+          >{{ home.hero.button }}</a
+        >
+      </div>
       <img
         src="{{ home.services-hero.image.src }}"
         alt="{{ home.services-hero.image.alt }}"
       />
     </div>
   </div>
-</section>
 
-<section class="services">
   <div class="width-wrapper">
     <h2>Our services</h2>
     <ul
@@ -134,9 +145,9 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
 <section class="hero">
   <div class="copy">
     <h2>{{ home.call-to-action.heading }}</h2>
-    <p>{{ home.call-to-action.description-1 }}</p>
-    <p>{{ home.call-to-action.description-2 }}</p>
-    <p>{{ home.call-to-action.description-3 }}</p>
+    {% for paragraph in home.call-to-action.text %}
+    <p>{{ paragraph }}</p>
+    {% endfor %}
     <div class="buttons hero-cta">
       <a
         href="{{ home.call-to-action.primary-button-link }}"

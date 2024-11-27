@@ -1,6 +1,7 @@
 :root {
-  --rounded-full: 9999px;
+  --rounded-sm: 0.125rem;
   --rounded-3xl: 1.5rem;
+  --rounded-full: 9999px;
 
   --space-xs: 0.25rem;
   --space-sm: 1rem;
@@ -8,8 +9,45 @@
   --space-lg: 4rem;
   --space-xl: 8rem;
   --space-2xl: 10rem;
+  --space-3xl: 16rem;
+  --space-4xl: 24rem;
 }
 
 svg {
   max-width: max-content;
+}
+
+section {
+  --header-size: 100px;
+  --ticker-size: 80px;
+
+  min-height: calc(100dvh - var(--header-size) - (var(--ticker-size) / 2));
+  padding-inline: var(--space-sm);
+  padding-block: var(--space-md);
+}
+@media screen and (height > 500px) {
+  section {
+    padding-block: var(--space-lg);
+  }
+}
+@media screen and (height > 767px) {
+  section {
+    padding-block: var(--space-lg);
+  }
+}
+@media screen and (height > 820px) and (width > 500px) {
+  section {
+    min-height: unset;
+    padding-block: var(--space-xl);
+  }
+}
+@media screen and (height > 820px) and (width > 900px) {
+  section {
+    padding-block: var(--space-2xl);
+  }
+}
+@media screen and (height > 820px) and (width > 1200px) {
+  section {
+    padding-block: var(--space-3xl);
+  }
 }

@@ -9,6 +9,7 @@ nav ul {
 nav ul li a {
   text-decoration: none;
   color: var(--white);
+  transition: all 100ms linear;
 }
 
 nav ul li a:visited {

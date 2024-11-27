@@ -1,19 +1,43 @@
-section {
-  padding-inline: var(--space-sm);
-}
-@media screen and (width > 500px) {
-  section {
-    padding-block: var(--space-xl);
-  }
-}
-@media screen and (width > 900px) {
-  section {
-    padding-block: var(--space-2xl);
-  }
+.services-hero {
+  margin-inline: auto;
+  margin-block-end: var(--space-lg);
 }
 
-section:nth-of-type(2) h2 {
-  text-align: center;
+.services-hero .flex {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: var(--space-lg) var(--space-sm);
+}
+.services-hero .align-center {
+  /* align-self: center; */
+}
+
+.services-hero img {
+  justify-self: center;
+  margin-inline: var(--space-sm);
+}
+.heading {
+  /* margin-inline-start: */
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.services-hero h2 {
+  /* text-align: center; */
+  max-width: 24ch;
+}
+
+.services-hero p {
+  max-width: 48ch;
+  margin-block-end: var(--space-md);
+}
+
+@media screen and (width > 768px) {
+  .services-hero {
+    margin-block-end: var(--space-xl);
+  }
 }
 
 .difference {
@@ -36,6 +60,7 @@ section:nth-of-type(2) h2 {
 }
 
 .difference .content p {
+  max-width: 60ch;
   padding-block-end: var(--space-lg);
 }
 
@@ -52,8 +77,8 @@ section:nth-of-type(2) h2 {
 }
 
 .testimonials li {
-  position: absolute;
+  /* position: absolute;
   left: 0px;
-  min-width: 300px;
+  min-width: 300px; */
   /* animation: scroll 10s linear infinite; */
 }

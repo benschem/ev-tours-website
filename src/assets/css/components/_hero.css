@@ -13,16 +13,16 @@
 </section> */
 
 .hero {
-  --screen-height-minus-nav-bar: 82vh;
+  margin-inline: auto;
 
-  /* min-height: var(--screen-height-minus-nav-bar); */
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: var(--space-lg) var(--space-sm);
   justify-content: center;
   align-items: center;
+
+  gap: var(--space-lg) 0;
 }
 
 .hero > div {
@@ -32,15 +32,14 @@
 }
 
 .hero .copy {
-  min-width: 300px;
 }
 
 .hero .copy h1 {
-  max-width: 10ch;
+  max-width: 16ch;
 }
 
 .hero .copy p {
-  max-width: 65ch;
+  max-width: 32ch;
 }
 
 .hero .copy p + p {
@@ -52,25 +51,27 @@
 }
 
 .hero .image {
-  max-height: fit-content;
   align-items: center;
+  padding-inline: var(--space-sm);
 }
 
-@media screen and (width > 450px) {
-  .hero {
-    margin-inline: var(--space-xl);
-  }
-}
 @media screen and (width > 768px) {
   .hero {
-    margin-inline: var(--space-lg);
     flex-wrap: nowrap;
-    gap: var(--space-lg) var(--space-md);
+    gap: var(--space-lg) 0;
+  }
+
+  .hero > div {
+    padding-inline: var(--space-lg);
   }
 }
 @media screen and (width > 1100px) {
   .hero {
-    gap: var(--space-lg) var(--space-lg);
+    gap: var(--space-lg) 0;
+  }
+
+  .hero > div {
+    padding-inline: 0;
   }
 }
 @media screen and (width > 1500px) {

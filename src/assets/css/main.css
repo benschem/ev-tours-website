@@ -1,8 +1,14 @@
+/* Base */
 @import "./base/_reset.css";
+@import "./base/_brand.css";
+
+/* Utilities */
+@import "./utilities/_typography.css";
 @import "./utilities/_colors.css";
 @import "./utilities/_spacing.css";
-@import "./utilities/_typography.css";
+@import "./utilities/_dark-mode.css";
 
+/* Components */
 @import "./components/_header.css";
 @import "./components/_footer.css";
 @import "./components/_buttons.css";
@@ -13,6 +19,7 @@
 @import "./components/_ticker.css";
 @import "./components/_back-to-top.css";
 
+/* Pages */
 @import "./pages/_home.css";
 @import "./pages/_about.css";
 /* @import "./pages/_services.css"; */

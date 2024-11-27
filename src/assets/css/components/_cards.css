@@ -18,7 +18,6 @@
   border-radius: var(--rounded-3xl);
   background-color: var(--color-primary-light);
   transition: all 100ms linear;
-  will-change: filter;
 }
 
 .card p + p {

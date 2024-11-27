@@ -6,8 +6,6 @@
   height: 40px;
   width: 40px;
   fill: var(--color-primary);
-  will-change: filter;
-  will-change: scale;
   animation: bounce 2s infinite;
 }
 

@@ -23,7 +23,8 @@
     Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
   font-weight: 900;
   font-size: small;
-  transition: all 100ms linear;
+
+  transition: all 200ms ease-in-out;
 }
 
 .btn *:hover {
@@ -41,7 +42,6 @@
   border: 0.25rem solid var(--color-primary);
   border-radius: var(--rounded-full);
   padding: 0.5rem 3rem;
-  will-change: filter;
 }
 
 .btn-primary:hover {
@@ -62,7 +62,6 @@
   border: 0.25rem solid var(--color-primary);
   border-radius: var(--rounded-full);
   padding: 0.5rem 3rem;
-  will-change: filter;
 }
 
 .btn-secondary:hover {

@@ -12,6 +12,7 @@
   },
   "services-hero": {
     "heading": "We’ve got the wheels to take you where you need to go",
+    "highlight": "wheels",
     "caption": "Need a bus? We’ve got you covered. Our dedicated team will ensure your trip is hassle-free with outstanding service from start to finish.",
     "button": "View fleet",
     "button-link": "",
@@ -57,7 +58,7 @@
     "differences": [
       {
         "name": "Family owned",
-        "description": "As a family business, we’re all about putting a personal touch on every trip. You’re not just a booking to us - we’re here to make your journey as enjoyable as possible."
+        "description": "We’re all about putting a personal touch on every trip. You’re not just a booking to us - we’re here to make your journey as enjoyable as possible."
       },
       {
         "name": "Exceptional service",
@@ -65,7 +66,7 @@
       },
       {
         "name": "Local expertise",
-        "description": "Our local knowledge means we don’t just know the way, we know the best routes, stops, and hidden gems, making your journey that much more memorable."
+        "description": "Our local knowledge means we don’t just know the way, we know the best routes, stops, and hidden gems, to make your journey memorable."
       },
       {
         "name": "Personal touch",
@@ -83,9 +84,10 @@
   ],
   "call-to-action": {
     "heading": "Book your transport now",
-    "description-1": "Our diverse fleet and professional drivers are ready to provide you with a comfortable and enjoyable travel experience.",
-    "description-2": "Whether it's for business or leisure, let us take care of your transport needs so you can focus on what matters most.",
-    "description-3": "Get started on your booking now!",
+    "text": [
+      "Whether it's for business or leisure, let us take care of your transport needs so you can focus on what matters most.",
+      "Get started on your booking now!"
+    ],
     "primary-button-text": "Book now",
     "primary-button-link": "",
     "secondary-button-text": "Learn more",
