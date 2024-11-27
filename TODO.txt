@@ -1,0 +1,46 @@
+Mobile menu
+
+Contact Form
+  - Add form
+  - Validations
+  - link on netlify
+  - recaptcha
+
+Analytics
+  - connect scripts
+  - setup users in Plausible
+
+Pages
+- Homepage
+  - Fix ticker
+  - Link the service cards on home page
+- 404 page styling and content
+
+Search
+- Robots.tx
+- Sitemap.xml
+- metadata
+- schema.org
+
+Blog
+- index page styling
+- post styling
+- collections setup
+
+Night mode
+- theme
+- js
+
+Security
+- headers
+- redirects
+
+Images
+- favicon
+- image plugin
+
+Deployment
+- brotli compression
+- instructions and documentation
+
+Decap CMS
