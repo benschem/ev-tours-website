@@ -1,11 +1,11 @@
-.services .width-wrapper {
+.width-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.services .cards {
+.cards {
   max-width: 1600px;
   display: grid;
   grid-template-columns: 1fr;
@@ -13,7 +13,7 @@
   gap: var(--space-sm);
 }
 
-.services .card {
+.card {
   padding: var(--space-md);
   border-radius: var(--rounded-3xl);
   background-color: var(--color-primary-light);
@@ -21,7 +21,15 @@
   will-change: filter;
 }
 
-.services .card:hover {
+.card p + p {
+  margin-block-start: var(--space-sm);
+}
+.card p + a {
+  display: block;
+  margin-block-start: var(--space-sm);
+}
+
+.card-clickable:hover {
   cursor: pointer;
   box-shadow: var(--shadow-md);
   transform: translate(0, -2px);
@@ -29,30 +37,30 @@
   filter: brightness(102%);
 }
 
-.services .card:active {
+.card-clickable:active {
   box-shadow: none;
   transform: translate(0, 2px);
 }
 
-.services .card *:hover {
+.card-clickable *:hover {
   cursor: pointer;
 }
 
-.services .card span {
+.card span {
   margin-block-end: var(--space-sm);
 }
 
 @media screen and (width > 500px) {
-  .services .cards {
+  .cards {
     grid-template-columns: 1fr 1fr;
   }
 }
 @media screen and (width > 900px) {
-  .services .cards {
+  .cards {
     grid-template-columns: 1fr 1fr 1fr;
     gap: var(--space-md);
   }
-  .services .card {
+  .card {
     padding: var(--space-lg);
   }
 }

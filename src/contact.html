@@ -11,32 +11,42 @@ description: Ready to book your bus tour or charter? Get in touch with EV Tours 
   {% endfor %}
 </section>
 
-<section>
-  <h2>{{ contact.phone.heading }}</h2>
-  <p>{{ contact.phone.text }}</p>
-  <a href="tel:{{ business.phone }}"> {{ business.phone }} </a>
-</section>
+<div class="width-wrapper">
+  <ul
+    role="list"
+    class="cards"
+  >
+    <li class="card">
+      {% include "icon.liquid", name: "phone", class: "icon-md pink", aria_hidden: true %}
+      <h3>{{ contact.phone.heading }}</h3>
+      <p>{{ contact.phone.text }}</p>
+      <a href="tel:{{ business.phone }}"> {{ business.phone }} </a>
+    </li>
 
-<section>
-  <h2>{{ contact.email.heading }}</h2>
-  <p>{{ contact.email.text }}</p>
-  <a href="mailto:{{ business.email }}"> {{ business.email }} </a>
-</section>
+    <li class="card">
+      {% include "icon.liquid", name: "envelope", class: "icon-md pink", aria_hidden: true %}
+      <h3>{{ contact.email.heading }}</h3>
+      <p>{{ contact.email.text }}</p>
+      <a href="mailto:{{ business.email }}"> {{ business.email }} </a>
+    </li>
 
-<section>
-  <h2>{{ contact.address.heading }}</h2>
-  <p>{{ contact.address.text }}</p>
-  <p>{{ business.address.line-1 }}</p>
-  <p>{{ business.address.line-2 }}</p>
-</section>
+    <li class="card">
+      {% include "icon.liquid", name: "location-dot", class: "icon-md pink", aria_hidden: true %}
+      <h3>{{ contact.address.heading }}</h3>
+      <p>{{ contact.address.text }} {{ business.address }}.</p>
+      <p>{{ contact.address.text2 }}</p>
+    </li>
 
-<section>
-  <h2>{{ contact.hours.heading }}</h2>
-  <p>{{ contact.hours.text }}</p>
-  {% for day in contact.hours.days %}
-  <p>{{ day }}</p>
-  {% endfor %}
-</section>
+    <li class="card">
+      {% include "icon.liquid", name: "clock", class: "icon-md pink", aria_hidden: true %}
+      <h3>{{ contact.hours.heading }}</h3>
+      <p>{{ contact.hours.text }}</p>
+      {% for day in contact.hours.days %}
+      <p>{{ day }}</p>
+      {% endfor %}
+    </li>
+  </ul>
+</div>
 
 <section>
   <h2>{{ contact.socials.heading }}</h2>
