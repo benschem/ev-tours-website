@@ -18,12 +18,15 @@
   border-radius: var(--rounded-3xl);
   background-color: var(--color-primary-light);
   transition: all 100ms linear;
+  will-change: filter;
 }
 
 .services .card:hover {
   cursor: pointer;
-  box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
+  box-shadow: var(--shadow-md);
   transform: translate(0, -2px);
+  transition: filter 250ms;
+  filter: brightness(102%);
 }
 
 .services .card:active {
