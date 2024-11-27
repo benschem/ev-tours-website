@@ -18,11 +18,10 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
       >{{ home.hero.button }}</a
     >
   </div>
-
   <div class="image">
     <img
-      src="/assets/img/placeholder-image.webp"
-      alt="{{ home.hero.image-alt }}"
+      src="{{ home.hero.image.src }}"
+      alt="{{ home.hero.image.alt }}"
     />
   </div>
 </section>
@@ -46,21 +45,21 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
   </div>
 </div>
 
-<section class="hero-2">
+<section>
   <h2>{{ home.services-hero.heading }}</h2>
-  <div>
-    <div>
+  <div class="hero">
+    <div class="copy">
       <p>{{ home.services-hero.caption }}</p>
       <a
         href="{{ home.services-hero.button-link }}"
-        class="btn btn-primary"
+        class="btn btn-primary hero-cta"
         >{{ home.hero.button }}</a
       >
     </div>
     <div class="image">
       <img
-        src="assets/img/placeholder-image.webp"
-        alt=""
+        src="{{ home.services-hero.image.src }}"
+        alt="{{ home.services-hero.image.alt }}"
       />
     </div>
   </div>
@@ -112,31 +111,33 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
 </section>
 
 <section class="testimonials">
-  <ul
-    role="list"
-    class="testimonials"
-  >
-    {% for testimonial in home.testimonials %}
-    <li>
-      <div class="stars">
-        {% include "icon.liquid", name: "star", class: "icon-xs pink", aria_hidden: true %} {% include "icon.liquid",
-        name: "star", class: "icon-xs pink", aria_hidden: true %} {% include "icon.liquid", name: "star", class:
-        "icon-xs pink", aria_hidden: true %} {% include "icon.liquid", name: "star", class: "icon-xs pink", aria_hidden:
-        true %} {% include "icon.liquid", name: "star", class: "icon-xs pink", aria_hidden: true %}
-      </div>
-      <p>{{ testimonial }}</p>
-    </li>
-    {% endfor %}
-  </ul>
+  <div class="testimonials-wrapper">
+    <ul
+      role="list"
+      class="testimonials"
+    >
+      {% for testimonial in home.testimonials %}
+      <li>
+        <div class="stars">
+          {% include "icon.liquid", name: "star", class: "icon-xs pink", aria_hidden: true %} {% include "icon.liquid",
+          name: "star", class: "icon-xs pink", aria_hidden: true %} {% include "icon.liquid", name: "star", class:
+          "icon-xs pink", aria_hidden: true %} {% include "icon.liquid", name: "star", class: "icon-xs pink",
+          aria_hidden: true %} {% include "icon.liquid", name: "star", class: "icon-xs pink", aria_hidden: true %}
+        </div>
+        <p>{{ testimonial }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
 </section>
 
-<section class="cta">
-  <div>
+<section class="hero">
+  <div class="copy">
     <h2>{{ home.call-to-action.heading }}</h2>
     <p>{{ home.call-to-action.description-1 }}</p>
     <p>{{ home.call-to-action.description-2 }}</p>
     <p>{{ home.call-to-action.description-3 }}</p>
-    <div class="buttons">
+    <div class="buttons hero-cta">
       <a
         href="{{ home.call-to-action.primary-button-link }}"
         class="btn btn-primary"

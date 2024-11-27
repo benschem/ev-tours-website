@@ -45,16 +45,17 @@
 
 .btn-primary:hover {
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  transform: translate(-2px, -2px);
+  transform: translate(0, -2px);
 }
 
 .btn-primary:active {
   /* TODO */
   box-shadow: none;
-  transform: translate(2px, 2px);
+  transform: translate(0, 2px);
 }
 
 .btn-secondary {
+  background-color: var(--color-primary-light);
   border: 0.25rem solid var(--color-primary);
   border-radius: var(--rounded-full);
   padding: 0.5rem 3rem;
@@ -62,10 +63,12 @@
 
 .btn-secondary:hover {
   box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  transform: translate(-2px, -2px);
+  transform: translate(0, -2px);
   /* TODO */
 }
 
 .btn-secondary:active {
   /* TODO */
+  box-shadow: none;
+  transform: translate(0, 2px);
 }

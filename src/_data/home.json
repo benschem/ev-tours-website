@@ -1,20 +1,24 @@
 {
   "hero": {
     "heading": "Exceptional bus tours and charter",
-    "highlight": "bus tours",
+    "highlight": "bus",
     "caption": "Hassle-free, reliable bus transport across Victoria and interstate.",
     "button": "Book now",
     "button-link": "",
-    "image": "",
-    "image-alt": ""
+    "image": {
+      "src": "/assets/img/ev-tours-charter-family-business.jpg",
+      "alt": "Elyce at the window of one of her buses smiling at her dad."
+    }
   },
   "services-hero": {
-    "heading": "We’ve got the wheels to take you where you need to go.",
+    "heading": "We’ve got the wheels to take you where you need to go",
     "caption": "Need a bus? We’ve got you covered. Our dedicated team will ensure your trip is hassle-free with outstanding service from start to finish.",
     "button": "View fleet",
     "button-link": "",
-    "image": "",
-    "image-alt": ""
+    "image": {
+      "src": "/assets/img/ev-tours-fleet.png",
+      "alt": "A bus and a van both with EV Tours & Charter signage."
+    }
   },
   "services": [
     {
