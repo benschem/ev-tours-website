@@ -31,8 +31,9 @@
       class="btn toggle-switch"
       aria-label="dark mode toggle"
     >
-      {% include "icon.liquid", name: "sun", class: "icon pink sun-icon hide", tooltip: "Activate light mode." %} {%
-      include "icon.liquid", name: "moon", class: "icon pink moon-icon", title: "Activate dark mode." %}
+      {% include "icon.liquid", name: "sun", id: "sun-icon", class: "icon pink sun-icon hide", tooltip: "Activate light
+      mode." %} {% include "icon.liquid", name: "moon", id: "moon-icon", class: "icon pink moon-icon", tooltip:
+      "Activate dark mode." %}
     </button>
 
     <a
@@ -41,5 +42,36 @@
     >
       {% include "icon.liquid", name: "phone", class: "icon", aria_hidden: true %} {{ business.phone }}
     </a>
+
+    <button
+      id="nav-toggle"
+      class="btn toggle-switch"
+      aria-expanded="false"
+      aria-label="Toggle menu"
+    >
+      {% include "icon.liquid", name: "bars", id: "open-menu-icon" class: "icon-md white", tooltip: "Open the menu." %}
+      {% include "icon.liquid", name: "xmark", id: "close-menu-icon" class: "icon-md white hide", tooltip: "Close the
+      menu." %}
+    </button>
   </div>
 </header>
+
+<nav
+  id="mobile-menu"
+  class="mobile-menu"
+  aria-hidden="true"
+  aria-labelledby="nav-toggle"
+>
+  <ul role="list">
+    {% for link in nav.links %}
+    <li>
+      <a
+        href="{{ link.link }}"
+        class="{% if page.url == link.link %}active{% endif %}"
+      >
+        {{ link.name }}
+      </a>
+    </li>
+    {% endfor %}
+  </ul>
+</nav>

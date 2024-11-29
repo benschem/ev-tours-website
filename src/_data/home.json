@@ -25,7 +25,7 @@
     {
       "icon": "briefcase",
       "heading": "Corporate charters",
-      "description": "Professional transport options ensure that your staff arrive on time and in comfort for conferences, team-building trips and corporate events."
+      "description": "Ensure that your staff arrive on time and in comfort with our professional transport for conferences, team-building trips and corporate events."
     },
     {
       "icon": "image",
@@ -35,7 +35,7 @@
     {
       "icon": "plane",
       "heading": "Airport transfer",
-      "description": "Ensure you arrive at the airport on time and stress-free, whether you're departing or arriving."
+      "description": "Ensure you and your group arrive at the airport on time and stress-free, whether you're departing or arriving."
     },
     {
       "icon": "calendar-day",
@@ -73,8 +73,10 @@
         "description": "We shape each trip around you, taking the time to understand your needs and adding those extra touches that make all the difference."
       }
     ],
-    "image": "",
-    "image-alt": ""
+    "image": {
+      "src": "/assets/img/ev-tours-difference.jpg",
+      "alt": "Elyce standing on the step of a bus smiling at her dad."
+    }
   },
   "testimonials": [
     "“The day on the bus was amazing, John was the best. Made the day easy and more enjoyable!! Could not recommend you enough :)”",

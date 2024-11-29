@@ -11,6 +11,7 @@
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   gap: var(--space-sm);
+  padding: none;
 }
 
 .card {
@@ -23,6 +24,7 @@
 .card p + p {
   margin-block-start: var(--space-sm);
 }
+
 .card p + a {
   display: block;
   margin-block-start: var(--space-sm);
@@ -46,20 +48,37 @@
 }
 
 .card span {
-  margin-block-end: var(--space-sm);
+  margin-block-end: var(--space-md);
 }
 
-@media screen and (width > 500px) {
+@media screen and (width > 400px) {
+  .cards[role="list"] {
+    padding-inline: var(--space-md);
+  }
+}
+@media screen and (width > 600px) {
   .cards {
     grid-template-columns: 1fr 1fr;
   }
 }
+@media screen and (width > 768) {
+  .cards[role="list"] {
+    padding-inline: var(--space-lg);
+  }
+}
+
 @media screen and (width > 900px) {
   .cards {
     grid-template-columns: 1fr 1fr 1fr;
     gap: var(--space-md);
   }
   .card {
-    padding: var(--space-lg);
+    padding: var(--space-md);
+  }
+}
+
+@media screen and (width > 1100) {
+  .cards {
+    padding-inline: var(--space-lg) !important;
   }
 }

@@ -40,6 +40,17 @@ svg {
   height: 40px;
 }
 
+.icon-lg {
+  display: inline-block;
+  vertical-align: middle;
+
+  font-size: 60px;
+  min-width: 60px;
+  min-height: 60px;
+  width: 60px;
+  height: 60px;
+}
+
 .icon:hover {
   /* TODO */
 }
@@ -57,7 +68,13 @@ svg {
 .icon-md.pink svg {
   fill: var(--color-primary);
 }
+.icon-lg.pink svg {
+  fill: var(--color-primary);
+}
 
 .hide {
   display: none;
+}
+.icon-md.white svg {
+  fill: var(--white);
 }

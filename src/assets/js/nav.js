@@ -1,3 +1,5 @@
+/* ----------- Highlight the link for the current page in the menu ---------- */
+
 const setActiveLink = () => {
   const currentLocation = window.location.pathname.replace(/\/$/, "");
   const links = document.querySelectorAll("nav ul li a");
@@ -7,4 +9,6 @@ const setActiveLink = () => {
   });
 };
 
-setActiveLink();
+document.addEventListener("DOMContentLoaded", () => {
+  setActiveLink();
+});

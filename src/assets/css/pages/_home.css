@@ -34,7 +34,7 @@
   margin-block-end: var(--space-md);
 }
 
-@media screen and (width > 768px) {
+@media screen and (width > 1200px) {
   .services-hero {
     margin-block-end: var(--space-xl);
   }
@@ -46,39 +46,69 @@
   padding-inline: unset;
   display: flex;
   flex-direction: row;
+  /* gap: var(--space-sm); */
+  flex-wrap: wrap-reverse;
+  justify-content: center;
 }
 
 .difference .image {
+  max-width: 55%;
+  max-height: 800px;
   display: flex;
-  flex-direction: column;
-  max-width: 70%;
-  justify-content: flex-end;
+  justify-content: flex-start;
+  align-content: center;
 }
+
+.difference .image img {
+  object-fit: contain;
+}
+
+@media screen and (width > 768px) {
+  .difference {
+    flex-wrap: nowrap;
+  }
+  .difference .image {
+    align-self: flex-end;
+  }
+}
+
 .difference .content {
-  padding-inline-start: var(--space-md);
-  padding-block-start: 8rem;
+  padding-inline: var(--space-md);
+  padding-block-start: var(--space-lg);
+}
+
+.difference .content ul {
+  padding-block-start: var(--space-md);
 }
 
 .difference .content p {
-  max-width: 60ch;
-  padding-block-end: var(--space-lg);
-}
-
-.testimonials-wrapper {
+  max-width: 55ch;
+  padding-block-end: var(--space-md);
 }
 
 .testimonials {
-  min-height: max-content;
+  padding: var(--space-md);
   background-color: var(--color-primary-light);
-  /* display: flex; */
-  gap: var(--space-md);
-  overflow-x: hidden;
   position: relative;
+  min-height: 200px;
+}
+
+.testimonials-wrapper {
+  overflow-x: hidden;
+}
+
+.testimonials ul {
+  display: flex;
+  gap: var(--space-md);
+
+  position: absolute;
+  animation: scroll-left 30s linear infinite;
 }
 
 .testimonials li {
-  /* position: absolute;
-  left: 0px;
-  min-width: 300px; */
-  /* animation: scroll 10s linear infinite; */
+  min-width: 300px;
+}
+
+.testimonials .stars {
+  margin-block-end: var(--space-sm);
 }

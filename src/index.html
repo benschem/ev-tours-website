@@ -27,24 +27,28 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
 </section>
 
 <div class="partner-logos">
-  <div class="logo-group group-1">
+  <div class="logo-group">
     {% for logo in partners.logos %}
     <img
       src="{{ logo.src }}"
       alt="{{ logo.alt }}"
     />
-    {% endfor %}
-  </div>
-  <div class="logo-group group-2">
-    {% for logo in partners.logos %}
+    {% endfor %} {% for logo in partners.logos %}
     <img
       src="{{ logo.src }}"
       alt="{{ logo.alt }}"
     />
-    {% endfor %}
-  </div>
-  <div class="logo-group group-3">
-    {% for logo in partners.logos %}
+    {% endfor %} {% for logo in partners.logos %}
+    <img
+      src="{{ logo.src }}"
+      alt="{{ logo.alt }}"
+    />
+    {% endfor %} {% for logo in partners.logos %}
+    <img
+      src="{{ logo.src }}"
+      alt="{{ logo.alt }}"
+    />
+    {% endfor %} {% for logo in partners.logos %}
     <img
       src="{{ logo.src }}"
       alt="{{ logo.alt }}"
@@ -85,7 +89,7 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
     >
       {% for service in home.services %}
       <li class="card card-clickable">
-        {% if service.icon != "" %} {% include "icon.liquid", name: service.icon, class: "icon-md pink", aria_hidden:
+        {% if service.icon != "" %} {% include "icon.liquid", name: service.icon, class: "icon-lg pink", aria_hidden:
         true %} {% endif %}
         <h3>{{ service.heading }}</h3>
         <p>{{ service.description }}</p>
@@ -98,8 +102,8 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
 <section class="difference">
   <div class="image">
     <img
-      src="./assets/img/placeholder-image.webp"
-      alt=""
+      src="{{ home.points-of-difference.image.src }}"
+      alt="{{ home.points-of-difference.image.alt }}"
     />
   </div>
   <div class="content">
@@ -121,26 +125,26 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
   </div>
 </section>
 
-<section class="testimonials">
+<div class="testimonials">
   <div class="testimonials-wrapper">
     <ul
       role="list"
-      class="testimonials"
+      class=""
     >
       {% for testimonial in home.testimonials %}
       <li>
         <div class="stars">
-          {% include "icon.liquid", name: "star", class: "icon-xs pink", aria_hidden: true %} {% include "icon.liquid",
-          name: "star", class: "icon-xs pink", aria_hidden: true %} {% include "icon.liquid", name: "star", class:
-          "icon-xs pink", aria_hidden: true %} {% include "icon.liquid", name: "star", class: "icon-xs pink",
-          aria_hidden: true %} {% include "icon.liquid", name: "star", class: "icon-xs pink", aria_hidden: true %}
+          {% include "icon.liquid", name: "star", class: "icon pink", aria_hidden: true %} {% include "icon.liquid",
+          name: "star", class: "icon pink", aria_hidden: true %} {% include "icon.liquid", name: "star", class: "icon
+          pink", aria_hidden: true %} {% include "icon.liquid", name: "star", class: "icon pink", aria_hidden: true %}
+          {% include "icon.liquid", name: "star", class: "icon pink", aria_hidden: true %}
         </div>
         <p>{{ testimonial }}</p>
       </li>
       {% endfor %}
     </ul>
   </div>
-</section>
+</div>
 
 <section class="hero">
   <div class="copy">
