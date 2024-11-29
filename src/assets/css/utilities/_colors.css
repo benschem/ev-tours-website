@@ -23,11 +23,23 @@
   --woodsmoke-900: #3d3d3d;
   --woodsmoke-950: #1c1c1c;
 
+  --zinc-50: #fafafa;
+  --zinc-100: #f4f4f5;
+  --zinc-200: #e4e4e7;
+  --zinc-300: #d4d4d8;
+  --zinc-400: #a1a1aa;
+  --zinc-500: #71717a;
+  --zinc-600: #52525b;
+  --zinc-700: #3f3f46;
+  --zinc-800: #27272a;
+  --zinc-900: #18181b;
+  --zinc-950: #09090b;
+
   --black: #000;
   --white: #fff;
   --color-primary: var(--azalea-300);
   --color-primary-light: var(--azalea-50);
-  --color-secondary: var(--woodsmoke-950);
+  --color-secondary: var(--zinc-700);
 
   --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1), 0 2px 4px -2px rgb(0 0 0 / 0.1);
 }
