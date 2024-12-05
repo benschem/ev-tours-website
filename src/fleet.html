@@ -4,7 +4,7 @@ title: Modern and Comfortable Bus Fleet | EV Tours & Charter
 description: Our fleet of buses offers comfort, safety, and reliability for your journey. From small group travel to large charters, find the perfect vehicle for your needs.
 ---
 
-<section>
+<section class="top-gradient-bkg">
   <h1>{{ fleet.hero.heading }}</h1>
   {% for paragraph in fleet.hero.text %}
   <p>{{ paragraph }}</p>
@@ -13,12 +13,20 @@ description: Our fleet of buses offers comfort, safety, and reliability for your
 
 <section>
   <h2>Vehicles</h2>
-  {% for bus in fleet.buses %}
-  <h3>{{ bus.model }}</h3>
-  <p>{{ bus.capacity }}</p>
-  {% for feature in bus.features %}
-  <p>{{ feature }}</p>
-  {% endfor %} {% endfor %}
+  <ul
+    role="list"
+    class="cards"
+  >
+    {% for bus in fleet.buses %}
+    <li class="card">
+      <h3>{{ bus.model }}</h3>
+      <p>Seats: {{ bus.capacity }}</p>
+      {% for feature in bus.features %}
+      <p>{{ feature }}</p>
+      {% endfor %}
+    </li>
+    {% endfor %}
+  </ul>
 </section>
 
 <section>
@@ -31,7 +39,7 @@ description: Our fleet of buses offers comfort, safety, and reliability for your
   {% endfor %} {% endfor %}
 </section>
 
-<section>
+<section class="bottom-gradient-bkg">
   <h2>{{ fleet.cta.heading }}</h2>
   {% for paragraph in fleet.cta.text %}
   <p>{{ paragraph }}</p>

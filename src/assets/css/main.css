@@ -22,7 +22,7 @@
 /* Pages */
 @import "./pages/_home.css";
 @import "./pages/_about.css";
-/* @import "./pages/_services.css"; */
+@import "./pages/_services.css";
 @import "./pages/_fleet.css";
 @import "./pages/_contact.css";
 @import "./pages/_404.css";

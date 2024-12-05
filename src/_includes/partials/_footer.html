@@ -5,7 +5,7 @@
     href="#top"
     aria-label="Scroll back to the top of the page"
   >
-    {% include "icon.liquid", name: "circle-up", class: "icon", aria_hidden: true %}
+    {% include "icon.liquid", name: "circle-up", class: "icon icon-md", aria_hidden: true %}
   </a>
   <a href="/">
     <img
@@ -14,18 +14,26 @@
     />
   </a>
   <div class="details">
-    <p>© {{ business.copyright }} {{ "now" | date: "%Y" }}</p>
-    <p>{{ business.address }}</p>
-    <p>{{ business.phone }}</p>
-    <p>{{ business.email }}</p>
+    <div>
+      {% include "icon.liquid", name: "location-dot", class: "icon icon-sm pink", aria_hidden: true %}
+      <p>{{ business.address }}</p>
+    </div>
+    <div>
+      {% include "icon.liquid", name: "phone", class: "icon icon-sm pink", aria_hidden: true %}
+      <a href="tel:{{ business.phone }}">{{ business.phone }}</a>
+    </div>
+    <div>
+      {% include "icon.liquid", name: "envelope", class: "icon icon-sm pink", aria_hidden: true %}
+      <a href="mailto:{{ business.email }}">{{ business.email }}</p>
+    </div>
     <p>ABN: {{ business.abn }}</p>
+    <p>© {{ business.copyright }} {{ "now" | date: "%Y" }}</p>
     <p class="rocketzip">
-      Website by
       <a
         href="https://rocketzip.com.au"
         target="_blank"
       >
-        Rocketzip
+        Website by Rocketzip
       </a>
     </p>
   </div>

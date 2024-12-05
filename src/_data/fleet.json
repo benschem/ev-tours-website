@@ -9,12 +9,47 @@
   },
   "buses": [
     {
-      "model": "Mercedes",
-      "capacity": "20",
+      "model": "Van",
+      "capacity": "12",
       "features": [
-        "air con",
-        "toilet",
-        "radio"
+        "Air conditioning",
+        "Heating",
+        "AUX",
+        "Bluetooth",
+        "Seatbelts"
+      ]
+    },
+    {
+      "model": "Rosa",
+      "capacity": "26",
+      "features": [
+        "Air conditioning",
+        "Heating",
+        "Bluetooth",
+        "Seatbelts"
+      ]
+    },
+    {
+      "model": "Low Floor",
+      "capacity": "43",
+      "features": [
+        "Air conditioning",
+        "Heating",
+        "Bluetooth",
+        "Ramp access"
+      ]
+    },
+    {
+      "model": "Coach",
+      "capacity": "57",
+      "features": [
+        "Air conditioning",
+        "Heating",
+        "Bluetooth",
+        "Seatbelts",
+        "Curtains",
+        "Storage space",
+        "Television"
       ]
     }
   ],

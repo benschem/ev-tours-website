@@ -31,16 +31,16 @@
       class="btn toggle-switch"
       aria-label="dark mode toggle"
     >
-      {% include "icon.liquid", name: "sun", id: "sun-icon", class: "icon pink sun-icon hide", tooltip: "Activate light
-      mode." %} {% include "icon.liquid", name: "moon", id: "moon-icon", class: "icon pink moon-icon", tooltip:
-      "Activate dark mode." %}
+      {% include "icon.liquid", name: "sun", id: "sun-icon", class: "icon icon-sm pink sun-icon hide", tooltip:
+      "Activate light mode." %} {% include "icon.liquid", name: "moon", id: "moon-icon", class: "icon icon-sm pink
+      moon-icon", tooltip: "Activate dark mode." %}
     </button>
 
     <a
       href="tel:{{ business.phone }}"
       class="btn btn-primary nav-cta"
     >
-      {% include "icon.liquid", name: "phone", class: "icon", aria_hidden: true %} {{ business.phone }}
+      {% include "icon.liquid", name: "phone", class: "icon icon-sm", aria_hidden: true %} {{ business.phone }}
     </a>
 
     <button
@@ -49,9 +49,9 @@
       aria-expanded="false"
       aria-label="Toggle menu"
     >
-      {% include "icon.liquid", name: "bars", id: "open-menu-icon" class: "icon-md white", tooltip: "Open the menu." %}
-      {% include "icon.liquid", name: "xmark", id: "close-menu-icon" class: "icon-md white hide", tooltip: "Close the
-      menu." %}
+      {% include "icon.liquid", name: "bars", id: "open-menu-icon" class: "icon icon-md white", tooltip: "Open the
+      menu." %} {% include "icon.liquid", name: "xmark", id: "close-menu-icon" class: "icon icon-md white hide",
+      tooltip: "Close the menu." %}
     </button>
   </div>
 </header>

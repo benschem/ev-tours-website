@@ -48,7 +48,11 @@
 }
 
 .card span {
+  max-width: min-content;
+  display: flex;
   margin-block-end: var(--space-md);
+  align-items: center;
+  justify-content: center;
 }
 
 @media screen and (width > 400px) {

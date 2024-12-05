@@ -4,7 +4,7 @@ title: Exceptional Bus Tours & Charter Across Victoria | EV Tours & Charter
 description: "Experience hassle-free, reliable transport with EV Tours & Charter. From winery tours to corporate events, we provide tailored, professional services for every journey."
 ---
 
-<section class="hero">
+<section class="hero top-gradient-bkg">
   <div class="copy">
     <h1>
       {% assign parts = home.hero.heading | split: home.hero.highlight %} {{ parts[0] }}<span class="highlight"
@@ -89,8 +89,8 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
     >
       {% for service in home.services %}
       <li class="card card-clickable">
-        {% if service.icon != "" %} {% include "icon.liquid", name: service.icon, class: "icon-lg pink", aria_hidden:
-        true %} {% endif %}
+        {% if service.icon != "" %} {% include "icon.liquid", name: service.icon, class: "icon icon-lg pink",
+        aria_hidden: true %} {% endif %}
         <h3>{{ service.heading }}</h3>
         <p>{{ service.description }}</p>
       </li>
@@ -99,54 +99,53 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
   </div>
 </section>
 
-<section class="difference">
-  <div class="image">
+<section class="pink-bkg">
+  <div class="difference">
     <img
       src="{{ home.points-of-difference.image.src }}"
       alt="{{ home.points-of-difference.image.alt }}"
     />
-  </div>
-  <div class="content">
-    <h2>{{ home.points-of-difference.heading }}</h2>
-    <ul
-      role="list"
-      class="differences"
-    >
-      {% for difference in home.points-of-difference.differences %}
-      <li style="display: flex; gap: 1rem">
-        {% include "icon.liquid", name: "circle-check", class: "icon", aria_hidden: true %}
-        <div>
-          <h3>{{ difference.name }}</h3>
-          <p>{{ difference.description }}</p>
-        </div>
-      </li>
-      {% endfor %}
-    </ul>
+
+    <div class="content">
+      <h2>{{ home.points-of-difference.heading }}</h2>
+      <ul role="list">
+        {% for difference in home.points-of-difference.differences %}
+        <li style="display: flex; gap: 1rem">
+          {% include "icon.liquid", name: "circle-check", class: "icon icon-sm", aria_hidden: true %}
+          <div>
+            <h3>{{ difference.name }}</h3>
+            <p>{{ difference.description }}</p>
+          </div>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
 </section>
 
 <div class="testimonials">
-  <div class="testimonials-wrapper">
-    <ul
-      role="list"
-      class=""
-    >
-      {% for testimonial in home.testimonials %}
-      <li>
-        <div class="stars">
-          {% include "icon.liquid", name: "star", class: "icon pink", aria_hidden: true %} {% include "icon.liquid",
-          name: "star", class: "icon pink", aria_hidden: true %} {% include "icon.liquid", name: "star", class: "icon
-          pink", aria_hidden: true %} {% include "icon.liquid", name: "star", class: "icon pink", aria_hidden: true %}
-          {% include "icon.liquid", name: "star", class: "icon pink", aria_hidden: true %}
-        </div>
-        <p>{{ testimonial }}</p>
-      </li>
-      {% endfor %}
-    </ul>
-  </div>
+  <!-- <div class="testimonials-wrapper"> -->
+  <ul
+    role="list"
+    class=""
+  >
+    {% for testimonial in home.testimonials %}
+    <li>
+      <div class="stars">
+        {% include "icon.liquid", name: "star", class: "icon icon-sm pink", aria_hidden: true %} {% include
+        "icon.liquid", name: "star", class: "icon icon-sm pink", aria_hidden: true %} {% include "icon.liquid", name:
+        "star", class: "icon icon-sm pink", aria_hidden: true %} {% include "icon.liquid", name: "star", class: "icon
+        icon-sm pink", aria_hidden: true %} {% include "icon.liquid", name: "star", class: "icon icon-sm pink",
+        aria_hidden: true %}
+      </div>
+      <p>{{ testimonial }}</p>
+    </li>
+    {% endfor %}
+  </ul>
+  <!-- </div> -->
 </div>
 
-<section class="hero">
+<section class="hero bottom-gradient-bkg">
   <div class="copy">
     <h2>{{ home.call-to-action.heading }}</h2>
     {% for paragraph in home.call-to-action.text %}

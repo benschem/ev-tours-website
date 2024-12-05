@@ -1,20 +1,16 @@
 {
   "hero": {
     "heading": "Our services",
-    "text": "Need reliable transport? We’re here to help! Our dedicated team is committed to making your journey seamless and enjoyable, providing exceptional service every step of the way.",
-    "subheading": "Our services include:",
-    "services": [
-      "School charters and excursions",
-      "Scenic tours",
-      "Corporate charters",
-      "Major event transport",
-      "Special occasion charters",
-      "Airport shuttle"
-    ]
+    "text": "Need reliable transport? We’re here to help! Our dedicated team is committed to making your journey seamless and enjoyable, providing exceptional service every step of the way. Our services include:",
+    "image": {
+      "src": "/assets/img/sunset-bus-ev-tours.jpg",
+      "alt": "John standing by the coach at sunset."
+    }
   },
   "services": [
     {
-      "heading": "School charters and excursions",
+      "heading": "School students",
+      "icon": "graduation-cap",
       "text": "Safe, reliable transport for schools. With our experienced drivers and well-maintained fleet, your students are in good hands.",
       "points": [
         "Regular school routes",
@@ -24,6 +20,7 @@
     },
     {
       "heading": "Scenic tours",
+      "icon": "image",
       "text": "Explore Victoria’s iconic landscapes with our scenic tours, including options for winery, brewery, and Great Ocean Road tours.",
       "points": [
         "Winery tours",
@@ -32,7 +29,8 @@
       ]
     },
     {
-      "heading": "Corporate Charter",
+      "heading": "Corporate charter",
+      "icon": "user-tie",
       "text": "Make your next corporate event effortless and ensure that your staff arrive on-time and in comfort.",
       "points": [
         "Conferences",
@@ -41,7 +39,8 @@
       ]
     },
     {
-      "heading": "Major event transport",
+      "heading": "Event transport",
+      "icon": "ticket",
       "text": "For major events such as sporting events or festivals, we provide reliable charter services to get you there and back in comfort and style.",
       "points": [
         "Sporting events",
@@ -50,7 +49,8 @@
       ]
     },
     {
-      "heading": "Special occasion charter",
+      "heading": "Special occasions",
+      "icon": "champagne-glasses",
       "text": "From weddings to hens parties and golf trips, we make transportation for your special occasion a breeze. Our flexible options will ensure your group travels together in style and comfort.",
       "points": [
         "Wedding transfers",
@@ -60,7 +60,13 @@
     },
     {
       "heading": "Airport transfer",
-      "text": "Our reliable service ensures you arrive at the airport on time and stress-free, whether you're departing or arriving. Enjoy a smooth transition to and from the airport."
+      "icon": "plane",
+      "text": "Our reliable service ensures you arrive at the airport on time and stress-free, whether you're departing or arriving. Enjoy a smooth transition to and from the airport.",
+      "points": [
+        "Sports teams",
+        "Hens and bucks groups",
+        "Corporate travel"
+      ]
     }
   ],
   "cta": {

@@ -4,7 +4,7 @@ title: Contact EV Tours & Charter | Book Your Next Journey
 description: Ready to book your bus tour or charter? Get in touch with EV Tours & Charter for friendly assistance and hassle-free booking for your next trip.
 ---
 
-<section>
+<section class="top-gradient-bkg">
   <h1>{{ contact.hero.heading }}</h1>
   {% for paragraph in contact.hero.text %}
   <p>{{ paragraph }}</p>
@@ -17,28 +17,28 @@ description: Ready to book your bus tour or charter? Get in touch with EV Tours 
     class="cards"
   >
     <li class="card">
-      {% include "icon.liquid", name: "phone", class: "icon-lg pink", aria_hidden: true %}
+      {% include "icon.liquid", name: "phone", class: "icon icon-lg pink", aria_hidden: true %}
       <h3>{{ contact.phone.heading }}</h3>
       <p>{{ contact.phone.text }}</p>
       <a href="tel:{{ business.phone }}"> {{ business.phone }} </a>
     </li>
 
     <li class="card">
-      {% include "icon.liquid", name: "envelope", class: "icon-lg pink", aria_hidden: true %}
+      {% include "icon.liquid", name: "envelope", class: "icon icon-lg pink", aria_hidden: true %}
       <h3>{{ contact.email.heading }}</h3>
       <p>{{ contact.email.text }}</p>
       <a href="mailto:{{ business.email }}"> {{ business.email }} </a>
     </li>
 
     <li class="card">
-      {% include "icon.liquid", name: "location-dot", class: "icon-lg pink", aria_hidden: true %}
+      {% include "icon.liquid", name: "location-dot", class: "icon icon-lg pink", aria_hidden: true %}
       <h3>{{ contact.address.heading }}</h3>
       <p>{{ contact.address.text }} {{ business.address }}.</p>
       <p>{{ contact.address.text2 }}</p>
     </li>
 
     <li class="card">
-      {% include "icon.liquid", name: "clock", class: "icon-lg pink", aria_hidden: true %}
+      {% include "icon.liquid", name: "clock", class: "icon icon-lg pink", aria_hidden: true %}
       <h3>{{ contact.hours.heading }}</h3>
       <p>{{ contact.hours.text }}</p>
       {% for day in contact.hours.days %}
@@ -48,11 +48,11 @@ description: Ready to book your bus tour or charter? Get in touch with EV Tours 
   </ul>
 </div>
 
-<section>
+<section class="bottom-gradient-bkg">
   <h2>{{ contact.socials.heading }}</h2>
   <p>{{ contact.socials.text }}</p>
-  {% for social in business.socials %} {% include "icon.liquid", name: social.icon, class: "icon-md pink", aria_hidden:
-  true %}
+  {% for social in business.socials %} {% include "icon.liquid", name: social.icon, class: "icon icon-md pink",
+  aria_hidden: true %}
   <a href="{{ social.link }}"> {{ social.platform }} </a>
   {% endfor %}
 </section>

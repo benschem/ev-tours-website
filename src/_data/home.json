@@ -23,9 +23,9 @@
   },
   "services": [
     {
-      "icon": "briefcase",
+      "icon": "user-tie",
       "heading": "Corporate charters",
-      "description": "Ensure that your staff arrive on time and in comfort with our professional transport for conferences, team-building trips and corporate events."
+      "description": "Ensure that your staff arrive on time with our professional transport for conferences, team-building trips and corporate events."
     },
     {
       "icon": "image",
@@ -38,7 +38,7 @@
       "description": "Ensure you and your group arrive at the airport on time and stress-free, whether you're departing or arriving."
     },
     {
-      "icon": "calendar-day",
+      "icon": "ticket",
       "heading": "Major event transport",
       "description": "Get to and from sporting events, festivals, horse races, expos and trade shows in comfort and style."
     },

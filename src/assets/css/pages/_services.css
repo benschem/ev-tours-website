@@ -1,0 +1,112 @@
+.sp-wrapper {
+  margin-inline: auto;
+  max-width: 2000px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+@media screen and (width > 1280px) {
+  .sp-wrapper {
+    gap: var(--space-xl);
+  }
+}
+@media screen and (width > 1440px) {
+  .sp-wrapper {
+    gap: var(--space-2xl);
+  }
+}
+
+.sp-title {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+  gap: var(--space-md);
+  justify-content: center;
+  align-items: center;
+  max-width: max-content;
+  margin-inline: auto;
+  text-align: center;
+}
+
+@media screen and (width > 1024px) {
+  .sp-title {
+    flex-direction: row;
+    gap: var(--space-lg);
+    text-align: unset;
+  }
+}
+@media screen and (width > 1024px) {
+  .sp-title {
+    flex-direction: row;
+  }
+}
+
+.sp-title img {
+  max-width: 350px;
+  height: auto;
+}
+
+.sp-title > div {
+  max-height: max-content;
+}
+
+.sp-title p {
+  text-align: left;
+  max-width: 65ch;
+}
+
+.sp-wrapper > ul {
+  margin-inline: auto;
+  max-width: max-content;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-sm) var(--space-sm);
+  justify-content: center;
+}
+
+.sp-card {
+  display: flex;
+  padding-inline-end: var(--space-md);
+  background-color: var(--color-primary-light);
+  /* border: 1px solid var(--color-primary); */
+  border-radius: var(--rounded-3xl);
+}
+
+.sp-card h3 {
+  height: fit-content;
+  align-self: center;
+  padding-block-end: 0px;
+}
+
+.sp-card span {
+  border-radius: 9999px;
+  padding: var(--space-md);
+  width: 100px;
+  align-self: center;
+}
+
+@media screen and (width > 500px) {
+  .sp-wrapper > ul {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-md) var(--space-lg);
+  }
+}
+@media screen and (width > 1024px) {
+  .sp-wrapper > ul {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--space-md) var(--space-md);
+  }
+}
+@media screen and (width > 1280px) {
+  .sp-wrapper > ul {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--space-lg) var(--space-lg);
+  }
+}
+@media screen and (width > 1440px) {
+  .sp-wrapper > ul {
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: var(--space-lg) var(--space-2xl);
+  }
+}

@@ -4,32 +4,59 @@ title: Tailored Bus Tours & Charter Services | EV Tours & Charter
 description: Explore our range of bus charter services, including school transport, winery tours, corporate transfers, and interstate travel. Reliable and flexible solutions for every need.
 ---
 
-<section>
-  <h1>{{ services.hero.heading }}</h1>
-  <p>{{ services.hero.text }}</p>
-  <p>{{ services.hero.subheading }}</p>
-  <ul role="list">
-    {% for service in services.hero.services %}
-    <li>{{ service }}</li>
-    {% endfor %}
-  </ul>
+<section class="top-gradient-bkg">
+  <div class="sp-wrapper">
+    <div class="sp-title">
+      <img
+        src="{{ services.hero.image.src }}"
+        alt="{{ services.hero.image.alt }}"
+      />
+      <div>
+        <h1>{{ services.hero.heading }}</h1>
+        <p>{{ services.hero.text }}</p>
+      </div>
+    </div>
+    <!-- <p>{{ services.hero.subheading }}</p> -->
+    <ul role="list">
+      {% for service in services.services %}
+      <li class="sp-card">
+        {% if service.icon != "" %} {% include "icon.liquid", name: service.icon, class: "icon icon-lg pink
+        sp-card-icon", aria_hidden: true %} {% endif %}
+        <h3>{{ service.heading }}</p>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
 </section>
 
 {% for service in services.services %}
-<section>
-  <h2>{{ service.heading }}</h2>
-  <p>{{ service.text }}</p>
-  {% if service.points %}
-  <ul role="list">
-    {% for point in service.points %}
-    <li>{{ point }}</li>
-    {% endfor %}
-  </ul>
-  {% endif %}
+<section class="services">
+  <div class="services-hero">
+    <div class="flex">
+      <div class="align-center">
+        <h2>{{ service.heading }}</h2>
+        <p>{{ service.text }}</p>
+      </div>
+    </div>
+  </div>
+  <div class="width-wrapper">
+    {% if service.points %}
+    <ul
+      role="list"
+      class="cards"
+    >
+      {% for point in service.points %}
+      <li class="card">
+        <h3>{{ point }}</h3>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
 </section>
 {% endfor %}
 
-<section>
+<section class="bottom-gradient-bkg">
   <h2>{{ services.cta.heading }}</h2>
   {% for paragraph in services.cta.text %}
   <p>{{ paragraph }}</p>
