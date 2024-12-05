@@ -58,12 +58,17 @@ h6 {
 
 /* Display images etc in a more intuitive way */
 img,
-picture,
 video,
 canvas,
 svg {
   display: block; /* default is inline weirdly */
   max-width: 100%; /* auto resize based on parent */
+  height: auto;
+}
+
+picture {
+  display: block;
+  overflow: hidden;
 }
 
 /* Make it so form controls inherit typographical styles from their parents */

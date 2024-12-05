@@ -1,34 +1,37 @@
-  {
+{
     "name": "ev-tours-and-charter-website",
     "description": "Exceptional bus tours and charter. Hassle-free, reliable bus transport across Victoria and interstate.",
     "version": "1.0.0",
     "main": "index.js",
     "scripts": {
-      "cleanup": "rm -rf public",
-      "dev": "npx @11ty/eleventy --serve",
-      "dev-quiet": "npx @11ty/eleventy --serve --quiet",
-      "build": "npx @11ty/eleventy",
-      "debug": "DEBUG=Eleventy* npx @11ty/eleventy",
-      "test": "echo \"Error: no test specified\" && exit 1"
+        "cleanup": "rm -rf public",
+        "dev": "npx @11ty/eleventy --serve",
+        "dev-quiet": "npx @11ty/eleventy --serve --quiet",
+        "build": "npx @11ty/eleventy",
+        "debug": "DEBUG=Eleventy* npx @11ty/eleventy",
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": {
-      "name": "Rocketzip",
-      "email": "hello@rocketzip.com.au"
+        "name": "Rocketzip",
+        "email": "hello@rocketzip.com.au"
     },
     "license": "ISC",
     "dependencies": {
-      "@11ty/eleventy": "^2.0.1"
+        "@11ty/eleventy": "^3.0.0"
     },
     "browserslist": [
-      "cover 99.5% in au",
-      "last 2 versions",
-      "Firefox ESR",
-      "not dead"
+        "cover 99.5% in au",
+        "last 2 versions",
+        "Firefox ESR",
+        "not dead"
     ],
     "devDependencies": {
-      "autoprefixer": "^10.4.20",
-      "cssnano": "^6.1.2",
-      "postcss": "^8.4.47",
-      "postcss-import": "^16.1.0"
+        "@11ty/eleventy-img": "^5.0.0",
+        "autoprefixer": "^10.4.20",
+        "cssnano": "^6.1.2",
+        "eleventy-plugin-compress": "^1.0.5",
+        "html-minifier": "^4.0.0",
+        "postcss": "^8.4.47",
+        "postcss-import": "^16.1.0"
     }
-  }
+}

@@ -4,6 +4,12 @@ const autoprefixer = require("autoprefixer");
 const cssnano = require("cssnano");
 const postcssImport = require("postcss-import");
 
+const { compress } = require("eleventy-plugin-compress");
+const htmlmin = require("html-minifier");
+const path = require("path");
+
+const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
+
 module.exports = function (eleventyConfig) {
   eleventyConfig.addFilter("toUppercase", function (string) {
     try {
@@ -77,6 +83,49 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/assets/fonts");
   eleventyConfig.addPassthroughCopy("./src/assets/img");
   eleventyConfig.addPassthroughCopy("./src/assets/js");
+  eleventyConfig.addPassthroughCopy("./src/_headers");
+  eleventyConfig.addPassthroughCopy("./src/_redirects");
+  eleventyConfig.addPassthroughCopy("./src/favicon.ico");
+
+  // Images
+  eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
+    extensions: "html",
+    formats: ["webp", "jpeg"],
+
+    // Specify the widths for the output images
+    widths: [80, 150, 300, 600, "auto"],
+
+    // For the <img> tag
+    defaultAttributes: {
+      sizes: "auto",
+      loading: "lazy",
+      decoding: "async",
+    },
+
+    filenameFormat: function (id, src, width, format) {
+      let filename = path.basename(src, path.extname(src));
+      return `${filename}-${width}.${format}`;
+    },
+
+    outputDir: "public/assets/img/",
+  });
+
+  // Minify HTML
+  eleventyConfig.addTransform("htmlmin", function (content) {
+    if (this.page.outputPath && this.page.outputPath.endsWith(".html")) {
+      let minified = htmlmin.minify(content, {
+        useShortDoctype: true,
+        removeComments: true,
+        collapseWhitespace: true,
+      });
+      return minified;
+    }
+    return content;
+  });
+  eleventyConfig.addPlugin(compress, {
+    enabled: true,
+    algorithm: "brotli",
+  });
 
   return {
     markdownTemplateEngine: "liquid",
