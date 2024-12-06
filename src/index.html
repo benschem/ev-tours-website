@@ -4,7 +4,7 @@ title: Exceptional Bus Tours & Charter Across Victoria | EV Tours & Charter
 description: "Experience hassle-free, reliable transport with EV Tours & Charter. From winery tours to corporate events, we provide tailored, professional services for every journey."
 ---
 
-<section class="hero top-gradient-bkg">
+<section class="hero lines">
   <div class="copy">
     <h1>
       {% assign parts = home.hero.heading | split: home.hero.highlight %} {{ parts[0] }}<span class="highlight"
@@ -145,13 +145,13 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
   <!-- </div> -->
 </div>
 
-<section class="hero bottom-gradient-bkg">
+<section class="index-cta bottom-gradient-bkg">
   <div class="copy">
     <h2>{{ home.call-to-action.heading }}</h2>
     {% for paragraph in home.call-to-action.text %}
     <p>{{ paragraph }}</p>
     {% endfor %}
-    <div class="buttons hero-cta">
+    <div class="buttons">
       <a
         href="{{ home.call-to-action.primary-button-link }}"
         class="btn btn-primary"
@@ -164,10 +164,8 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
       >
     </div>
   </div>
-  <div class="image">
-    <img
-      src="{{ home.call-to-action.image.src }}"
-      alt="{{ home.call-to-action.image.alt }}"
-    />
-  </div>
+  <img
+    src="{{ home.call-to-action.image.src }}"
+    alt="{{ home.call-to-action.image.alt }}"
+  />
 </section>
