@@ -81,13 +81,26 @@
   padding-block-end: 0px;
 }
 
+.sp-card a {
+  align-self: center;
+}
+
 .sp-card span {
   background-color: var(--color-primary-light);
   box-shadow: var(--shadow-md);
   border-radius: 9999px;
   padding: var(--space-md);
   max-width: 120px;
-  align-self: center;
+  max-height: 120px;
+  align-content: center;
+}
+
+.sp-card span:hover {
+  cursor: pointer;
+  box-shadow: var(--shadow-md);
+  transform: translate(0, -2px);
+  transition: filter 250ms;
+  filter: brightness(102%);
 }
 
 @media screen and (width > 500px) {

@@ -20,7 +20,8 @@
       "image": {
         "src": "/assets/img/placeholder-image.webp",
         "alt": ""
-      }
+      },
+      "id": "tours"
     },
     {
       "heading": "School students",
@@ -34,11 +35,12 @@
       "image": {
         "src": "/assets/img/placeholder-image.webp",
         "alt": ""
-      }
+      },
+      "id": "schools"
     },
     {
       "heading": "Corporate charter",
-      "icon": "user-tie",
+      "icon": "briefcase",
       "text": "Make your next corporate event effortless and ensure that your staff arrive on-time and in comfort.",
       "points": [
         "Conferences",
@@ -48,7 +50,8 @@
       "image": {
         "src": "/assets/img/placeholder-image.webp",
         "alt": ""
-      }
+      },
+      "id": "corporate"
     },
     {
       "heading": "Event transport",
@@ -62,7 +65,8 @@
       "image": {
         "src": "/assets/img/placeholder-image.webp",
         "alt": ""
-      }
+      },
+      "id": "events"
     },
     {
       "heading": "Special occasions",
@@ -76,7 +80,8 @@
       "image": {
         "src": "/assets/img/placeholder-image.webp",
         "alt": ""
-      }
+      },
+      "id": "special"
     },
     {
       "heading": "Airport transfer",
@@ -90,7 +95,8 @@
       "image": {
         "src": "/assets/img/placeholder-image.webp",
         "alt": ""
-      }
+      },
+      "id": "airport"
     }
   ],
   "cta": {
