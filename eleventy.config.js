@@ -11,6 +11,10 @@ const path = require("path");
 const { eleventyImageTransformPlugin } = require("@11ty/eleventy-img");
 
 module.exports = function (eleventyConfig) {
+  eleventyConfig.addGlobalData("site", {
+    env: process.env.CONTEXT || "development", // for site.env from netlify
+  });
+
   eleventyConfig.addFilter("toUppercase", function (string) {
     try {
       return string.toUpperCase();
@@ -122,6 +126,7 @@ module.exports = function (eleventyConfig) {
     }
     return content;
   });
+
   eleventyConfig.addPlugin(compress, {
     enabled: true,
     algorithm: "brotli",
