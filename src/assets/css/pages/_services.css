@@ -86,7 +86,7 @@
   box-shadow: var(--shadow-md);
   border-radius: 9999px;
   padding: var(--space-md);
-  width: 100px;
+  max-width: 120px;
   align-self: center;
 }
 
@@ -125,6 +125,7 @@ section.side-by-side {
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-template-areas: "image" "content";
+  background-color: var(--color-secondary-light);
 }
 
 @media screen and (width > 880px) {

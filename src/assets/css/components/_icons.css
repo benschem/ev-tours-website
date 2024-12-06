@@ -8,20 +8,24 @@ button:has(span.icon) {
   width: auto;
 }
 
-.icon-xs {
-  min-width: 10px;
+.icon-xs svg {
+  min-height: 10px;
+  width: 10px;
 }
 
-.icon-sm {
-  min-width: 20px;
+.icon-sm svg {
+  min-height: 20px;
+  width: auto;
 }
 
-.icon-md {
-  min-width: 40px;
+.icon-md svg {
+  min-height: 40px;
+  width: 40px;
 }
 
-.icon-lg {
-  min-width: 60px;
+.icon-lg svg {
+  min-height: 60px;
+  width: 60px;
 }
 
 .icon:hover {
