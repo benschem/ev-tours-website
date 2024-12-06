@@ -94,7 +94,9 @@
     "primary-button-link": "",
     "secondary-button-text": "Learn more",
     "secondary-button-link": "",
-    "image": "",
-    "image-alt": ""
+    "image": {
+      "src": "/assets/img/ev-tours-buses-lined-up.avif",
+      "alt": "Buses lined up waiting to pickup guests"
+    }
   }
 }
