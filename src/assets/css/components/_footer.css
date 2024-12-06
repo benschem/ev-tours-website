@@ -6,6 +6,10 @@ footer {
   position: relative;
 }
 
+footer p {
+  color: var(--white);
+}
+
 footer .back-to-top {
   position: absolute;
   top: var(--space-md);
