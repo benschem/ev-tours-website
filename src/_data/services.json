@@ -12,14 +12,32 @@
       "heading": "Scenic tours",
       "icon": "image",
       "text": "Explore Victoria’s iconic landscapes with our scenic tours, including options for winery, brewery, and Great Ocean Road tours.",
-      "points": [
-        "Winery tours",
-        "Brewery tours",
-        "Great Ocean Road tours"
+      "subheadings": [
+        {
+          "title": "Winery tours",
+          "img": {
+            "src": "/assets/img/placeholder-image.webp",
+            "alt": ""
+          }
+        },
+        {
+          "title": "Brewery tours",
+          "img": {
+            "src": "/assets/img/placeholder-image.webp",
+            "alt": ""
+          }
+        },
+        {
+          "title": "Great Ocean Road tours",
+          "img": {
+            "src": "/assets/img/placeholder-image.webp",
+            "alt": ""
+          }
+        }
       ],
       "image": {
-        "src": "/assets/img/placeholder-image.webp",
-        "alt": ""
+        "src": "/assets/img/ev-tours-wine-tour.webp",
+        "alt": "A scenic view of a winery"
       },
       "id": "tours"
     },
@@ -27,29 +45,65 @@
       "heading": "School students",
       "icon": "graduation-cap",
       "text": "Safe, reliable transport for schools. With our experienced drivers and well-maintained fleet, your students are in good hands.",
-      "points": [
-        "Regular school routes",
-        "School camps",
-        "Excursions"
+      "subheadings": [
+        {
+          "title": "School routes",
+          "img": {
+            "src": "/assets/img/placeholder-image.webp",
+            "alt": ""
+          }
+        },
+        {
+          "title": "School camps",
+          "img": {
+            "src": "/assets/img/placeholder-image.webp",
+            "alt": ""
+          }
+        },
+        {
+          "title": "Excursions",
+          "img": {
+            "src": "/assets/img/placeholder-image.webp",
+            "alt": ""
+          }
+        }
       ],
       "image": {
-        "src": "/assets/img/placeholder-image.webp",
-        "alt": ""
+        "src": "/assets/img/ev-tours-bus-seats.jpg",
+        "alt": "The blue seats of a bus loking down the aisle."
       },
       "id": "schools"
     },
     {
       "heading": "Corporate charter",
-      "icon": "briefcase",
+      "icon": "user-tie",
       "text": "Make your next corporate event effortless and ensure that your staff arrive on-time and in comfort.",
-      "points": [
-        "Conferences",
-        "Corporate events",
-        "Team-building trips"
+      "subheadings": [
+        {
+          "title": "Conferences",
+          "img": {
+            "src": "/assets/img/placeholder-image.webp",
+            "alt": ""
+          }
+        },
+        {
+          "title": "Corporate events",
+          "img": {
+            "src": "/assets/img/placeholder-image.webp",
+            "alt": ""
+          }
+        },
+        {
+          "title": "Team-building trips",
+          "img": {
+            "src": "/assets/img/placeholder-image.webp",
+            "alt": ""
+          }
+        }
       ],
       "image": {
-        "src": "/assets/img/placeholder-image.webp",
-        "alt": ""
+        "src": "/assets/img/ev-tours-corporate-conference.jpg",
+        "alt": "Looking down at a crowd of business people networking at a conference."
       },
       "id": "corporate"
     },
@@ -57,14 +111,32 @@
       "heading": "Event transport",
       "icon": "ticket",
       "text": "For major events such as sporting events or festivals, we provide reliable charter services to get you there and back in comfort and style.",
-      "points": [
-        "Sporting events",
-        "Festivals",
-        "Expos and trade shows"
+      "subheadings": [
+        {
+          "title": "Sporting events",
+          "img": {
+            "src": "/assets/img/placeholder-image.webp",
+            "alt": ""
+          }
+        },
+        {
+          "title": "Music festivals",
+          "img": {
+            "src": "/assets/img/placeholder-image.webp",
+            "alt": ""
+          }
+        },
+        {
+          "title": "Expos and trade shows",
+          "img": {
+            "src": "/assets/img/placeholder-image.webp",
+            "alt": ""
+          }
+        }
       ],
       "image": {
-        "src": "/assets/img/placeholder-image.webp",
-        "alt": ""
+        "src": "/assets/img/melbourne-cbd.jpg",
+        "alt": "A view of the Melbourne CBD looking over the bridge"
       },
       "id": "events"
     },
@@ -72,14 +144,32 @@
       "heading": "Special occasions",
       "icon": "champagne-glasses",
       "text": "From weddings to hens parties and golf trips, we make transportation for your special occasion a breeze. Our flexible options will ensure your group travels together in style and comfort.",
-      "points": [
-        "Wedding transfers",
-        "Hens and bucks parties",
-        "Sporting trips"
+      "subheadings": [
+        {
+          "title": "Wedding transfers",
+          "img": {
+            "src": "/assets/img/placeholder-image.webp",
+            "alt": ""
+          }
+        },
+        {
+          "title": "Hens and bucks parties",
+          "img": {
+            "src": "/assets/img/placeholder-image.webp",
+            "alt": ""
+          }
+        },
+        {
+          "title": "Sporting trips",
+          "img": {
+            "src": "/assets/img/placeholder-image.webp",
+            "alt": ""
+          }
+        }
       ],
       "image": {
-        "src": "/assets/img/placeholder-image.webp",
-        "alt": ""
+        "src": "/assets/img/ev-tours-hens-party.avif",
+        "alt": "The back of a group of girls dressed up nicely and holding hands walking away from the camera. "
       },
       "id": "special"
     },
@@ -87,13 +177,31 @@
       "heading": "Airport transfer",
       "icon": "plane",
       "text": "Our reliable service ensures you arrive at the airport on time and stress-free, whether you're departing or arriving. Enjoy a smooth transition to and from the airport.",
-      "points": [
-        "Sports teams",
-        "Hens and bucks groups",
-        "Corporate travel"
+      "subheadings": [
+        {
+          "title": "Sports teams",
+          "img": {
+            "src": "/assets/img/placeholder-image.webp",
+            "alt": ""
+          }
+        },
+        {
+          "title": "Hens and bucks groups",
+          "img": {
+            "src": "/assets/img/placeholder-image.webp",
+            "alt": ""
+          }
+        },
+        {
+          "title": "Corporate travel",
+          "img": {
+            "src": "/assets/img/placeholder-image.webp",
+            "alt": ""
+          }
+        }
       ],
       "image": {
-        "src": "/assets/img/placeholder-image.webp",
+        "src": "/assets/img/ev-tours-airport-transport.jpg",
         "alt": ""
       },
       "id": "airport"
@@ -107,6 +215,16 @@
       "Whether it’s a custom itinerary, a special event, or any other transport needs, we’re here to help make it happen.",
       "Contact us today to discuss how we can accommodate your specific requirements!"
     ],
+    "buttons": {
+      "primary": {
+        "link": "/contact#form",
+        "text": "Book now"
+      },
+      "secondary": {
+        "link": "/services",
+        "text": "Learn more"
+      }
+    },
     "image": {
       "src": "/assets/img/placeholder-image.webp",
       "alt": ""

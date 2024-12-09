@@ -12,11 +12,18 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
       >{{ parts[1] }}
     </h1>
     <p>{{ home.hero.caption }}</p>
-    <a
-      href="{{ home.hero.button-link }}"
-      class="btn btn-primary hero-cta"
-      >{{ home.hero.button }}</a
-    >
+    <div class="buttons">
+      <a
+        href="{{ home.hero.buttons.primary.link }}"
+        class="btn btn-primary"
+        >{{ home.hero.buttons.primary.text }}</a
+      >
+      <a
+        href="{{ home.hero.buttons.secondary.link }}"
+        class="btn btn-secondary"
+        >{{ home.hero.buttons.secondary.text }}</a
+      >
+    </div>
   </div>
   <div class="image">
     <img
@@ -68,11 +75,18 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
           >{{ parts[1] }}
         </h2>
         <p>{{ home.services-hero.caption }}</p>
-        <a
-          href="{{ home.services-hero.button-link }}"
-          class="btn btn-primary hero-cta"
-          >{{ home.hero.button }}</a
-        >
+        <div class="buttons">
+          <a
+            href="{{ home.services-hero.buttons.primary.link }}"
+            class="btn btn-primary"
+            >{{ home.services-hero.buttons.primary.text }}</a
+          >
+          <a
+            href="{{ home.services-hero.buttons.secondary.link }}"
+            class="btn btn-secondary"
+            >{{ home.services-hero.buttons.secondary.text }}</a
+          >
+        </div>
       </div>
       <img
         src="{{ home.services-hero.image.src }}"
@@ -81,7 +95,7 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
     </div>
   </div>
 
-  <div class="width-wrapper">
+  <div class="flex-col-center">
     <h2>Our services</h2>
     <ul
       role="list"
@@ -89,10 +103,12 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
     >
       {% for service in home.services %}
       <li class="card card-clickable">
-        {% if service.icon != "" %} {% include "icon.liquid", name: service.icon, class: "icon icon-lg pink",
-        aria_hidden: true %} {% endif %}
-        <h3>{{ service.heading }}</h3>
-        <p>{{ service.description }}</p>
+        <a href="{{ service.link }}">
+          {% if service.icon != "" %} {% include "icon.liquid", name: service.icon, class: "icon icon-lg pink",
+          aria_hidden: true %} {% endif %}
+          <h3>{{ service.heading }}</h3>
+          <p>{{ service.description }}</p>
+        </a>
       </li>
       {% endfor %}
     </ul>
@@ -140,6 +156,50 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
       </div>
       <p>{{ testimonial }}</p>
     </li>
+    {% endfor %} {% for testimonial in home.testimonials %}
+    <li>
+      <div class="stars">
+        {% include "icon.liquid", name: "star", class: "icon icon-sm pink", aria_hidden: true %} {% include
+        "icon.liquid", name: "star", class: "icon icon-sm pink", aria_hidden: true %} {% include "icon.liquid", name:
+        "star", class: "icon icon-sm pink", aria_hidden: true %} {% include "icon.liquid", name: "star", class: "icon
+        icon-sm pink", aria_hidden: true %} {% include "icon.liquid", name: "star", class: "icon icon-sm pink",
+        aria_hidden: true %}
+      </div>
+      <p>{{ testimonial }}</p>
+    </li>
+    {% endfor %} {% for testimonial in home.testimonials %}
+    <li>
+      <div class="stars">
+        {% include "icon.liquid", name: "star", class: "icon icon-sm pink", aria_hidden: true %} {% include
+        "icon.liquid", name: "star", class: "icon icon-sm pink", aria_hidden: true %} {% include "icon.liquid", name:
+        "star", class: "icon icon-sm pink", aria_hidden: true %} {% include "icon.liquid", name: "star", class: "icon
+        icon-sm pink", aria_hidden: true %} {% include "icon.liquid", name: "star", class: "icon icon-sm pink",
+        aria_hidden: true %}
+      </div>
+      <p>{{ testimonial }}</p>
+    </li>
+    {% endfor %} {% for testimonial in home.testimonials %}
+    <li>
+      <div class="stars">
+        {% include "icon.liquid", name: "star", class: "icon icon-sm pink", aria_hidden: true %} {% include
+        "icon.liquid", name: "star", class: "icon icon-sm pink", aria_hidden: true %} {% include "icon.liquid", name:
+        "star", class: "icon icon-sm pink", aria_hidden: true %} {% include "icon.liquid", name: "star", class: "icon
+        icon-sm pink", aria_hidden: true %} {% include "icon.liquid", name: "star", class: "icon icon-sm pink",
+        aria_hidden: true %}
+      </div>
+      <p>{{ testimonial }}</p>
+    </li>
+    {% endfor %} {% for testimonial in home.testimonials %}
+    <li>
+      <div class="stars">
+        {% include "icon.liquid", name: "star", class: "icon icon-sm pink", aria_hidden: true %} {% include
+        "icon.liquid", name: "star", class: "icon icon-sm pink", aria_hidden: true %} {% include "icon.liquid", name:
+        "star", class: "icon icon-sm pink", aria_hidden: true %} {% include "icon.liquid", name: "star", class: "icon
+        icon-sm pink", aria_hidden: true %} {% include "icon.liquid", name: "star", class: "icon icon-sm pink",
+        aria_hidden: true %}
+      </div>
+      <p>{{ testimonial }}</p>
+    </li>
     {% endfor %}
   </ul>
   <!-- </div> -->
@@ -153,14 +213,14 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
     {% endfor %}
     <div class="buttons">
       <a
-        href="{{ home.call-to-action.primary-button-link }}"
+        href="{{ home.call-to-action.buttons.primary.link }}"
         class="btn btn-primary"
-        >{{ home.call-to-action.primary-button-text }}</a
+        >{{ home.call-to-action.buttons.primary.text }}</a
       >
       <a
-        href="{{ home.call-to-action.secondary-button-link }}"
+        href="{{ home.call-to-action.buttons.secondary.link }}"
         class="btn btn-secondary"
-        >{{ home.call-to-action.secondary-button-text }}</a
+        >{{ home.call-to-action.buttons.secondary.text }}</a
       >
     </div>
   </div>

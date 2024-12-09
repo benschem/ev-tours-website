@@ -3,19 +3,35 @@
     "heading": "Exceptional bus tours and charter",
     "highlight": "bus",
     "caption": "Hassle-free, reliable bus transport across Victoria and interstate.",
-    "button": "Book now",
-    "button-link": "",
     "image": {
       "src": "/assets/img/ev-tours-charter-family-business.jpg",
       "alt": "Elyce at the window of one of her buses smiling at her dad."
+    },
+    "buttons": {
+      "primary": {
+        "text": "Book now",
+        "link": "/contact#form"
+      },
+      "secondary": {
+        "text": "Enquire",
+        "link": "/contact"
+      }
     }
   },
   "services-hero": {
     "heading": "We’ve got the wheels to take you where you need to go",
     "highlight": "wheels",
     "caption": "Need a bus? We’ve got you covered. Our dedicated team will ensure your trip is hassle-free with outstanding service from start to finish.",
-    "button": "View fleet",
-    "button-link": "",
+    "buttons": {
+      "primary": {
+        "text": "See services",
+        "link": "/services"
+      },
+      "secondary": {
+        "text": "View fleet",
+        "link": "/fleet"
+      }
+    },
     "image": {
       "src": "/assets/img/ev-tours-fleet.png",
       "alt": "A bus and a van both with EV Tours & Charter signage."
@@ -24,31 +40,37 @@
   "services": [
     {
       "icon": "user-tie",
+      "link": "/services#corporate",
       "heading": "Corporate charters",
       "description": "Ensure that your staff arrive on time with our professional transport for conferences, team-building trips and corporate events."
     },
     {
       "icon": "image",
+      "link": "/services#tours",
       "heading": "Scenic tours",
       "description": "Explore Victoria’s iconic landscapes, including wineries, breweries, Puffing Billy, the Phillip Island penguins and the Great Ocean Road."
     },
     {
       "icon": "plane",
+      "link": "/services#airport",
       "heading": "Airport transfer",
       "description": "Ensure you and your group arrive at the airport on time and stress-free, whether you're departing or arriving."
     },
     {
       "icon": "ticket",
+      "link": "/services#events",
       "heading": "Major event transport",
       "description": "Get to and from sporting events, festivals, horse races, expos and trade shows in comfort and style."
     },
     {
       "icon": "graduation-cap",
+      "link": "/services#schools",
       "heading": "School charters",
       "description": "Safe, reliable transport for school students and teachers on camps, excursions, and regular school routes."
     },
     {
       "icon": "champagne-glasses",
+      "link": "/services#special",
       "heading": "Special occasions",
       "description": "From weddings to hens parties and golf trips, we make sure your group travels together in style and comfort."
     }
@@ -90,10 +112,16 @@
       "Whether it's for business or leisure, let us take care of your transport needs so you can focus on what matters most.",
       "Get started on your booking now!"
     ],
-    "primary-button-text": "Book now",
-    "primary-button-link": "",
-    "secondary-button-text": "Learn more",
-    "secondary-button-link": "",
+    "buttons": {
+      "primary": {
+        "text": "Book now",
+        "link": "/contact#form"
+      },
+      "secondary": {
+        "text": "Learn more",
+        "link": "/about"
+      }
+    },
     "image": {
       "src": "/assets/img/ev-tours-buses-lined-up.avif",
       "alt": "Buses lined up waiting to pickup guests"

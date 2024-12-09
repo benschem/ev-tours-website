@@ -89,18 +89,17 @@
   overflow-x: hidden;
 }
 
-.testimonials-wrapper {
-}
-
 .testimonials ul {
   display: flex;
   gap: var(--space-md);
 
-  position: absolute;
-  animation: scroll-left 30s linear infinite;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
 }
 
 .testimonials li {
+  scroll-snap-align: start;
   padding: var(--space-sm);
   min-width: 300px;
 }
@@ -122,7 +121,7 @@
   grid-template-areas:
     "image"
     "content";
-  gap: var(--space-xl) var(--space-sm);
+  gap: var(--space-md) var(--space-sm);
 }
 
 @media screen and (width > 880px) {

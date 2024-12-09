@@ -32,7 +32,7 @@
   padding-block-start: var(--space-sm);
 }
 
-.hero .copy .hero-cta {
+.hero .copy .buttons {
   margin-block-start: var(--space-md);
 }
 

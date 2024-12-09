@@ -39,9 +39,15 @@ description: Our fleet of buses offers comfort, safety, and reliability for your
   {% endfor %} {% endfor %}
 </section>
 
-<section class="">
-  <h2>{{ fleet.cta.heading }}</h2>
-  {% for paragraph in fleet.cta.text %}
-  <p>{{ paragraph }}</p>
-  {% endfor %}
+<section class="index-cta">
+  <div class="copy">
+    <h2>{{ fleet.cta.heading }}</h2>
+    {% for paragraph in fleet.cta.text %}
+    <p>{{ paragraph }}</p>
+    {% endfor %}
+  </div>
+  <img
+    src=""
+    alt=""
+  />
 </section>

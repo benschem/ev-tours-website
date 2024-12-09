@@ -34,19 +34,20 @@ description: Explore our range of bus charter services, including school transpo
   </section>
 
   {% for service in services.services %}
-  <section class="side-by-side" id="{{ service.id }}">
+  <section class="side-by-side">
     <img
       src="{{ service.image.src }}"
       alt="{{ service.image.alt }}"
     />
-    <div class="content">
+    <div class="content" id="{{ service.id }}">
       <h2>{{ service.heading }}</h2>
       <p>{{ service.text }}</p>
-      {% if service.points %}
+      {% if service.subheadings %}
       <ul role="list">
-        {% for point in service.points %}
+        {% for subheading in service.subheadings %}
         <li>
-          <h3>{{ point }}</h3>
+          <img src="{{ subheading.img.src }}" alt="{{ subheading.img.alt }}">
+          <h3>{{ subheading.title }}</h3>
         </li>
         {% endfor %}
       </ul>
@@ -55,21 +56,24 @@ description: Explore our range of bus charter services, including school transpo
 </section>
 {% endfor %}
 
-<section class="services-cta ">
-  <h2>{{ services.cta.heading }}</h2>
-  {% for paragraph in services.cta.text %}
-  <p>{{ paragraph }}</p>
-  {% endfor %}
-  <div class="buttons hero-cta">
-    <a
-      href="{{ home.call-to-action.primary-button-link }}"
-      class="btn btn-primary"
-      >{{ home.call-to-action.primary-button-text }}</a
-    >
-    <a
-      href="{{ home.call-to-action.secondary-button-link }}"
-      class="btn btn-secondary"
-      >{{ home.call-to-action.secondary-button-text }}</a
-    >
+<section class="index-cta">
+  <div class="copy">
+    <h2>{{ services.cta.heading }}</h2>
+    {% for paragraph in services.cta.text %}
+    <p>{{ paragraph }}</p>
+    {% endfor %}
+    <div class="buttons">
+      <a
+        href="{{ services.cta.buttons.primary.link }}"
+        class="btn btn-primary"
+        >{{ services.cta.buttons.primary.text }}</a
+      >
+      <a
+        href="{{ services.cta.buttons.secondary.link }}"
+        class="btn btn-secondary"
+        >{{ services.cta.buttons.secondary.text }}</a
+      >
+    </div>
   </div>
+  <img src="{{ services.cta.image.src }}" alt="{{ services.cta.image.src }}">
 </section>

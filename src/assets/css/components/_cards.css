@@ -1,4 +1,4 @@
-.width-wrapper {
+.flex-col-center {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -28,6 +28,10 @@
 .card p + a {
   display: block;
   margin-block-start: var(--space-sm);
+}
+
+.card-clickable > a {
+  text-decoration: none;
 }
 
 .card-clickable:hover {
