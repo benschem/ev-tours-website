@@ -76,6 +76,10 @@
   padding-block-start: var(--space-md);
 }
 
+.difference .content ul li span {
+  padding-block-start: var(--space-xs);
+}
+
 .difference .content p {
   max-width: 55ch;
   padding-block-end: var(--space-md);

@@ -16,21 +16,21 @@
         {
           "title": "Winery tours",
           "img": {
-            "src": "/assets/img/placeholder-image.webp",
+            "src": "/assets/img/winery-tour.jpg",
             "alt": ""
           }
         },
         {
           "title": "Brewery tours",
           "img": {
-            "src": "/assets/img/placeholder-image.webp",
+            "src": "/assets/img/brewery-tour.jpg",
             "alt": ""
           }
         },
         {
           "title": "Great Ocean Road tours",
           "img": {
-            "src": "/assets/img/placeholder-image.webp",
+            "src": "/assets/img/great-ocean-road-tour.jpg",
             "alt": ""
           }
         }
