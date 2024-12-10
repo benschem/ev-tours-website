@@ -1,12 +1,23 @@
 {
   "hero": {
     "heading": "About us",
-    "text": "EV Tours & Charter is a family business run by daddy and daughter team Elyce and John, who are dedicated to providing you with exceptional transport experiences tailored to your needs."
+    "text": "EV Tours & Charter is a family business run by daddy and daughter team Elyce and John, who are dedicated to providing you with exceptional transport experiences tailored to your needs.",
+    "buttons": {
+      "primary": {
+        "link": "/contact#form",
+        "text": "Book now"
+      },
+      "secondary": {
+        "link": "/services",
+        "text": "Learn more"
+      }
+    }
   },
   "story": {
     "heading": "Our story",
     "sections": [
       {
+        "icon": "hand-holding-heart",
         "heading": "Passion project turned professional",
         "text": [
           "EV Tours & Charter was founded by the Director Elyce, who got her start organising winery tours and hens party outings for her friends.",
@@ -14,6 +25,7 @@
         ]
       },
       {
+        "icon": "bus",
         "heading": "From a single bus to a fleet",
         "text": [
           "What started as a single bus operation blossomed into a fleet of buses, with Elyce’s dad John joining her to share his business and mechanical expertise.",
@@ -21,6 +33,7 @@
         ]
       },
       {
+        "icon": "arrow-trend-up",
         "heading": "Onward and upward",
         "text": [
           "As we look to the future, we are excited to continue expanding our services and exploring new destinations.",
@@ -43,7 +56,7 @@
         "heading": "Our experience and expertise",
         "text": [
           "With years of experience in the transport industry, we blend youthful energy with reliable service.",
-          "Blah"
+          "We’ve been at this for years, so we know how to make your trip smooth and stress-free."
         ]
       },
       {
@@ -60,6 +73,20 @@
     "text": [
       "With our dedicated team and family-focused approach, we’re here to ensure your journey is smooth and memorable.",
       "Whether you're planning a winery tour, a special event, or a day out with friends, we can’t wait to help you create lasting memories."
-    ]
+    ],
+    "img": {
+      "src": "/assets/img/bus-stop.jpg",
+      "alt": "Replace this"
+    },
+    "buttons": {
+      "primary": {
+        "link": "/contact#form",
+        "text": "Book now"
+      },
+      "secondary": {
+        "link": "/services",
+        "text": "Learn more"
+      }
+    }
   }
 }

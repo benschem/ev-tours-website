@@ -1,0 +1,45 @@
+.fleet h2 {
+  text-align: center;
+  margin-block-end: var(--space-lg);
+}
+
+.buses {
+  display: grid;
+  gap: var(--space-lg) var(--space-md);
+}
+
+.buses .features {
+  list-style: disc;
+  margin-inline-start: var(--space-md);
+  margin-block-end: var(--space-md);
+}
+
+.buses > li {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  background-color: var(--color-primary-light);
+  border-radius: var(--rounded-3xl);
+  padding: var(--space-md);
+}
+
+@media screen and (width > 1024px) {
+  .buses {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (width > 1480px) {
+  .buses {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.buses > li > a {
+  /* align-self: center; */
+  margin-block-start: auto;
+}
+
+.buses li h3 {
+  margin-block-start: var(--space-md);
+}

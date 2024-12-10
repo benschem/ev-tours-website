@@ -4,56 +4,70 @@ title: About EV Tours & Charter | Family-Owned Bus Tours & Charter
 description: Discover our story at EV Tours & Charter, where a passion for transport turned into a family-run business. Learn how we’ve grown from a single bus to a trusted fleet serving Victoria and beyond.
 ---
 
-<section class="hero lines">
-  <div class="copy">
+<section class="sp-title lines mx-auto">
+  <div>
     <h1>{{ about.hero.heading }}</h1>
     <p>{{ about.hero.text }}</p>
-    <a
-      href="{{ home.hero.button-link }}"
-      class="btn btn-primary hero-cta"
-      >{{ home.hero.button }}</a
-    >
+    <div class="buttons">
+      <a
+        href="{{ home.hero.buttons.primary.link }}"
+        class="btn btn-primary"
+        >{{ home.hero.buttons.primary.text }}</a
+      >
+      <a
+        href="{{ home.hero.buttons.secondary.link }}"
+        class="btn btn-secondary"
+        >{{ home.hero.buttons.secondary.text }}</a
+      >
+    </div>
   </div>
-  <div class="image">
-    <img
-      src="/assets/img/placeholder-image.webp"
-      alt="{{ home.hero.image-alt }}"
-    />
-  </div>
+  <img
+    src="/assets/img/bus-stop.jpg"
+    alt="{{ home.hero.image-alt }}"
+  />
 </section>
 
 <section class="story">
   <h2>{{ about.story.heading }}</h2>
-  {% for section in about.story.sections %}
-  <div>
-    <h3>{{ section.heading }}</h3>
-    {% for paragraph in section.text %}
-    <p>{{ paragraph }}</p>
+  <div class="blocks">
+    {% for section in about.story.sections %}
+    <div>
+      {% if section.icon != "" %} {% include "icon.liquid", name: section.icon, class: "icon icon-lg pink", aria_hidden:
+      true %} {% endif %}
+      <h3>{{ section.heading }}</h3>
+      {% for paragraph in section.text %}
+      <p>{{ paragraph }}</p>
+      {% endfor %}
+    </div>
     {% endfor %}
   </div>
-  {% endfor %}
 </section>
 
-<section class="difference">
-  <div class="image">
-    <img
-      src="/assets/img/placeholder-image.webp"
-      alt="{{ home.points-of-difference.image-alt }}"
-    />
-  </div>
+<section class="about-difference">
   <div class="content">
     <h2>{{ about.difference.heading }}</h2>
-    {% for section in about.difference.sections %}
-    <h3>{{ section.heading }}</h3>
-    {% if section.text contains 'string' %}
-    <p>{{ section.text }}</p>
-    {% else %} {% for paragraph in section.text %}
-    <p>{{ paragraph }}</p>
-    {% endfor %} {% endif %} {% endfor %}
+    <div class="blocks">
+      {% for section in about.difference.sections %}
+      <div class="block">
+        <img
+          src="/assets/img/bus-stop.jpg"
+          alt="{{ home.points-of-difference.image-alt }}"
+        />
+        <div class="content">
+          <h3>{{ section.heading }}</h3>
+          {% if section.text contains 'string' %}
+          <p>{{ section.text }}</p>
+          {% else %} {% for paragraph in section.text %}
+          <p>{{ paragraph }}</p>
+          {% endfor %} {% endif %}
+        </div>
+      </div>
+      {% endfor %}
+    </div>
   </div>
 </section>
 
-<section class="index-cta">
+<section class="index-cta lines">
   <div class="copy">
     <h2>{{ about.cta.heading }}</h2>
     {% for paragraph in about.cta.text %}
@@ -61,19 +75,19 @@ description: Discover our story at EV Tours & Charter, where a passion for trans
     {% endfor %}
     <div class="buttons">
       <a
-        href="{{ home.call-to-action.primary-button-link }}"
+        href="{{ about.cta.buttons.primary.link }}"
         class="btn btn-primary"
-        >{{ home.call-to-action.primary-button-text }}</a
+        >{{ about.cta.buttons.primary.text }}</a
       >
       <a
-        href="{{ home.call-to-action.secondary-button-link }}"
+        href="{{ about.cta.buttons.secondary.link }}"
         class="btn btn-secondary"
-        >{{ home.call-to-action.secondary-button-text }}</a
+        >{{ about.cta.buttons.secondary.text }}</a
       >
     </div>
   </div>
   <img
-    src=""
-    alt=""
+    src="{{ about.cta.img.src }}"
+    alt="{{ about.cta.img.alt }}"
   />
 </section>

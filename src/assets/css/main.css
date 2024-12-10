@@ -34,6 +34,10 @@
   display: none;
 }
 
+.mx-auto {
+  margin-inline: auto;
+}
+
 /* If a user doesn't want motion, they won't get it */
 @media (prefers-reduced-motion: reduce) {
   *,

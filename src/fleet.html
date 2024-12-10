@@ -4,39 +4,72 @@ title: Modern and Comfortable Bus Fleet | EV Tours & Charter
 description: Our fleet of buses offers comfort, safety, and reliability for your journey. From small group travel to large charters, find the perfect vehicle for your needs.
 ---
 
-<section class="lines">
-  <h1>{{ fleet.hero.heading }}</h1>
-  {% for paragraph in fleet.hero.text %}
-  <p>{{ paragraph }}</p>
-  {% endfor %}
-</section>
+<section class="lines fleet-wrapper mx-auto">
+  <div class="sp-title">
+    <div>
+      <h1>{{ fleet.hero.heading }}</h1>
+      {% for paragraph in fleet.hero.text %}
+      <p>{{ paragraph }}</p>
+      {% endfor %}
+    </div>
+    <img
+      src="/assets/img/bus-stop.jpg"
+      alt="Replace this"
+    />
+  </div>
+  <!-- </section> -->
 
-<section>
-  <h2>Vehicles</h2>
+  <!-- <section class="fleet"> -->
+  <!-- <h2>Vehicles</h2> -->
   <ul
     role="list"
-    class="cards"
+    class="buses"
   >
     {% for bus in fleet.buses %}
-    <li class="card">
+    <li>
+      <img
+        src="{{ bus.image.src }}"
+        alt="{{ bus.image.alt }}"
+      />
       <h3>{{ bus.model }}</h3>
-      <p>Seats: {{ bus.capacity }}</p>
-      {% for feature in bus.features %}
-      <p>{{ feature }}</p>
-      {% endfor %}
+      <ul
+        role="list"
+        class="features"
+      >
+        <li>
+          <p>Seats {{ bus.capacity }}</p>
+        </li>
+        {% for feature in bus.features %}
+        <li>
+          <p>{{ feature }}</p>
+        </li>
+        {% endfor %}
+      </ul>
+      <a
+        href="/contact#form"
+        class="btn btn-primary"
+        >Book now</a
+      >
     </li>
     {% endfor %}
   </ul>
 </section>
 
-<section>
+<section class="story">
   <h2>{{ fleet.safety.heading }}</h2>
   <p>{{ fleet.safety.text }}</p>
-  {% for section in fleet.safety.sections %}
-  <h3>{{ section.heading }}</h3>
-  {% for paragraph in section.text %}
-  <p>{{ paragraph }}</p>
-  {% endfor %} {% endfor %}
+  <div class="blocks">
+    {% for section in fleet.safety.sections %}
+    <div>
+      {% if section.icon != "" %} {% include "icon.liquid", name: section.icon, class: "icon icon-lg pink", aria_hidden:
+      true %} {% endif %}
+      <h3>{{ section.heading }}</h3>
+      {% for paragraph in section.text %}
+      <p>{{ paragraph }}</p>
+      {% endfor %}
+    </div>
+    {% endfor %}
+  </div>
 </section>
 
 <section class="index-cta">
@@ -45,9 +78,21 @@ description: Our fleet of buses offers comfort, safety, and reliability for your
     {% for paragraph in fleet.cta.text %}
     <p>{{ paragraph }}</p>
     {% endfor %}
+    <div class="buttons">
+      <a
+        href="{{ fleet.cta.buttons.primary.link }}"
+        class="btn btn-primary"
+        >{{ fleet.cta.buttons.primary.text }}</a
+      >
+      <a
+        href="{{ fleet.cta.buttons.secondary.link }}"
+        class="btn btn-secondary"
+        >{{ fleet.cta.buttons.secondary.text }}</a
+      >
+    </div>
   </div>
   <img
-    src=""
-    alt=""
+    src="{{ fleet.cta.image.src }}"
+    alt="{{ fleet.cta.image.alt }}"
   />
 </section>

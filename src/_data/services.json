@@ -1,7 +1,10 @@
 {
   "hero": {
     "heading": "Our services",
-    "text": "Need reliable transport? We’re here to help! Our dedicated team is committed to making your journey seamless and enjoyable, providing exceptional service every step of the way. Our services include:",
+    "text": [
+      "Need reliable transport? We’re here to help! Our dedicated team is committed to making your journey seamless and enjoyable, providing exceptional service every step of the way.",
+      "Our services include:"
+    ],
     "image": {
       "src": "/assets/img/sunset-bus-ev-tours.jpg",
       "alt": "John standing by the coach at sunset."
@@ -18,21 +21,27 @@
           "img": {
             "src": "/assets/img/winery-tour.jpg",
             "alt": ""
-          }
+          },
+          "text": "See more →",
+          "link": "/services"
         },
         {
           "title": "Brewery tours",
           "img": {
             "src": "/assets/img/brewery-tour.jpg",
             "alt": ""
-          }
+          },
+          "text": "See more →",
+          "link": "/services"
         },
         {
           "title": "Great Ocean Road tours",
           "img": {
             "src": "/assets/img/great-ocean-road-tour.jpg",
             "alt": ""
-          }
+          },
+          "text": "See more →",
+          "link": "/services"
         }
       ],
       "image": {
@@ -49,23 +58,29 @@
         {
           "title": "School routes",
           "img": {
-            "src": "/assets/img/placeholder-image.webp",
+            "src": "/assets/img/bus-stop.jpg",
             "alt": ""
-          }
+          },
+          "text": "See more →",
+          "link": "/services"
         },
         {
           "title": "School camps",
           "img": {
-            "src": "/assets/img/placeholder-image.webp",
+            "src": "/assets/img/bus-stop.jpg",
             "alt": ""
-          }
+          },
+          "text": "See more →",
+          "link": "/services"
         },
         {
           "title": "Excursions",
           "img": {
-            "src": "/assets/img/placeholder-image.webp",
+            "src": "/assets/img/bus-stop.jpg",
             "alt": ""
-          }
+          },
+          "text": "See more →",
+          "link": "/services"
         }
       ],
       "image": {
@@ -82,23 +97,29 @@
         {
           "title": "Conferences",
           "img": {
-            "src": "/assets/img/placeholder-image.webp",
+            "src": "/assets/img/bus-stop.jpg",
             "alt": ""
-          }
+          },
+          "text": "See more →",
+          "link": "/services"
         },
         {
           "title": "Corporate events",
           "img": {
-            "src": "/assets/img/placeholder-image.webp",
+            "src": "/assets/img/bus-stop.jpg",
             "alt": ""
-          }
+          },
+          "text": "See more →",
+          "link": "/services"
         },
         {
           "title": "Team-building trips",
           "img": {
-            "src": "/assets/img/placeholder-image.webp",
+            "src": "/assets/img/bus-stop.jpg",
             "alt": ""
-          }
+          },
+          "text": "See more →",
+          "link": "/services"
         }
       ],
       "image": {
@@ -115,23 +136,29 @@
         {
           "title": "Sporting events",
           "img": {
-            "src": "/assets/img/placeholder-image.webp",
+            "src": "/assets/img/bus-stop.jpg",
             "alt": ""
-          }
+          },
+          "text": "See more →",
+          "link": "/services"
         },
         {
           "title": "Music festivals",
           "img": {
-            "src": "/assets/img/placeholder-image.webp",
+            "src": "/assets/img/bus-stop.jpg",
             "alt": ""
-          }
+          },
+          "text": "See more →",
+          "link": "/services"
         },
         {
           "title": "Expos and trade shows",
           "img": {
-            "src": "/assets/img/placeholder-image.webp",
+            "src": "/assets/img/bus-stop.jpg",
             "alt": ""
-          }
+          },
+          "text": "See more →",
+          "link": "/services"
         }
       ],
       "image": {
@@ -148,23 +175,29 @@
         {
           "title": "Wedding transfers",
           "img": {
-            "src": "/assets/img/placeholder-image.webp",
+            "src": "/assets/img/bus-stop.jpg",
             "alt": ""
-          }
+          },
+          "text": "See more →",
+          "link": "/services"
         },
         {
           "title": "Hens and bucks parties",
           "img": {
-            "src": "/assets/img/placeholder-image.webp",
+            "src": "/assets/img/bus-stop.jpg",
             "alt": ""
-          }
+          },
+          "text": "See more →",
+          "link": "/services"
         },
         {
           "title": "Sporting trips",
           "img": {
-            "src": "/assets/img/placeholder-image.webp",
+            "src": "/assets/img/bus-stop.jpg",
             "alt": ""
-          }
+          },
+          "text": "See more →",
+          "link": "/services"
         }
       ],
       "image": {
@@ -181,23 +214,29 @@
         {
           "title": "Sports teams",
           "img": {
-            "src": "/assets/img/placeholder-image.webp",
+            "src": "/assets/img/bus-stop.jpg",
             "alt": ""
-          }
+          },
+          "text": "See more →",
+          "link": "/services"
         },
         {
           "title": "Hens and bucks groups",
           "img": {
-            "src": "/assets/img/placeholder-image.webp",
+            "src": "/assets/img/bus-stop.jpg",
             "alt": ""
-          }
+          },
+          "text": "See more →",
+          "link": "/services"
         },
         {
           "title": "Corporate travel",
           "img": {
-            "src": "/assets/img/placeholder-image.webp",
+            "src": "/assets/img/bus-stop.jpg",
             "alt": ""
-          }
+          },
+          "text": "See more →",
+          "link": "/services"
         }
       ],
       "image": {
@@ -226,7 +265,7 @@
       }
     },
     "image": {
-      "src": "/assets/img/placeholder-image.webp",
+      "src": "/assets/img/bus-stop.jpg",
       "alt": ""
     }
   }

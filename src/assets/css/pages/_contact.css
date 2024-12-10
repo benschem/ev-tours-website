@@ -6,7 +6,7 @@
   gap: var(--space-lg) var(--space-sm);
   justify-content: space-between;
   align-items: center;
-
+  padding-block: var(--space-md);
   margin-block-end: var(--space-md);
 }
 
@@ -74,4 +74,36 @@
   .contact-details ul[role="list"] {
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+}
+
+.form {
+  background-color: var(--color-primary-light);
+}
+
+.follow {
+  max-width: fit-content;
+  margin-inline: auto;
+}
+
+.follow ul {
+  margin-block-start: var(--space-md);
+  display: flex;
+  gap: var(--space-xl);
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.follow ul li {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+
+  text-align: center;
+  padding: var(--space-sm);
+  background-color: unset;
+}
+.follow li a {
+  display: block;
+  margin-block-start: var(--space-sm);
 }

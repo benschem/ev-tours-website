@@ -13,7 +13,9 @@ description: Explore our range of bus charter services, including school transpo
       />
       <div>
         <h1>{{ services.hero.heading }}</h1>
-        <p>{{ services.hero.text }}</p>
+        {% for paragraph in services.hero.text %}
+        <p>{{ paragraph }}</p>
+        {% endfor %}
       </div>
     </div>
     <!-- <p>{{ services.hero.subheading }}</p> -->
@@ -47,7 +49,10 @@ description: Explore our range of bus charter services, including school transpo
         {% for subheading in service.subheadings %}
         <li>
           <img src="{{ subheading.img.src }}" alt="{{ subheading.img.alt }}">
-          <h3>{{ subheading.title }}</h3>
+          <div>
+            <h3>{{ subheading.title }}</h3>
+            <a href="{{ subheading.link }}"><p>{{ subheading.text }}</p></a>
+          </div>
         </li>
         {% endfor %}
       </ul>
@@ -56,7 +61,7 @@ description: Explore our range of bus charter services, including school transpo
 </section>
 {% endfor %}
 
-<section class="index-cta">
+<section class="index-cta lines">
   <div class="copy">
     <h2>{{ services.cta.heading }}</h2>
     {% for paragraph in services.cta.text %}
@@ -75,5 +80,5 @@ description: Explore our range of bus charter services, including school transpo
       >
     </div>
   </div>
-  <img src="{{ services.cta.image.src }}" alt="{{ services.cta.image.src }}">
+  <img src="{{ services.cta.image.src }}" alt="{{ services.cta.image.alt }}">
 </section>
