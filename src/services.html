@@ -52,15 +52,20 @@ description: Explore our range of bus charter services, including school transpo
     {% if service.subheadings %}
     <ul role="list">
       {% for subheading in service.subheadings %}
-      <li>
-        <img
-          src="{{ subheading.img.src }}"
-          alt="{{ subheading.img.alt }}"
-        />
-        <div>
-          <h3>{{ subheading.title }}</h3>
-          <a href="{{ subheading.link }}"><p>{{ subheading.text }}</p></a>
-        </div>
+      <li class="card-clickable">
+        <a
+          href="{{ subheading.link }}"
+          aria-label="{{ subheading.title }}"
+        >
+          <img
+            src="{{ subheading.img.src }}"
+            alt="{{ subheading.img.alt }}"
+          />
+          <div>
+            <h3>{{ subheading.title }}</h3>
+            <p>{{ subheading.text }}</p>
+          </div>
+        </a>
       </li>
       {% endfor %}
     </ul>
