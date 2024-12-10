@@ -14,3 +14,7 @@ picture {
 .pink-bkg {
   background-color: var(--color-primary);
 }
+
+a {
+  text-decoration-color: var(--color-primary);
+}

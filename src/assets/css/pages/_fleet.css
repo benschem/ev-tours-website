@@ -1,6 +1,5 @@
-.fleet h2 {
+.fleet-wrapper h2 {
   text-align: center;
-  margin-block-end: var(--space-lg);
 }
 
 .buses {

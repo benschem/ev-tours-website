@@ -57,15 +57,17 @@ description: Ready to book your bus tour or charter? Get in touch with EV Tours 
   <h2>Form goes here</h2>
 </section>
 
-<section class="follow lines">
-  <h2>{{ contact.socials.heading }}</h2>
-  <p>{{ contact.socials.text }}</p>
-  <ul role="list">
-    {% for social in business.socials %}
-    <li>
-      {% include "icon.liquid", name: social.icon, class: "icon icon-lg pink", aria_hidden: true %}
-      <a href="{{ social.link }}"> {{ social.platform }} </a>
-    </li>
-    {% endfor %}
-  </ul>
+<section class="lines">
+  <div class="follow">
+    <h2>{{ contact.socials.heading }}</h2>
+    <p>{{ contact.socials.text }}</p>
+    <ul role="list">
+      {% for social in business.socials %}
+      <li>
+        {% include "icon.liquid", name: social.icon, class: "icon icon-lg pink", aria_hidden: true %}
+        <a href="{{ social.link }}"> {{ social.platform }} </a>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
 </section>

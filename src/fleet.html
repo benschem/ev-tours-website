@@ -20,39 +20,41 @@ description: Our fleet of buses offers comfort, safety, and reliability for your
   <!-- </section> -->
 
   <!-- <section class="fleet"> -->
-  <!-- <h2>Vehicles</h2> -->
-  <ul
-    role="list"
-    class="buses"
-  >
-    {% for bus in fleet.buses %}
-    <li>
-      <img
-        src="{{ bus.image.src }}"
-        alt="{{ bus.image.alt }}"
-      />
-      <h3>{{ bus.model }}</h3>
-      <ul
-        role="list"
-        class="features"
-      >
-        <li>
-          <p>Seats {{ bus.capacity }}</p>
-        </li>
-        {% for feature in bus.features %}
-        <li>
-          <p>{{ feature }}</p>
-        </li>
-        {% endfor %}
-      </ul>
-      <a
-        href="/contact#form"
-        class="btn btn-primary"
-        >Book now</a
-      >
-    </li>
-    {% endfor %}
-  </ul>
+  <div>
+    <h2>Vehicles</h2>
+    <ul
+      role="list"
+      class="buses"
+    >
+      {% for bus in fleet.buses %}
+      <li>
+        <img
+          src="{{ bus.image.src }}"
+          alt="{{ bus.image.alt }}"
+        />
+        <h3>{{ bus.model }}</h3>
+        <ul
+          role="list"
+          class="features"
+        >
+          <li>
+            <p>Seats {{ bus.capacity }}</p>
+          </li>
+          {% for feature in bus.features %}
+          <li>
+            <p>{{ feature }}</p>
+          </li>
+          {% endfor %}
+        </ul>
+        <a
+          href="/contact#form"
+          class="btn btn-primary"
+          >Book now</a
+        >
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
 </section>
 
 <section class="story">

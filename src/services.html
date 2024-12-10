@@ -23,41 +23,49 @@ description: Explore our range of bus charter services, including school transpo
       {% for service in services.services %}
       <li class="sp-card">
         {% if service.icon != "" %}
-        <a href="#{{ service.id }}">
-          {% include "icon.liquid", name: service.icon, class: "icon icon-lg pink
-          sp-card-icon", aria_hidden: true %}
+        <a
+          href="#{{ service.id }}"
+          aria-label="{{ service.heading }}"
+        >
+          {% include "icon.liquid", name: service.icon, class: "icon icon-lg pink sp-card-icon", aria_hidden: true %}
         </a>
         {% endif %}
-        <h3>{{ service.heading }}</p>
-        </li>
-        {% endfor %}
-      </ul>
-    </div>
-  </section>
+        <h3>{{ service.heading }}</h3>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
 
-  {% for service in services.services %}
-  <section class="side-by-side">
-    <img
-      src="{{ service.image.src }}"
-      alt="{{ service.image.alt }}"
-    />
-    <div class="content" id="{{ service.id }}">
-      <h2>{{ service.heading }}</h2>
-      <p>{{ service.text }}</p>
-      {% if service.subheadings %}
-      <ul role="list">
-        {% for subheading in service.subheadings %}
-        <li>
-          <img src="{{ subheading.img.src }}" alt="{{ subheading.img.alt }}">
-          <div>
-            <h3>{{ subheading.title }}</h3>
-            <a href="{{ subheading.link }}"><p>{{ subheading.text }}</p></a>
-          </div>
-        </li>
-        {% endfor %}
-      </ul>
-      {% endif %}
-    </div>
+{% for service in services.services %}
+<section class="side-by-side">
+  <img
+    src="{{ service.image.src }}"
+    alt="{{ service.image.alt }}"
+  />
+  <div
+    class="content"
+    id="{{ service.id }}"
+  >
+    <h2>{{ service.heading }}</h2>
+    <p>{{ service.text }}</p>
+    {% if service.subheadings %}
+    <ul role="list">
+      {% for subheading in service.subheadings %}
+      <li>
+        <img
+          src="{{ subheading.img.src }}"
+          alt="{{ subheading.img.alt }}"
+        />
+        <div>
+          <h3>{{ subheading.title }}</h3>
+          <a href="{{ subheading.link }}"><p>{{ subheading.text }}</p></a>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+  </div>
 </section>
 {% endfor %}
 
@@ -80,5 +88,8 @@ description: Explore our range of bus charter services, including school transpo
       >
     </div>
   </div>
-  <img src="{{ services.cta.image.src }}" alt="{{ services.cta.image.alt }}">
+  <img
+    src="{{ services.cta.image.src }}"
+    alt="{{ services.cta.image.alt }}"
+  />
 </section>
