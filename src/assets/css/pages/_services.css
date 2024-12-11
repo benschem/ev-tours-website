@@ -166,10 +166,6 @@ section.side-by-side {
   }
 }
 
-.side-by-side:nth-of-type(odd) {
-  background-color: var(--color-primary-light);
-}
-
 @media screen and (width > 880px) {
   .side-by-side:nth-of-type(even) {
     grid-template-areas: "content image";
@@ -249,10 +245,6 @@ section.side-by-side {
   text-align: center;
   border-radius: var(--rounded-3xl);
   box-shadow: var(--shadow-md);
-}
-
-.side-by-side:nth-of-type(odd) .content li {
-  background-color: var(--color-primary);
 }
 
 .side-by-side .content li picture {
