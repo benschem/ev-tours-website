@@ -85,10 +85,10 @@ header .nav-cta {
 .menu > ul > li > p::before {
   font-family: "Segoe UI Symbol";
   display: inline-block;
-  content: "\25B6"; /* Right chevron arrow */
+  content: "\276F"; /* Right chevron arrow */
   margin-right: 8px;
   font-size: 0.8em;
-  transition: transform 0.3s ease-out;
+  transition: transform 0.2s ease-out;
 }
 
 .menu > ul > li:hover > p::before {
@@ -103,6 +103,7 @@ header .nav-cta {
   display: none;
   position: absolute;
   top: 100%;
+  left: -20%;
   padding: var(--space-sm);
   transition: all 0.3s;
   transition-behavior: allow-discrete;
