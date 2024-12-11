@@ -16,6 +16,7 @@
 @import "./components/_hero.css";
 @import "./components/_cards.css";
 @import "./components/_ticker.css";
+@import "./components/_form.css";
 @import "./components/_back-to-top.css";
 
 /* Pages */
@@ -50,10 +51,3 @@
     scroll-behavior: auto !important;
   }
 }
-/* :root {
-  --color-primary: --
-  --color-primary-light:
-  --co-lightlor-secondary:
-  --color-secondary-light:
-  -light
-} */

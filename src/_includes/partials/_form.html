@@ -1,0 +1,191 @@
+<form
+  method="POST"
+  autocomplete="on"
+  class="form"
+  id="contact"
+  name="form"
+  data-netlify="true"
+  data-netlify-recaptcha="true"
+>
+  <fieldset>
+    <legend style="font-weight: bold">Your Name</legend>
+    <div class="form-items">
+      <div style="position: relative">
+        <label
+          id="firstNameLabel"
+          for="firstName"
+          >First Name *</label
+        >
+        <span aria-live="polite"></span>
+        <input
+          type="text"
+          id="firstName"
+          name="firstName"
+          aria-label="First Name"
+          aria-labelledby="firstNameLabel"
+          required
+          minlength="2"
+          pattern="^[a-zA-Z ]*$"
+        />
+        <span aria-live="polite"></span>
+      </div>
+      <div style="position: relative">
+        <label
+          id="lastNameLabel"
+          for="lastName"
+          >Last Name *</label
+        >
+        <span aria-live="polite"></span>
+        <input
+          type="text"
+          id="lastName"
+          name="lastName"
+          aria-label="Last Name"
+          aria-labelledby="lastNameLabel"
+          required
+          minlength="2"
+          pattern="^[a-zA-Z ]*$"
+        />
+        <span aria-live="polite"></span>
+      </div>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend style="font-weight: bold">Contact Details</legend>
+    <div class="form-items">
+      <div style="position: relative">
+        <label
+          id="emailLabel"
+          for="email"
+          >Email Address *</label
+        >
+        <span aria-live="polite"></span>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          aria-label="Email Address"
+          aria-labelledby="emailLabel"
+          required
+          minlength="5"
+        />
+        <span aria-live="polite"></span>
+      </div>
+
+      <div style="position: relative">
+        <label
+          id="mobileLabel"
+          for="mobile"
+          >Mobile Number</label
+        >
+        <span aria-live="polite"></span>
+        <input
+          type="tel"
+          id="mobile"
+          name="mobile"
+          aria-label="Mobile Number"
+          aria-labelledby="mobileLabel"
+          minlength="10"
+          pattern="^\s*\+?[0-9\s]*\s*$"
+        />
+        <span aria-live="polite"></span>
+      </div>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend style="font-weight: bold">Ceremony Details</legend>
+    <div class="form-items">
+      <div style="display: flex; flex-direction: column">
+        <label
+          id="ceremonyTypeLabel"
+          for="ceremonyType"
+          >Ceremony Type</label
+        >
+        <select
+          id="ceremonyType"
+          name="ceremonyType"
+          aria-label="Ceremony Type"
+          aria-labelledby="ceremonyTypeLabel"
+        >
+          <option
+            selected
+            value="wedding"
+          >
+            Wedding
+          </option>
+          <option value="vowRenewal">Vow Renewal</option>
+          <option value="namingCeremony">Naming Ceremony</option>
+          <option value="otherCeremony">Other Ceremony</option>
+        </select>
+      </div>
+      <div>
+        <label
+          id="weddingDateLabel"
+          for="weddingDate"
+          >Ceremony Date</label
+        >
+        <input
+          type="date"
+          id="weddingDate"
+          name="weddingDate"
+          aria-label="Wedding Date"
+          aria-labelledby="weddingDateLabel"
+        />
+      </div>
+    </div>
+
+    <div style="position: relative; margin-top: 1.5rem">
+      <label
+        id="venueLocationLabel"
+        for="venueLocation"
+        >Venue or Ceremony Location</label
+      >
+      <span aria-live="polite"></span>
+      <input
+        type="text"
+        id="venueLocation"
+        name="venueLocation"
+        aria-label="Venue or Ceremony Location"
+        aria-labelledby="venueLocationLabel"
+        minlength="7"
+      />
+      <span aria-live="polite"></span>
+    </div>
+  </fieldset>
+  <fieldset>
+    <div style="position: relative">
+      <label
+        id="messageLabel"
+        for="message"
+        style="font-weight: bold"
+        >Message *</label
+      >
+      <span aria-live="polite"></span>
+      <textarea
+        id="message"
+        name="message"
+        rows="5"
+        aria-label="Message"
+        aria-labelledby="messageLabel"
+        required
+        minlength="10"
+        maxlength="450"
+      ></textarea>
+      <span aria-live="polite"></span>
+    </div>
+  </fieldset>
+  <span style="margin-left: 0.5rem">* Required fields</span>
+  <div style="width: 100%; display: flex; justify-content: center">
+    <div data-netlify-recaptcha="true"></div>
+    <!-- <div
+      id="cf-turnstile"
+      data-sitekey="1x00000000000000000000AA"
+    ></div> -->
+  </div>
+  <button
+    type="submit"
+    class="btn btn-primary"
+  >
+    Submit
+  </button>
+</form>

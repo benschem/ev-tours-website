@@ -19,6 +19,9 @@
       data-api="/pa-stats/api/event"
       src="/pa-stats/js/script.js"
     ></script>
+    {% if page.url == '/contact/' %}
+      <script defer src="/assets/js/formValidations.js"></script>
+    {% endif %}
   </head>
   <body id="top">
     {% include 'partials/_header.html' %}

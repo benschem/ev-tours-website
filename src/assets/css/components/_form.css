@@ -1,0 +1,92 @@
+.form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: var(--body-color);
+}
+
+.form input,
+.form textarea {
+  line-height: 3rem;
+  border: 1px solid var(--body-color);
+  width: 100%;
+  /* background-color: var(--form-background-color); */
+  color: var(--body-color);
+}
+
+.form textarea {
+  resize: none;
+}
+
+.form select {
+  color: var(--body-color);
+}
+
+.form input[type="date"],
+.form select {
+  border: 1px solid var(--body-color);
+  /* background-color: var(--form-background-color); */
+  height: 3rem;
+}
+
+.form legend {
+  padding-inline: 0px;
+}
+
+.form button {
+  padding-block: 0.5rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+}
+
+fieldset {
+  border: 1px solid var(--border-color);
+}
+
+.cross::before {
+  position: relative;
+}
+
+.cross::before {
+  position: absolute;
+  right: 5px;
+  top: 35px;
+  padding: 0.3rem;
+  content: "✗";
+  color: #fe5f55ed;
+}
+
+.tick::before {
+  position: absolute;
+  right: 5px;
+  top: 35px;
+  padding: 0.3rem;
+  content: "✓";
+  color: #157f1f;
+}
+
+.formError {
+  padding: 0.3rem;
+  width: 100%;
+  color: var(--body-color);
+  font-weight: bold;
+  background-color: #fe5f55;
+  border-radius: 0 0 0.25rem 0.25rem;
+  display: block;
+  background-color: #fe5f55ed;
+}
+
+.form > * {
+  margin-bottom: 1rem;
+}
+
+.form-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+  gap: 1rem;
+}
+
+/* if using cloufdlare turnstile - not needed on netlify with recaptcha */
+#turnstile {
+  justify-content: center;
+}
