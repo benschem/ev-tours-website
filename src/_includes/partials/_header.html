@@ -22,9 +22,18 @@
           {{ link.name }}
         </a>
         {% else %}
-        <p>{{ link.name }}</p>
+        <button
+          id="submenu-btn"
+          class="btn"
+          aria-expanded="false"
+        >
+          {{ link.name }}
+        </button>
         {% endif %} {% if link.sublinks %}
-        <ul class="submenu">
+        <ul
+          id="submenu"
+          class="submenu"
+        >
           {% for sublink in link.sublinks %}
           <li class="sublink">
             <a
