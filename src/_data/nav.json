@@ -10,7 +10,24 @@
     },
     {
       "name": "Services",
-      "link": "/services"
+      "sublinks": [
+        {
+          "name": "All Services",
+          "link": "/services"
+        },
+        {
+          "name": "Scenic Tours",
+          "link": "/services/tours"
+        },
+        {
+          "name": "Corporate Charter",
+          "link": "/services/corporate"
+        },
+        {
+          "name": "School Charter",
+          "link": "/services/schools"
+        }
+      ]
     },
     {
       "name": "Fleet",

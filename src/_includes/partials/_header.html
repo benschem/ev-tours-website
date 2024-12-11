@@ -14,12 +14,29 @@
     <ul role="list">
       {% for link in nav.links %}
       <li>
+        {% if link.link %}
         <a
           href="{{ link.link }}"
           class="{% if page.url == link.link %}active{% endif %}"
         >
           {{ link.name }}
         </a>
+        {% else %}
+        <p>{{ link.name }}</p>
+        {% endif %} {% if link.sublinks %}
+        <ul class="submenu">
+          {% for sublink in link.sublinks %}
+          <li class="sublink">
+            <a
+              href="{{ sublink.link }}"
+              class="{% if page.url == sublink.link %}active{% endif %}"
+            >
+              {{ sublink.name }}
+            </a>
+          </li>
+          {% endfor %}
+        </ul>
+        {% endif %}
       </li>
       {% endfor %}
     </ul>
@@ -65,12 +82,29 @@
   <ul role="list">
     {% for link in nav.links %}
     <li>
+      {% if link.link %}
       <a
         href="{{ link.link }}"
         class="{% if page.url == link.link %}active{% endif %}"
       >
         {{ link.name }}
       </a>
+      {% else %}
+      <p>{{ link.name }}</p>
+      {% endif %} {% if link.sublinks %}
+      <ul class="submenu">
+        {% for sublink in link.sublinks %}
+        <li class="sublink">
+          <a
+            href="{{ sublink.link }}"
+            class="{% if page.url == sublink.link %}active{% endif %}"
+          >
+            {{ sublink.name }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+      {% endif %}
     </li>
     {% endfor %}
   </ul>
