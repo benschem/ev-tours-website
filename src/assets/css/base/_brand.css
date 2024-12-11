@@ -18,3 +18,7 @@ picture {
 a {
   text-decoration-color: var(--color-primary);
 }
+
+li::marker {
+  color: var(--body-color);
+}

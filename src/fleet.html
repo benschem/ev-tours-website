@@ -4,56 +4,58 @@ title: Modern and Comfortable Bus Fleet | EV Tours & Charter
 description: Our fleet of buses offers comfort, safety, and reliability for your journey. From small group travel to large charters, find the perfect vehicle for your needs.
 ---
 
-<section class="lines fleet-wrapper mx-auto">
-  <div class="sp-title">
-    <div>
-      <h1>{{ fleet.hero.heading }}</h1>
-      {% for paragraph in fleet.hero.text %}
-      <p>{{ paragraph }}</p>
-      {% endfor %}
+<section class="lines">
+  <div class="sp-wrapper">
+    <div class="sp-title">
+      <div>
+        <h1>{{ fleet.hero.heading }}</h1>
+        {% for paragraph in fleet.hero.text %}
+        <p>{{ paragraph }}</p>
+        {% endfor %}
+      </div>
+      <img
+        src="/assets/img/bus-stop.jpg"
+        alt="Replace this"
+      />
     </div>
-    <img
-      src="/assets/img/bus-stop.jpg"
-      alt="Replace this"
-    />
-  </div>
-  <!-- </section> -->
+    <!-- </section> -->
 
-  <!-- <section class="fleet"> -->
-  <div>
-    <h2>Vehicles</h2>
-    <ul
-      role="list"
-      class="buses"
-    >
-      {% for bus in fleet.buses %}
-      <li>
-        <img
-          src="{{ bus.image.src }}"
-          alt="{{ bus.image.alt }}"
-        />
-        <h3>{{ bus.model }}</h3>
-        <ul
-          role="list"
-          class="features"
-        >
-          <li>
-            <p>Seats {{ bus.capacity }}</p>
-          </li>
-          {% for feature in bus.features %}
-          <li>
-            <p>{{ feature }}</p>
-          </li>
-          {% endfor %}
-        </ul>
-        <a
-          href="/contact#form"
-          class="btn btn-primary"
-          >Book now</a
-        >
-      </li>
-      {% endfor %}
-    </ul>
+    <!-- <section class="fleet"> -->
+    <div>
+      <h2>Vehicles</h2>
+      <ul
+        role="list"
+        class="buses"
+      >
+        {% for bus in fleet.buses %}
+        <li>
+          <img
+            src="{{ bus.image.src }}"
+            alt="{{ bus.image.alt }}"
+          />
+          <h3>{{ bus.model }}</h3>
+          <ul
+            role="list"
+            class="features"
+          >
+            <li>
+              <p>Seats {{ bus.capacity }}</p>
+            </li>
+            {% for feature in bus.features %}
+            <li>
+              <p>{{ feature }}</p>
+            </li>
+            {% endfor %}
+          </ul>
+          <a
+            href="/contact#form"
+            class="btn btn-primary"
+            >Book now</a
+          >
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
   </div>
 </section>
 

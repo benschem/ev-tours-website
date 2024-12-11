@@ -106,6 +106,7 @@ header .nav-cta {
   transition: all 0.3s;
   transition-behavior: allow-discrete;
   opacity: 0%;
+  z-index: 1000;
 }
 
 .menu .submenu .sublink {

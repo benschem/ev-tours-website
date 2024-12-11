@@ -11,6 +11,10 @@
   position: relative;
 }
 
+.dark-mode .partner-logos {
+  background-color: var(--azalea-300);
+}
+
 .logo-group {
   display: flex;
   gap: var(--space-lg);
@@ -23,12 +27,18 @@
   flex-shrink: 0;
   max-width: 100px;
   overflow: unset;
+  border-radius: 0px;
 }
 
 .partner-logos img {
+  border-radius: 0px;
   max-height: 100px;
   object-fit: contain;
   filter: grayscale(100%) brightness(40%) opacity(40%);
+}
+
+.dark-mode .partner-logos img {
+  filter: grayscale(100%) brightness(40%) opacity(50%);
 }
 
 .partner-logos img:hover {

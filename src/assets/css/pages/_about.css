@@ -53,6 +53,15 @@
   text-align: center;
 }
 
+.dark-mode .about-difference h2,
+.dark-mode .about-difference h3 {
+  color: var(--black);
+}
+
+.dark-mode .about-difference p {
+  color: var(--zinc-700);
+}
+
 .blocks {
   display: grid;
   grid-template-columns: 1fr;

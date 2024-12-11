@@ -27,6 +27,7 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
   </div>
   <div class="image">
     <img
+      eleventy:ignore
       src="{{ home.hero.image.src }}"
       alt="{{ home.hero.image.alt }}"
     />
@@ -127,7 +128,7 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
       <ul role="list">
         {% for difference in home.points-of-difference.differences %}
         <li style="display: flex; gap: 1rem">
-          {% include "icon.liquid", name: "circle-check", class: "icon icon-sm", aria_hidden: true %}
+          {% include "icon.liquid", name: "circle-check", class: "icon black icon-sm", aria_hidden: true %}
           <div>
             <h3>{{ difference.name }}</h3>
             <p>{{ difference.description }}</p>

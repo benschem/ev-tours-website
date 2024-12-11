@@ -9,7 +9,6 @@
 @import "./utilities/_dark-mode.css";
 
 /* Components */
-@import "./components/_nav.css";
 @import "./components/_header.css";
 @import "./components/_footer.css";
 @import "./components/_buttons.css";

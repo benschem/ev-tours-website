@@ -64,7 +64,18 @@
   transform: translate(0, 2px);
 }
 
+#dark-mode-toggle {
+  min-width: 20px;
+}
+
+#dark-mode-toggle:active {
+  /* TODO */
+  box-shadow: none;
+  transform: translate(0, 2px);
+}
+
 .btn-secondary {
+  color: var(--body-color);
   display: inline-flex;
   /* flex-shrink: 1; */
   justify-content: center;

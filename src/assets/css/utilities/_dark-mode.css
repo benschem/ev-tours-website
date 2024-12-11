@@ -1,0 +1,10 @@
+html.dark-mode {
+  --color-primary: var(--azalea-300);
+  --color-primary-light: var(--zinc-800);
+  --color-secondary: var(--zinc-900);
+  --color-secondary-light: var(--zinc-600);
+  --body-color: var(--zinc-200);
+  --heading-color: var(--white);
+  --background-color: var(--black);
+  --lines: var(--lines-dark);
+}

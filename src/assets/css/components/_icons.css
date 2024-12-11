@@ -47,3 +47,7 @@ button:has(span.icon) {
 .icon.white svg {
   fill: var(--white);
 }
+
+.icon.black svgv {
+  fill: var(--black);
+}
