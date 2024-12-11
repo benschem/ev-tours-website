@@ -1,20 +1,23 @@
-.back-to-top svg {
-  fill: var(--color-primary);
+footer .back-to-top {
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-sm);
 }
 
-.back-to-top .icon {
+footer .back-to-top .icon svg {
+  fill: var(--color-primary);
   height: 40px;
   width: 40px;
   fill: var(--color-primary);
   animation: bounce 2s infinite;
 }
 
-.back-to-top .icon:hover {
+footer .back-to-top .icon svg:hover {
   transition: filter 250ms;
   filter: brightness(110%);
 }
 
-.back-to-top .icon:active {
+footer .back-to-top .icon svg:active {
   scale: 90%;
 }
 
@@ -35,7 +38,7 @@
 }
 
 @media screen and (width > 768px) {
-  .back-to-top .icon {
+  footer .back-to-top .icon svg {
     height: 60px;
     width: 60px;
   }

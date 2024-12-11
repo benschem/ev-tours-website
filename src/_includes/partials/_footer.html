@@ -1,16 +1,8 @@
 <footer>
-  <a
-    id="back-to-top"
-    class="btn back-to-top"
-    href="#top"
-    aria-label="Scroll back to the top of the page"
-  >
-    {% include "icon.liquid", name: "circle-up", class: "icon icon-md", aria_hidden: true %}
-  </a>
   <a href="/">
     <img
-      src="/assets/img/EV-tours-logo-white.png"
-      alt="Logo for Ev Tours & Charter"
+    src="/assets/img/EV-tours-logo-white.png"
+    alt="Logo for Ev Tours & Charter"
     />
   </a>
   <div class="details">
@@ -25,16 +17,24 @@
     <div>
       {% include "icon.liquid", name: "envelope", class: "icon icon-sm pink", aria_hidden: true %}
       <a href="mailto:{{ business.email }}">{{ business.email }}</p>
-    </div>
-    <p>ABN: {{ business.abn }}</p>
-    <p>© {{ business.copyright }} {{ "now" | date: "%Y" }}</p>
-    <p class="rocketzip">
-      <a
+      </div>
+      <p>ABN: {{ business.abn }}</p>
+      <p>© {{ business.copyright }} {{ "now" | date: "%Y" }}</p>
+      <p class="rocketzip">
+        <a
         href="https://rocketzip.com.au"
         target="_blank"
-      >
+        >
         Website by Rocketzip
       </a>
     </p>
   </div>
+  <a
+    id="back-to-top"
+    class="btn back-to-top"
+    href="#top"
+    aria-label="Scroll back to the top of the page"
+  >
+    {% include "icon.liquid", name: "circle-up", class: "icon icon-md", aria_hidden: true %}
+  </a>
 </footer>

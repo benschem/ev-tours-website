@@ -11,10 +11,8 @@ footer a {
   color: var(--white);
 }
 
-footer .back-to-top {
-  position: absolute;
-  top: var(--space-md);
-  right: var(--space-sm);
+footer a:has(picture) picture {
+  max-width: fit-content;
 }
 
 footer img {
