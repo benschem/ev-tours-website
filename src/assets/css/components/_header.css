@@ -42,7 +42,7 @@ header .nav-cta {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  gap: var(--space-sm);
+  gap: var(--space-md);
 }
 
 .menu ul li {
