@@ -127,7 +127,7 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
       <h2>{{ home.points-of-difference.heading }}</h2>
       <ul role="list">
         {% for difference in home.points-of-difference.differences %}
-        <li style="display: flex; gap: 1rem">
+        <li>
           {% include "icon.liquid", name: "circle-check", class: "icon black icon-sm", aria_hidden: true %}
           <div>
             <h3>{{ difference.name }}</h3>

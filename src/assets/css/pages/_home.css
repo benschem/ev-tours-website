@@ -82,6 +82,11 @@
   padding-block-start: var(--space-md);
 }
 
+.difference .content ul li {
+  display: flex;
+  gap: 1rem;
+}
+
 .difference .content ul li span {
   padding-block-start: var(--space-xs);
 }
