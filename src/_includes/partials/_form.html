@@ -8,9 +8,9 @@
   data-netlify-recaptcha="true"
 >
   <fieldset>
-    <legend style="font-weight: bold">Your Name</legend>
+    <legend>Your details</legend>
     <div class="form-items">
-      <div style="position: relative">
+      <div>
         <label
           id="firstNameLabel"
           for="firstName"
@@ -29,7 +29,7 @@
         />
         <span aria-live="polite"></span>
       </div>
-      <div style="position: relative">
+      <div>
         <label
           id="lastNameLabel"
           for="lastName"
@@ -49,11 +49,9 @@
         <span aria-live="polite"></span>
       </div>
     </div>
-  </fieldset>
-  <fieldset>
-    <legend style="font-weight: bold">Contact Details</legend>
+
     <div class="form-items">
-      <div style="position: relative">
+      <div>
         <label
           id="emailLabel"
           for="email"
@@ -72,11 +70,11 @@
         <span aria-live="polite"></span>
       </div>
 
-      <div style="position: relative">
+      <div>
         <label
           id="mobileLabel"
           for="mobile"
-          >Mobile Number</label
+          >Mobile Number *</label
         >
         <span aria-live="polite"></span>
         <input
@@ -85,6 +83,7 @@
           name="mobile"
           aria-label="Mobile Number"
           aria-labelledby="mobileLabel"
+          required
           minlength="10"
           pattern="^\s*\+?[0-9\s]*\s*$"
         />
@@ -93,89 +92,213 @@
     </div>
   </fieldset>
   <fieldset>
-    <legend style="font-weight: bold">Ceremony Details</legend>
+    <legend>Enquiry details</legend>
     <div class="form-items">
-      <div style="display: flex; flex-direction: column">
+      <div class="flex-col">
         <label
-          id="ceremonyTypeLabel"
-          for="ceremonyType"
-          >Ceremony Type</label
+          id="serviceTypeLabel"
+          for="serviceType"
+          >Type of service *</label
         >
+        <span
+          aria-live="polite"
+          class="bump-left"
+        ></span>
         <select
-          id="ceremonyType"
-          name="ceremonyType"
-          aria-label="Ceremony Type"
-          aria-labelledby="ceremonyTypeLabel"
+          id="serviceType"
+          name="serviceType"
+          aria-label="Service type"
+          aria-labelledby="serviceTypeLabel"
+          required
         >
           <option
+            value=""
+            disabled
             selected
-            value="wedding"
           >
-            Wedding
+            Select a service
           </option>
-          <option value="vowRenewal">Vow Renewal</option>
-          <option value="namingCeremony">Naming Ceremony</option>
-          <option value="otherCeremony">Other Ceremony</option>
+          <option value="charter">Charter hire</option>
+          <option value="wineryTour">Wine tour</option>
+          <option value="breweryTour">Brewery tour</option>
+          <option value="airport">Airport transfer</option>
+          <option value="wedding">Wedding transfer</option>
+          <option value="hens">Hens party</option>
+          <option value="bucks">Bucks party</option>
+          <option value="school">School transport</option>
+          <option value="corporate">Corporate transport</option>
+          <option value="event">Event transport</option>
         </select>
+        <span aria-live="polite"></span>
       </div>
       <div>
         <label
-          id="weddingDateLabel"
-          for="weddingDate"
-          >Ceremony Date</label
+          id="dateLabel"
+          for="date"
+          >Date request *</label
         >
+        <span
+          aria-live="polite"
+          class="bump-left"
+        ></span>
         <input
           type="date"
-          id="weddingDate"
-          name="weddingDate"
-          aria-label="Wedding Date"
-          aria-labelledby="weddingDateLabel"
+          id="date"
+          name="date"
+          aria-label="Date request"
+          aria-labelledby="dateLabel"
+          min="{{ 'now' | date: '%Y-%m-%d' }}"
+          required
         />
+        <span aria-live="polite"></span>
       </div>
     </div>
 
-    <div style="position: relative; margin-top: 1.5rem">
-      <label
-        id="venueLocationLabel"
-        for="venueLocation"
-        >Venue or Ceremony Location</label
-      >
-      <span aria-live="polite"></span>
-      <input
-        type="text"
-        id="venueLocation"
-        name="venueLocation"
-        aria-label="Venue or Ceremony Location"
-        aria-labelledby="venueLocationLabel"
-        minlength="7"
-      />
-      <span aria-live="polite"></span>
+    <div class="form-items">
+      <div>
+        <label
+          id="pickupLabel"
+          for="pickup"
+          >Pick up location *</label
+        >
+        <span aria-live="polite"></span>
+        <input
+          type="text"
+          id="pickup"
+          name="pickup"
+          aria-label="Pick up location"
+          aria-labelledby="pickupLabel"
+          required
+          minlength="5"
+        />
+        <span aria-live="polite"></span>
+      </div>
+
+      <div>
+        <label
+          id="dropoffLabel"
+          for="dropoff"
+          >Drop off location *</label
+        >
+        <span aria-live="polite"></span>
+        <input
+          type="text"
+          id="dropoff"
+          name="dropoff"
+          aria-label="Drop off location"
+          aria-labelledby="dropoffLabel"
+          required
+          minlength="5"
+        />
+        <span aria-live="polite"></span>
+      </div>
+    </div>
+
+    <div class="form-items">
+      <div>
+        <label
+          id="passengersLabel"
+          for="passengers"
+          >No. of passengers *</label
+        >
+        <span
+          aria-live="polite"
+          class="bump-left"
+        ></span>
+        <input
+          type="number"
+          id="passengers"
+          name="passengers"
+          aria-label="Number of passengers"
+          aria-labelledby="passengersLabel"
+          required
+        />
+        <span aria-live="polite"></span>
+      </div>
+
+      <div>
+        <label
+          id="departureTimeLabel"
+          for="departureTime"
+          >Final departure time *
+        </label>
+        <span
+          aria-live="polite"
+          class="bump-left"
+        ></span>
+        <input
+          required
+          type="time"
+          id="departureTime"
+          name="departureTime"
+          aria-label="Ideal departure time from last location"
+          aria-labelledby="departureTimeLabel"
+        />
+        <span aria-live="polite"></span>
+      </div>
     </div>
   </fieldset>
   <fieldset>
-    <div style="position: relative">
+    <div>
       <label
-        id="messageLabel"
-        for="message"
-        style="font-weight: bold"
-        >Message *</label
+        id="itineraryLabel"
+        for="itinerary"
+        >Itinerary information *</label
       >
-      <span aria-live="polite"></span>
+      <span
+        aria-live="polite"
+        class="bump-up"
+      ></span>
       <textarea
-        id="message"
-        name="message"
+        id="itinerary"
+        name="itinerary"
         rows="5"
-        aria-label="Message"
-        aria-labelledby="messageLabel"
+        aria-label="Itinerary"
+        aria-labelledby="itineraryLabel"
         required
         minlength="10"
-        maxlength="450"
+        maxlength="600"
       ></textarea>
       <span aria-live="polite"></span>
     </div>
   </fieldset>
-  <span style="margin-left: 0.5rem">* Required fields</span>
-  <div style="width: 100%; display: flex; justify-content: center">
+  <fieldset>
+    <div class="flex-col">
+      <label
+        id="referralSourceLabel"
+        for="referralSource"
+        >How did you hear about us? *
+      </label>
+      <span
+        aria-live="polite"
+        class="bump-left"
+      ></span>
+      <select
+        id="referralSource"
+        name="referralSource"
+        aria-label="How did you hear about us"
+        aria-labelledby="referralSourceLabel"
+        required
+      >
+        <option
+          value=""
+          disabled
+          selected
+        >
+          Select an option
+        </option>
+        <option value="referral">Referral</option>
+        <option value="referral">Referral</option>
+        <option value="cinema">Cinema ad</option>
+        <option value="instagram">Instagram</option>
+        <option value="facebook">Facebook</option>
+        <option value="google">Google</option>
+      </select>
+      <span aria-live="polite"></span>
+    </div>
+  </fieldset>
+  <span class="required">* Required fields</span>
+  <div class="widget">
     <div data-netlify-recaptcha="true"></div>
     <!-- <div
       id="cf-turnstile"
@@ -184,6 +307,7 @@
   </div>
   <button
     type="submit"
+    id="formSubmitBtn"
     class="btn btn-primary"
   >
     Submit

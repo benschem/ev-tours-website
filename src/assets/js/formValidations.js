@@ -5,7 +5,9 @@
 /* ------------------------ Listen to all form fields ----------------------- */
 
 document.addEventListener("DOMContentLoaded", () => {
-  const inputs = document.querySelectorAll("#firstName, #lastName, #email, #mobile, #venueLocation, #message");
+  const inputs = document.querySelectorAll(
+    "#firstName, #lastName, #email, #mobile, #date, #pickup, #dropoff, #itinerary"
+  );
 
   inputs.forEach((input) => {
     input.addEventListener("blur", () => {
@@ -66,6 +68,7 @@ const applyValidStyling = (input) => {
 
 const applyInvalidStyling = (input) => {
   const errorSpan = input.nextElementSibling;
+
   const tickOrCross = input.previousElementSibling;
   tickOrCross.classList.remove("tick");
   tickOrCross.classList.add("cross");
@@ -87,11 +90,17 @@ const setValidityMessage = (input) => {
     case "mobile":
       setCustomMessage(input, "mobile");
       break;
-    case "venueLocation":
-      setCustomMessage(input, "venue");
+    case "date":
+      setCustomMessage(input, "date");
       break;
-    case "message":
-      setCustomMessage(input, "message");
+    case "pickup":
+      setCustomMessage(input, "pickup");
+      break;
+    case "dropoff":
+      setCustomMessage(input, "dropoff");
+      break;
+    case "itinerary":
+      setCustomMessage(input, "itinerary");
       break;
     default:
       break;
@@ -105,50 +114,58 @@ const setCustomMessage = (input, type) => {
 
   switch (type) {
     case "name":
-      if (userInput.valueMissing) {
-        input.setCustomValidity("⚠️ You haven't entered a name");
-      } else if (userInput.patternMismatch) {
-        input.setCustomValidity("⚠️ That doesn't look like a name");
+      if (userInput.patternMismatch) {
+        input.setCustomValidity("That doesn't look like a name");
       } else if (userInput.tooShort) {
-        input.setCustomValidity("⚠️ The name looks too short");
+        input.setCustomValidity("The name looks too short");
       } else {
         input.setCustomValidity("");
       }
       break;
     case "email":
-      if (userInput.valueMissing) {
-        input.setCustomValidity("⚠️ You haven't entered an email");
-      } else if (userInput.tooShort) {
-        input.setCustomValidity("⚠️ Your email looks too short");
+      if (userInput.tooShort) {
+        input.setCustomValidity("Your email looks too short");
       } else if (userInput.typeMismatch) {
-        input.setCustomValidity("⚠️ That doesn't look like an email");
+        input.setCustomValidity("That doesn't look like an email");
       } else {
         input.setCustomValidity("");
       }
       break;
     case "mobile":
-      if (userInput.valueMissing) {
-        input.setCustomValidity("⚠️ You haven't entered a mobile");
-      } else if (userInput.patternMismatch) {
-        input.setCustomValidity("⚠️ That doesn't look like a mobile");
+      if (userInput.patternMismatch) {
+        input.setCustomValidity("That doesn't look like a mobile");
       } else if (userInput.tooShort) {
-        input.setCustomValidity("⚠️ Your mobile looks too short");
+        input.setCustomValidity("Your mobile looks too short");
       } else {
         input.setCustomValidity("");
       }
       break;
-    case "venue":
-      if (userInput.tooShort) {
-        input.setCustomValidity("⚠️ That looks too short to be a location");
+    case "date":
+      if (userInput.rangeUnderflow) {
+        input.setCustomValidity("Date can't be in the past");
       } else {
         input.setCustomValidity("");
       }
       break;
-    case "message":
+    case "pickup":
       if (userInput.tooShort) {
-        input.setCustomValidity("⚠️ Your message is too short");
+        input.setCustomValidity("That doesn't look like a location");
+      } else {
+        input.setCustomValidity("");
+      }
+      break;
+    case "dropoff":
+      if (userInput.tooShort) {
+        input.setCustomValidity("That doesn't look like a location");
+      } else {
+        input.setCustomValidity("");
+      }
+      break;
+    case "itinerary":
+      if (userInput.tooShort) {
+        input.setCustomValidity("Your message is too short");
       } else if (userInput.tooLong) {
-        input.setCustomValidity("⚠️ Your message is too long");
+        input.setCustomValidity("Your message is too long");
       } else {
         input.setCustomValidity("");
       }
@@ -157,5 +174,43 @@ const setCustomMessage = (input, type) => {
       break;
   }
 };
+
+/* ----------------- Prevent form submit with invalid values ----------------- */
+
+const formSubmitBtn = document.querySelector("#formSubmitBtn");
+
+formSubmitBtn.addEventListener("click", (event) => {
+  checkBeforeSubmit(event);
+});
+formSubmitBtn.addEventListener("keydown", (event) => {
+  if (event.key === "Enter") {
+    checkBeforeSubmit(event);
+  }
+});
+
+function checkBeforeSubmit(event) {
+  event.preventDefault();
+  event.stopPropagation();
+
+  let allValid = true;
+
+  const inputs = document.querySelectorAll(
+    "#firstName, #lastName, #email, #mobile, #serviceType, #date, #pickup, #dropoff, #passengers, #departureTime, #itinerary, #referralSource"
+  );
+
+  inputs.forEach((input) => {
+    const isValid = input.checkValidity();
+
+    if (!isValid) {
+      applyInvalidStyling(input);
+      allValid = false;
+    }
+  });
+
+  if (allValid) {
+    console.log("All inputs are valid, submitting the form...");
+    form.submit();
+  }
+}
 
 /* -------------------------------------------------------------------------- */

@@ -2,16 +2,26 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  color: var(--body-color);
+  color: var(--black);
+}
+
+.dark-mode .form {
+  color: var(--white);
 }
 
 .form input,
 .form textarea {
   line-height: 3rem;
-  border: 1px solid var(--body-color);
+  border: 1px solid var(--black);
   width: 100%;
-  /* background-color: var(--form-background-color); */
-  color: var(--body-color);
+  background-color: var(--white);
+  color: inherit;
+}
+
+.dark-mode .form input,
+.dark-mode .form textarea {
+  background-color: var(--black);
+  border: 1px solid var(--color-primary);
 }
 
 .form textarea {
@@ -19,13 +29,23 @@
 }
 
 .form select {
-  color: var(--body-color);
+  color: inherit;
 }
 
 .form input[type="date"],
 .form select {
-  border: 1px solid var(--body-color);
-  /* background-color: var(--form-background-color); */
+  color: inherit;
+  border: 1px solid var(--black);
+  background-color: var(--white);
+  height: 3.5rem;
+  line-height: 3rem;
+}
+
+.dark-mode .form input[type="date"],
+.dark-mode .form select {
+  color: inherit;
+  border: 1px solid var(--color-primary);
+  background-color: var(--black);
   height: 3rem;
 }
 
@@ -48,6 +68,7 @@ fieldset {
 }
 
 .cross::before {
+  font-family: "Segoe UI Symbol";
   position: absolute;
   right: 5px;
   top: 35px;
@@ -57,6 +78,7 @@ fieldset {
 }
 
 .tick::before {
+  font-family: "Segoe UI Symbol";
   position: absolute;
   right: 5px;
   top: 35px;
@@ -65,15 +87,26 @@ fieldset {
   color: #157f1f;
 }
 
+.bump-left::before {
+  right: 20px;
+}
+
+.bump-up::before {
+  top: 25px;
+}
+
 .formError {
   padding: 0.3rem;
   width: 100%;
   color: var(--body-color);
   font-weight: bold;
-  background-color: #fe5f55;
   border-radius: 0 0 0.25rem 0.25rem;
   display: block;
-  background-color: #fe5f55ed;
+  background-color: var(--color-primary);
+}
+
+.dark-mode .formError {
+  color: var(--black);
 }
 
 .form > * {
@@ -84,6 +117,48 @@ fieldset {
   display: grid;
   grid-template-columns: 1fr 1fr; /* Two columns with equal width */
   gap: 1rem;
+  /* align-items: end; */
+}
+
+.form-items + .form-items {
+  margin-block-start: 2rem;
+}
+
+.form-items > div,
+fieldset > div {
+  position: relative;
+}
+
+fieldset > legend {
+  font-weight: bold;
+}
+
+.dark-mode input[type="date"]::-webkit-calendar-picker-indicator {
+  filter: invert(100%);
+  cursor: pointer;
+}
+.dark-mode input[type="time"]::-webkit-calendar-picker-indicator {
+  filter: invert(100%);
+  cursor: pointer;
+}
+
+form .required {
+  margin-left: 0.5rem;
+}
+
+form .widget {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+form .flex-col {
+  display: flex;
+  flex-direction: column;
+}
+
+textarea {
+  /* position: relative; */
 }
 
 /* if using cloufdlare turnstile - not needed on netlify with recaptcha */
