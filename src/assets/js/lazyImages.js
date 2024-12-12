@@ -1,4 +1,4 @@
-const lazyImages = document.querySelectorAll('img[loading="lazy"]');
+const lazyImages = document.querySelectorAll('img[loading="lazy"]:not([data-above-the-fold="true"])');
 
 lazyImages.forEach(function (img) {
   img.addEventListener("load", function () {

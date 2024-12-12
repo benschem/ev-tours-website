@@ -175,19 +175,22 @@ header .nav-cta {
   font-weight: 700;
 }
 
+.dark-mode .mobile-menu ul li a,
+.dark-mode .mobile-menu ul li p {
+  color: var(--white);
+}
+
 .mobile-menu ul li p::before {
   content: "\25BC"; /* Down chevron arrow */
   margin-right: 8px;
   font-size: 0.8em;
 }
 
-.mobile-menu ul li a:hover,
-.mobile-menu ul li p:hover {
+.mobile-menu ul li a:hover {
   color: var(--color-primary);
 }
 
-.mobile-menu ul li a.active,
-.mobile-menu ul li p.active {
+.mobile-menu ul li a.active {
   font-weight: 900;
   color: var(--color-primary);
 }
