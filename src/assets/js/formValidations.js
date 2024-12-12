@@ -6,7 +6,7 @@
 
 document.addEventListener("DOMContentLoaded", () => {
   const inputs = document.querySelectorAll(
-    "#firstName, #lastName, #email, #mobile, #date, #pickup, #dropoff, #itinerary"
+    "#firstName, #lastName, #email, #mobile, #serviceType, #date, #pickup, #dropoff, #passengers, #departureTime, #itinerary, #referralSource"
   );
 
   inputs.forEach((input) => {
@@ -208,7 +208,6 @@ function checkBeforeSubmit(event) {
   });
 
   if (allValid) {
-    console.log("All inputs are valid, submitting the form...");
     form.submit();
   }
 }
