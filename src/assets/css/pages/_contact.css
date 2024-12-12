@@ -76,8 +76,15 @@
   }
 }
 
-.form {
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   background-color: var(--color-primary-light);
+}
+
+.form-container p {
+  margin-block-end: var(--space-md);
 }
 
 .follow {
