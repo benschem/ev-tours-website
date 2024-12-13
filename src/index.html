@@ -68,7 +68,7 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
 <section class="services lines">
   <div class="services-hero">
     <div class="flex">
-      <div class="align-center">
+      <div class="copy">
         <h2>
           {% assign parts = home.services-hero.heading | split: home.services-hero.highlight %} {{ parts[0] }}<span
             class="highlight"
@@ -100,7 +100,7 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
     <h2>Our services</h2>
     <ul
       role="list"
-      class="cards"
+      class="cards index-services"
     >
       {% for service in home.services %}
       <li class="card card-clickable">

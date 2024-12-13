@@ -35,7 +35,7 @@ description: Discover our story at EV Tours & Charter, where a passion for trans
   <h2>{{ about.story.heading }}</h2>
   <div class="blocks">
     {% for section in about.story.sections %}
-    <div>
+    <div class="story-point">
       {% if section.icon != "" %} {% include "icon.liquid", name: section.icon, class: "icon icon-lg pink", aria_hidden:
       true %} {% endif %}
       <h3>{{ section.heading }}</h3>

@@ -28,6 +28,10 @@
   align-items: center;
   max-width: max-content;
   text-align: center;
+
+  animation: fade-out linear;
+  animation-timeline: view();
+  animation-range: exit;
 }
 
 @media screen and (width > 1024px) {
@@ -86,6 +90,10 @@
   /* padding-inline-end: var(--space-md); */
   /* border: 1px solid var(--color-primary); */
   border-radius: var(--rounded-3xl);
+
+  animation: shake-z 0.5s cubic-bezier(0.25, 0, 0.3, 1);
+  animation-timeline: view();
+  animation-range: exit;
 }
 
 .sp-card h3 {
@@ -233,6 +241,17 @@ section.side-by-side {
   .side-by-side .content ul {
     gap: var(--space-md) var(--space-lg);
   }
+}
+
+.side-by-side:nth-of-type(odd) .content li {
+  animation: slide-in-left 0.5s cubic-bezier(0.25, 0, 0.3, 1);
+  animation-timeline: view();
+  animation-range: entry;
+}
+.side-by-side:nth-of-type(even) .content li {
+  animation: slide-in-right 0.5s cubic-bezier(0.25, 0, 0.3, 1);
+  animation-timeline: view();
+  animation-range: entry;
 }
 
 .side-by-side .content li a {

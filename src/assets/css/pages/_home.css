@@ -9,8 +9,16 @@
   flex-wrap: wrap;
   gap: var(--space-lg) var(--space-sm);
 }
-.services-hero .align-center {
-  /* align-self: center; */
+.services-hero .copy {
+  animation: slide-in-right 0.5s cubic-bezier(0.25, 0, 0.3, 1);
+  animation-timeline: view();
+  animation-range: entry;
+}
+
+.services-hero picture {
+  animation: slide-in-left 0.5s cubic-bezier(0.25, 0, 0.3, 1);
+  animation-timeline: view();
+  animation-range: entry;
 }
 
 .services-hero img {
@@ -38,6 +46,50 @@
 @media screen and (width > 1200px) {
   .services-hero {
     margin-block-end: var(--space-xl);
+  }
+}
+
+.index-services li:nth-of-type(odd) {
+  animation: slide-in-right 0.5s cubic-bezier(0.25, 0, 0.3, 1);
+  animation-timeline: view();
+  animation-range: entry;
+}
+.index-services li:nth-of-type(even) {
+  animation: slide-in-left 0.5s cubic-bezier(0.25, 0, 0.3, 1);
+  animation-timeline: view();
+  animation-range: entry;
+}
+
+@media screen and (width > 900px) {
+  .index-services li:nth-of-type(1) {
+    animation: slide-in-right 0.5s cubic-bezier(0.25, 0, 0.3, 1);
+    animation-timeline: view();
+    animation-range: entry;
+  }
+  .index-services li:nth-of-type(2) {
+    animation: slide-in-up 0.5s cubic-bezier(0.25, 0, 0.3, 1);
+    animation-timeline: view();
+    animation-range: entry;
+  }
+  .index-services li:nth-of-type(3) {
+    animation: slide-in-left 0.5s cubic-bezier(0.25, 0, 0.3, 1);
+    animation-timeline: view();
+    animation-range: entry;
+  }
+  .index-services li:nth-of-type(4) {
+    animation: slide-in-right 0.5s cubic-bezier(0.25, 0, 0.3, 1);
+    animation-timeline: view();
+    animation-range: entry;
+  }
+  .index-services li:nth-of-type(5) {
+    animation: slide-in-up 0.5s cubic-bezier(0.25, 0, 0.3, 1);
+    animation-timeline: view();
+    animation-range: entry;
+  }
+  .index-services li:nth-of-type(6) {
+    animation: slide-in-left 0.5s cubic-bezier(0.25, 0, 0.3, 1);
+    animation-timeline: view();
+    animation-range: entry;
   }
 }
 
@@ -70,6 +122,10 @@
 
 .difference picture {
   max-width: 500px;
+
+  animation: slide-in-right 0.5s cubic-bezier(0.25, 0, 0.3, 1);
+  animation-timeline: view();
+  animation-range: entry;
 }
 
 .difference .content {
@@ -152,10 +208,18 @@
   justify-self: center;
   /* padding: var(--space-md); */
   align-content: center;
+
+  animation: slide-in-right 0.5s cubic-bezier(0.25, 0, 0.3, 1);
+  animation-timeline: view();
+  animation-range: entry;
 }
 
 .index-cta picture {
   grid-area: image;
+
+  animation: slide-in-left 0.5s cubic-bezier(0.25, 0, 0.3, 1);
+  animation-timeline: view();
+  animation-range: entry;
 }
 
 .index-cta .copy p {

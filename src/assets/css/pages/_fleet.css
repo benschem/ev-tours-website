@@ -20,6 +20,10 @@
   background-color: var(--color-primary-light);
   border-radius: var(--rounded-3xl);
   padding: var(--space-md);
+
+  animation: slide-in-up 0.5s cubic-bezier(0.25, 0, 0.3, 1);
+  animation-timeline: view();
+  animation-range: entry;
 }
 
 @media screen and (width > 1024px) {

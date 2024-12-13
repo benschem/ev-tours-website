@@ -64,7 +64,7 @@ description: Our fleet of buses offers comfort, safety, and reliability for your
   <p>{{ fleet.safety.text }}</p>
   <div class="blocks">
     {% for section in fleet.safety.sections %}
-    <div>
+    <div class="story-point">
       {% if section.icon != "" %} {% include "icon.liquid", name: section.icon, class: "icon icon-lg pink", aria_hidden:
       true %} {% endif %}
       <h3>{{ section.heading }}</h3>
