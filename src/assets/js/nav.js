@@ -69,3 +69,8 @@ document.addEventListener("click", (event) => {
 submenu.addEventListener("click", (event) => {
   event.stopPropagation();
 });
+
+/* ----------- Let the submenu button be clickable ---------- */
+submenuBtn.addEventListener("click", () => {
+  window.location.href = "/services";
+});

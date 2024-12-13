@@ -78,4 +78,12 @@ navToggle.addEventListener("click", () => {
   toggleMenu();
 });
 
+/* ----------- Let the submenu button be clickable ---------- */
+
+const mobileMenuP = document.querySelector(".mobile-menu p");
+
+mobileMenuP.addEventListener("click", () => {
+  window.location.href = "/services";
+});
+
 /* -------------------------------------------------------------------------- */
