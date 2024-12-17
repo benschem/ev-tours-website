@@ -27,9 +27,10 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
   </div>
   <div class="image">
     <img
-      data-above-the-fold="true"
       src="{{ home.hero.image.src }}"
       alt="{{ home.hero.image.alt }}"
+      data-above-the-fold="true"
+      sizes="100vw"
     />
   </div>
 </section>
@@ -40,26 +41,43 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
     <img
       src="{{ logo.src }}"
       alt="{{ logo.alt }}"
+      sizes="100vw"
     />
     {% endfor %} {% for logo in partners.logos %}
     <img
       src="{{ logo.src }}"
       alt="{{ logo.alt }}"
+      sizes="100vw"
+    />
+    {% endfor %}
+  </div>
+  <div class="logo-group">
+    {% for logo in partners.logos %}
+    <img
+      src="{{ logo.src }}"
+      alt="{{ logo.alt }}"
+      sizes="100vw"
     />
     {% endfor %} {% for logo in partners.logos %}
     <img
       src="{{ logo.src }}"
       alt="{{ logo.alt }}"
+      sizes="100vw"
+    />
+    {% endfor %}
+  </div>
+  <div class="logo-group">
+    {% for logo in partners.logos %}
+    <img
+      src="{{ logo.src }}"
+      alt="{{ logo.alt }}"
+      sizes="100vw"
     />
     {% endfor %} {% for logo in partners.logos %}
     <img
       src="{{ logo.src }}"
       alt="{{ logo.alt }}"
-    />
-    {% endfor %} {% for logo in partners.logos %}
-    <img
-      src="{{ logo.src }}"
-      alt="{{ logo.alt }}"
+      sizes="100vw"
     />
     {% endfor %}
   </div>
@@ -92,6 +110,7 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
       <img
         src="{{ home.services-hero.image.src }}"
         alt="{{ home.services-hero.image.alt }}"
+        sizes="100vw"
       />
     </div>
   </div>
@@ -121,6 +140,7 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
     <img
       src="{{ home.points-of-difference.image.src }}"
       alt="{{ home.points-of-difference.image.alt }}"
+      sizes="100vw"
     />
 
     <div class="content">
@@ -228,5 +248,6 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
   <img
     src="{{ home.call-to-action.image.src }}"
     alt="{{ home.call-to-action.image.alt }}"
+    sizes="100vw"
   />
 </section>

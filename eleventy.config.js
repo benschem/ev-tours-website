@@ -94,16 +94,24 @@ module.exports = function (eleventyConfig) {
   // Images
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     extensions: "html",
-    formats: ["webp", "jpeg"],
+    formats: ["webp", "jpeg", "png"],
 
     // Specify the widths for the output images
-    widths: [80, 150, 300, 600, "auto"],
+    widths: [200, 400, 600, 1000, 1400, "auto"],
 
-    // For the <img> tag
-    defaultAttributes: {
-      sizes: "auto",
-      loading: "lazy",
-      decoding: "async",
+    // Don't lazy load "above the fold" images
+    transform: (attributes, options) => {
+      attributes.sizes = attributes.sizes || "100vw";
+
+      if (attributes["data-above-the-fold"] === "true") {
+        attributes.loading = null;
+      } else {
+        attributes.loading = "lazy";
+      }
+
+      attributes.decoding = attributes.decoding || "async";
+
+      return attributes;
     },
 
     filenameFormat: function (id, src, width, format) {
