@@ -24,6 +24,9 @@
       data-api="/pa-stats/api/event"
       src="/pa-stats/js/script.js"
     ></script>
+    {% if page.url == '/index/' %}
+      <script defer src="/assets/js/ticker.js"></script>
+    {% endif %}
     {% if page.url == '/contact/' %}
       <script defer src="/assets/js/formValidations.js"></script>
     {% endif %}

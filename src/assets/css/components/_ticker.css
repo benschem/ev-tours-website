@@ -7,7 +7,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  gap: var(--space-xl);
+  gap: var(--space-lg);
   position: relative;
 }
 
@@ -16,11 +16,34 @@
 }
 
 .logo-group {
+  margin-inline-end: var(--space-lg);
+  flex-shrink: 0;
   display: flex;
   gap: var(--space-lg);
   align-items: center;
-  position: absolute;
-  animation: scroll-left 30s linear infinite;
+  /* position: absolute; */
+  animation: scroll-left 6s linear infinite;
+}
+
+@media screen and (width > 450px) {
+  .logo-group {
+    animation: scroll-left 10s linear infinite;
+  }
+}
+@media screen and (width > 768px) {
+  .logo-group {
+    animation: scroll-left 16s linear infinite;
+  }
+}
+@media screen and (width > 900px) {
+  .logo-group {
+    animation: scroll-left 20s linear infinite;
+  }
+}
+@media screen and (width > 1280px) {
+  .logo-group {
+    animation: scroll-left 30s linear infinite;
+  }
 }
 
 .partner-logos picture {
