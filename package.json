@@ -8,7 +8,7 @@
         "dev": "npx @11ty/eleventy --serve",
         "dev-quiet": "npx @11ty/eleventy --serve --quiet",
         "build": "npx @11ty/eleventy",
-        "debug": "DEBUG=Eleventy* npx @11ty/eleventy",
+        "debug": "DEBUG=* npx @11ty/eleventy",
         "test": "echo \"Error: no test specified\" && exit 1"
     },
     "author": {

@@ -95,23 +95,10 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {
     extensions: "html",
     formats: ["webp", "jpeg", "png"],
-
-    // Specify the widths for the output images
     widths: [200, 400, 600, 1000, 1400, "auto"],
 
-    // Don't lazy load "above the fold" images
-    transform: (attributes, options) => {
-      attributes.sizes = attributes.sizes || "100vw";
-
-      if (attributes["data-above-the-fold"] === "true") {
-        attributes.loading = null;
-      } else {
-        attributes.loading = "lazy";
-      }
-
-      attributes.decoding = attributes.decoding || "async";
-
-      return attributes;
+    defaultAttributes: {
+      decoding: "async",
     },
 
     filenameFormat: function (id, src, width, format) {
