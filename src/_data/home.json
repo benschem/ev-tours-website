@@ -24,7 +24,7 @@
     "caption": "Need a bus? We’ve got you covered. Our dedicated team will ensure your trip is hassle-free with outstanding service from start to finish.",
     "buttons": {
       "primary": {
-        "text": "See services",
+        "text": "Our services",
         "link": "/services"
       },
       "secondary": {
@@ -118,7 +118,7 @@
         "link": "/contact#form"
       },
       "secondary": {
-        "text": "Learn more",
+        "text": "About us",
         "link": "/about"
       }
     },

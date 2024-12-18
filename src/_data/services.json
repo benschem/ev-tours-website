@@ -260,8 +260,8 @@
         "text": "Book now"
       },
       "secondary": {
-        "link": "/services",
-        "text": "Learn more"
+        "link": "/about",
+        "text": "About us"
       }
     },
     "image": {
