@@ -1,0 +1,20 @@
+img {
+  object-fit: cover;
+  border-radius: var(--rounded-3xl);
+}
+
+picture {
+  border-radius: var(--rounded-3xl);
+}
+
+img[loading="lazy"] {
+  opacity: 0;
+  scale: 0;
+  will-change: opacity, scale;
+}
+
+img[loading="lazy"][data-opt-lazy-loaded] {
+  transition: opacity 1s ease, scale 0.5s ease;
+  opacity: 1;
+  scale: 1;
+}

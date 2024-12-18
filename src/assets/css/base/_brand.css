@@ -1,12 +1,3 @@
-img {
-  object-fit: cover;
-  border-radius: var(--rounded-3xl);
-}
-
-picture {
-  border-radius: var(--rounded-3xl);
-}
-
 .ampersand {
   /* TODO */
 }
