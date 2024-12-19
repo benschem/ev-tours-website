@@ -15,16 +15,8 @@
 }
 
 section {
-  --header-size: 100px;
-  --ticker-size: 80px;
-
   padding-inline: var(--space-sm);
   padding-block: var(--space-md);
-}
-
-section:first-of-type {
-  min-height: calc(100dvh - var(--header-size) - (var(--ticker-size) / 2));
-  align-content: center;
 }
 
 @media screen and (height > 500px) {
@@ -39,17 +31,6 @@ section:first-of-type {
 }
 @media screen and (height > 820px) and (width > 500px) {
   section {
-    min-height: unset;
     padding-block: var(--space-xl);
-  }
-}
-@media screen and (height > 820px) and (width > 900px) {
-  section {
-    /* padding-block: var(--space-2xl); */
-  }
-}
-@media screen and (height > 820px) and (width > 1200px) {
-  section {
-    /* padding-block: var(--space-3xl); */
   }
 }

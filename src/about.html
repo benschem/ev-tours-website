@@ -4,32 +4,40 @@ title: About EV Tours & Charter | Family-Owned Bus Tours & Charter
 description: Discover our story at EV Tours & Charter, where a passion for transport turned into a family-run business. Learn how we’ve grown from a single bus to a trusted fleet serving Victoria and beyond.
 ---
 
-<section class="lines">
-  <div class="sp-wrapper">
-    <div class="sp-title">
-      <div>
-        <h1>{{ about.hero.heading }}</h1>
-        <p>{{ about.hero.text }}</p>
-        <div class="buttons">
-          <a
-            href="{{ home.hero.buttons.primary.link }}"
-            class="btn btn-primary"
-            >{{ home.hero.buttons.primary.text }}</a
-          >
-          <a
-            href="{{ home.hero.buttons.secondary.link }}"
-            class="btn btn-secondary"
-            >{{ home.hero.buttons.secondary.text }}</a
-          >
-        </div>
-      </div>
+<section class="hero reverse lines">
+  <div class="copy">
+    <h1>{{ about.hero.heading }}</h1>
+    <p>{{ about.hero.text }}</p>
+    <div class="buttons">
+      <a
+        href="{{ home.hero.buttons.primary.link }}"
+        class="btn btn-primary"
+        >{{ home.hero.buttons.primary.text }}</a
+      >
+      <a
+        href="{{ home.hero.buttons.secondary.link }}"
+        class="btn btn-secondary"
+        >{{ home.hero.buttons.secondary.text }}</a
+      >
+    </div>
+  </div>
+  <div class="visual">
+    <video
+      src="/assets/video/ev-tours-charter-about.mp4"
+      poster="/assets/video/ev-tours-charter-about.jpg"
+      loading="lazy"
+      autoplay
+      muted
+      loop
+    >
+      Your browser does not support the video tag.
       <img
         src="/assets/img/bus-stop.jpg"
         alt="{{ home.hero.image-alt }}"
         data-above-the-fold="true"
         sizes="100vw"
       />
-    </div>
+    </video>
   </div>
 </section>
 
@@ -50,32 +58,30 @@ description: Discover our story at EV Tours & Charter, where a passion for trans
 </section>
 
 <section class="about-difference">
-  <div class="content">
-    <h2>{{ about.difference.heading }}</h2>
-    <div class="blocks">
-      {% for section in about.difference.sections %}
-      <div class="block">
-        <img
-          src="/assets/img/bus-stop.jpg"
-          alt="{{ home.points-of-difference.image-alt }}"
-          sizes="100vw"
-          loading="lazy"
-        />
-        <div class="content">
-          <h3>{{ section.heading }}</h3>
-          {% if section.text contains 'string' %}
-          <p>{{ section.text }}</p>
-          {% else %} {% for paragraph in section.text %}
-          <p>{{ paragraph }}</p>
-          {% endfor %} {% endif %}
-        </div>
+  <h2>{{ about.difference.heading }}</h2>
+  <div class="blocks">
+    {% for section in about.difference.sections %}
+    <div class="story-point">
+      <img
+        src="/assets/img/bus-stop.jpg"
+        alt="{{ home.points-of-difference.image-alt }}"
+        sizes="100vw"
+        loading="lazy"
+      />
+      <div class="content">
+        <h3>{{ section.heading }}</h3>
+        {% if section.text contains 'string' %}
+        <p>{{ section.text }}</p>
+        {% else %} {% for paragraph in section.text %}
+        <p>{{ paragraph }}</p>
+        {% endfor %} {% endif %}
       </div>
-      {% endfor %}
     </div>
+    {% endfor %}
   </div>
 </section>
 
-<section class="index-cta lines">
+<section class="hero lines">
   <div class="copy">
     <h2>{{ about.cta.heading }}</h2>
     {% for paragraph in about.cta.text %}
@@ -94,10 +100,12 @@ description: Discover our story at EV Tours & Charter, where a passion for trans
       >
     </div>
   </div>
-  <img
-    src="{{ about.cta.img.src }}"
-    alt="{{ about.cta.img.alt }}"
-    sizes="100vw"
-    loading="lazy"
-  />
+  <div class="visual">
+    <img
+      src="{{ about.cta.img.src }}"
+      alt="{{ about.cta.img.alt }}"
+      sizes="100vw"
+      loading="lazy"
+    />
+  </div>
 </section>

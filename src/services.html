@@ -4,39 +4,50 @@ title: Tailored Bus Tours & Charter Services | EV Tours & Charter
 description: Explore our range of bus charter services, including school transport, winery tours, corporate transfers, and interstate travel. Reliable and flexible solutions for every need.
 ---
 
-<section class="lines">
-  <div class="sp-wrapper">
-    <div class="sp-title">
+<section class="hero lines">
+  <div class="copy">
+    <h1>{{ services.hero.heading }}</h1>
+    {% for paragraph in services.hero.text %}
+    <p>{{ paragraph }}</p>
+    {% endfor %}
+  </div>
+  <div class="visuals">
+    <video
+      src="/assets/video/ev-tours-charter-scenery.mp4"
+      poster="/assets/video/ev-tours-charter-scenery.jpg"
+      loading="lazy"
+      autoplay
+      muted
+      loop
+    >
+      Your browser does not support the video tag.
       <img
         src="{{ services.hero.image.src }}"
         alt="{{ services.hero.image.alt }}"
         data-above-the-fold="true"
         sizes="100vw"
       />
-      <div>
-        <h1>{{ services.hero.heading }}</h1>
-        {% for paragraph in services.hero.text %}
-        <p>{{ paragraph }}</p>
-        {% endfor %}
-      </div>
-    </div>
-    <!-- <p>{{ services.hero.subheading }}</p> -->
-    <ul role="list">
-      {% for service in services.services %}
-      <li class="sp-card">
-        {% if service.icon != "" %}
-        <a
-          href="#{{ service.id }}"
-          aria-label="{{ service.heading }}"
-        >
-          {% include "icon.liquid", name: service.icon, class: "icon icon-lg pink sp-card-icon", aria_hidden: true %}
-        </a>
-        {% endif %}
-        <h3>{{ service.heading }}</h3>
-      </li>
-      {% endfor %}
-    </ul>
+    </video>
   </div>
+</section>
+
+<section class="sp-wrapper lines">
+  <h2>{{ services.hero.subheading }}</h2>
+  <ul role="list">
+    {% for service in services.services %}
+    <li class="sp-card">
+      {% if service.icon != "" %}
+      <a
+        href="#{{ service.id }}"
+        aria-label="{{ service.heading }}"
+      >
+        {% include "icon.liquid", name: service.icon, class: "icon icon-lg pink sp-card-icon", aria_hidden: true %}
+      </a>
+      {% endif %}
+      <h3>{{ service.heading }}</h3>
+    </li>
+    {% endfor %}
+  </ul>
 </section>
 
 {% for service in services.services %}
@@ -48,7 +59,7 @@ description: Explore our range of bus charter services, including school transpo
     loading="lazy"
   />
   <div
-    class="content"
+    class="content lines"
     id="{{ service.id }}"
   >
     <h2>{{ service.heading }}</h2>
@@ -81,7 +92,7 @@ description: Explore our range of bus charter services, including school transpo
 </section>
 {% endfor %}
 
-<section class="index-cta lines">
+<section class="hero lines">
   <div class="copy">
     <h2>{{ services.cta.heading }}</h2>
     {% for paragraph in services.cta.text %}
@@ -100,10 +111,12 @@ description: Explore our range of bus charter services, including school transpo
       >
     </div>
   </div>
-  <img
-    src="{{ services.cta.image.src }}"
-    alt="{{ services.cta.image.alt }}"
-    sizes="100vw"
-    loading="lazy"
-  />
+  <div class="visual">
+    <img
+      src="{{ services.cta.image.src }}"
+      alt="{{ services.cta.image.alt }}"
+      sizes="100vw"
+      loading="lazy"
+    />
+  </div>
 </section>

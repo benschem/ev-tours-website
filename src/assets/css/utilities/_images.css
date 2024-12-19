@@ -7,14 +7,16 @@ picture {
   border-radius: var(--rounded-3xl);
 }
 
+video {
+  border-radius: var(--rounded-3xl);
+}
+
 img[loading="lazy"] {
   opacity: 0;
-  scale: 0;
-  will-change: opacity, scale;
+  will-change: opacity;
 }
 
 img[loading="lazy"][data-opt-lazy-loaded] {
-  transition: opacity 1s ease, scale 0.5s ease;
+  transition: opacity 1s ease;
   opacity: 1;
-  scale: 1;
 }

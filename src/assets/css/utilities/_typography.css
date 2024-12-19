@@ -121,6 +121,10 @@ a {
   color: var(--body-color);
 }
 
+p {
+  text-wrap: pretty;
+}
+
 .highlight {
   /* color: var(--color-primary); */
 }

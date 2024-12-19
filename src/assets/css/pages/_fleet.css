@@ -1,7 +1,3 @@
-.fleet-wrapper h2 {
-  text-align: center;
-}
-
 .buses {
   display: grid;
   gap: var(--space-lg) var(--space-md);

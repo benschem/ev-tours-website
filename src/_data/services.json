@@ -1,9 +1,9 @@
 {
   "hero": {
-    "heading": "Our services",
+    "heading": "Tours and charter hire",
+    "subheading": "Our services",
     "text": [
-      "Need reliable transport? We’re here to help! Our dedicated team is committed to making your journey seamless and enjoyable, providing exceptional service every step of the way.",
-      "Our services include:"
+      "Need reliable transport? We’re here to help! Our dedicated team is committed to making your journey seamless and enjoyable, providing exceptional service every step of the way."
     ],
     "image": {
       "src": "/assets/img/sunset-bus-ev-tours.jpg",
@@ -51,7 +51,7 @@
       "id": "tours"
     },
     {
-      "heading": "School students",
+      "heading": "School transport",
       "icon": "graduation-cap",
       "text": "Safe, reliable transport for schools. With our experienced drivers and well-maintained fleet, your students are in good hands.",
       "subheadings": [

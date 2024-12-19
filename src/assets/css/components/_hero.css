@@ -1,34 +1,31 @@
 .hero {
   margin-inline: auto;
-
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
+  gap: var(--space-lg) var(--space-md);
   justify-content: center;
   align-items: center;
-  justify-content: center;
-  align-items: center;
-
-  gap: var(--space-lg) 0;
 }
 
-.hero > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.hero.reverse {
+  flex-direction: row-reverse;
 }
 
 .hero .copy {
   animation: fade-out linear;
   animation-timeline: view();
   animation-range: exit;
+
+  max-width: 650px;
 }
 
 .hero .copy h1 {
-  max-width: 16ch;
+  /* max-width: 16ch; */
 }
 
 .hero .copy p {
-  max-width: 32ch;
+  /* max-width: 32ch; */
 }
 
 .hero .copy p + p {
@@ -39,37 +36,18 @@
   margin-block-start: var(--space-md);
 }
 
-.hero .image picture {
-  align-items: center;
-  padding: var(--space-sm);
+.hero .visual picture,
+.hero .visual video {
+  width: 100%;
+  max-width: 1280px;
 
   animation: fade-out linear;
   animation-timeline: view();
   animation-range: exit;
 }
 
-@media screen and (width > 768px) {
+@media screen and (width >= 1024px) {
   .hero {
-    flex-wrap: nowrap;
-    gap: var(--space-lg) 0;
-  }
-
-  .hero > div {
-    padding-inline: var(--space-lg);
-  }
-}
-
-@media screen and (width > 1100px) {
-  .hero {
-    gap: var(--space-lg) 0;
-  }
-
-  .hero > div {
-    padding-inline: 0;
-  }
-}
-
-@media screen and (width > 1500px) {
-  .hero {
+    flex-wrap: unset;
   }
 }

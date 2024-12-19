@@ -25,13 +25,23 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
       >
     </div>
   </div>
-  <div class="image">
-    <img
-      src="{{ home.hero.image.src }}"
-      alt="{{ home.hero.image.alt }}"
-      data-above-the-fold="true"
-      sizes="100vw"
-    />
+  <div class="visual">
+    <video
+      src="/assets/video/ev-tours-charter-boarding.mp4"
+      poster="/assets/video/ev-tours-charter-boarding.jpg"
+      loading="lazy"
+      autoplay
+      muted
+      loop
+    >
+      Your browser does not support the video tag.
+      <img
+        src="{{ home.hero.image.src }}"
+        alt="{{ home.hero.image.alt }}"
+        data-above-the-fold="true"
+        sizes="100vw"
+      />
+    </video>
   </div>
 </section>
 
@@ -234,7 +244,7 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
   <!-- </div> -->
 </div>
 
-<section class="index-cta lines">
+<section class="hero lines">
   <div class="copy">
     <h2>{{ home.call-to-action.heading }}</h2>
     {% for paragraph in home.call-to-action.text %}
@@ -253,10 +263,12 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
       >
     </div>
   </div>
-  <img
-    src="{{ home.call-to-action.image.src }}"
-    alt="{{ home.call-to-action.image.alt }}"
-    sizes="100vw"
-    loading="lazy"
-  />
+  <div class="visual">
+    <img
+      src="{{ home.call-to-action.image.src }}"
+      alt="{{ home.call-to-action.image.alt }}"
+      sizes="100vw"
+      loading="lazy"
+    />
+  </div>
 </section>
