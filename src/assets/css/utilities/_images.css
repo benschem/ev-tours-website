@@ -16,7 +16,7 @@ img[loading="lazy"] {
   will-change: opacity;
 }
 
-img[loading="lazy"][data-opt-lazy-loaded] {
+img[loading="lazy"][data-lazy-loaded="true"] {
   transition: opacity 1s ease;
   opacity: 1;
 }

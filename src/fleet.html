@@ -4,63 +4,70 @@ title: Modern and Comfortable Bus Fleet | EV Tours & Charter
 description: Our fleet of buses offers comfort, safety, and reliability for your journey. From small group travel to large charters, find the perfect vehicle for your needs.
 ---
 
-<section class="lines">
-  <div class="sp-wrapper">
-    <div class="sp-title">
-      <div>
-        <h1>{{ fleet.hero.heading }}</h1>
-        {% for paragraph in fleet.hero.text %}
-        <p>{{ paragraph }}</p>
-        {% endfor %}
-      </div>
+<section class="hero lines">
+  <div class="copy">
+    <h1>{{ fleet.hero.heading }}</h1>
+    {% for paragraph in fleet.hero.text %}
+    <p>{{ paragraph }}</p>
+    {% endfor %}
+  </div>
+  <div class="visual">
+    <video
+      src="/assets/video/ev-tours-charter-fleet.mp4"
+      poster="/assets/video/ev-tours-charter-fleet.jpg"
+      loading="lazy"
+      autoplay
+      muted
+      loop
+    >
+      Your browser does not support the video tag.
       <img
         src="/assets/img/bus-stop.jpg"
-        alt="Replace this"
+        alt="{{ home.hero.image-alt }}"
         data-above-the-fold="true"
         sizes="100vw"
       />
-    </div>
-    <!-- </section> -->
+    </video>
+  </div>
+</section>
 
-    <!-- <section class="fleet"> -->
-    <div>
-      <h2>Vehicles</h2>
+<section class="vehicle-wrapper lines">
+  <h2>{{ fleet.vehicles.heading }}</h2>
+  <p>{{ fleet.vehicles.subheading }}</p>
+  <ul
+    role="list"
+    class="buses"
+  >
+    {% for bus in fleet.buses %}
+    <li>
+      <img
+        src="{{ bus.image.src }}"
+        alt="{{ bus.image.alt }}"
+        sizes="100vw"
+        loading="lazy"
+      />
+      <h3>{{ bus.model }}</h3>
       <ul
         role="list"
-        class="buses"
+        class="features"
       >
-        {% for bus in fleet.buses %}
         <li>
-          <img
-            src="{{ bus.image.src }}"
-            alt="{{ bus.image.alt }}"
-            sizes="100vw"
-            loading="lazy"
-          />
-          <h3>{{ bus.model }}</h3>
-          <ul
-            role="list"
-            class="features"
-          >
-            <li>
-              <p>Seats {{ bus.capacity }}</p>
-            </li>
-            {% for feature in bus.features %}
-            <li>
-              <p>{{ feature }}</p>
-            </li>
-            {% endfor %}
-          </ul>
-          <a
-            href="/contact#form"
-            class="btn btn-primary"
-            >Book now</a
-          >
+          <p>Seats {{ bus.capacity }}</p>
+        </li>
+        {% for feature in bus.features %}
+        <li>
+          <p>{{ feature }}</p>
         </li>
         {% endfor %}
       </ul>
-    </div>
-  </div>
+      <a
+        href="/contact#form"
+        class="btn btn-primary"
+        >Book now</a
+      >
+    </li>
+    {% endfor %}
+  </ul>
 </section>
 
 <section class="story">
@@ -80,7 +87,7 @@ description: Our fleet of buses offers comfort, safety, and reliability for your
   </div>
 </section>
 
-<section class="index-cta lines">
+<section class="hero lines">
   <div class="copy">
     <h2>{{ fleet.cta.heading }}</h2>
     {% for paragraph in fleet.cta.text %}
@@ -99,10 +106,12 @@ description: Our fleet of buses offers comfort, safety, and reliability for your
       >
     </div>
   </div>
-  <img
-    src="{{ fleet.cta.image.src }}"
-    alt="{{ fleet.cta.image.alt }}"
-    sizes="100vw"
-    loading="lazy"
-  />
+  <div class="visual">
+    <img
+      src="{{ fleet.cta.image.src }}"
+      alt="{{ fleet.cta.image.alt }}"
+      sizes="100vw"
+      loading="lazy"
+    />
+  </div>
 </section>

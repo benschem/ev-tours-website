@@ -4,22 +4,34 @@ title: Contact EV Tours & Charter | Book Your Next Journey
 description: Ready to book your bus tour or charter? Get in touch with EV Tours & Charter for friendly assistance and hassle-free booking for your next trip.
 ---
 
-<section class="lines">
-  <div class="sp-wrapper">
-    <div class="sp-title">
+<section class="hero reverse lines">
+  <div class="copy">
+    <h1>{{ contact.hero.heading }}</h1>
+    {% for paragraph in contact.hero.text %}
+    <p>{{ paragraph }}</p>
+    {% endfor %}
+  </div>
+  <div class="visual">
+    <video
+      src="/assets/video/ev-tours-charter-about.mp4"
+      poster="/assets/video/ev-tours-charter-about.jpg"
+      loading="lazy"
+      autoplay
+      muted
+      loop
+    >
+      Your browser does not support the video tag.
       <img
-        src="{{ contact.hero.img.src }}"
-        alt="{{ contact.hero.img.alt }}"
-        data-above-the-fold="true"
-        sizes="100vw"
+      src="/assets/img/bus-stop.jpg"
+      alt="{{ home.hero.image-alt }}"
+      data-above-the-fold="true"
+      sizes="100vw"
       />
-      <div>
-        <h1>{{ contact.hero.heading }}</h1>
-        {% for paragraph in contact.hero.text %}
-        <p>{{ paragraph }}</p>
-        {% endfor %}
-      </div>
-    </div>
+    </video>
+  </div>
+</section>
+
+<section>
     <div class="contact-details">
       <ul role="list">
         <li>

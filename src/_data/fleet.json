@@ -2,10 +2,13 @@
   "hero": {
     "heading": "Our fleet",
     "text": [
-      "Our diverse and well-maintained fleet of vehicles is designed to meet all your transport needs.",
       "From comfortable minibuses for intimate group outings to spacious coaches for larger events, each vehicle is equipped with modern amenities to ensure a smooth and enjoyable ride.",
       "No matter the occasion, our fleet is ready to take you wherever you need to go!"
     ]
+  },
+  "vehicles": {
+    "heading": "Vehicles",
+    "subheading": "Our diverse and well-maintained fleet of vehicles is designed to meet all your transport needs."
   },
   "buses": [
     {

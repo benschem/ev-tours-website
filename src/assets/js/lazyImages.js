@@ -1,7 +1,5 @@
 const lazyImages = document.querySelectorAll('img[loading="lazy"]');
 
-lazyImages.forEach(function (img) {
-  img.addEventListener("load", function () {
-    img.setAttribute("data-opt-lazy-loaded", "true");
-  });
+lazyImages.forEach((img) => {
+  img.setAttribute("data-lazy-loaded", "true");
 });

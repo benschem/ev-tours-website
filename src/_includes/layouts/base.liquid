@@ -16,13 +16,12 @@
     <link rel="stylesheet" href="/assets/css/styles-minified.css" />
     <script defer src="/assets/js/nav.js"></script>
     <script defer src="/assets/js/mobileMenu.js"></script>
-    <script defer src="/assets/js/lazyImages.js"></script>
     <script defer src="/assets/js/darkMode.js"></script>
     {% comment %} <script
-      defer
-      data-domain="evtours.com.au"
-      data-api="/pa-stats/api/event"
-      src="/pa-stats/js/script.js"
+    defer
+    data-domain="evtours.com.au"
+    data-api="/pa-stats/api/event"
+    src="/pa-stats/js/script.js"
     ></script> {% endcomment %}
     {% if page.url == '/index/' %}
       <script defer src="/assets/js/ticker.js"></script>
@@ -30,6 +29,7 @@
     {% if page.url == '/contact/' %}
       <script defer src="/assets/js/formValidations.js"></script>
     {% endif %}
+    <script defer src="/assets/js/lazyImages.js"></script>
   </head>
   <body id="top">
     {% include 'partials/_header.html' %}

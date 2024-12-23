@@ -13,10 +13,6 @@
 }
 
 .hero .copy {
-  animation: fade-out linear;
-  animation-timeline: view();
-  animation-range: exit;
-
   max-width: 650px;
 }
 
@@ -25,7 +21,7 @@
 }
 
 .hero .copy p {
-  /* max-width: 32ch; */
+  max-width: 75ch;
 }
 
 .hero .copy p + p {
@@ -35,12 +31,19 @@
 .hero .copy .buttons {
   margin-block-start: var(--space-md);
 }
-
 .hero .visual picture,
 .hero .visual video {
   width: 100%;
   max-width: 1280px;
+}
 
+.hero:first-of-type .copy {
+  animation: fade-out linear;
+  animation-timeline: view();
+  animation-range: exit;
+}
+.hero:first-of-type .visual picture,
+.hero:first-of-type .visual video {
   animation: fade-out linear;
   animation-timeline: view();
   animation-range: exit;

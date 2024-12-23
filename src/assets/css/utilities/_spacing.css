@@ -19,6 +19,10 @@ section {
   padding-block: var(--space-md);
 }
 
+section:first-of-type {
+  padding-block: var(--space-xl);
+}
+
 @media screen and (height > 500px) {
   section {
     padding-block: var(--space-lg);

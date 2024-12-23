@@ -1,5 +1,21 @@
+.vehicle-wrapper {
+  max-width: 2000px;
+  margin-inline: auto;
+}
+
+.vehicle-wrapper > h2,
+.vehicle-wrapper > p {
+  text-align: center;
+}
+
+.vehicle-wrapper > p {
+  margin-block-end: var(--space-md);
+}
+
 .buses {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: var(--space-lg) var(--space-md);
 }
 
