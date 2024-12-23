@@ -3,7 +3,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: var(--space-lg) var(--space-md);
+  gap: var(--space-lg) var(--space-lg);
   justify-content: center;
   align-items: center;
 }
@@ -31,10 +31,17 @@
 .hero .copy .buttons {
   margin-block-start: var(--space-md);
 }
+
+.hero .visual {
+  min-width: 350px;
+}
+
 .hero .visual picture,
 .hero .visual video {
   width: 100%;
   max-width: 1280px;
+  /* object-fit: cover; */
+  /* object-position: center; */
 }
 
 .hero:first-of-type .copy {

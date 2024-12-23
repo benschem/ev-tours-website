@@ -1,5 +1,10 @@
+:root {
+  --header-img-height: 60px;
+  --header-padding: var(--space-sm);
+}
+
 header {
-  padding: var(--space-sm);
+  padding: var(--header-padding);
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,7 +14,7 @@ header {
 
 header img {
   width: 330px;
-  height: 60px;
+  height: var(--header-img-height);
   object-fit: contain;
 }
 
