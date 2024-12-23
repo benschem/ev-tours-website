@@ -1,11 +1,32 @@
 .hero {
+  --header-height: calc(var(--header-img-height) + var(--header-padding));
+
+  min-height: calc(100svh - var(--header-height));
   margin-inline: auto;
+  padding-inline: var(--space-xl);
+  padding-block: unset;
+
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   gap: var(--space-lg) var(--space-lg);
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (width < 1024px) {
+  .hero {
+    min-height: unset;
+    padding-inline: var(--space-xl);
+    padding-block: var(--space-lg);
+  }
+}
+
+@media screen and (height > 768px) {
+  .hero {
+    padding-inline: var(--space-xl);
+    padding-block: var(--space-lg);
+  }
 }
 
 .hero.reverse {

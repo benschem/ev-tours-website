@@ -19,29 +19,6 @@ section {
   padding-block: var(--space-md);
 }
 
-section:first-of-type {
-  --header-height: calc(var(--header-img-height) + var(--header-padding));
-
-  min-height: calc(100svh - var(--header-height));
-  padding-inline: var(--space-xl);
-  padding-block: unset;
-}
-
-@media screen and (width < 1024px) {
-  section:first-of-type {
-    min-height: unset;
-    padding-inline: var(--space-xl);
-    padding-block: var(--space-lg);
-  }
-}
-
-@media screen and (height > 768px) {
-  section:first-of-type {
-    padding-inline: var(--space-xl);
-    padding-block: var(--space-lg);
-  }
-}
-
 @media screen and (height > 500px) {
   section {
     padding-block: var(--space-lg);
