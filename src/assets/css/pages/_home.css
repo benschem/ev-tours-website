@@ -153,17 +153,24 @@
 }
 
 .testimonials {
-  padding: var(--space-md);
   background-color: var(--color-primary-light);
-  min-height: 220px;
+}
+
+.testimonials h2 {
+  text-align: center;
 }
 
 .testimonials li {
+  background-color: var(--color-primary);
+  border: 2px solid var(--color-primary);
+  border-radius: var(--rounded-3xl);
   padding: var(--space-sm);
-  min-width: 300px;
+  min-width: 250px;
 }
 
 .testimonials .stars {
+  display: flex;
+  justify-content: center;
   margin-block-end: var(--space-sm);
 }
 

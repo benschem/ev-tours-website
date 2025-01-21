@@ -3,15 +3,22 @@
   align-items: center;
 }
 
+.control:first-of-type {
+  padding-inline-end: var(--space-sm);
+}
+.control:last-of-type {
+  padding-inline-start: var(--space-sm);
+}
+
 .carousel {
-  /* position: relative;
-  overflow-x: hidden;
-  display: flex; */
+  /* position: relative; */
+  /* overflow-x: hidden; */
+  display: flex;
 }
 
 .carousel ul {
   display: flex;
-  gap: var(--space-md);
+  gap: var(--space-sm);
 
   overflow-x: auto;
   scroll-snap-type: x mandatory;

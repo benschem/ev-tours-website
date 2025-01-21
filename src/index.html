@@ -179,84 +179,39 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
   </div>
 </section>
 
-<div
-  class="testimonials carousel"
-  aria-labelledby="carouselheading"
->
-  <h2
-    id="carouselheading"
-    class=""
-  >
-    Don't take our word for it. Take theirs
-  </h2>
-  <button class="btn control control-left">
-    {% include "icon.liquid", name: "circle-chevron-left", class: "icon icon-lg pink", aria_hidden: false %}
-  </button>
-  <ul
-    role="list"
-    class=""
-  >
-    {% for testimonial in home.testimonials %}
-    <li>
-      <div class="stars">
-        {% include "icon.liquid", name: "star", class: "icon icon-sm pink", aria_hidden: true %} {% include
-        "icon.liquid", name: "star", class: "icon icon-sm pink", aria_hidden: true %} {% include "icon.liquid", name:
-        "star", class: "icon icon-sm pink", aria_hidden: true %} {% include "icon.liquid", name: "star", class: "icon
-        icon-sm pink", aria_hidden: true %} {% include "icon.liquid", name: "star", class: "icon icon-sm pink",
-        aria_hidden: true %}
-      </div>
-      <p>{{ testimonial }}</p>
-    </li>
-    {% endfor %} {% for testimonial in home.testimonials %}
-    <li>
-      <div class="stars">
-        {% include "icon.liquid", name: "star", class: "icon icon-sm pink", aria_hidden: true %} {% include
-        "icon.liquid", name: "star", class: "icon icon-sm pink", aria_hidden: true %} {% include "icon.liquid", name:
-        "star", class: "icon icon-sm pink", aria_hidden: true %} {% include "icon.liquid", name: "star", class: "icon
-        icon-sm pink", aria_hidden: true %} {% include "icon.liquid", name: "star", class: "icon icon-sm pink",
-        aria_hidden: true %}
-      </div>
-      <p>{{ testimonial }}</p>
-    </li>
-    {% endfor %} {% for testimonial in home.testimonials %}
-    <li>
-      <div class="stars">
-        {% include "icon.liquid", name: "star", class: "icon icon-sm pink", aria_hidden: true %} {% include
-        "icon.liquid", name: "star", class: "icon icon-sm pink", aria_hidden: true %} {% include "icon.liquid", name:
-        "star", class: "icon icon-sm pink", aria_hidden: true %} {% include "icon.liquid", name: "star", class: "icon
-        icon-sm pink", aria_hidden: true %} {% include "icon.liquid", name: "star", class: "icon icon-sm pink",
-        aria_hidden: true %}
-      </div>
-      <p>{{ testimonial }}</p>
-    </li>
-    {% endfor %} {% for testimonial in home.testimonials %}
-    <li>
-      <div class="stars">
-        {% include "icon.liquid", name: "star", class: "icon icon-sm pink", aria_hidden: true %} {% include
-        "icon.liquid", name: "star", class: "icon icon-sm pink", aria_hidden: true %} {% include "icon.liquid", name:
-        "star", class: "icon icon-sm pink", aria_hidden: true %} {% include "icon.liquid", name: "star", class: "icon
-        icon-sm pink", aria_hidden: true %} {% include "icon.liquid", name: "star", class: "icon icon-sm pink",
-        aria_hidden: true %}
-      </div>
-      <p>{{ testimonial }}</p>
-    </li>
-    {% endfor %} {% for testimonial in home.testimonials %}
-    <li>
-      <div class="stars">
-        {% include "icon.liquid", name: "star", class: "icon icon-sm pink", aria_hidden: true %} {% include
-        "icon.liquid", name: "star", class: "icon icon-sm pink", aria_hidden: true %} {% include "icon.liquid", name:
-        "star", class: "icon icon-sm pink", aria_hidden: true %} {% include "icon.liquid", name: "star", class: "icon
-        icon-sm pink", aria_hidden: true %} {% include "icon.liquid", name: "star", class: "icon icon-sm pink",
-        aria_hidden: true %}
-      </div>
-      <p>{{ testimonial }}</p>
-    </li>
-    {% endfor %}
-  </ul>
-  <div class="control control-right">
-    {% include "icon.liquid", name: "circle-chevron-right", class: "icon icon-lg pink", aria_hidden: false %}
+<section class="testimonials">
+  <div class="stars">
+    {% include "icon.liquid", name: "star", class: "icon icon-md pink", aria_hidden: true %} {% include "icon.liquid",
+    name: "star", class: "icon icon-md pink", aria_hidden: true %} {% include "icon.liquid", name: "star", class: "icon
+    icon-md pink", aria_hidden: true %} {% include "icon.liquid", name: "star", class: "icon icon-md pink", aria_hidden:
+    true %} {% include "icon.liquid", name: "star", class: "icon icon-md pink", aria_hidden: true %}
   </div>
-</div>
+  <h2 id="carouselheading">Don't take our word for it. Take theirs!</h2>
+  <div
+    class="carousel"
+    aria-labelledby="carouselheading"
+  >
+    <button
+      class="btn control"
+      id="control-left"
+    >
+      {% include "icon.liquid", name: "chevron-left", class: "icon icon-sm pink", aria_hidden: false %}
+    </button>
+    <ul role="list">
+      {% for testimonial in home.testimonials %}
+      <li>
+        <p>“{{ testimonial }}”</p>
+      </li>
+      {% endfor %}
+    </ul>
+    <button
+      class="btn control"
+      id="control-right"
+    >
+      {% include "icon.liquid", name: "chevron-right", class: "icon icon-sm pink", aria_hidden: false %}
+    </button>
+  </div>
+</section>
 
 <section class="hero lines">
   <div class="copy">
