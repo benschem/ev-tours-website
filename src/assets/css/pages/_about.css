@@ -54,6 +54,10 @@
   margin-block-end: var(--space-md);
 }
 
+.story-point img {
+  aspect-ratio: 3/2;
+}
+
 .story-point p + p {
   margin-block-start: var(--space-sm);
 }

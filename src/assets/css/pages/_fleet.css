@@ -38,6 +38,10 @@
   animation-range: entry;
 }
 
+.buses > li img {
+  aspect-ratio: 3/2;
+}
+
 @media screen and (width > 1024px) {
   .buses {
     grid-template-columns: repeat(2, 1fr);

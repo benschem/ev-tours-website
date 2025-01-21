@@ -63,8 +63,8 @@ description: Discover our story at EV Tours & Charter, where a passion for trans
     {% for section in about.difference.sections %}
     <div class="story-point">
       <img
-        src="/assets/img/bus-stop.jpg"
-        alt="{{ home.points-of-difference.image-alt }}"
+        src="{{ section.img.src }}"
+        alt="{{ section.img.alt }}"
         sizes="100vw"
         loading="lazy"
       />

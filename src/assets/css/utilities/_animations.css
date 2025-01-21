@@ -13,19 +13,16 @@
   animation-timeline: view();
   animation-range: entry;
 }
-
-.animate-entry-fade {
-  animation: fade-in linear;
-  animation-timeline: view();
-  animation-range: entry;
-}
-
 .animate-exit-to-top {
   animation: slide-out-up linear;
   animation-timeline: view();
   animation-range: exit;
 }
-
+.animate-entry-fade {
+  animation: fade-in linear;
+  animation-timeline: view();
+  animation-range: entry;
+}
 .animate-exit-fade {
   animation: fade-out linear;
   animation-timeline: view();
@@ -77,24 +74,5 @@
 @keyframes fade-out {
   to {
     opacity: 0;
-  }
-}
-
-@keyframes shake-z {
-  0%,
-  100% {
-    transform: rotate(0deg);
-  }
-  20% {
-    transform: rotate(-2deg);
-  }
-  40% {
-    transform: rotate(2deg);
-  }
-  60% {
-    transform: rotate(-2deg);
-  }
-  80% {
-    transform: rotate(2deg);
   }
 }

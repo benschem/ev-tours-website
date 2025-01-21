@@ -102,7 +102,7 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
 <section class="services lines">
   <div class="services-hero">
     <div class="flex">
-      <div class="copy">
+      <div class="copy animate-entry-from-left">
         <h2>
           {% assign parts = home.services-hero.heading | split: home.services-hero.highlight %} {{ parts[0] }}<span
             class="highlight"
@@ -128,6 +128,7 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
         alt="{{ home.services-hero.image.alt }}"
         sizes="100vw"
         loading="lazy"
+        class="animate-entry-from-right"
       />
     </div>
   </div>
@@ -178,8 +179,19 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
   </div>
 </section>
 
-<div class="testimonials">
-  <!-- <div class="testimonials-wrapper"> -->
+<div
+  class="testimonials carousel"
+  aria-labelledby="carouselheading"
+>
+  <h2
+    id="carouselheading"
+    class=""
+  >
+    Don't take our word for it. Take theirs
+  </h2>
+  <button class="btn control control-left">
+    {% include "icon.liquid", name: "circle-chevron-left", class: "icon icon-lg pink", aria_hidden: false %}
+  </button>
   <ul
     role="list"
     class=""
@@ -241,7 +253,9 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
     </li>
     {% endfor %}
   </ul>
-  <!-- </div> -->
+  <div class="control control-right">
+    {% include "icon.liquid", name: "circle-chevron-right", class: "icon icon-lg pink", aria_hidden: false %}
+  </div>
 </div>
 
 <section class="hero lines">

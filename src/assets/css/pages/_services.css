@@ -33,10 +33,6 @@
   /* padding-inline-end: var(--space-md); */
   /* border: 1px solid var(--color-primary); */
   border-radius: var(--rounded-3xl);
-
-  animation: shake-z 0.5s cubic-bezier(0.25, 0, 0.3, 1);
-  animation-timeline: view();
-  animation-range: exit;
 }
 
 .sp-card h3 {

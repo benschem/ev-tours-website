@@ -155,22 +155,10 @@
 .testimonials {
   padding: var(--space-md);
   background-color: var(--color-primary-light);
-  position: relative;
   min-height: 220px;
-  overflow-x: hidden;
-}
-
-.testimonials ul {
-  display: flex;
-  gap: var(--space-md);
-
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
 }
 
 .testimonials li {
-  scroll-snap-align: start;
   padding: var(--space-sm);
   min-width: 300px;
 }

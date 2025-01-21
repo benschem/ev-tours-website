@@ -48,23 +48,35 @@
       {
         "heading": "Family owned and operated",
         "text": [
-          "Our family-oriented approach means you can expect personalised attention and care in every booking.",
+          "Our family-oriented approach means you can expect personalised attention and care.",
           "We offer a transport experience that goes beyond just getting you from point A to point B."
-        ]
+        ],
+        "img": {
+          "src": "/assets/img/ev-tours-family-owned.jpg",
+          "alt": "Replace this"
+        }
       },
       {
         "heading": "Our experience and expertise",
         "text": [
           "With years of experience in the transport industry, we blend youthful energy with reliable service.",
           "We’ve been at this for years, so we know how to make your trip smooth and stress-free."
-        ]
+        ],
+        "img": {
+          "src": "/assets/img/bus-stop.jpg",
+          "alt": "Replace this"
+        }
       },
       {
         "heading": "Personalised service",
         "text": [
-          "Our commitment to quality and customer satisfaction sets us apart, making us the preferred choice as your travel partner.",
+          "Our commitment to quality and customer satisfaction is what sets us apart.",
           "Once you’ve experienced the EV difference, you won’t want to go anywhere else!"
-        ]
+        ],
+        "img": {
+          "src": "/assets/img/bus-stop.jpg",
+          "alt": "Replace this"
+        }
       }
     ]
   },

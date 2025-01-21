@@ -22,7 +22,7 @@
         "Seatbelts"
       ],
       "image": {
-        "src": "/assets/img/van.webp",
+        "src": "/assets/img/van.jpg",
         "alt": "Replace this"
       }
     },
@@ -80,8 +80,8 @@
         "icon": "wrench",
         "heading": "Vehicle maintenance",
         "text": [
-          "We pride ourselves on the condition of our fleet. Each vehicle undergoes regular inspections and maintenance to ensure it meets our high safety standards.",
-          "Our commitment to keeping our buses in peak condition helps prevent issues and ensures a smooth ride for all passengers."
+          "Each vehicle undergoes regular inspections and maintenance to ensure it meets our high safety standards.",
+          "We keep our buses in peak condition to prevent issues and ensure a smooth ride for all passengers."
         ]
       },
       {
@@ -96,8 +96,8 @@
         "icon": "shield-halved",
         "heading": "Saftey protocols",
         "text": [
-          "We have comprehensive safety protocols that include regular safety briefings for our drivers and GPS tracking of our fleet.",
-          "From seatbelt use to emergency procedures, we ensure that every aspect of your journey is covered so you can relax and enjoy the ride."
+          "Our comprehensive safety protocols include regular safety briefings for our drivers and GPS tracking of our fleet.",
+          "From seatbelt use to emergency procedures, every aspect of your journey is covered so you can relax and enjoy the ride."
         ]
       }
     ]

@@ -1,0 +1,23 @@
+.control {
+  display: flex;
+  align-items: center;
+}
+
+.carousel {
+  /* position: relative;
+  overflow-x: hidden;
+  display: flex; */
+}
+
+.carousel ul {
+  display: flex;
+  gap: var(--space-md);
+
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+}
+
+.carousel li {
+  scroll-snap-align: start;
+}
