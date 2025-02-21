@@ -1,11 +1,10 @@
 GENERAL
 [X] Change home page video to full screen size, she wants it exactly like Alston Coaches website https://www.alstoncoaches.com.au/ then have the words over the top of the video like they do too.
-[ ] Fix the secondary buttons not see through
-[ ] Make the pink colour lighter on buttons then when you hover over make them darker.
+[X] Make the pink colour lighter on buttons then when you hover over make them darker.
 [ ] Change Coach picture near "We've got the wheels" to an updated version (i've attached).
-[ ] Change standard pink background on "evtours & charter difference" fraction lighter, close to our original business colour, same with buttons so it all matches.
+[X] Change standard pink background on "evtours & charter difference" fraction lighter, close to our original business colour, same with buttons so it all matches.
 [X] Add the word "just" to "Don't just take our word for it".
-[ ] Change "Review Boxes" section to white boxes and have a pink border and black writing.
+[X] Change "Review Boxes" section to white boxes and have a pink border and black writing.
 [X] Change ABN to our ACN 637 231 942 and add Accreditation no. AO 055193
 [ ] Add social media icons to the top of the page next to the phone number.
 [X] Service types, please change the order to:
@@ -21,7 +20,7 @@ Event Transport
 
 ABOUT US PAGE
 [ ] About us page and contact page both have the same video can we switch this up please?
-[ ] Change pink again on the "about section" so any sections like this please make a lighter pink.
+[X] Change pink again on the "about section" so any sections like this please make a lighter pink.
 
 ALL SERVICES PAGE
 [X] Where it says "Sporting" change it to Birthdays. (I'll get some new pics for this page)
