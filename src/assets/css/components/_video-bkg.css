@@ -2,7 +2,9 @@
   --header-height: calc(var(--header-img-height) + var(--header-padding));
 
   height: calc(100svh - var(--header-height));
+  overflow: hidden;
 
+  position: relative;
   padding: 0;
   display: grid;
   place-items: center;
@@ -23,6 +25,7 @@
 }
 
 .video-bkg .foreground {
+  position: absolute;
   max-width: max-content;
   max-height: max-content;
   z-index: 1;
