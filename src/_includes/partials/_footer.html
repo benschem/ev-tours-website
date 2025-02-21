@@ -20,7 +20,8 @@
       {% include "icon.liquid", name: "envelope", class: "icon icon-sm pink", aria_hidden: true %}
       <a href="mailto:{{ business.email }}">{{ business.email }}</p>
       </div>
-      <p>ABN: {{ business.abn }}</p>
+      <p>ACN: {{ business.acn }}</p>
+      <p>Accreditation number: {{ business.accreditation-no }}</p>
       <p>© {{ business.copyright }} {{ "now" | date: "%Y" }}</p>
       <p class="rocketzip">
         <a

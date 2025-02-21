@@ -16,16 +16,28 @@
           "link": "/services"
         },
         {
-          "name": "Scenic Tours",
-          "link": "/services/tours"
-        },
-        {
           "name": "Corporate Charter",
           "link": "/services/corporate"
         },
         {
           "name": "School Charter",
           "link": "/services/schools"
+        },
+        {
+          "name": "Airport Transfer",
+          "link": "/services/airport"
+        },
+        {
+          "name": "Special Occasions",
+          "link": "/services/special-occasions"
+        },
+        {
+          "name": "Scenic Tours",
+          "link": "/services/tours"
+        },
+        {
+          "name": "Event transport",
+          "link": "/services/events"
         }
       ]
     },

@@ -4,9 +4,9 @@ GENERAL
 [ ] Make the pink colour lighter on buttons then when you hover over make them darker.
 [ ] Change Coach picture near "We've got the wheels" to an updated version (i've attached).
 [ ] Change standard pink background on "evtours & charter difference" fraction lighter, close to our original business colour, same with buttons so it all matches.
-[ ] Add the word "just" to "Don't just take our word for it".
+[X] Add the word "just" to "Don't just take our word for it".
 [ ] Change "Review Boxes" section to white boxes and have a pink border and black writing.
-[ ] Change ABN to our ACN 637 231 942 and add Accreditation no. AO 055193
+[X] Change ABN to our ACN 637 231 942 and add Accreditation no. AO 055193
 [ ] Add social media icons to the top of the page next to the phone number.
 [ ] Service types, please change the order to:
 Charter

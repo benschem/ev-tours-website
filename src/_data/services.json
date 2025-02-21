@@ -12,32 +12,32 @@
   },
   "services": [
     {
-      "heading": "Scenic tours",
-      "icon": "image",
-      "text": "Explore Victoria’s iconic landscapes with our scenic tours, including options for winery, brewery, and Great Ocean Road tours.",
+      "heading": "Corporate charter",
+      "icon": "user-tie",
+      "text": "Make your next corporate event effortless and ensure that your staff arrive on-time and in comfort.",
       "subheadings": [
         {
-          "title": "Winery tours",
+          "title": "Conferences",
           "img": {
-            "src": "/assets/img/winery-tour.jpg",
+            "src": "/assets/img/bus-stop.jpg",
             "alt": ""
           },
           "text": "See more →",
           "link": "/services"
         },
         {
-          "title": "Brewery tours",
+          "title": "Corporate events",
           "img": {
-            "src": "/assets/img/brewery-tour.jpg",
+            "src": "/assets/img/bus-stop.jpg",
             "alt": ""
           },
           "text": "See more →",
           "link": "/services"
         },
         {
-          "title": "Great Ocean Road tours",
+          "title": "Team-building trips",
           "img": {
-            "src": "/assets/img/great-ocean-road-tour.jpg",
+            "src": "/assets/img/bus-stop.jpg",
             "alt": ""
           },
           "text": "See more →",
@@ -45,10 +45,10 @@
         }
       ],
       "image": {
-        "src": "/assets/img/ev-tours-wine-tour.webp",
-        "alt": "A scenic view of a winery"
+        "src": "/assets/img/ev-tours-corporate-conference.jpg",
+        "alt": "Looking down at a crowd of business people networking at a conference."
       },
-      "id": "tours"
+      "id": "corporate"
     },
     {
       "heading": "School transport",
@@ -90,12 +90,12 @@
       "id": "schools"
     },
     {
-      "heading": "Corporate charter",
-      "icon": "user-tie",
-      "text": "Make your next corporate event effortless and ensure that your staff arrive on-time and in comfort.",
+      "heading": "Airport transfer",
+      "icon": "plane",
+      "text": "Our reliable service ensures you arrive at the airport on time and stress-free, whether you're departing or arriving. Enjoy a smooth transition to and from the airport.",
       "subheadings": [
         {
-          "title": "Conferences",
+          "title": "Sports teams",
           "img": {
             "src": "/assets/img/bus-stop.jpg",
             "alt": ""
@@ -104,7 +104,7 @@
           "link": "/services"
         },
         {
-          "title": "Corporate events",
+          "title": "Hens and bucks groups",
           "img": {
             "src": "/assets/img/bus-stop.jpg",
             "alt": ""
@@ -113,7 +113,7 @@
           "link": "/services"
         },
         {
-          "title": "Team-building trips",
+          "title": "Corporate travel",
           "img": {
             "src": "/assets/img/bus-stop.jpg",
             "alt": ""
@@ -123,49 +123,10 @@
         }
       ],
       "image": {
-        "src": "/assets/img/ev-tours-corporate-conference.jpg",
-        "alt": "Looking down at a crowd of business people networking at a conference."
+        "src": "/assets/img/ev-tours-airport-transport.jpg",
+        "alt": ""
       },
-      "id": "corporate"
-    },
-    {
-      "heading": "Event transport",
-      "icon": "ticket",
-      "text": "For major events such as sporting events or festivals, we provide reliable charter services to get you there and back in comfort and style.",
-      "subheadings": [
-        {
-          "title": "Sporting events",
-          "img": {
-            "src": "/assets/img/bus-stop.jpg",
-            "alt": ""
-          },
-          "text": "See more →",
-          "link": "/services"
-        },
-        {
-          "title": "Music festivals",
-          "img": {
-            "src": "/assets/img/bus-stop.jpg",
-            "alt": ""
-          },
-          "text": "See more →",
-          "link": "/services"
-        },
-        {
-          "title": "Expos and trade shows",
-          "img": {
-            "src": "/assets/img/bus-stop.jpg",
-            "alt": ""
-          },
-          "text": "See more →",
-          "link": "/services"
-        }
-      ],
-      "image": {
-        "src": "/assets/img/melbourne-cbd.jpg",
-        "alt": "A view of the Melbourne CBD looking over the bridge"
-      },
-      "id": "events"
+      "id": "airport"
     },
     {
       "heading": "Special occasions",
@@ -207,12 +168,52 @@
       "id": "special"
     },
     {
-      "heading": "Airport transfer",
-      "icon": "plane",
-      "text": "Our reliable service ensures you arrive at the airport on time and stress-free, whether you're departing or arriving. Enjoy a smooth transition to and from the airport.",
+      "heading": "Scenic tours",
+      "icon": "image",
+      "text": "Explore Victoria’s iconic landscapes with our scenic tours, including options for winery, brewery, and Great Ocean Road tours.",
       "subheadings": [
         {
-          "title": "Sports teams",
+          "title": "Winery tours",
+          "img": {
+            "src": "/assets/img/winery-tour.jpg",
+            "alt": ""
+          },
+          "text": "See more →",
+          "link": "/services"
+        },
+        {
+          "title": "Brewery tours",
+          "img": {
+            "src": "/assets/img/brewery-tour.jpg",
+            "alt": ""
+          },
+          "text": "See more →",
+          "link": "/services"
+        },
+        {
+          "title": "Great Ocean Road tours",
+          "img": {
+            "src": "/assets/img/great-ocean-road-tour.jpg",
+            "alt": ""
+          },
+          "text": "See more →",
+          "link": "/services"
+        }
+      ],
+      "image": {
+        "src": "/assets/img/ev-tours-wine-tour.webp",
+        "alt": "A scenic view of a winery"
+      },
+      "id": "tours"
+    },
+
+    {
+      "heading": "Event transport",
+      "icon": "ticket",
+      "text": "For major events such as sporting events or festivals, we provide reliable charter services to get you there and back in comfort and style.",
+      "subheadings": [
+        {
+          "title": "Sporting events",
           "img": {
             "src": "/assets/img/bus-stop.jpg",
             "alt": ""
@@ -221,7 +222,7 @@
           "link": "/services"
         },
         {
-          "title": "Hens and bucks groups",
+          "title": "Music festivals",
           "img": {
             "src": "/assets/img/bus-stop.jpg",
             "alt": ""
@@ -230,7 +231,7 @@
           "link": "/services"
         },
         {
-          "title": "Corporate travel",
+          "title": "Expos and trade shows",
           "img": {
             "src": "/assets/img/bus-stop.jpg",
             "alt": ""
@@ -240,10 +241,10 @@
         }
       ],
       "image": {
-        "src": "/assets/img/ev-tours-airport-transport.jpg",
-        "alt": ""
+        "src": "/assets/img/melbourne-cbd.jpg",
+        "alt": "A view of the Melbourne CBD looking over the bridge"
       },
-      "id": "airport"
+      "id": "events"
     }
   ],
   "cta": {
