@@ -24,20 +24,8 @@
           "link": "/services/schools"
         },
         {
-          "name": "Airport Transfer",
-          "link": "/services/airport"
-        },
-        {
-          "name": "Special Occasions",
-          "link": "/services/special-occasions"
-        },
-        {
           "name": "Scenic Tours",
           "link": "/services/tours"
-        },
-        {
-          "name": "Event transport",
-          "link": "/services/events"
         }
       ]
     },
