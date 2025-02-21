@@ -51,7 +51,8 @@
   justify-content: center;
 }
 
-.btn-primary:hover {
+.btn-primary:hover,
+.btn-primary:focus {
   transition: filter 250ms;
   background-color: var(--azalea-300);
   border-color: var(--azalea-300);
@@ -88,7 +89,8 @@
   padding: 0.5rem 3rem;
 }
 
-.btn-secondary:hover {
+.btn-secondary:hover,
+.btn-secondary:focus {
   transition: filter 250ms;
   background-color: var(--azalea-200);
   border-color: var(--azalea-200);

@@ -12,9 +12,10 @@ footer .back-to-top .icon svg {
   animation: bounce 2s infinite;
 }
 
-footer .back-to-top .icon svg:hover {
+footer .back-to-top .icon svg:hover,
+footer .back-to-top .icon svg:focus {
   transition: filter 250ms;
-  filter: brightness(110%);
+  filter: brightness(90%);
 }
 
 footer .back-to-top .icon svg:active {

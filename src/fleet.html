@@ -40,12 +40,24 @@ description: Our fleet of buses offers comfort, safety, and reliability for your
   >
     {% for bus in fleet.buses %}
     <li>
-      <img
-        src="{{ bus.image.src }}"
-        alt="{{ bus.image.alt }}"
-        sizes="100vw"
-        loading="lazy"
-      />
+      <div
+        class="image-hover hover-target"
+        tabindex="0"
+      >
+        <img
+          src="{{ bus.exterior-image.src }}"
+          alt="{{ bus.exterior-image.alt }}"
+          sizes="100vw"
+          loading="lazy"
+        />
+        <img
+          src="{{ bus.interior-image.src }}"
+          alt="{{ bus.interior-image.alt }}"
+          sizes="100vw"
+          loading="lazy"
+          aria-hidden="true"
+        />
+      </div>
       <div class="heading">
         <h3>{{ bus.model }}</h3>
         <div class="capacity">

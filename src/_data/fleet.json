@@ -21,9 +21,13 @@
         { "icon": "bluetooth", "text": "Bluetooth" },
         { "icon": "music", "text": "3.5mm audio jack" }
       ],
-      "image": {
-        "src": "/assets/img/van.jpg",
-        "alt": "Replace this"
+      "exterior-image": {
+        "src": "/assets/img/van-exterior.jpg",
+        "alt": "Exterior of the van"
+      },
+      "interior-image": {
+        "src": "/assets/img/van-interior.webp",
+        "alt": "Interior of the van"
       }
     },
     {
@@ -35,9 +39,13 @@
         { "icon": "temperature-half", "text": "Heating" },
         { "icon": "bluetooth", "text": "Bluetooth" }
       ],
-      "image": {
-        "src": "/assets/img/rosa.webp",
-        "alt": "Replace this"
+      "exterior-image": {
+        "src": "/assets/img/minibus-exterior.webp",
+        "alt": "Exterior of the  minibus"
+      },
+      "interior-image": {
+        "src": "/assets/img/minibus-interior.webp",
+        "alt": "Interior of the minibus"
       }
     },
     {
@@ -49,9 +57,13 @@
         { "icon": "bluetooth", "text": "Bluetooth" },
         { "icon": "wheelchair", "text": "Ramp access" }
       ],
-      "image": {
-        "src": "/assets/img/low-floor.webp",
-        "alt": "Replace this"
+      "exterior-image": {
+        "src": "/assets/img/low-floor-exterior.webp",
+        "alt": "Exterior of the low floor bus"
+      },
+      "interior-image": {
+        "src": "/assets/img/low-floor-interior.webp",
+        "alt": "Interior of the low floor bus"
       }
     },
     {
@@ -66,9 +78,13 @@
         { "icon": "suitcase-rolling", "text": "Storage space" },
         { "icon": "tv", "text": "Television" }
       ],
-      "image": {
-        "src": "/assets/img/coach.webp",
-        "alt": "Replace this"
+      "exterior-image": {
+        "src": "/assets/img/coach-exterior.webp",
+        "alt": "Exterior of the coach"
+      },
+      "interior-image": {
+        "src": "/assets/img/coach-interior.webp",
+        "alt": "Interior of the coach"
       }
     }
   ],
