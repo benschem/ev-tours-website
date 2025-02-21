@@ -8,7 +8,7 @@ GENERAL
 [ ] Change "Review Boxes" section to white boxes and have a pink border and black writing.
 [X] Change ABN to our ACN 637 231 942 and add Accreditation no. AO 055193
 [ ] Add social media icons to the top of the page next to the phone number.
-[ ] Service types, please change the order to:
+[X] Service types, please change the order to:
 Charter
 Corporate
 School
@@ -17,7 +17,7 @@ Weddings
 Tours
 Event Transport
 
-[ ] Is it possible to take off dark mode from the site??
+[X] Is it possible to take off dark mode from the site??
 
 ABOUT US PAGE
 [ ] About us page and contact page both have the same video can we switch this up please?
