@@ -33,7 +33,7 @@ FLEET PAGE
 
 [X] Change dot points to little icons as mentioned in our meeting, make it look pretty.
 
-[ ] With each bus picture when hovering over them it displays a picture of the inside of the bus.
+[X] With each bus picture when hovering over them it displays a picture of the inside of the bus.
 (I've attached photos - Blue seats are the coach, Grey/Cream seats are the Van, other Cream seats Mini Bus 24 seater,
 You already have a pic of the inside of the low floor but we would like to change the outer AND coach outer also, see attached.)
 
