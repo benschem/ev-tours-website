@@ -46,17 +46,23 @@ description: Our fleet of buses offers comfort, safety, and reliability for your
         sizes="100vw"
         loading="lazy"
       />
-      <h3>{{ bus.model }}</h3>
+      <div class="heading">
+        <h3>{{ bus.model }}</h3>
+        <div class="capacity">
+          <p>Seats {{ bus.capacity }}</p>
+          {% include "icon.liquid", name: "person", class: "icon icon-sm pink", aria_hidden: true %}
+        </div>
+      </div>
+      <hr />
       <ul
         role="list"
         class="features"
       >
-        <li>
-          <p>Seats {{ bus.capacity }}</p>
-        </li>
         {% for feature in bus.features %}
         <li>
-          <p>{{ feature }}</p>
+          {% if feature.icon != "" %} {% include "icon.liquid", name: feature.icon, class: "icon icon-sm pink",
+          aria_hidden: true %} {% endif %}
+          <p>{{ feature.text }}</p>
         </li>
         {% endfor %}
       </ul>

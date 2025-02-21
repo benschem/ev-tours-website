@@ -20,9 +20,11 @@
 }
 
 .buses .features {
-  list-style: disc;
-  margin-inline-start: var(--space-md);
+  list-style: none;
+  padding-inline-start: 0px;
+  margin-inline-start: 0px;
   margin-block-end: var(--space-md);
+  padding-inline: var(--space-sm);
 }
 
 .buses > li {
@@ -36,6 +38,41 @@
   animation: slide-in-up 0.5s cubic-bezier(0.25, 0, 0.3, 1);
   animation-timeline: view();
   animation-range: entry;
+}
+
+.buses .heading {
+  margin-block-start: var(--space-sm);
+  padding: var(--space-sm);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.buses .heading h3 {
+  margin: 0;
+}
+.buses .heading .capacity {
+  display: flex;
+  align-items: center;
+}
+.buses .heading .capacity span {
+  margin-inline-start: var(--space-xs);
+}
+
+.buses hr {
+  border: 1px solid var(--color-primary);
+  opacity: 20%;
+  margin-block-end: var(--space-sm);
+}
+
+.buses .features > li > span {
+  justify-self: center;
+  align-self: center;
+  margin-inline-end: var(--space-sm);
+}
+
+.buses .features > li {
+  display: grid;
+  grid-template-columns: 1fr 7fr;
 }
 
 .buses > li img {

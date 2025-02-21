@@ -24,15 +24,15 @@ ABOUT US PAGE
 [ ] Change pink again on the "about section" so any sections like this please make a lighter pink.
 
 ALL SERVICES PAGE
-[ ] Where it says "Sporting" change it to Birthdays. (I'll get some new pics for this page)
+[X] Where it says "Sporting" change it to Birthdays. (I'll get some new pics for this page)
 
 FLEET PAGE
-[ ] Change Van to 11-12 seater
-[ ] Change Rosa to just MINI BUS and make it a 24 seater.
-[ ] Low Floor to 43 seater
-[ ] Coach remove "curtains" to mobile charge input or whatever sounds good.
+[X] Change Van to 11-12 seater
+[X] Change Rosa to just MINI BUS and make it a 24 seater.
+[X] Low Floor to 43 seater
+[X] Coach remove "curtains" to mobile charge input or whatever sounds good.
 
-[ ] Change dot points to little icons as mentioned in our meeting, make it look pretty.
+[X] Change dot points to little icons as mentioned in our meeting, make it look pretty.
 
 [ ] With each bus picture when hovering over them it displays a picture of the inside of the bus.
 (I've attached photos - Blue seats are the coach, Grey/Cream seats are the Van, other Cream seats Mini Bus 24 seater,

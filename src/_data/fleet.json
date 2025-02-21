@@ -13,13 +13,13 @@
   "buses": [
     {
       "model": "Van",
-      "capacity": "12",
+      "capacity": "11-12",
       "features": [
-        "Air conditioning",
-        "Heating",
-        "AUX",
-        "Bluetooth",
-        "Seatbelts"
+        { "icon": "seatbelt", "text": "Seatbelts" },
+        { "icon": "snowflake", "text": "Air conditioning" },
+        { "icon": "temperature-half", "text": "Heating" },
+        { "icon": "bluetooth", "text": "Bluetooth" },
+        { "icon": "music", "text": "3.5mm audio jack" }
       ],
       "image": {
         "src": "/assets/img/van.jpg",
@@ -27,13 +27,13 @@
       }
     },
     {
-      "model": "Rosa",
-      "capacity": "26",
+      "model": "Mini Bus",
+      "capacity": "24",
       "features": [
-        "Air conditioning",
-        "Heating",
-        "Bluetooth",
-        "Seatbelts"
+        { "icon": "seatbelt", "text": "Seatbelts" },
+        { "icon": "snowflake", "text": "Air conditioning" },
+        { "icon": "temperature-half", "text": "Heating" },
+        { "icon": "bluetooth", "text": "Bluetooth" }
       ],
       "image": {
         "src": "/assets/img/rosa.webp",
@@ -44,10 +44,10 @@
       "model": "Low Floor",
       "capacity": "43",
       "features": [
-        "Air conditioning",
-        "Heating",
-        "Bluetooth",
-        "Ramp access"
+        { "icon": "snowflake", "text": "Air conditioning" },
+        { "icon": "temperature-half", "text": "Heating" },
+        { "icon": "bluetooth", "text": "Bluetooth" },
+        { "icon": "wheelchair", "text": "Ramp access" }
       ],
       "image": {
         "src": "/assets/img/low-floor.webp",
@@ -58,13 +58,13 @@
       "model": "Coach",
       "capacity": "57",
       "features": [
-        "Air conditioning",
-        "Heating",
-        "Bluetooth",
-        "Seatbelts",
-        "Curtains",
-        "Storage space",
-        "Television"
+        { "icon": "seatbelt", "text": "Seatbelts" },
+        { "icon": "snowflake", "text": "Air conditioning" },
+        { "icon": "temperature-half", "text": "Heating" },
+        { "icon": "bluetooth", "text": "Bluetooth" },
+        { "icon": "battery-full", "text": "Phone chargers" },
+        { "icon": "suitcase-rolling", "text": "Storage space" },
+        { "icon": "tv", "text": "Television" }
       ],
       "image": {
         "src": "/assets/img/coach.webp",
