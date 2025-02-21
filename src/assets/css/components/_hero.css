@@ -1,3 +1,8 @@
+/* Usage: */
+/* section.hero lines */
+/*  div.copy */
+/*  div.visual */
+
 .hero {
   --header-height: calc(var(--header-img-height) + var(--header-padding));
 

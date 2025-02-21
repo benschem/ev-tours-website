@@ -76,12 +76,12 @@
 
 .btn-secondary {
   color: var(--body-color);
+  background-color: var(--white);
   display: inline-flex;
   /* flex-shrink: 1; */
   justify-content: center;
   text-align: center;
   max-width: 160px;
-  /* background-color: var(--white); */
   /* background-color: var(--color-primary-light); */
   border: 0.25rem solid var(--color-primary);
   border-radius: var(--rounded-3xl);

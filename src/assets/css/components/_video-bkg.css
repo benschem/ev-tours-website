@@ -1,0 +1,51 @@
+.video-bkg {
+  --header-height: calc(var(--header-img-height) + var(--header-padding));
+
+  min-height: calc(100svh - var(--header-height));
+
+  padding: 0;
+  display: grid;
+  place-items: center;
+}
+
+.video-bkg > * {
+  grid-area: 1 / 1;
+}
+
+@media screen and (width < 1024px) {
+  .video-bkg {
+    min-height: unset;
+  }
+}
+
+.video-bkg video {
+  border-radius: 0px;
+}
+
+.video-bkg .foreground {
+  max-width: 1000px;
+  max-height: max-content;
+  z-index: 1;
+}
+
+.video-bkg .foreground h1,
+.video-bkg .foreground p {
+  color: var(--white);
+  text-shadow: 1px 1px var(--black);
+}
+
+.video-bkg .foreground .buttons {
+  margin-block-start: var(--space-md);
+}
+
+.video-bkg .background {
+  width: 100%;
+  height: 100%;
+}
+
+.video-bkg .background video {
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
