@@ -6,19 +6,26 @@ document.addEventListener("DOMContentLoaded", function () {
   const items = document.querySelectorAll(".carousel li");
   const scrollAmount = items[0].offsetWidth + 16; // Adjust for gap
 
+  function updateActiveDot() {
+    const scrollLeft = carousel.scrollLeft;
+    const maxScrollLeft = carousel.scrollWidth - carousel.clientWidth;
+    let index = Math.round(scrollLeft / scrollAmount);
+
+    // Ensure index doesn't exceed the last item
+    if (scrollLeft >= maxScrollLeft) {
+      index = dots.length - 1;
+    }
+
+    dots.forEach((dot, i) => dot.classList.toggle("active", i === index));
+  }
+
   leftButton.addEventListener("click", () => {
     carousel.scrollBy({ left: -scrollAmount, behavior: "smooth" });
   });
 
   rightButton.addEventListener("click", () => {
-    carousel.scrollBy({ top: 0, left: scrollAmount, behavior: "smooth" });
+    carousel.scrollBy({ left: scrollAmount, behavior: "smooth" });
   });
-
-  function updateActiveDot() {
-    const scrollLeft = carousel.scrollLeft;
-    let index = Math.round(scrollLeft / scrollAmount);
-    dots.forEach((dot, i) => dot.classList.toggle("active", i === index));
-  }
 
   dots.forEach((dot, i) => {
     dot.addEventListener("click", () => {
@@ -27,5 +34,5 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   carousel.addEventListener("scroll", updateActiveDot);
-  updateActiveDot();
+  updateActiveDot(); // Set initial state
 });
