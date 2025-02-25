@@ -254,3 +254,21 @@ header .nav-cta {
     display: flex;
   }
 }
+
+@media screen and (orientation: landscape) and (height < 600px) {
+  .mobile-menu > ul {
+    overflow: scroll;
+    padding-block-start: 200px;
+    padding-block-end: 150px;
+  }
+  .mobile-menu > ul > li {
+    padding: var(--space-xs);
+  }
+  .mobile-menu .sublink {
+    margin-block-start: var(--space-xs);
+    padding: var(--space-xxs);
+  }
+  .mobile-menu .submenu {
+    margin-block-start: var(--space-xs);
+  }
+}
