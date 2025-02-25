@@ -54,8 +54,13 @@
   cursor: pointer;
   box-shadow: var(--shadow-md);
   transform: translate(0, -2px);
-  transition: filter 250ms;
-  filter: brightness(102%);
+  transition: background-color 250ms;
+  background-color: var(--azalea-100);
+}
+
+.sp-card span:hover svg {
+  transition: fill 250ms;
+  fill: var(--azalea-300);
 }
 
 @media screen and (width > 950px) {
@@ -195,6 +200,11 @@ section.side-by-side {
   text-align: center;
   border-radius: var(--rounded-3xl);
   box-shadow: var(--shadow-md);
+}
+
+.side-by-side .content li a:hover {
+  transition: background-color 250ms;
+  background-color: var(--azalea-100);
 }
 
 .side-by-side .content li a picture {

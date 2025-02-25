@@ -38,8 +38,13 @@
   cursor: pointer;
   box-shadow: var(--shadow-md);
   transform: translate(0, -2px);
-  transition: filter 250ms;
-  filter: brightness(102%);
+  transition: background-color 250ms;
+  background-color: var(--azalea-100);
+}
+
+.card-clickable:hover svg {
+  transition: fill 250ms;
+  fill: var(--azalea-300);
 }
 
 .card-clickable:active {

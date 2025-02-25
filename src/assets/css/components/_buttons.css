@@ -53,7 +53,7 @@
 
 .btn-primary:hover,
 .btn-primary:focus {
-  transition: filter 250ms;
+  transition: background-color 250ms;
   background-color: var(--azalea-300);
   border-color: var(--azalea-300);
   box-shadow: var(--shadow-md);
