@@ -19,17 +19,19 @@
   align-items: center;
 }
 
-@media screen and (width < 1024px) {
+@media screen and (height > 768px) {
   .hero {
-    min-height: unset;
     padding-inline: var(--space-xl);
     padding-block: var(--space-lg);
   }
 }
 
-@media screen and (height > 768px) {
+@media screen and (width < 1024px) {
   .hero {
-    padding-inline: var(--space-xl);
+    flex-direction: column-reverse;
+    min-height: unset;
+    padding-inline: var(--space-sm);
+    margin-inline: auto;
     padding-block: var(--space-lg);
   }
 }
@@ -65,7 +67,7 @@
 .hero .visual picture,
 .hero .visual video {
   width: 100%;
-  max-width: 1280px;
+  max-width: 800px;
   /* object-fit: cover; */
   /* object-position: center; */
 }

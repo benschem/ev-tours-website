@@ -189,31 +189,41 @@ description: "Experience hassle-free, reliable transport with EV Tours & Charter
     true %} {% include "icon.liquid", name: "star", class: "icon icon-md pink", aria_hidden: true %}
   </div>
   <h2 id="carouselheading">Don't just take our word for it. Take theirs!</h2>
-  <div
-    class="carousel"
-    aria-labelledby="carouselheading"
-  >
+  <div class="carousel-wrapper">
     <button
-      class="btn control"
-      id="control-left"
+      class="btn control left"
       aria-label="Scroll left"
     >
       {% include "icon.liquid", name: "chevron-left", class: "icon icon-sm pink", aria_hidden: false %}
     </button>
-    <ul role="list">
-      {% for testimonial in home.testimonials %}
-      <li>
-        <p>“{{ testimonial }}”</p>
-      </li>
-      {% endfor %}
-    </ul>
+
+    <div
+      class="carousel"
+      aria-labelledby="carouselheading"
+    >
+      <ul role="list">
+        {% for testimonial in home.testimonials %}
+        <li>
+          <p>“{{ testimonial }}”</p>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+
     <button
-      class="btn control"
-      id="control-right"
+      class="btn control right"
       aria-label="Scroll right"
     >
       {% include "icon.liquid", name: "chevron-right", class: "icon icon-sm pink", aria_hidden: false %}
     </button>
+  </div>
+  <div class="carousel-indicators">
+    {% for testimonial in home.testimonials %}
+    <button
+      class="dot"
+      aria-label="Go to testimonial {{ forloop.index }}"
+    ></button>
+    {% endfor %}
   </div>
 </section>
 
