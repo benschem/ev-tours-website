@@ -4,7 +4,39 @@ title: School Charter Services | Safe & Reliable Transport for Students
 description: EV Tours & Charter offers reliable and safe school charter services, from daily routes to excursions and camps. Our family-owned business ensures your students travel in comfort with our personalised and friendly service, every time.
 ---
 
-<section class="lines">
-  <h1>School charter</h1>
-  <p>TODO</p>
+<section class="schools video-bkg">
+  <div class="foreground">
+    <h1>{{ schools.hero.heading }}</h1>
+    <p>{{ schools.hero.content }}</p>
+  </div>
+  <div class="background">
+  </div>
 </section>
+
+{% for section in schools.sections %}
+<section class="schools hero lines">
+  <div class="copy">
+    <h2>{{ section.heading }}</h2>
+    <p>{{ section.content }}</p>
+    <div class="buttons">
+      <a
+      href="{{ about.cta.buttons.primary.link }}"
+      class="btn btn-primary"
+      >{{ about.cta.buttons.primary.text }}</a
+      >
+      <a
+      href="{{ about.cta.buttons.primary.link }}"
+      class="btn btn-secondary"
+      >{{ about.cta.buttons.primary.text }}</a
+      >
+    </div>
+  </div>
+  <div class="visual">
+    <img
+      src="{{ about.cta.img.src }}"
+      alt="{{ about.cta.img.alt }}"
+      sizes="100vw"
+      loading="lazy"
+    />
+</section>
+{% endfor %}

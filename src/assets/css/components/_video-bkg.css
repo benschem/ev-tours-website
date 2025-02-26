@@ -29,6 +29,9 @@
   max-width: max-content;
   max-height: max-content;
   z-index: 1;
+  background: rgba(63, 63, 70, 0.7);
+  padding: var(--space-md);
+  border-radius: var(--rounded-3xl);
 }
 
 .video-bkg .foreground h1,
@@ -37,6 +40,9 @@
   text-shadow: 1px 1px var(--black);
 }
 
+.video-bkg .foreground h1 {
+  max-width: 50ch;
+}
 .video-bkg .foreground p {
   max-width: 70ch;
 }
@@ -59,14 +65,15 @@
 
 @media screen and (width < 1024px) {
   .video-bkg .foreground {
-    padding-inline: var(--space-xl);
-    padding-block: var(--space-lg);
+    margin-inline: var(--space-xl);
+    margin-block: var(--space-lg);
   }
 }
 @media screen and (width < 500px) {
   .video-bkg .foreground {
-    padding-inline: var(--space-sm);
-    padding-block: var(--space-2xl);
+    padding: var(--space-sm);
+    margin-inline: var(--space-sm);
+    margin-block: var(--space-2xl);
   }
 }
 @media screen and (height < 500px) {
@@ -74,7 +81,7 @@
     height: unset;
   }
   .video-bkg .foreground {
-    padding-inline: var(--space-sm);
-    padding-block: var(--space-2xl);
+    margin-inline: var(--space-sm);
+    margin-block: var(--space-2xl);
   }
 }
