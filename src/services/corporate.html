@@ -26,7 +26,7 @@ description: At EV Tours & Charter, we provide flexible, professional transport 
 </section>
 
 {% for section in corporate.sections %}
-<section class="corporate hero lines">
+<section class="corporate hero lines" id="{{ section.id }}">
   <div class="copy">
     <h2>{{ section.heading }}</h2>
     <p>{{ section.content }}</p>

@@ -40,7 +40,7 @@ description: Explore our range of bus charter services, including school transpo
     <li class="sp-card">
       {% if service.icon != "" %}
       <a
-        href="#{{ service.id }}"
+        href="/services#{{ service.id }}"
         aria-label="{{ service.heading }}"
       >
         {% include "icon.liquid", name: service.icon, class: "icon icon-lg pink sp-card-icon", aria_hidden: true %}
@@ -53,17 +53,17 @@ description: Explore our range of bus charter services, including school transpo
 </section>
 
 {% for service in services.services %}
-<section class="side-by-side">
+<section
+  class="side-by-side"
+  id="{{ service.id }}"
+>
   <img
     src="{{ service.image.src }}"
     alt="{{ service.image.alt }}"
     sizes="100vw"
     loading="lazy"
   />
-  <div
-    class="content lines"
-    id="{{ service.id }}"
-  >
+  <div class="content lines">
     <h2>{{ service.heading }}</h2>
     <p>{{ service.text }}</p>
     {% if service.subheadings %}

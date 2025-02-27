@@ -1,6 +1,6 @@
 {
   "hero": {
-    "heading": "Tours and charter hire",
+    "heading": "Tours and Charter Hire",
     "subheading": "Our services",
     "text": [
       "Need reliable transport? We’re here to help! Our dedicated team is committed to making your journey seamless and enjoyable, providing exceptional service every step of the way."
@@ -22,8 +22,8 @@
             "src": "/assets/img/bus-stop.jpg",
             "alt": ""
           },
-          "text": "See more →",
-          "link": "/services"
+          "text": "Conference transport →",
+          "link": "/services/corporate#conference-transport"
         },
         {
           "title": "Corporate events",
@@ -31,8 +31,8 @@
             "src": "/assets/img/bus-stop.jpg",
             "alt": ""
           },
-          "text": "See more →",
-          "link": "/services"
+          "text": "Event transport →",
+          "link": "/services/corporate#event-transport"
         },
         {
           "title": "Team-building trips",
@@ -40,8 +40,8 @@
             "src": "/assets/img/bus-stop.jpg",
             "alt": ""
           },
-          "text": "See more →",
-          "link": "/services"
+          "text": "Team-building transport →",
+          "link": "/services/corporate#team-building-trip-transport"
         }
       ],
       "image": {
