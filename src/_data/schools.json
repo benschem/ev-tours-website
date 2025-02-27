@@ -1,0 +1,40 @@
+{
+  "hero": {
+    "heading": "School charter",
+    "content": "We’re proud to offer reliable and efficient school bus charter services that cover all your transportation needs. With a team of friendly local drivers who know the routes like the back of their hand, we ensure a safe, comfortable, and hassle-free ride for both students and staff."
+  },
+  "sections": [
+    {
+      "heading": "School swimming",
+      "content": "Heading to a swim meet? We’ve got you covered! Our fleet of buses, ranging from 11 to 57 seats, ensures that all students travel comfortably and arrive on time.",
+      "image": {
+        "src": "/assets/img/sunset-bus-ev-tours.jpg",
+        "alt": "TODO"
+      }
+    },
+    {
+      "heading": "School sports",
+      "content": "From local tournaments to out-of-town matches, our buses are ready to transport sports teams and their supporters. Leave the parking and logistics to us, so you can focus on the game.",
+      "image": {
+        "src": "/assets/img/sunset-bus-ev-tours.jpg",
+        "alt": "TODO"
+      }
+    },
+    {
+      "heading": "School camps",
+      "content": "Planning a camping trip or excursion? Our spacious buses are perfect for hauling all the gear, and our skilled drivers will ensure a smooth and safe journey for everyone involved.",
+      "image": {
+        "src": "/assets/img/sunset-bus-ev-tours.jpg",
+        "alt": "TODO"
+      }
+    },
+    {
+      "heading": "School excursions",
+      "content": "Educational trips are a vital part of learning. We provide reliable and safe transportation to all kinds of destinations, from museums to historical landmarks, ensuring a stress-free experience for your school.",
+      "image": {
+        "src": "/assets/img/sunset-bus-ev-tours.jpg",
+        "alt": "TODO"
+      }
+    }
+  ]
+}

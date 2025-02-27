@@ -31,6 +31,7 @@
 }
 
 .card-clickable > a {
+  -webkit-tap-highlight-color: transparent;
   text-decoration: none;
 }
 
