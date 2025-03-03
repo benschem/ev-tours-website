@@ -1,6 +1,5 @@
 .buttons {
   display: flex;
-  /* flex-wrap: wrap; */
   gap: var(--space-sm);
 }
 
@@ -39,7 +38,6 @@
 }
 
 .btn-primary {
-  /* text-align: center; */
   background-color: var(--color-primary);
   color: var(--black);
   border: 0.25rem solid var(--color-primary);
@@ -47,7 +45,6 @@
   padding: 0.5rem 3rem;
   width: 160px;
   display: inline-flex;
-  /* flex-shrink: 1; */
   justify-content: center;
 }
 
@@ -61,25 +58,15 @@
 }
 
 .btn-primary:active {
-  /* TODO */
   box-shadow: none;
-  transform: translate(0, 2px);
-}
-
-#dark-mode-toggle {
-  min-width: 20px;
-}
-
-#dark-mode-toggle:active {
-  /* TODO */
-  box-shadow: none;
-  transform: translate(0, 2px);
+  transition: 250ms;
+  transform: translate(0, 1px);
+  transform: scale(0.95);
 }
 
 .btn-secondary {
   color: var(--body-color);
   display: inline-flex;
-  /* flex-shrink: 1; */
   justify-content: center;
   text-align: center;
   width: 160px;
@@ -99,7 +86,8 @@
 }
 
 .btn-secondary:active {
-  /* TODO */
   box-shadow: none;
-  transform: translate(0, 2px);
+  transition: 250ms;
+  transform: translate(0, 1px);
+  transform: scale(0.95);
 }

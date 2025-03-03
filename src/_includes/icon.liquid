@@ -4,6 +4,7 @@
   {% include "icon.liquid", name: "sun", class: "icon icon-sm", aria_hidden: true %}
 {% endcomment %}
 
+{% if name | append: ".svg" | svgFileExists %}
 <span
   {% if id %} id="{{ id }}" {% endif %}
   class="{{ class }}"
@@ -12,5 +13,4 @@
 >
   {% include "icons/{{ name | escape }}.svg" %}
 </span>
-
-{% comment %} TODO - stop this breaking if svg file does not exist {% endcomment %}
+{% endif %}

@@ -23,6 +23,11 @@ module.exports = function (eleventyConfig) {
     }
   });
 
+  eleventyConfig.addFilter("svgFileExists", function (fileName) {
+    const filePath = path.join(__dirname, "src/_includes/icons", fileName);
+    return fs.existsSync(filePath);
+  });
+
   // CSS Pipeline
   // ||- Bundling
   // ||- Prefixing
