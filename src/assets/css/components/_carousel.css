@@ -33,13 +33,11 @@
   scroll-snap-align: start;
   width: 300px;
   min-height: 150px;
-  padding: var(--space-sm);
-  background: var(--white);
-  border-radius: var(--border-radius);
 }
 
 .carousel li p {
-  padding: 1rem;
+  text-align: center;
+  /* padding: 1rem; */
 }
 
 .control {

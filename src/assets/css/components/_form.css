@@ -166,6 +166,13 @@ form button {
 }
 
 /* if using cloufdlare turnstile - not needed on netlify with recaptcha */
-#turnstile {
+/* #turnstile {
   justify-content: center;
+} */
+
+.form input[type="time"],
+.form input[type="date"] {
+  min-height: 3rem;
+  line-height: 3rem;
+  width: 100%;
 }

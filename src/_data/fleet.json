@@ -1,6 +1,6 @@
 {
   "hero": {
-    "heading": "Our fleet",
+    "heading": "Our Fleet",
     "text": [
       "From comfortable minibuses for intimate group outings to spacious coaches for larger events, each vehicle is equipped with modern amenities to ensure a smooth and enjoyable ride.",
       "No matter the occasion, our fleet is ready to take you wherever you need to go!"
@@ -19,7 +19,7 @@
         { "icon": "snowflake", "text": "Air conditioning" },
         { "icon": "temperature-half", "text": "Heating" },
         { "icon": "bluetooth", "text": "Bluetooth" },
-        { "icon": "music", "text": "3.5mm audio jack" }
+        { "icon": "music", "text": "AUX Connection" }
       ],
       "exterior-image": {
         "src": "/assets/img/van-exterior.jpg",
