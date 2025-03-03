@@ -1,7 +1,22 @@
 {
   "hero": {
-    "heading": "Proudly Family Owned",
-    "text": "EV Tours & Charter is a family business run by dad and daughter team John and Elyce, who are dedicated to providing you with exceptional transport experiences tailored to your needs."
+    "h1": "Proudly Family Owned",
+    "p": "EV Tours & Charter is a family business run by dad and daughter team John and Elyce, who are dedicated to providing you with exceptional transport experiences tailored to your needs.",
+    "buttons": {
+      "primary": {
+        "text": "Our story",
+        "link": "#our-story"
+      },
+      "secondary": {
+        "text": "Why us",
+        "link": "#why-us"
+      }
+    },
+    "video": {
+      "src": "/assets/video/ev-tours-charter-about.mp4",
+      "poster": "/assets/video/ev-tours-charter-about.jpg",
+      "fallback": "/assets/video/ev-tours-charter-about.jpg"
+    }
   },
   "story": {
     "heading": "Our story",
@@ -82,7 +97,7 @@
     },
     "buttons": {
       "primary": {
-        "link": "/contact#form",
+        "link": "/contact#enquiry",
         "text": "Book now"
       },
       "secondary": {

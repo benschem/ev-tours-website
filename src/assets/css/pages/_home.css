@@ -166,6 +166,7 @@
   border-radius: var(--rounded-3xl);
   padding: var(--space-md);
   min-width: 250px;
+  box-shadow: var(--shadow-md);
 }
 
 .testimonials .stars {

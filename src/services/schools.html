@@ -6,15 +6,27 @@ description: EV Tours & Charter offers reliable and safe school charter services
 
 <section class="schools video-bkg">
   <div class="foreground">
-    <h1>{{ schools.hero.heading }}</h1>
-    <p>{{ schools.hero.content }}</p>
+    <h1>{{ schools.hero.h1 }}</h1>
+    <p>{{ schools.hero.p }}</p>
+    <div class="buttons">
+      <a
+      href="{{ schools.hero.buttons.primary.link }}"
+      class="btn btn-primary"
+      >{{ schools.hero.buttons.primary.text }}</a
+      >
+      <a
+      href="{{ schools.hero.buttons.secondary.link }}"
+      class="btn btn-secondary"
+      >{{ schools.hero.buttons.secondary.text }}</a
+      >
+    </div>
   </div>
   <div class="background">
   </div>
 </section>
 
 {% for section in schools.sections %}
-<section class="schools hero lines">
+<section class="schools hero lines" id="{{ section.id }}">
   <div class="copy">
     <h2>{{ section.heading }}</h2>
     <p>{{ section.content }}</p>
@@ -40,3 +52,10 @@ description: EV Tours & Charter offers reliable and safe school charter services
     />
 </section>
 {% endfor %}
+
+<section
+  class="lines"
+  id="quote"
+>
+  TODO: put a form here
+</section>

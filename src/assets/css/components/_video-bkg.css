@@ -26,7 +26,7 @@
 
 .video-bkg .foreground {
   position: absolute;
-  max-width: max-content;
+  max-width: 700px;
   max-height: max-content;
   z-index: 1;
   background: rgba(63, 63, 70, 0.7);
@@ -40,12 +40,12 @@
   text-shadow: 1px 1px var(--black);
 }
 
-.video-bkg .foreground h1 {
+/* .video-bkg .foreground h1 {
   max-width: 50ch;
 }
 .video-bkg .foreground p {
   max-width: 70ch;
-}
+} */
 
 .video-bkg .foreground .buttons {
   margin-block-start: var(--space-md);

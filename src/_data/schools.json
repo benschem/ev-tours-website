@@ -1,10 +1,21 @@
 {
   "hero": {
-    "heading": "School Charter",
-    "content": "We’re proud to offer reliable and efficient school bus charter services that cover all your transportation needs. With a team of friendly local drivers who know the routes like the back of their hand, we ensure a safe, comfortable, and hassle-free ride for both students and staff."
+    "h1": "School Charter",
+    "p": "We’re proud to offer reliable and efficient school bus charter services that cover all your transportation needs. With a team of friendly local drivers who know the routes like the back of their hand, we ensure a safe, comfortable, and hassle-free ride for both students and staff.",
+    "buttons": {
+      "primary": {
+        "text": "Get a quote",
+        "link": "#quote"
+      },
+      "secondary": {
+        "text": "All services",
+        "link": "/services"
+      }
+    }
   },
   "sections": [
     {
+      "id": "swimming",
       "heading": "School swimming",
       "content": "Heading to a swim meet? We’ve got you covered! Our fleet of buses, ranging from 11 to 57 seats, ensures that all students travel comfortably and arrive on time.",
       "image": {
@@ -13,6 +24,7 @@
       }
     },
     {
+      "id": "sports",
       "heading": "School sports",
       "content": "From local tournaments to out-of-town matches, our buses are ready to transport sports teams and their supporters. Leave the parking and logistics to us, so you can focus on the game.",
       "image": {
@@ -21,6 +33,7 @@
       }
     },
     {
+      "id": "camps",
       "heading": "School camps",
       "content": "Planning a camping trip or excursion? Our spacious buses are perfect for hauling all the gear, and our skilled drivers will ensure a smooth and safe journey for everyone involved.",
       "image": {
@@ -29,6 +42,7 @@
       }
     },
     {
+      "id": "excursions",
       "heading": "School excursions",
       "content": "Educational trips are a vital part of learning. We provide reliable and safe transportation to all kinds of destinations, from museums to historical landmarks, ensuring a stress-free experience for your school.",
       "image": {

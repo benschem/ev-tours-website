@@ -1,10 +1,22 @@
 {
   "hero": {
-    "heading": "Our Fleet",
-    "text": [
-      "From comfortable minibuses for intimate group outings to spacious coaches for larger events, each vehicle is equipped with modern amenities to ensure a smooth and enjoyable ride.",
-      "No matter the occasion, our fleet is ready to take you wherever you need to go!"
-    ]
+    "h1": "Our Fleet",
+    "p": "From comfortable minibuses for intimate group outings to spacious coaches for larger events, each vehicle is equipped with modern amenities to ensure a smooth and enjoyable ride. No matter the occasion, our fleet is ready to take you wherever you need to go!",
+    "buttons": {
+      "primary": {
+        "text": "Explore vehicles",
+        "link": "#vehicles"
+      },
+      "secondary": {
+        "text": "Travel Safety",
+        "link": "#safety"
+      }
+    },
+    "video": {
+      "src": "/assets/video/ev-tours-charter-fleet.mp4",
+      "poster": "/assets/video/ev-tours-charter-fleet.jpg",
+      "fallback": "/assets/video/ev-tours-charter-fleet.jpg"
+    }
   },
   "vehicles": {
     "heading": "Vehicles",
@@ -131,7 +143,7 @@
     },
     "buttons": {
       "primary": {
-        "link": "/contact#form",
+        "link": "/contact#enquiry",
         "text": "Book now"
       },
       "secondary": {

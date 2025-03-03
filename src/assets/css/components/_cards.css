@@ -15,6 +15,7 @@
 }
 
 .card {
+  box-shadow: var(--shadow-md);
   padding: var(--space-md);
   border-radius: var(--rounded-3xl);
   background-color: var(--color-primary-light);
@@ -37,7 +38,7 @@
 
 .card-clickable:hover {
   cursor: pointer;
-  box-shadow: var(--shadow-md);
+  box-shadow: var(--shadow-lg);
   transform: translate(0, -2px);
   transition: background-color 250ms;
   background-color: var(--azalea-100);

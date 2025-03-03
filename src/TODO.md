@@ -14,7 +14,8 @@ INDEX
 [ ] Get more testimonials from past emails/fb/etc
 
 SERVICES
-[ ] Check all cards are linked correctly
+[X] Check all cards are linked correctly
+[ ] cards that don't link anywhere shouldn't be links or have hover state
 
 CONTACT
 [X] Edit and add new video for Contact page

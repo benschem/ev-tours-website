@@ -46,11 +46,12 @@
   width: 160px;
   display: inline-flex;
   justify-content: center;
+  box-shadow: var(--shadow-sm);
 }
 
 .btn-primary:hover,
 .btn-primary:focus {
-  transition: background-color 250ms;
+  transition: 250ms;
   background-color: var(--azalea-300);
   border-color: var(--azalea-300);
   box-shadow: var(--shadow-md);
@@ -74,13 +75,14 @@
   border: 0.25rem solid var(--azalea-100);
   border-radius: var(--rounded-3xl);
   padding: 0.5rem 3rem;
+  box-shadow: var(--shadow-sm);
 }
 
 .btn-secondary:hover,
 .btn-secondary:focus {
   transition: filter 250ms;
-  background-color: var(--azalea-200);
-  border-color: var(--azalea-200);
+  background-color: var(--azalea-50);
+  border-color: var(--azalea-50);
   box-shadow: var(--shadow-md);
   transform: translate(0, -2px);
 }

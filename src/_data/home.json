@@ -1,7 +1,7 @@
 {
   "hero": {
     "heading": "Exceptional Bus Tours and Charter",
-    "caption": "Hassle-free, reliable bus transport across Victoria and interstate.",
+    "caption": "Hassle-free, reliable bus transport across Victoria and interstate. A family-run business dedicated to providing you with exceptional transport experiences",
     "image": {
       "src": "/assets/img/ev-tours-charter-family-business.jpg",
       "alt": "Elyce at the window of one of her buses smiling at her dad."
@@ -9,7 +9,7 @@
     "buttons": {
       "primary": {
         "text": "Book now",
-        "link": "/contact#form"
+        "link": "/contact#enquiry"
       },
       "secondary": {
         "text": "Enquire",
@@ -120,7 +120,7 @@
     "buttons": {
       "primary": {
         "text": "Book now",
-        "link": "/contact#form"
+        "link": "/contact#enquiry"
       },
       "secondary": {
         "text": "About us",

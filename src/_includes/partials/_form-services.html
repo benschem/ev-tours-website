@@ -1,0 +1,130 @@
+<form
+  method="POST"
+  autocomplete="on"
+  class="form"
+  name="form"
+  data-netlify="true"
+  data-netlify-recaptcha="true"
+>
+  <fieldset>
+    <div class="form-items">
+      <div>
+        <label
+          id="firstNameLabel"
+          for="firstName"
+          >First Name *</label
+        >
+        <span aria-live="polite"></span>
+        <input
+          type="text"
+          id="firstName"
+          name="firstName"
+          aria-label="First Name"
+          aria-labelledby="firstNameLabel"
+          required
+          minlength="2"
+          pattern="^[a-zA-Z ]*$"
+        />
+        <span aria-live="polite"></span>
+      </div>
+      <div>
+        <label
+          id="lastNameLabel"
+          for="lastName"
+          >Last Name *</label
+        >
+        <span aria-live="polite"></span>
+        <input
+          type="text"
+          id="lastName"
+          name="lastName"
+          aria-label="Last Name"
+          aria-labelledby="lastNameLabel"
+          required
+          minlength="2"
+          pattern="^[a-zA-Z ]*$"
+        />
+        <span aria-live="polite"></span>
+      </div>
+    </div>
+
+    <div class="form-items">
+      <div>
+        <label
+          id="emailLabel"
+          for="email"
+          >Email Address *</label
+        >
+        <span aria-live="polite"></span>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          aria-label="Email Address"
+          aria-labelledby="emailLabel"
+          required
+          minlength="5"
+        />
+        <span aria-live="polite"></span>
+      </div>
+
+      <div>
+        <label
+          id="mobileLabel"
+          for="mobile"
+          >Mobile Number *</label
+        >
+        <span aria-live="polite"></span>
+        <input
+          type="tel"
+          id="mobile"
+          name="mobile"
+          aria-label="Mobile Number"
+          aria-labelledby="mobileLabel"
+          required
+          minlength="10"
+          pattern="^\s*\+?[0-9\s]*\s*$"
+        />
+        <span aria-live="polite"></span>
+      </div>
+    </div>
+  </fieldset>
+  <fieldset>
+    <div>
+      <label
+        id="itineraryLabel"
+        for="itinerary"
+        >What service do you need? *</label
+      >
+      <span
+        aria-live="polite"
+        class="bump-up"
+      ></span>
+      <textarea
+        id="itinerary"
+        name="itinerary"
+        rows=2"
+        aria-label="Itinerary"
+        aria-labelledby="itineraryLabel"
+        required
+        minlength="10"
+        maxlength="600"
+      ></textarea>
+      <span aria-live="polite"></span>
+    </div>
+  </fieldset>
+  <div class="widget">
+    <div data-netlify-recaptcha="true"></div>
+    <!-- <div
+      id="cf-turnstile"
+      data-sitekey="1x00000000000000000000AA"
+    ></div> -->
+  </div>
+  <button
+    type="submit"
+    id="formSubmitBtn"
+    class="btn btn-primary"
+  >
+    Submit
+  </button>
+</form>

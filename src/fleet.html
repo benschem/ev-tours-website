@@ -6,15 +6,25 @@ description: Our fleet of buses offers comfort, safety, and reliability for your
 
 <section class="video-bkg">
   <div class="foreground">
-    <h1>{{ fleet.hero.heading }}</h1>
-    {% for paragraph in fleet.hero.text %}
-    <p>{{ paragraph }}</p>
-    {% endfor %}
+    <h1>{{ fleet.hero.h1 }}</h1>
+    <p>{{ fleet.hero.p }}</p>
+    <div class="buttons">
+      <a
+        href="{{ fleet.hero.buttons.primary.link }}"
+        class="btn btn-primary"
+        >{{ fleet.hero.buttons.primary.text }}</a
+      >
+      <a
+        href="{{ fleet.hero.buttons.secondary.link }}"
+        class="btn btn-secondary"
+        >{{ fleet.hero.buttons.secondary.text }}</a
+      >
+    </div>
   </div>
   <div class="background">
     <video
-      src="/assets/video/ev-tours-charter-fleet.mp4"
-      poster="/assets/video/ev-tours-charter-fleet.jpg"
+      src="{{ fleet.hero.video.src }}"
+      poster="{{ fleet.hero.video.poster }}"
       loading="lazy"
       type="video/mp4"
       muted
@@ -24,7 +34,7 @@ description: Our fleet of buses offers comfort, safety, and reliability for your
     >
       Your browser does not support the video tag.
       <img
-        src="/assets/video/ev-tours-charter-fleet.jpg"
+        src="{{ fleet.hero.video.fallback }}"
         alt="Your browser does not support the video tag."
         data-above-the-fold="true"
         sizes="100vw"
@@ -33,7 +43,10 @@ description: Our fleet of buses offers comfort, safety, and reliability for your
   </div>
 </section>
 
-<section class="vehicle-wrapper lines">
+<section
+  class="vehicle-wrapper lines"
+  id="vehicles"
+>
   <h2>{{ fleet.vehicles.heading }}</h2>
   <p>{{ fleet.vehicles.subheading }}</p>
   <ul
@@ -81,7 +94,7 @@ description: Our fleet of buses offers comfort, safety, and reliability for your
         {% endfor %}
       </ul>
       <a
-        href="/contact#form"
+        href="/contact#enquiry"
         class="btn btn-primary"
         >Book now</a
       >
@@ -90,7 +103,10 @@ description: Our fleet of buses offers comfort, safety, and reliability for your
   </ul>
 </section>
 
-<section class="story">
+<section
+  class="story"
+  id="safety"
+>
   <h2>{{ fleet.safety.heading }}</h2>
   <p>{{ fleet.safety.text }}</p>
   <div class="blocks">

@@ -57,7 +57,7 @@ footer .rocketzip {
   margin-block-start: var(--space-md);
   /* opacity: 50%; */
   text-align: end;
-  background: -webkit-linear-gradient(var(--zinc-500), var(--zinc-500));
+  background: linear-gradient(var(--zinc-500), var(--zinc-500));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }

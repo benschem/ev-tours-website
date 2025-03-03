@@ -1,7 +1,5 @@
 .carousel-wrapper {
-  /* max-width: max-content; */
   display: flex;
-  /* justify-self: center; */
   align-items: center;
   gap: var(--space-sm);
 }
@@ -13,6 +11,7 @@
   scroll-behavior: smooth;
   -webkit-overflow-scrolling: touch;
   scrollbar-width: none;
+  padding-block: var(--space-sm);
 }
 
 .carousel::-webkit-scrollbar {

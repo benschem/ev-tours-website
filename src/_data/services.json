@@ -1,250 +1,240 @@
 {
   "hero": {
-    "heading": "Tours and Charter Hire",
-    "subheading": "Our services",
-    "text": [
-      "Need reliable transport? We’re here to help! Our dedicated team is committed to making your journey seamless and enjoyable, providing exceptional service every step of the way."
-    ],
-    "image": {
-      "src": "/assets/img/sunset-bus-ev-tours.jpg",
-      "alt": "John standing by the coach at sunset."
+    "h1": "Tours and Charter Hire",
+    "p": "Need reliable transport? We’re here to help! Our dedicated team is committed to making your journey seamless and enjoyable, providing exceptional service every step of the way.",
+    "buttons": {
+      "primary": {
+        "text": "View services",
+        "link": "#list"
+      },
+      "secondary": {
+        "text": "Request a quote",
+        "link": "/contact#enquiry"
+      }
+    },
+    "video": {
+      "src": "/assets/video/ev-tours-charter-scenery.mp4",
+      "poster": "/assets/video/ev-tours-charter-scenery.jpg",
+      "fallback": "/assets/video/ev-tours-charter-scenery.jpg"
     }
   },
+  "h2": "Our services",
   "services": [
     {
-      "heading": "Corporate charter",
+      "id": "corporate",
+      "name": "Corporate charter",
       "icon": "user-tie",
       "text": "Make your next corporate event effortless and ensure that your staff arrive on-time and in comfort.",
-      "subheadings": [
-        {
-          "title": "Conferences",
-          "img": {
-            "src": "/assets/img/bus-stop.jpg",
-            "alt": ""
-          },
-          "text": "Conference transport →",
-          "link": "/services/corporate#conference-transport"
-        },
-        {
-          "title": "Corporate events",
-          "img": {
-            "src": "/assets/img/bus-stop.jpg",
-            "alt": ""
-          },
-          "text": "Event transport →",
-          "link": "/services/corporate#event-transport"
-        },
-        {
-          "title": "Team-building trips",
-          "img": {
-            "src": "/assets/img/bus-stop.jpg",
-            "alt": ""
-          },
-          "text": "Team-building transport →",
-          "link": "/services/corporate#team-building-trip-transport"
-        }
-      ],
       "image": {
         "src": "/assets/img/ev-tours-corporate-conference.jpg",
         "alt": "Looking down at a crowd of business people networking at a conference."
       },
-      "id": "corporate"
+      "subservices": [
+        {
+          "name": "Conferences",
+          "img": {
+            "src": "/assets/img/bus-stop.jpg",
+            "alt": ""
+          },
+          "link": "/services/corporate#conference-transport"
+        },
+        {
+          "name": "Corporate events",
+          "img": {
+            "src": "/assets/img/bus-stop.jpg",
+            "alt": ""
+          },
+          "link": "/services/corporate#event-transport"
+        },
+        {
+          "name": "Team-building trips",
+          "img": {
+            "src": "/assets/img/bus-stop.jpg",
+            "alt": ""
+          },
+          "link": "/services/corporate#team-building-trip-transport"
+        }
+      ]
     },
     {
-      "heading": "School transport",
+      "id": "schools",
+      "name": "School transport",
       "icon": "graduation-cap",
       "text": "Safe, reliable transport for schools. With our experienced drivers and well-maintained fleet, your students are in good hands.",
-      "subheadings": [
-        {
-          "title": "School routes",
-          "img": {
-            "src": "/assets/img/bus-stop.jpg",
-            "alt": ""
-          },
-          "text": "See more →",
-          "link": "/services"
-        },
-        {
-          "title": "School camps",
-          "img": {
-            "src": "/assets/img/bus-stop.jpg",
-            "alt": ""
-          },
-          "text": "See more →",
-          "link": "/services"
-        },
-        {
-          "title": "Excursions",
-          "img": {
-            "src": "/assets/img/bus-stop.jpg",
-            "alt": ""
-          },
-          "text": "See more →",
-          "link": "/services"
-        }
-      ],
       "image": {
         "src": "/assets/img/ev-tours-bus-seats.jpg",
         "alt": "The blue seats of a bus loking down the aisle."
       },
-      "id": "schools"
+      "subservices": [
+        {
+          "name": "School swimming",
+          "img": {
+            "src": "/assets/img/bus-stop.jpg",
+            "alt": ""
+          },
+          "link": "/services/schools#swimming"
+        },
+        {
+          "name": "School camps",
+          "img": {
+            "src": "/assets/img/bus-stop.jpg",
+            "alt": ""
+          },
+          "link": "/services/schools#camps"
+        },
+        {
+          "name": "School excursions",
+          "img": {
+            "src": "/assets/img/bus-stop.jpg",
+            "alt": ""
+          },
+          "link": "/services/schools#excursions"
+        }
+      ]
     },
     {
-      "heading": "Airport transfer",
+      "id": "airport",
+      "name": "Airport transfer",
       "icon": "plane",
       "text": "Our reliable service ensures you arrive at the airport on time and stress-free, whether you're departing or arriving. Enjoy a smooth transition to and from the airport.",
-      "subheadings": [
-        {
-          "title": "Sports teams",
-          "img": {
-            "src": "/assets/img/bus-stop.jpg",
-            "alt": ""
-          },
-          "text": "See more →",
-          "link": "/services"
-        },
-        {
-          "title": "Hens and bucks groups",
-          "img": {
-            "src": "/assets/img/bus-stop.jpg",
-            "alt": ""
-          },
-          "text": "See more →",
-          "link": "/services"
-        },
-        {
-          "title": "Corporate travel",
-          "img": {
-            "src": "/assets/img/bus-stop.jpg",
-            "alt": ""
-          },
-          "text": "See more →",
-          "link": "/services"
-        }
-      ],
       "image": {
         "src": "/assets/img/ev-tours-airport-transport.jpg",
         "alt": ""
       },
-      "id": "airport"
-    },
-    {
-      "heading": "Special occasions",
-      "icon": "champagne-glasses",
-      "text": "From weddings to hens parties and golf trips, we make transportation for your special occasion a breeze. Our flexible options will ensure your group travels together in style and comfort.",
-      "subheadings": [
+      "subservices": [
         {
-          "title": "Wedding transfers",
+          "name": "Sports teams",
           "img": {
             "src": "/assets/img/bus-stop.jpg",
             "alt": ""
           },
-          "text": "See more →",
           "link": "/services"
         },
         {
-          "title": "Hens and bucks parties",
+          "name": "Hens and bucks groups",
           "img": {
             "src": "/assets/img/bus-stop.jpg",
             "alt": ""
           },
-          "text": "See more →",
           "link": "/services"
         },
         {
-          "title": "Birthday trips",
+          "name": "Corporate travel",
           "img": {
             "src": "/assets/img/bus-stop.jpg",
             "alt": ""
           },
-          "text": "See more →",
           "link": "/services"
         }
-      ],
+      ]
+    },
+    {
+      "id": "special",
+      "name": "Special occasions",
+      "icon": "champagne-glasses",
+      "text": "From weddings to hens parties and golf trips, we make transportation for your special occasion a breeze. Our flexible options will ensure your group travels together in style and comfort.",
       "image": {
         "src": "/assets/img/ev-tours-hens-party.avif",
         "alt": "The back of a group of girls dressed up nicely and holding hands walking away from the camera. "
       },
-      "id": "special"
-    },
-    {
-      "heading": "Scenic tours",
-      "icon": "image",
-      "text": "Explore Victoria’s iconic landscapes with our scenic tours, including options for winery, brewery, and Great Ocean Road tours.",
-      "subheadings": [
+      "subservices": [
         {
-          "title": "Winery tours",
+          "name": "Wedding transfers",
           "img": {
-            "src": "/assets/img/winery-tour.jpg",
+            "src": "/assets/img/bus-stop.jpg",
             "alt": ""
           },
-          "text": "See more →",
           "link": "/services"
         },
         {
-          "title": "Brewery tours",
+          "name": "Hens and bucks parties",
           "img": {
-            "src": "/assets/img/brewery-tour.jpg",
+            "src": "/assets/img/bus-stop.jpg",
             "alt": ""
           },
-          "text": "See more →",
           "link": "/services"
         },
         {
-          "title": "Great Ocean Road tours",
+          "name": "Birthday trips",
           "img": {
-            "src": "/assets/img/great-ocean-road-tour.jpg",
+            "src": "/assets/img/bus-stop.jpg",
             "alt": ""
           },
-          "text": "See more →",
           "link": "/services"
         }
-      ],
+      ]
+    },
+    {
+      "id": "tours",
+      "name": "Scenic tours",
+      "icon": "image",
+      "text": "Explore Victoria’s iconic landscapes with our scenic tours, including options for winery, brewery, and Great Ocean Road tours.",
       "image": {
         "src": "/assets/img/ev-tours-wine-tour.webp",
         "alt": "A scenic view of a winery"
       },
-      "id": "tours"
-    },
-
-    {
-      "heading": "Event transport",
-      "icon": "ticket",
-      "text": "For major events such as sporting events or festivals, we provide reliable charter services to get you there and back in comfort and style.",
-      "subheadings": [
+      "subservices": [
         {
-          "title": "Sporting events",
+          "name": "Winery tours",
           "img": {
-            "src": "/assets/img/bus-stop.jpg",
+            "src": "/assets/img/winery-tour.jpg",
             "alt": ""
           },
-          "text": "See more →",
           "link": "/services"
         },
         {
-          "title": "Music festivals",
+          "name": "Brewery tours",
           "img": {
-            "src": "/assets/img/bus-stop.jpg",
+            "src": "/assets/img/brewery-tour.jpg",
             "alt": ""
           },
-          "text": "See more →",
           "link": "/services"
         },
         {
-          "title": "Expos and trade shows",
+          "name": "Great Ocean Road tours",
           "img": {
-            "src": "/assets/img/bus-stop.jpg",
+            "src": "/assets/img/great-ocean-road-tour.jpg",
             "alt": ""
           },
-          "text": "See more →",
           "link": "/services"
         }
-      ],
+      ]
+    },
+    {
+      "id": "events",
+      "name": "Event transport",
+      "icon": "ticket",
+      "text": "For major events such as sporting events or festivals, we provide reliable charter services to get you there and back in comfort and style.",
       "image": {
         "src": "/assets/img/melbourne-cbd.jpg",
         "alt": "A view of the Melbourne CBD looking over the bridge"
       },
-      "id": "events"
+      "subservices": [
+        {
+          "name": "Sporting events",
+          "img": {
+            "src": "/assets/img/bus-stop.jpg",
+            "alt": ""
+          },
+          "link": "/services"
+        },
+        {
+          "name": "Music festivals",
+          "img": {
+            "src": "/assets/img/bus-stop.jpg",
+            "alt": ""
+          },
+          "link": "/services"
+        },
+        {
+          "name": "Expos and trade shows",
+          "img": {
+            "src": "/assets/img/bus-stop.jpg",
+            "alt": ""
+          },
+          "link": "/services"
+        }
+      ]
     }
   ],
   "cta": {
@@ -255,12 +245,12 @@
     ],
     "buttons": {
       "primary": {
-        "link": "/contact#form",
+        "link": "/contact#enquiry",
         "text": "Book now"
       },
       "secondary": {
-        "link": "/about",
-        "text": "About us"
+        "link": "/fleet",
+        "text": "Our fleet"
       }
     },
     "image": {
