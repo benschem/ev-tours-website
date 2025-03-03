@@ -1,5 +1,5 @@
 GENERAL
-[ ] Add social media icons to the top of the page next to the phone number
+[X] Add social media icons to the top of the page next to the phone number
 [ ] Check all alt texts
 [ ] grep TODO
 [ ] add extra photos from email

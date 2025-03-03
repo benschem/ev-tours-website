@@ -9,9 +9,6 @@ const mobileMenu = document.querySelector("#mobile-menu");
 const openMenuIcon = document.querySelector("#open-menu-icon");
 const closeMenuIcon = document.querySelector("#close-menu-icon");
 
-const sunIcon = document.querySelector("#sun-icon");
-const moonIcon = document.querySelector("#moon-icon");
-
 const mainElement = document.querySelector("body");
 const backToTopButton = document.querySelector("#back-to-top");
 

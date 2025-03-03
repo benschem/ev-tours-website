@@ -31,9 +31,32 @@ header .nav-cta {
   align-items: center;
   gap: 1rem;
 }
+header .nav-socials {
+  border-radius: 50%;
+  padding-inline: 0.78rem;
+  padding-block: 0.6rem;
+}
+nav .nav-socials {
+  border-radius: 50%;
+  padding-inline: 0.78rem;
+  padding-block: 0.6rem;
+  margin-inline: var(--space-sm);
+}
+nav .mobile-menu-socials {
+  display: flex;
+  justify-content: center;
+}
 
-@media screen and (width < 1000px) {
+@media screen and (width < 1080px) {
   header .nav-cta {
+    display: none;
+  }
+  header .nav-socials {
+    display: none;
+  }
+}
+@media screen and (height < 700px) {
+  nav .mobile-menu-socials {
     display: none;
   }
 }
