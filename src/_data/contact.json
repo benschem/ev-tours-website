@@ -1,13 +1,21 @@
 {
   "hero": {
-    "heading": "Contact Us",
-    "text": [
-      "We’re here to help with all your transport needs, whether it’s a school charter, corporate event, or scenic tour.",
-      "Have a question or special request? Don’t hesitate to reach out - we’re happy to assist you in any way we can."
-    ],
-    "img": {
-      "src": "/assets/img/ev-tours-bus-coach.webp",
-      "alt": "An EV Tours coach parked against the backdrop of a setting sun."
+    "h1": "Contact Us",
+    "p": "We’re here to help with all your transport needs, whether it’s a school charter, corporate event, or scenic tour. Have a question or special request? Don’t hesitate to reach out - we’re happy to assist you in any way we can.",
+    "buttons": {
+      "primary": {
+        "text": "Enquire online",
+        "link": "#enquiry"
+      },
+      "secondary": {
+        "text": "Call us",
+        "link": "tel:1800 668 371"
+      }
+    },
+    "video": {
+      "src": "/assets/video/ev-tours-charter-contact.mp4",
+      "poster": "/assets/video/ev-tours-charter-contact.jpg",
+      "fallback": "/assets/video/ev-tours-charter-contact.jpg"
     }
   },
   "phone": {
