@@ -58,7 +58,7 @@
         ],
         "img": {
           "src": "/assets/img/ev-tours-family-owned.jpg",
-          "alt": "Replace this"
+          "alt": "John sitting in the drivers seat of a bus with Elyce sititng behind him"
         }
       },
       {
@@ -68,8 +68,8 @@
           "We’ve been at this for years, so we know how to make your trip smooth and stress-free."
         ],
         "img": {
-          "src": "/assets/img/bus-stop.jpg",
-          "alt": "Replace this"
+          "src": "/assets/img/ev-tours-charter-experience.webp",
+          "alt": "Closeup of a hand putting pins in a map"
         }
       },
       {
@@ -79,8 +79,8 @@
           "Once you’ve experienced the EV difference, you won’t want to go anywhere else!"
         ],
         "img": {
-          "src": "/assets/img/bus-stop.jpg",
-          "alt": "Replace this"
+          "src": "/assets/img/sunset-bus-ev-tours.jpg",
+          "alt": "John standing next to the coach at sunset"
         }
       }
     ]
@@ -93,7 +93,7 @@
     ],
     "img": {
       "src": "/assets/img/bus-stop.jpg",
-      "alt": "Replace this"
+      "alt": "TODO: Replace this"
     },
     "buttons": {
       "primary": {

@@ -4,7 +4,6 @@ GENERAL
 [ ] grep TODO
 [ ] add extra photos from email
 [ ] add stock images elsewhere
-[ ] check and maybe increase video quality?
 
 INDEX
 [ ] Edit and add new Bus/Van picture near "We've got the wheels" to updated Coach pic

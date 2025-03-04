@@ -5,10 +5,6 @@
   color: var(--black);
 }
 
-.dark-mode .form {
-  color: var(--white);
-}
-
 .form input,
 .form select,
 .form textarea {
@@ -18,12 +14,6 @@
   width: 100%;
   background-color: var(--white);
   color: inherit;
-}
-
-.dark-mode .form input,
-.dark-mode .form textarea {
-  background-color: var(--black);
-  border: 1px solid var(--color-primary);
 }
 
 .form textarea {
@@ -41,14 +31,6 @@
   background-color: var(--white);
   height: 3.5rem;
   line-height: 3rem;
-}
-
-.dark-mode .form input[type="date"],
-.dark-mode .form select {
-  color: inherit;
-  border: 1px solid var(--color-primary);
-  background-color: var(--black);
-  height: 3rem;
 }
 
 .form legend {
@@ -107,10 +89,6 @@ fieldset {
   background-color: var(--color-primary);
 }
 
-.dark-mode .formError {
-  color: var(--black);
-}
-
 .form > * {
   margin-bottom: 1rem;
 }
@@ -133,15 +111,6 @@ fieldset > div {
 
 fieldset > legend {
   font-weight: bold;
-}
-
-.dark-mode input[type="date"]::-webkit-calendar-picker-indicator {
-  filter: invert(100%);
-  cursor: pointer;
-}
-.dark-mode input[type="time"]::-webkit-calendar-picker-indicator {
-  filter: invert(100%);
-  cursor: pointer;
 }
 
 form .required {

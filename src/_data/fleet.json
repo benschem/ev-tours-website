@@ -139,7 +139,7 @@
     ],
     "image": {
       "src": "/assets/img/bus-stop.jpg",
-      "alt": "Replace this"
+      "alt": "TODO: Replace this"
     },
     "buttons": {
       "primary": {

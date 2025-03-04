@@ -19,8 +19,18 @@
       "heading": "School swimming",
       "content": "Heading to a swim meet? We’ve got you covered! Our fleet of buses, ranging from 11 to 57 seats, ensures that all students travel comfortably and arrive on time.",
       "image": {
-        "src": "/assets/img/sunset-bus-ev-tours.jpg",
-        "alt": "TODO"
+        "src": "/assets/img/school-swimming-transport.webp",
+        "alt": "Diving blocks and kickboards next to a swimming pool"
+      },
+      "buttons": {
+        "primary": {
+          "text": "Book swimming",
+          "link": "#quote"
+        },
+        "secondary": {
+          "text": "Request a quote",
+          "link": "/contact#enquiry"
+        }
       }
     },
     {
@@ -28,8 +38,14 @@
       "heading": "School sports",
       "content": "From local tournaments to out-of-town matches, our buses are ready to transport sports teams and their supporters. Leave the parking and logistics to us, so you can focus on the game.",
       "image": {
-        "src": "/assets/img/sunset-bus-ev-tours.jpg",
-        "alt": "TODO"
+        "src": "/assets/img/school-sports.webp",
+        "alt": "An assortment of sports equipment, runners and drink bottle"
+      },
+      "buttons": {
+        "primary": {
+          "text": "Book sport",
+          "link": "#quote"
+        }
       }
     },
     {
@@ -37,8 +53,14 @@
       "heading": "School camps",
       "content": "Planning a camping trip or excursion? Our spacious buses are perfect for hauling all the gear, and our skilled drivers will ensure a smooth and safe journey for everyone involved.",
       "image": {
-        "src": "/assets/img/sunset-bus-ev-tours.jpg",
-        "alt": "TODO"
+        "src": "/assets/img/school-camp.webp",
+        "alt": "School girl walking through the trees with a backpack"
+      },
+      "buttons": {
+        "primary": {
+          "text": "Book camp",
+          "link": "#quote"
+        }
       }
     },
     {
@@ -46,8 +68,18 @@
       "heading": "School excursions",
       "content": "Educational trips are a vital part of learning. We provide reliable and safe transportation to all kinds of destinations, from museums to historical landmarks, ensuring a stress-free experience for your school.",
       "image": {
-        "src": "/assets/img/sunset-bus-ev-tours.jpg",
-        "alt": "TODO"
+        "src": "/assets/img/school-excursion.webp",
+        "alt": "Kids at the zoo"
+      },
+      "buttons": {
+        "primary": {
+          "text": "Book excursion",
+          "link": "#quote"
+        },
+        "secondary": {
+          "text": "Request a quote",
+          "link": "/contact#enquiry"
+        }
       }
     }
   ]

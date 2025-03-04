@@ -33,24 +33,24 @@
         {
           "name": "Conferences",
           "img": {
-            "src": "/assets/img/bus-stop.jpg",
-            "alt": ""
+            "src": "/assets/img/corporate-conference.webp",
+            "alt": "Top down view of conference attendees in auditorium seats taking notes"
           },
           "link": "/services/corporate#conference-transport"
         },
         {
           "name": "Corporate events",
           "img": {
-            "src": "/assets/img/bus-stop.jpg",
-            "alt": ""
+            "src": "/assets/img/corporate-function.webp",
+            "alt": "Business people socialising over finger food and drinks."
           },
           "link": "/services/corporate#event-transport"
         },
         {
           "name": "Team-building trips",
           "img": {
-            "src": "/assets/img/bus-stop.jpg",
-            "alt": ""
+            "src": "/assets/img/corporate-team-building.webp",
+            "alt": "Casually dressed business people having a dance on a rooftop terrrace"
           },
           "link": "/services/corporate#team-building-trip-transport"
         }
@@ -69,24 +69,24 @@
         {
           "name": "School swimming",
           "img": {
-            "src": "/assets/img/bus-stop.jpg",
-            "alt": ""
+            "src": "/assets/img/school-swimming-transport.webp",
+            "alt": "Diving blocks and kickboards next to a swimming pool"
           },
           "link": "/services/schools#swimming"
         },
         {
           "name": "School camps",
           "img": {
-            "src": "/assets/img/bus-stop.jpg",
-            "alt": ""
+            "src": "/assets/img/school-camp.webp",
+            "alt": "School girl walking through the trees with a backpack"
           },
           "link": "/services/schools#camps"
         },
         {
           "name": "School excursions",
           "img": {
-            "src": "/assets/img/bus-stop.jpg",
-            "alt": ""
+            "src": "/assets/img/school-excursion.webp",
+            "alt": "Kids at the zoo"
           },
           "link": "/services/schools#excursions"
         }
@@ -213,24 +213,24 @@
         {
           "name": "Sporting events",
           "img": {
-            "src": "/assets/img/bus-stop.jpg",
-            "alt": ""
+            "src": "/assets/img/cricket-match.webp",
+            "alt": "A cricket match"
           },
           "link": "/services"
         },
         {
           "name": "Music festivals",
           "img": {
-            "src": "/assets/img/bus-stop.jpg",
-            "alt": ""
+            "src": "/assets/img/music-festival.webp",
+            "alt": "A music festival"
           },
           "link": "/services"
         },
         {
           "name": "Expos and trade shows",
           "img": {
-            "src": "/assets/img/bus-stop.jpg",
-            "alt": ""
+            "src": "/assets/img/expo-trade-show.webp",
+            "alt": "An expo"
           },
           "link": "/services"
         }
@@ -246,7 +246,7 @@
     "buttons": {
       "primary": {
         "link": "/contact#enquiry",
-        "text": "Book now"
+        "text": "Contact us"
       },
       "secondary": {
         "link": "/fleet",

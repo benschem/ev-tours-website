@@ -20,13 +20,17 @@
       "content": "Take the hassle out of corporate travel with our reliable charter services. Whether you're heading to a major industry conference or an off-site seminar, we provide comfortable and efficient group transport, so your team arrives refreshed and on time.",
       "buttons": {
         "primary": {
-          "link": "/contact#enquiry",
+          "link": "#quote",
           "text": "Book conference"
         },
         "secondary": {
-          "link": "/services",
+          "link": "#quote",
           "text": "Book seminar"
         }
+      },
+      "image": {
+        "src": "/assets/img/corporate-conference.webp",
+        "alt": "Top down view of conference attendees in auditorium seats taking notes"
       }
     },
     {
@@ -35,13 +39,17 @@
       "content": "From gala dinners to product launches, our corporate charters make event transportation effortless. With a range of vehicle sizes, we can accommodate small teams or large groups, ensuring everyone gets to the venue smoothly and safely.",
       "buttons": {
         "primary": {
-          "link": "/contact#enquiry",
+          "link": "#quote",
           "text": "Book event"
         },
         "secondary": {
-          "link": "/services",
+          "link": "#quote",
           "text": "Book function"
         }
+      },
+      "image": {
+          "src": "/assets/img/corporate-function.webp",
+          "alt": "Business people socialising over finger food and drinks."
       }
     },
     {
@@ -50,13 +58,17 @@
       "content": "Planning a team-building day or an off-site retreat? Let us handle the transport while you focus on strengthening your team. Our comfortable coaches are perfect for group travel to scenic locations, adventure activities, and corporate retreats.",
       "buttons": {
         "primary": {
-          "link": "/contact#enquiry",
+          "link": "#quote",
           "text": "Book team event"
         },
         "secondary": {
-          "link": "/services",
+          "link": "#quote",
           "text": "Book retreat"
         }
+      },
+      "image": {
+        "src": "/assets/img/corporate-team-building.webp",
+        "alt": "Casually dressed business people having a dance on a rooftop terrrace"
       }
     },
     {
@@ -65,13 +77,17 @@
       "content": "Heading to the Melbourne Cup, Australian Open, F1 Grand Prix, or another major event? Avoid the parking stress and traffic congestion with our hassle-free charter services. Whether it’s a corporate outing or a VIP group, we’ll get you there comfortably and on time.",
       "buttons": {
         "primary": {
-          "link": "/contact#enquiry",
+          "link": "#quote",
           "text": "Book sports event"
         },
         "secondary": {
           "link": "/services",
           "text": "See other services "
         }
+      },
+      "image": {
+        "src": "/assets/img/australian-open.webp",
+        "alt": "Tennis match at Rod Laver arena"
       }
     }
   ]

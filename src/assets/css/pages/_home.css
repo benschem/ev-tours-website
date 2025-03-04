@@ -166,6 +166,9 @@
   border-radius: var(--rounded-3xl);
   padding: var(--space-md);
   min-width: 250px;
+  max-height: 250px;
+  overflow: scroll;
+  align-content: center;
   box-shadow: var(--shadow-md);
 }
 
