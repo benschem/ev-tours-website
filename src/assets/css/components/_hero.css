@@ -68,8 +68,10 @@
 .hero .visual video {
   width: 100%;
   max-width: 800px;
-  /* object-fit: cover; */
-  /* object-position: center; */
+}
+
+.hero .visual img {
+  aspect-ratio: 3/2;
 }
 
 .hero:first-of-type .copy {
