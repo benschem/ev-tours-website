@@ -30,7 +30,10 @@
     {% if page.url == '/fleet/' %}
       <script defer src="/assets/js/showImageOnHover.js"></script>
     {% endif %}
-    {% if page.url == '/contact/' %}
+    {% if page.url == '/contact/' or page.url startswith '/services/' %}
+      <script defer src="/assets/js/formValidations.js"></script>
+    {% endif %}
+    {% if page.url startswith '/services/' %}
       <script defer src="/assets/js/formValidations.js"></script>
     {% endif %}
     <script defer src="/assets/js/lazyImages.js"></script>

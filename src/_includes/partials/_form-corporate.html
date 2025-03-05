@@ -2,7 +2,7 @@
   method="POST"
   autocomplete="on"
   class="form"
-  name="form"
+  name="form-corporate"
   data-netlify="true"
   data-netlify-recaptcha="true"
 >
@@ -10,17 +10,17 @@
     <div class="form-items">
       <div>
         <label
-          id="firstNameLabel"
-          for="firstName"
-          >First Name *</label
+          id="fullNameLabel"
+          for="fullName"
+          >Full Name *</label
         >
         <span aria-live="polite"></span>
         <input
           type="text"
-          id="firstName"
-          name="firstName"
-          aria-label="First Name"
-          aria-labelledby="firstNameLabel"
+          id="fullName"
+          name="fullName"
+          aria-label="Full Name"
+          aria-labelledby="fullNameLabel"
           required
           minlength="2"
           pattern="^[a-zA-Z ]*$"
@@ -29,17 +29,17 @@
       </div>
       <div>
         <label
-          id="lastNameLabel"
-          for="lastName"
-          >Last Name *</label
+          id="companyLabel"
+          for="company"
+          >Company *</label
         >
         <span aria-live="polite"></span>
         <input
           type="text"
-          id="lastName"
-          name="lastName"
-          aria-label="Last Name"
-          aria-labelledby="lastNameLabel"
+          id="company"
+          name="company"
+          aria-label="Company"
+          aria-labelledby="companyLabel"
           required
           minlength="2"
           pattern="^[a-zA-Z ]*$"
@@ -70,17 +70,17 @@
 
       <div>
         <label
-          id="mobileLabel"
-          for="mobile"
-          >Mobile Number *</label
+          id="phoneLabel"
+          for="phone"
+          >Phone Number *</label
         >
         <span aria-live="polite"></span>
         <input
           type="tel"
-          id="mobile"
-          name="mobile"
-          aria-label="Mobile Number"
-          aria-labelledby="mobileLabel"
+          id="phone"
+          name="phone"
+          aria-label="Phone Number"
+          aria-labelledby="phoneLabel"
           required
           minlength="10"
           pattern="^\s*\+?[0-9\s]*\s*$"
@@ -90,11 +90,42 @@
     </div>
   </fieldset>
   <fieldset>
+      <label
+        id="serviceTypeLabel"
+        for="serviceType"
+        >Type of service *</label
+      >
+      <span
+        aria-live="polite"
+        class="bump-left"
+      ></span>
+      <select
+        id="serviceType"
+        name="serviceType"
+        aria-label="Service type"
+        aria-labelledby="serviceTypeLabel"
+        required
+      >
+        <option
+          value=""
+          disabled
+          selected
+        >
+          Select a service
+        </option>
+        <option value="conference-transport">Conference / seminar</option>
+        <option value="event-transport">Event / function</option>
+        <option value="team-building-trip-transport">Team building / retreat</option>
+        <option value="sporting-event-transport">Major sporting event</option>
+      </select>
+      <span aria-live="polite"></span>
+  </fieldset>
+  <fieldset>
     <div>
       <label
         id="itineraryLabel"
         for="itinerary"
-        >What service do you need? *</label
+        >Tell us more detail *</label
       >
       <span
         aria-live="polite"

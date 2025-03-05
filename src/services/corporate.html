@@ -33,12 +33,14 @@ description: At EV Tours & Charter, we provide flexible, professional transport 
     <div class="buttons">
       <a
       href="{{ section.buttons.primary.link }}"
-      class="btn btn-primary"
+      class="btn btn-primary form-link-btn"
+      data-value="{{ section.id }}"
       >{{ section.buttons.primary.text }}</a
       >
       <a
       href="{{ section.buttons.secondary.link }}"
-      class="btn btn-secondary"
+      class="btn btn-secondary form-link-btn"
+      data-value="{{ section.id }}"
       >{{ section.buttons.secondary.text }}</a
       >
     </div>
@@ -54,8 +56,10 @@ description: At EV Tours & Charter, we provide flexible, professional transport 
 {% endfor %}
 
 <section
-  class="lines"
+  class="pink-bkg form-container"
   id="quote"
 >
-  TODO: put a form here
+  <h2>Enquiry form</h2>
+  <p>Fill in the enquiry form with as much detail as possible to receive your quote.</p>
+  {% include 'partials/_form-corporate.html' %}
 </section>

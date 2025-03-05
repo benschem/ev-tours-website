@@ -213,3 +213,14 @@ function checkBeforeSubmit(event) {
 }
 
 /* -------------------------------------------------------------------------- */
+
+// Select from the form dropdown based on the button clicked
+buttonsThatScrollToForm = document.querySelectorAll(".form-link-btn");
+
+buttonsThatScrollToForm.forEach((button) => {
+  button.addEventListener("click", (event) => {
+    const selectedValue = event.target.getAttribute("data-value");
+    const selectElement = document.getElementById("serviceType");
+    selectElement.value = selectedValue;
+  });
+});

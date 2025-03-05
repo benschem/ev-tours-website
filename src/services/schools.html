@@ -33,7 +33,8 @@ description: EV Tours & Charter offers reliable and safe school charter services
     <div class="buttons">
       <a
       href="{{ section.buttons.primary.link }}"
-      class="btn btn-primary"
+      class="btn btn-primary form-link-btn"
+      data-value="{{ section.id }}"
       >{{ section.buttons.primary.text }}</a
       >
       <!-- <a
@@ -54,8 +55,10 @@ description: EV Tours & Charter offers reliable and safe school charter services
 {% endfor %}
 
 <section
-  class="lines"
+  class="pink-bkg form-container"
   id="quote"
 >
-  TODO: put a form here
+  <h2>Enquiry form</h2>
+  <p>Fill in the enquiry form with as much detail as possible to receive your quote.</p>
+  {% include 'partials/_form-school.html' %}
 </section>
