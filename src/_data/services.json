@@ -105,8 +105,8 @@
         {
           "name": "Sports teams",
           "img": {
-            "src": "/assets/img/bus-stop.jpg",
-            "alt": ""
+            "src": "/assets/img/sports-team.webp",
+            "alt": "A women's sports team in a huddle."
           },
           "link": "/services"
         },
@@ -121,8 +121,8 @@
         {
           "name": "Corporate travel",
           "img": {
-            "src": "/assets/img/bus-stop.jpg",
-            "alt": ""
+            "src": "/assets/img/business-travel.webp",
+            "alt": "A business man in a suit sitting in the airport with luggage."
           },
           "link": "/services"
         }
@@ -254,8 +254,8 @@
       }
     },
     "image": {
-      "src": "/assets/img/bus-stop.jpg",
-      "alt": ""
+      "src": "/assets/img/custom-schedule.webp",
+      "alt": "An office desk with a blank schedule."
     }
   }
 }

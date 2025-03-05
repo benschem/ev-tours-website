@@ -134,12 +134,11 @@
     "heading": "Ready to choose your ride?",
     "text": [
       "Explore our fleet and find the perfect bus for your next adventure!",
-      "Whether you need transport for a school trip, corporate event, or a special occasion, we have the right vehicle to meet your needs.",
-      "Contact us today to book your bus."
+      "Whether you need transport for a school trip, corporate event, or a special occasion, we have the right vehicle to meet your needs."
     ],
     "image": {
-      "src": "/assets/img/bus-stop.jpg",
-      "alt": "TODO: Replace this"
+      "src": "/assets/img/ev-tours-buses-lined-up.avif",
+      "alt": "Buses lined up waiting to pickup guests"
     },
     "buttons": {
       "primary": {
