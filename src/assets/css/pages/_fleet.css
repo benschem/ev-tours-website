@@ -84,6 +84,7 @@
   cursor: pointer;
   display: grid;
   place-items: center;
+  position: relative;
 }
 .buses > li picture:nth-of-type(1) {
   grid-area: 1 / 1;
@@ -106,6 +107,12 @@
 }
 .buses > li .image-hover:focus picture:nth-of-type(2) {
   opacity: 100%;
+}
+.buses > li .image-hover span {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 1;
 }
 
 @media screen and (width > 1024px) {
