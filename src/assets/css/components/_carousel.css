@@ -39,7 +39,7 @@
   /* padding: 1rem; */
 }
 
-.control {
+.carousel-wrapper .control {
   height: 150px;
   background: none;
   border: none;
@@ -53,9 +53,11 @@
   justify-content: center;
   gap: var(--space-xs);
   margin-block-start: var(--space-sm);
+  max-width: max-content;
+  margin-inline: auto;
 }
 
-.carousel-indicators .dot {
+.carousel-indicators > .dot {
   width: 10px;
   height: 10px;
   border-radius: 50%;
@@ -65,7 +67,7 @@
   transition: background 0.3s;
 }
 
-.carousel-indicators .dot.active {
+.carousel-indicators > .dot.active {
   background: var(--azalea-200);
 }
 

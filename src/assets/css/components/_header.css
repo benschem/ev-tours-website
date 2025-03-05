@@ -190,7 +190,7 @@ nav .mobile-menu-socials {
   flex-direction: column;
   justify-content: center;
   margin-inline-start: var(--space-md);
-  margin-block-end: var(--space-lg);
+  margin-block-end: var(--space-md);
 }
 
 .mobile-menu > ul > li {
