@@ -30,10 +30,16 @@
     {% if page.url == '/fleet/' %}
       <script defer src="/assets/js/showImageOnHover.js"></script>
     {% endif %}
-    {% if page.url == '/contact/' or page.url startswith '/services/' %}
+    {% if page.url == '/contact/' %}
       <script defer src="/assets/js/formValidations.js"></script>
     {% endif %}
-    {% if page.url startswith '/services/' %}
+    {% if page.url == '/services/corporate/' %}
+      <script defer src="/assets/js/formValidations.js"></script>
+    {% endif %}
+    {% if page.url == '/services/schools/' %}
+      <script defer src="/assets/js/formValidations.js"></script>
+    {% endif %}
+    {% if page.url == '/services/tours/' %}
       <script defer src="/assets/js/formValidations.js"></script>
     {% endif %}
     <script defer src="/assets/js/lazyImages.js"></script>
