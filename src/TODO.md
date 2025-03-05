@@ -1,20 +1,20 @@
 GENERAL
 [X] Add social media icons to the top of the page next to the phone number
-[ ] Check all alt texts
-[ ] grep TODO
-[ ] add extra photos from email
-[ ] add stock images elsewhere
+[X] Check all alt texts
+[X] grep TODO
+[X] add extra photos from email
+[X] add stock images elsewhere
 
 INDEX
 [ ] Edit and add new Bus/Van picture near "We've got the wheels" to updated Coach pic
 [X] Make the words Exceptional Bus Tours and Charter just have capitals at each word
 [X] Center the text inside each testimonial
-[ ] Add testimonials from latest email
+[X] Add testimonials from latest email
 [ ] Get more testimonials from past emails/fb/etc
 
 SERVICES
 [X] Check all cards are linked correctly
-[ ] cards that don't link anywhere shouldn't be links or have hover state
+[X] cards that don't link to a specific page should link to contact#enquiry
 
 CONTACT
 [X] Edit and add new video for Contact page
@@ -33,12 +33,12 @@ TOURS
 
 CORPORATE
 [X] content
-[ ] Stock images
+[X] Stock images
 [ ] Form
 
 SCHOOLS
 [X] content
-[ ] Stock images
+[X] Stock images
 [ ] Form
 
 DEPLOYMENT
