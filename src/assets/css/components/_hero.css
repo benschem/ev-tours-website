@@ -26,7 +26,7 @@
   }
 }
 
-@media screen and (width < 1024px) {
+@media screen and (width < 800px) {
   .hero {
     flex-direction: column-reverse;
     min-height: unset;
@@ -67,7 +67,7 @@
 .hero .visual picture,
 .hero .visual video {
   width: 100%;
-  max-width: 800px;
+  max-width: 650px;
 }
 
 .hero .visual img {
@@ -86,7 +86,7 @@
   animation-range: exit;
 }
 
-@media screen and (width >= 1024px) {
+@media screen and (width >= 800px) {
   .hero {
     flex-wrap: unset;
   }

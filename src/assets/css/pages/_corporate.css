@@ -21,7 +21,7 @@
   flex-direction: row-reverse;
 }
 
-@media screen and (width <= 768px) {
+@media screen and (width <= 800px) {
   .corporate.hero:nth-of-type(even) {
     flex-direction: column-reverse;
   }
