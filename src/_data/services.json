@@ -108,7 +108,7 @@
             "src": "/assets/img/sports-team.webp",
             "alt": "A women's sports team in a huddle."
           },
-          "link": "/services"
+          "link": "/contact#enquiry"
         },
         {
           "name": "Hens and bucks groups",
@@ -116,7 +116,7 @@
             "src": "/assets/img/bus-stop.jpg",
             "alt": ""
           },
-          "link": "/services"
+          "link": "/contact#enquiry"
         },
         {
           "name": "Corporate travel",
@@ -124,7 +124,7 @@
             "src": "/assets/img/business-travel.webp",
             "alt": "A business man in a suit sitting in the airport with luggage."
           },
-          "link": "/services"
+          "link": "/contact#enquiry"
         }
       ]
     },
@@ -144,7 +144,7 @@
             "src": "/assets/img/bus-stop.jpg",
             "alt": ""
           },
-          "link": "/services"
+          "link": "/contact#enquiry"
         },
         {
           "name": "Hens and bucks parties",
@@ -152,7 +152,7 @@
             "src": "/assets/img/bus-stop.jpg",
             "alt": ""
           },
-          "link": "/services"
+          "link": "/contact#enquiry"
         },
         {
           "name": "Birthday trips",
@@ -160,7 +160,7 @@
             "src": "/assets/img/bus-stop.jpg",
             "alt": ""
           },
-          "link": "/services"
+          "link": "/contact#enquiry"
         }
       ]
     },
@@ -180,7 +180,7 @@
             "src": "/assets/img/winery-tour.jpg",
             "alt": ""
           },
-          "link": "/services"
+          "link": "/contact#enquiry"
         },
         {
           "name": "Brewery tours",
@@ -188,7 +188,7 @@
             "src": "/assets/img/brewery-tour.jpg",
             "alt": ""
           },
-          "link": "/services"
+          "link": "/contact#enquiry"
         },
         {
           "name": "Great Ocean Road tours",
@@ -196,7 +196,7 @@
             "src": "/assets/img/great-ocean-road-tour.jpg",
             "alt": ""
           },
-          "link": "/services"
+          "link": "/contact#enquiry"
         }
       ]
     },
@@ -216,7 +216,7 @@
             "src": "/assets/img/cricket-match.webp",
             "alt": "A cricket match"
           },
-          "link": "/services"
+          "link": "/contact#enquiry"
         },
         {
           "name": "Music festivals",
@@ -224,7 +224,7 @@
             "src": "/assets/img/music-festival.webp",
             "alt": "A music festival"
           },
-          "link": "/services"
+          "link": "/contact#enquiry"
         },
         {
           "name": "Expos and trade shows",
@@ -232,7 +232,7 @@
             "src": "/assets/img/expo-trade-show.webp",
             "alt": "An expo"
           },
-          "link": "/services"
+          "link": "/contact#enquiry"
         }
       ]
     }
