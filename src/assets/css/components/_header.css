@@ -162,10 +162,16 @@ nav .mobile-menu-socials {
 .menu .sublink:hover {
   cursor: pointer;
 }
+#nav-toggle > * {
+  transition: 300ms;
+}
 
-.toggle-switch:hover {
-  filter: brightness(110%);
+#nav-toggle:hover {
   transform: translate(0, -1px);
+}
+
+#nav-toggle:hover svg {
+  fill: var(--color-primary);
 }
 
 .mobile-menu {
@@ -179,11 +185,12 @@ nav .mobile-menu-socials {
 }
 
 .mobile-menu > ul {
-  height: 80%;
+  /* height: 80%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin-inline-start: var(--space-lg);
+  margin-inline-start: var(--space-md);
+  margin-block-end: var(--space-lg);
 }
 
 .mobile-menu > ul > li {
@@ -201,11 +208,6 @@ nav .mobile-menu-socials {
   text-decoration: none;
   font-size: var(--h3-font-size);
   font-weight: 700;
-}
-
-.dark-mode .mobile-menu ul li a,
-.dark-mode .mobile-menu ul li p {
-  color: var(--white);
 }
 
 .mobile-menu ul li p::before {
@@ -279,19 +281,24 @@ nav .mobile-menu-socials {
 }
 
 @media screen and (orientation: landscape) and (height < 600px) {
-  .mobile-menu > ul {
+  .mobile-menu {
     overflow: scroll;
-    padding-block-start: 200px;
-    padding-block-end: 150px;
+  }
+  .mobile-menu > ul {
+    margin-inline-start: 0;
+    flex-direction: row;
+    /* padding-block-start: 200px; */
+    /* padding-block-end: 150px; */
   }
   .mobile-menu > ul > li {
-    padding: var(--space-xs);
+    padding: var(--space-sm);
   }
   .mobile-menu .sublink {
-    margin-block-start: var(--space-xs);
-    padding: var(--space-xxs);
+    margin-block-start: var(--space-sm);
+    padding: var(--space-xs);
   }
   .mobile-menu .submenu {
     margin-block-start: var(--space-xs);
+    width: 180px;
   }
 }
