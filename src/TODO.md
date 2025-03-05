@@ -6,11 +6,11 @@ GENERAL
 [X] add stock images elsewhere
 
 INDEX
-[ ] Edit and add new Bus/Van picture near "We've got the wheels" to updated Coach pic
+[X] Edit and add new Bus/Van picture near "We've got the wheels" to updated Coach pic
 [X] Make the words Exceptional Bus Tours and Charter just have capitals at each word
 [X] Center the text inside each testimonial
 [X] Add testimonials from latest email
-[ ] Get more testimonials from past emails/fb/etc
+[X] Get more testimonials from past emails/fb/etc
 
 SERVICES
 [X] Check all cards are linked correctly
@@ -24,8 +24,8 @@ CONTACT
 [X] check field height and width on mobile
 
 FLEET
-[ ] Blur the driver in the new photo of the minibus
-[ ] Attach new photo of minibus to replace grey bus in shadow.
+[X] Blur the driver in the new photo of the minibus
+[X] Attach new photo of minibus to replace grey bus in shadow.
 [X] Change the 3.5mm audio cord to AUX Connection
 
 TOURS
@@ -34,12 +34,16 @@ TOURS
 CORPORATE
 [X] content
 [X] Stock images
-[ ] Form
+[X] Form
+[ ] Form success
+[ ] Form fail
 
 SCHOOLS
 [X] content
 [X] Stock images
-[ ] Form
+[X] Form
+[ ] Form success
+[ ] Form fail
 
 DEPLOYMENT
 [ ] Decap CMS

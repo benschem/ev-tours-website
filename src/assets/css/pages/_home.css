@@ -22,8 +22,15 @@
 }
 
 .services-hero img {
+  max-width: 500px;
   justify-self: center;
-  margin-inline: var(--space-sm);
+  /* margin-inline: var(--space-sm); */
+}
+@media screen and (width < 500px) {
+  .services-hero img {
+    max-width: 300px;
+    margin-inline: var(--space-sm);
+  }
 }
 
 .heading {
