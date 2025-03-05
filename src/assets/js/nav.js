@@ -71,6 +71,33 @@ submenu.addEventListener("click", (event) => {
 });
 
 /* ----------- Let the submenu button be clickable ---------- */
-submenuBtn.addEventListener("click", () => {
-  window.location.href = "/services";
+submenuBtn.addEventListener("click", (event) => {
+  event.stopPropagation();
+  // window.location.href = "/services";
+  if (submenu.classList.contains("show-menu")) {
+    closeTheMenu();
+  } else {
+    expandTheMenu();
+  }
 });
+
+// Do hover with JS instead of CSS, but only if user has a mouse
+if (window.matchMedia("(hover: hover)").matches) {
+  let isHoveringMenu = false;
+
+  submenuBtn.addEventListener("mouseenter", expandTheMenu);
+  submenuBtn.addEventListener("mouseleave", () => {
+    setTimeout(() => {
+      if (!isHoveringMenu) closeTheMenu();
+    }, 100); // Small delay to allow moving to submenu
+  });
+
+  submenu.addEventListener("mouseenter", () => {
+    isHoveringMenu = true;
+  });
+
+  submenu.addEventListener("mouseleave", () => {
+    isHoveringMenu = false;
+    closeTheMenu();
+  });
+}
