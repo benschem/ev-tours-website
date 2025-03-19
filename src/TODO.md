@@ -18,8 +18,8 @@ SERVICES
 
 CONTACT
 [X] Edit and add new video for Contact page
-[ ] Form success
-[ ] Form fail
+[X] Form success
+[X] Form fail
 [X] change 'Final Departure Time' to "What time would you like to leave the last location"
 [X] check field height and width on mobile
 
@@ -29,21 +29,24 @@ FLEET
 [X] Change the 3.5mm audio cord to AUX Connection
 
 TOURS
-[ ] content
+[ ] Content
+[ ] Form
+[ ] Form success
+[ ] Form fail
 
 CORPORATE
-[X] content
+[X] Content
 [X] Stock images
 [X] Form
-[ ] Form success
-[ ] Form fail
+[X] Form success
+[X] Form fail
 
 SCHOOLS
-[X] content
+[X] Content
 [X] Stock images
 [X] Form
-[ ] Form success
-[ ] Form fail
+[X] Form success
+[X] Form fail
 
 DEPLOYMENT
 [ ] Decap CMS
