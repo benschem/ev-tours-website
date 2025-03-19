@@ -7,6 +7,14 @@
     <title>{{ title }}</title>
     <meta name="description" content="{{ description }}" />
     <meta name="generator" content="{{ eleventy.generator }}" />
+    {% if page.url == '/success/' %}
+      <meta name="robots" content="noindex, nofollow">
+      <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+    {% endif %}
+    {% if page.url == '/404/' %}
+      <meta name="robots" content="noindex, nofollow">
+      <meta http-equiv="Cache-Control" content="no-store, no-cache, must-revalidate, max-age=0">
+    {% endif %}
     <link rel="icon" type="image/png" href="/assets/img/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/assets/img/favicon.svg" />
     <link rel="shortcut icon" href="/assets/img/favicon.ico" />
@@ -31,17 +39,17 @@
       <script defer src="/assets/js/showImageOnHover.js"></script>
     {% endif %}
     {% if page.url == '/contact/' %}
-      <script defer src="/assets/js/formValidations.js"></script>
+      <script defer src="/assets/js/contactFormValidations.js"></script>
     {% endif %}
     {% if page.url == '/services/corporate/' %}
-      <script defer src="/assets/js/formValidations.js"></script>
+      <script defer src="/assets/js/corporateFormValidations.js"></script>
     {% endif %}
     {% if page.url == '/services/schools/' %}
-      <script defer src="/assets/js/formValidations.js"></script>
+      <script defer src="/assets/js/schoolFormValidations.js"></script>
     {% endif %}
-    {% if page.url == '/services/tours/' %}
-      <script defer src="/assets/js/formValidations.js"></script>
-    {% endif %}
+    {% comment %} {% if page.url == '/services/tours/' %} {% endcomment %}
+      {% comment %} <script defer src="/assets/js/FormValidations.js"></script> {% endcomment %}
+    {% comment %} {% endif %} {% endcomment %}
     <script defer src="/assets/js/lazyImages.js"></script>
   </head>
   <body id="top">

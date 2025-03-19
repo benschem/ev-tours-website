@@ -5,6 +5,8 @@ User-agent: *
 {% if site.env == "production" %}
 Allow: /
 Sitemap: {{ site.url }}/sitemap.xml
+Disallow: /success/
+Disallow: /404/
 {% else %}
 Disallow: /
 {% endif %}
