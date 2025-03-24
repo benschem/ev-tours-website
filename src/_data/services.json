@@ -111,10 +111,10 @@
           "link": "/contact#enquiry"
         },
         {
-          "name": "Hens and bucks groups",
+          "name": "Seniors groups",
           "img": {
-            "src": "/assets/img/bucks.jpg",
-            "alt": "A bucks group in front of a bus"
+            "src": "/assets/img/seniors.jpg",
+            "alt": "A seniors group in front of a bus"
           },
           "link": "/contact#enquiry"
         },
@@ -141,8 +141,8 @@
         {
           "name": "Wedding transfers",
           "img": {
-            "src": "/assets/img/wedding.jpg",
-            "alt": "A group of women dressed up posing in front of a bus"
+            "src": "/assets/img/wedding.png",
+            "alt": "Black and white image of a bride and groom under a veil holding hands looking at each other."
           },
           "link": "/contact#enquiry"
         },
@@ -150,7 +150,7 @@
           "name": "Hens and bucks parties",
           "img": {
             "src": "/assets/img/hens.jpg",
-            "alt": "A topless waiter handing out shots to a hens group"
+            "alt": "A topless waiter handing out shots to a hens group."
           },
           "link": "/contact#enquiry"
         },
@@ -158,7 +158,7 @@
           "name": "Birthday trips",
           "img": {
             "src": "/assets/img/birthday.jpg",
-            "alt": "A group of guys posing at a pub"
+            "alt": "A group of guys posing at a pub."
           },
           "link": "/contact#enquiry"
         }
@@ -171,30 +171,30 @@
       "text": "Explore Victoria’s iconic landscapes with our scenic tours, including options for winery, brewery, and Great Ocean Road tours.",
       "image": {
         "src": "/assets/img/ev-tours-wine-tour.webp",
-        "alt": "A scenic view of a winery"
+        "alt": "A scenic view of a winery."
       },
       "subservices": [
         {
-          "name": "Winery tours",
+          "name": "Mornington Peninsula tours",
+          "img": {
+            "src": "/assets/img/mornington-peninsula-tour.jpg",
+            "alt": "View of Blairgowrie in the Mornington Peninsula."
+          },
+          "link": "/contact#enquiry"
+        },
+        {
+          "name": "Yarra Valley tours",
+          "img": {
+            "src": "/assets/img/yarra-valley.jpg",
+            "alt": "View of a vineyard on a Yarra Valley tour."
+          },
+          "link": "/contact#enquiry"
+        },
+        {
+          "name": "Mixed tours (wine and beer)",
           "img": {
             "src": "/assets/img/winery-tour.jpg",
-            "alt": "A group of people doing a wine tasting"
-          },
-          "link": "/contact#enquiry"
-        },
-        {
-          "name": "Brewery tours",
-          "img": {
-            "src": "/assets/img/brewery-tour.jpg",
-            "alt": "A couple posing in front of a brewery"
-          },
-          "link": "/contact#enquiry"
-        },
-        {
-          "name": "Great Ocean Road tours",
-          "img": {
-            "src": "/assets/img/great-ocean-road-tour.jpg",
-            "alt": "A view of the twelve apostles and cliff face"
+            "alt": "A group of people doing a wine tasting tour of the Mornington Peninsula."
           },
           "link": "/contact#enquiry"
         }

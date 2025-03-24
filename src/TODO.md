@@ -11,10 +11,12 @@ INDEX
 [X] Center the text inside each testimonial
 [X] Add testimonials from latest email
 [X] Get more testimonials from past emails/fb/etc
+[ ] Update "tours decription"?
 
 SERVICES
 [X] Check all cards are linked correctly
 [X] cards that don't link to a specific page should link to contact#enquiry
+[X] update "tours" photos
 
 CONTACT
 [X] Edit and add new video for Contact page
