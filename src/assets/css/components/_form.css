@@ -93,11 +93,14 @@ fieldset {
   margin-bottom: 1rem;
 }
 
+.form-item {
+  margin-block-start: 2rem;
+}
+
 .form-items {
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Two columns with equal width */
+  grid-template-columns: 1fr 1fr;
   gap: 1rem;
-  /* align-items: end; */
 }
 
 .form-items + .form-items {

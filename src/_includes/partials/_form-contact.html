@@ -197,6 +197,26 @@
     <div class="form-items">
       <div>
         <label
+          id="pickupTimeLabel"
+          for="pickupTime"
+          >Ideal pick up time *
+        </label>
+        <span
+          aria-live="polite"
+          class="bump-left"
+        ></span>
+        <input
+          required
+          type="time"
+          id="pickupTime"
+          name="pickupTime"
+          aria-label="Ideal pickup time from first location"
+          aria-labelledby="pickupTimeLabel"
+        />
+        <span aria-live="polite"></span>
+      </div>
+      <div>
+        <label
           id="passengersLabel"
           for="passengers"
           >No. of passengers *</label
@@ -215,7 +235,8 @@
         />
         <span aria-live="polite"></span>
       </div>
-
+    </div>
+    <div class="form-item">
       <div>
         <label
           id="departureTimeLabel"

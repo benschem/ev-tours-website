@@ -24,6 +24,7 @@ CONTACT
 [X] Form fail
 [X] change 'Final Departure Time' to "What time would you like to leave the last location"
 [X] check field height and width on mobile
+[X] add start time with validations
 
 FLEET
 [X] Blur the driver in the new photo of the minibus
