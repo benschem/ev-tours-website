@@ -62,20 +62,33 @@ description: Discover the best of Victoria with EV Tours & Charter. Whether you'
 </section>
 {% endfor %}
 
-<section class="tours disclaimer">
+<section class="tours info">
   <div>
-    <p>{{ tours.disclaimers.keywords }}</p>
-    <div>
+    <div class="disclaimer">
+      <div class="ico">{% include "icon.liquid", name: "map", class: "icon black icon-sm", aria_hidden: true %}</div>
+      <p>{{ tours.info.keywords }}</p>
+    </div>
+    <div class="photos">
+      {% for photo in tours.info.photos %}
+      <img
+        src="{{ photo.src }}"
+        alt="{{ photo.alt }}"
+        sizes="100vw"
+        loading="lazy"
+      />
+      {% endfor %}
+    </div>
+    <div class="disclaimer">
       <div class="ico">
         {% include "icon.liquid", name: "alert-circle", class: "icon black icon-sm", aria_hidden: true %}
       </div>
-      <p>{{ tours.disclaimers.alert }}</p>
+      <p>{{ tours.info.alert }}</p>
     </div>
-    <div>
+    <div class="disclaimer">
       <div class="ico">
         {% include "icon.liquid", name: "alert-triangle", class: "icon black icon-sm", aria_hidden: true %}
       </div>
-      <p>{{ tours.disclaimers.warning }}</p>
+      <p>{{ tours.info.warning }}</p>
     </div>
   </div>
 </section>

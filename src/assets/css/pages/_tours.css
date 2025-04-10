@@ -92,15 +92,44 @@ section.tours.lines:nth-of-type(even) {
   background-color: var(--color-primary-light);
 }
 
-section.tours.disclaimer {
+section.tours.info {
   background-color: var(--color-primary);
 }
 
-section.tours.disclaimer .ico {
+section.tours.info .photos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-block: var(--space-sm);
+}
+
+section.tours.info img {
+  aspect-ratio: 3/2;
+  max-width: 150px;
+}
+
+@media screen and (width > 700px) {
+  section.tours.info .photos {
+    gap: var(--space-md);
+  }
+  section.tours.info img {
+    aspect-ratio: 3/2;
+    max-width: 200px;
+  }
+}
+
+section.tours.info .disclaimer {
+  max-width: 500px;
+  margin-inline: auto;
+}
+
+section.tours.info .ico {
   margin-block-end: var(--space-xs);
 }
 
-section.tours.disclaimer > div {
+section.tours.info > div {
   max-width: 700px;
   margin-inline: auto;
   display: flex;

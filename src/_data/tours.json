@@ -135,7 +135,33 @@
       ]
     }
   ],
-  "disclaimers": {
+  "info": {
+    "photos": [
+      {
+        "src": "/assets/img/winery-tour-bar.webp",
+        "alt": "John sitting in the drivers seat of a bus with Elyce sititng behind him"
+      },
+      {
+        "src": "/assets/img/winery-tour-cheers.webp",
+        "alt": "John sitting in the drivers seat of a bus with Elyce sititng behind him"
+      },
+      {
+        "src": "/assets/img/winery-tour-group.webp",
+        "alt": "John sitting in the drivers seat of a bus with Elyce sititng behind him"
+      },
+      {
+        "src": "/assets/img/winery-tour-lunch.webp",
+        "alt": "John sitting in the drivers seat of a bus with Elyce sititng behind him"
+      },
+      {
+        "src": "/assets/img/winery-tour-tasting.webp",
+        "alt": "John sitting in the drivers seat of a bus with Elyce sititng behind him"
+      },
+      {
+        "src": "/assets/img/winery-tour-view.webp",
+        "alt": "John sitting in the drivers seat of a bus with Elyce sititng behind him"
+      }
+    ],
     "keywords": "Our tours cover the Mornington Peninsula and Yarra Valley Winery regions including: Mornington, Mount Eliza, Dromana, Tuerong, Moorooduc, Balnarring, Red Hill, Main Ridge, Merricks, Shoreham, Rosebud, Fingal, Arthurs Seat, Yarra Glen, Healesville and surrounding areas.",
     "alert": "If you are looking for a tour with 11+ people, please contact us directly so we can work to accommodate you.",
     "warning": "Please note that venues, wines or meals may be subject to change depending on availability."
