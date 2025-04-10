@@ -4,7 +4,61 @@ title: Scenic Tours | Explore Victoria with Expert Guides & Personalised Service
 description: Discover the best of Victoria with EV Tours & Charter. Whether you're exploring the Great Ocean Road, Phillip Island, or other stunning locations, we offer expert-guided scenic tours that highlight the beauty of the region, all with a personal touch.
 ---
 
-<section class="lines">
-  <h1>Scenic tours</h1>
-  <p>TODO</p>
+<section class="tours video-bkg">
+  <div class="foreground">
+    <h1>{{ tours.hero.h1 }}</h1>
+    {% for paragraph in tours.hero.intro %}
+    <p>{{ paragraph }}</p>
+    {% endfor %}
+    <div class="buttons">
+      <a
+        href="{{ tours.hero.buttons.primary.link }}"
+        class="btn btn-primary"
+        >{{ tours.hero.buttons.primary.text }}</a
+      >
+      <a
+        href="{{ tours.hero.buttons.secondary.link }}"
+        class="btn btn-secondary"
+        >{{ tours.hero.buttons.secondary.text }}</a
+      >
+    </div>
+  </div>
+  <div class="background"></div>
+</section>
+
+{% for package in tours.packages %}
+<section class="tours lines">
+  <div class="content">
+    <h2>{{ package.heading }}</h2>
+    <div class="people">
+      <div class="ico">{% include "icon.liquid", name: "users", class: "icon black icon-sm", aria_hidden: true %}</div>
+      <h3>{{ package.people }}</h3>
+    </div>
+    <div class="people">
+      <div class="ico">{% include "icon.liquid", name: "dollar", class: "icon black icon-sm", aria_hidden: true %}</div>
+      <h3>{{ package.price }}</h3>
+    </div>
+    {% for stop in package.stops %}
+    <div class="stop">
+      <h3>{{ stop.name }} - {{ stop.time }}</h3>
+      {% for inclusion in stop.inclusions %}
+      <div class="inclusions">
+        {% include "icon.liquid", name: "check", class: "icon black icon-sm", aria_hidden: true %}
+        <p><em>{{ inclusion }}</em></p>
+      </div>
+      {% endfor %}
+      <p>{{ stop.description }}</p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endfor %}
+
+<section
+  class="lines form-container"
+  id="book"
+>
+  <h2>Booking form</h2>
+  <p>Fill in the enquiry form with your preferred date and we'll contact you to confirm.</p>
+  {% include 'partials/_form-tour.html' %}
 </section>

@@ -2,6 +2,7 @@
   display: inline-block;
   vertical-align: middle;
   width: auto;
+  height: min-content;
 }
 
 .icon-xs svg {

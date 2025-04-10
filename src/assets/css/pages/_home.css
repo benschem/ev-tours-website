@@ -111,10 +111,8 @@
   justify-content: center;
 }
 
-.dark-mode .difference h2,
-.dark-mode .difference h3,
-.dark-mode .difference p {
-  color: var(--black);
+.difference h3 {
+  margin-block-start: var(--space-xs);
 }
 
 @media screen and (width > 768px) {

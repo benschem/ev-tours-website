@@ -149,4 +149,5 @@ form button {
   min-height: 3rem;
   line-height: 3rem;
   width: 100%;
+  max-height: max-content;
 }

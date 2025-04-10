@@ -61,3 +61,4 @@ DEPLOYMENT
 SEO
 [ ] Schema.org
 [ ] Check all metadata
+[ ] redirect old website urls

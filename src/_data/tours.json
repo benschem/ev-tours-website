@@ -1,0 +1,122 @@
+{
+  "hero": {
+    "h1": "Scenic Tours",
+    "intro": [
+      "Whether you're planning to celebrate a special occasion or seeking a unique experience for your next corporate event, we offer a variety of tailored tours across the stunning Mornington Peninsula and Yarra Valley.",
+      "Simply share your pick-up location, and we'll transport you to exceptional wineries, prestigious golf courses, and world-class venues, all while you take in the breathtaking scenery along the way."
+    ],
+    "buttons": {
+      "primary": {
+        "text": "Book now",
+        "link": "#book"
+      },
+      "secondary": {
+        "text": "All services",
+        "link": "/services"
+      }
+    },
+    "image": {
+      "src": "/assets/img/ev-tours-wine-tour.webp",
+      "alt": "A scenic view of a winery."
+    }
+  },
+  "packages": [
+    {
+      "heading": "MORNINGTON PENINSULA TOUR #1",
+      "people": "4+ people",
+      "price": "$250 + GST per person",
+      "stops": [
+        {
+          "name": "Stop 1: Paringa Estate",
+          "time": "11:00am",
+          "inclusions": [
+            "Tasting"
+          ],
+          "description": "Begin your 4 person tour at the stunning Paringa Estate Cellar Door. Known for its premium Pinot Noir and Chardonnay, the estate offers a memorable tasting experience in a beautiful, serene environment."
+        },
+        {
+          "name": "Stop 2: T’Gallant Vineyard",
+          "time": "12:30pm",
+          "inclusions": [
+            "Glass of wine",
+            "Lunch (Set menu)"
+          ],
+          "description": "Enjoy a delightful wine-tasting experience at T'Gallant Vineyard, where you can savor their signature wines in a picturesque, Italian-inspired setting. Pair your tasting with a carefully crafted set menu, featuring local, seasonal dishes that perfectly complement the estate's exceptional wines."
+        },
+        {
+          "name": "Stop 3: Port Phillip Estate",
+          "time": "14:40pm",
+          "inclusions": [
+            "Tasting"
+          ],
+          "description": "Finish your tour at the strikingly modern Port Phillip Estate with a tasting that includes a selection of handcrafted wines paired with the breathtaking views of the surrounding rolling hills and vineyard rows."
+        }
+      ]
+    },
+    {
+      "heading": "MORNINGTON PENINSULA TOUR #2",
+      "people": "5 - 7 people",
+      "price": "$230 + GST per person",
+      "stops": [
+        {
+          "name": "Stop 1: Polperro Winery",
+          "time": "11:00am",
+          "inclusions": [
+            "Tasting"
+          ],
+          "description": "Begin your tour by immersing yourself in an intimate and beautifully designed space at the Polperro Winery Cellar Door in Red Hill, and taste a unique selection of award-winning wines."
+        },
+        {
+          "name": "Stop 2: T’Gallant Vineyard",
+          "time": "12:30pm",
+          "inclusions": [
+            "Glass of wine",
+            "Lunch (Set menu)"
+          ],
+          "description": "Enjoy a delightful wine-tasting experience at T'Gallant Vineyard, where you can savor their signature wines in a picturesque, Italian-inspired setting. Pair your tasting with a carefully crafted set menu, featuring local, seasonal dishes that perfectly complement the estate's exceptional wines."
+        },
+        {
+          "name": "Stop 3: Point Leo Estate",
+          "time": "2:40pm",
+          "inclusions": [
+            "Tasting"
+          ],
+          "description": "End the day with an unforgettable wine tasting at Point Leo Estate, where breathtaking coastal views meet exceptional cool-climate wines. Immerse yourself in the stunning vineyard landscape while savoring a curated selection of their award-winning wines in a luxurious and welcoming atmosphere."
+        }
+      ]
+    },
+    {
+      "heading": "AUNTY EVE’S TOUR",
+      "people": "8 - 10 people",
+      "price": "$180 + GST per person",
+      "stops": [
+        {
+          "name": "Stop 1: Jackalope Hotel",
+          "time": "11:00am",
+          "inclusions": [
+            "Tasting"
+          ],
+          "description": "Commence your group tour by savoring premium local wines in a luxurious, modern setting at the Cellar Door of Jackalope Hotel. Surrounded by breathtaking views, the experience offers a perfect blend of exceptional wines and sophisticated ambiance."
+        },
+        {
+          "name": "Stop 2: T’Gallant Vineyard",
+          "time": "12:30pm",
+          "inclusions": [
+            "Glass of wine",
+            "Lunch (Set menu)"
+          ],
+          "description": "Enjoy a delightful wine-tasting experience at T'Gallant Vineyard, where you can savor their signature wines in a picturesque, Italian-inspired setting. Pair your tasting with a carefully crafted set menu, featuring local, seasonal dishes that perfectly complement the estate's exceptional wines."
+        },
+        {
+          "name": "Stop 3: Red Hill Estate",
+          "time": "2:40pm",
+          "inclusions": [
+            "Tasting"
+          ],
+          "description": "Finish your tour at Red Hill Estate, with stunning views and a tranquil atmosphere. Known for its premium cool-climate wines, it provides an exceptional tasting experience in a picturesque vineyard setting."
+        }
+      ]
+    }
+  ]
+
+}
