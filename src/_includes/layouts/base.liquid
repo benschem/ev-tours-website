@@ -47,9 +47,9 @@
     {% if page.url == '/services/schools/' %}
       <script defer src="/assets/js/schoolFormValidations.js"></script>
     {% endif %}
-    {% comment %} {% if page.url == '/services/tours/' %} {% endcomment %}
-      {% comment %} <script defer src="/assets/js/FormValidations.js"></script> {% endcomment %}
-    {% comment %} {% endif %} {% endcomment %}
+    {% if page.url == '/services/tours/' %}
+      <script defer src="/assets/js/tourFormValidations.js"></script>
+    {% endif %}
     <script defer src="/assets/js/lazyImages.js"></script>
   </head>
   <body id="top">

@@ -116,7 +116,28 @@
           "description": "Finish your tour at Red Hill Estate, with stunning views and a tranquil atmosphere. Known for its premium cool-climate wines, it provides an exceptional tasting experience in a picturesque vineyard setting."
         }
       ]
+    },
+    {
+      "heading": "CUSTOM TOUR",
+      "people": "Up to 10 people",
+      "price": "Enquire for quote",
+      "stops": [
+        {
+          "name": "Includes 3 Stops",
+          "time": "10am - 5pm",
+          "inclusions": [
+            "2x Tastings",
+            "Glass of wine",
+            "Lunch"
+          ],
+          "description": "This is an exclusive private tour which can be tailored to your liking. Visit some of Victoria's most esteemed award winning wineries with breathtaking views or incorporate the smaller boutique venues. Choose your own venues or let us guide you."
+        }
+      ]
     }
-  ]
-
+  ],
+  "disclaimers": {
+    "keywords": "Our tours cover the Mornington Peninsula and Yarra Valley Winery regions including: Mornington, Mount Eliza, Dromana, Tuerong, Moorooduc, Balnarring, Red Hill, Main Ridge, Merricks, Shoreham, Rosebud, Fingal, Arthurs Seat, Yarra Glen, Healesville and surrounding areas.",
+    "alert": "If you are looking for a tour with 11+ people, please contact us directly so we can work to accommodate you.",
+    "warning": "Please note that venues, wines or meals may be subject to change depending on availability."
+  }
 }
