@@ -146,7 +146,7 @@ form button {
 
 .form input[type="time"],
 .form input[type="date"] {
-  min-height: 3rem;
+  height: 3.5rem;
   line-height: 3rem;
   width: 100%;
   max-height: max-content;

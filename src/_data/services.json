@@ -180,7 +180,7 @@
             "src": "/assets/img/mornington-peninsula-tour.jpg",
             "alt": "View of Blairgowrie in the Mornington Peninsula."
           },
-          "link": "/contact#enquiry"
+          "link": "/services/tours"
         },
         {
           "name": "Yarra Valley tours",
@@ -188,7 +188,7 @@
             "src": "/assets/img/yarra-valley.jpg",
             "alt": "View of a vineyard on a Yarra Valley tour."
           },
-          "link": "/contact#enquiry"
+          "link": "/services/tours"
         },
         {
           "name": "Mixed tours (wine and beer)",
@@ -196,7 +196,7 @@
             "src": "/assets/img/winery-tour.jpg",
             "alt": "A group of people doing a wine tasting tour of the Mornington Peninsula."
           },
-          "link": "/contact#enquiry"
+          "link": "/services/tours"
         }
       ]
     },
