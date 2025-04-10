@@ -1,2 +1,9 @@
 /pa-stats/js/script.js https://analytics.rocketzip.com.au/js/script.js 200
 /pa-stats/api/event https://analytics.rocketzip.com.au/api/event 200
+
+/winery-tour/   https://evtours.com.au/services/tours   301
+/charter-hire/  https://evtours.com.au/services   301
+/hens-party/    https://evtours.com.au/services#special   301
+/page/gallery/  https://evtours.com.au   301
+/page/faq/      https://evtours.com.au   301
+/contact-us/    https://evtours.com.au/contact   301
