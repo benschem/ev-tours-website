@@ -32,10 +32,10 @@ FLEET
 [X] Change the 3.5mm audio cord to AUX Connection
 
 TOURS
-[ ] Content
-[ ] Form
-[ ] Form success
-[ ] Form fail
+[X] Content
+[X] Form
+[X] Form success
+[X] Form fail
 
 CORPORATE
 [X] Content
@@ -54,11 +54,11 @@ SCHOOLS
 DEPLOYMENT
 [ ] Decap CMS
 [ ] uncomment Plausible scripts and user setup in my admin
-[ ] Deployment instructions and documentation (README)
+[ ] Deployment instructions and documentation
 [ ] Netlify TOML file
-[ ] Readme and documentation
+[X] Readme
 
 SEO
 [ ] Schema.org
 [ ] Check all metadata
-[ ] redirect old website urls
+[X] redirect old website urls
