@@ -1,0 +1,328 @@
+<form
+  method="POST"
+  action="/success/"
+  autocomplete="on"
+  class="form"
+  name="tour-page-form"
+  data-netlify="true"
+  data-netlify-recaptcha="true"
+>
+  <fieldset>
+    <legend>Your details</legend>
+    <div class="form-items">
+      <div>
+        <label
+          id="firstNameLabel"
+          for="firstName"
+          >First Name *</label
+        >
+        <span aria-live="polite"></span>
+        <input
+          type="text"
+          id="firstName"
+          name="firstName"
+          aria-label="First Name"
+          aria-labelledby="firstNameLabel"
+          required
+          minlength="2"
+          pattern="^[a-zA-Z ]*$"
+        />
+        <span aria-live="polite"></span>
+      </div>
+      <div>
+        <label
+          id="lastNameLabel"
+          for="lastName"
+          >Last Name *</label
+        >
+        <span aria-live="polite"></span>
+        <input
+          type="text"
+          id="lastName"
+          name="lastName"
+          aria-label="Last Name"
+          aria-labelledby="lastNameLabel"
+          required
+          minlength="2"
+          pattern="^[a-zA-Z ]*$"
+        />
+        <span aria-live="polite"></span>
+      </div>
+    </div>
+
+    <div class="form-items">
+      <div>
+        <label
+          id="emailLabel"
+          for="email"
+          >Email Address *</label
+        >
+        <span aria-live="polite"></span>
+        <input
+          type="email"
+          id="email"
+          name="email"
+          aria-label="Email Address"
+          aria-labelledby="emailLabel"
+          required
+          minlength="5"
+        />
+        <span aria-live="polite"></span>
+      </div>
+
+      <div>
+        <label
+          id="mobileLabel"
+          for="mobile"
+          >Mobile Number *</label
+        >
+        <span aria-live="polite"></span>
+        <input
+          type="tel"
+          id="mobile"
+          name="mobile"
+          aria-label="Mobile Number"
+          aria-labelledby="mobileLabel"
+          required
+          minlength="10"
+          pattern="^\s*\+?[0-9\s]*\s*$"
+        />
+        <span aria-live="polite"></span>
+      </div>
+    </div>
+  </fieldset>
+  <fieldset>
+    <legend>Enquiry details</legend>
+    <div class="form-items">
+      <div class="flex-col">
+        <label
+          id="tourLabel"
+          for="tour"
+          >Tour Package *</label
+        >
+        <span
+          aria-live="polite"
+          class="bump-left"
+        ></span>
+        <select
+          id="tour"
+          name="tour"
+          aria-label="Tour"
+          aria-labelledby="tourLabel"
+          required
+        >
+          <option
+            value=""
+            disabled
+            selected
+          >
+            Select a service
+          </option>
+          {% for package in tours.packages %}
+          <option value="{{ package.heading }}">{{ package.heading }}</option>
+          {% endfor %}
+        </select>
+        <span aria-live="polite"></span>
+      </div>
+      <div>
+        <label
+          id="dateLabel"
+          for="date"
+          >Date request *</label
+        >
+        <span
+          aria-live="polite"
+          class="bump-left"
+        ></span>
+        <input
+          type="date"
+          id="date"
+          name="date"
+          aria-label="Date request"
+          aria-labelledby="dateLabel"
+          min="{{ 'now' | date: '%Y-%m-%d' }}"
+          required
+        />
+        <span aria-live="polite"></span>
+      </div>
+    </div>
+
+    <div class="form-items">
+      <div>
+        <label
+          id="pickupLabel"
+          for="pickup"
+          >Pick up location *</label
+        >
+        <span aria-live="polite"></span>
+        <input
+          type="text"
+          id="pickup"
+          name="pickup"
+          aria-label="Pick up location"
+          aria-labelledby="pickupLabel"
+          required
+          minlength="5"
+        />
+        <span aria-live="polite"></span>
+      </div>
+
+      <div>
+        <label
+          id="dropoffLabel"
+          for="dropoff"
+          >Drop off location *</label
+        >
+        <span aria-live="polite"></span>
+        <input
+          type="text"
+          id="dropoff"
+          name="dropoff"
+          aria-label="Drop off location"
+          aria-labelledby="dropoffLabel"
+          required
+          minlength="5"
+        />
+        <span aria-live="polite"></span>
+      </div>
+    </div>
+
+    <div class="form-items">
+      <div>
+        <label
+          id="pickupTimeLabel"
+          for="pickupTime"
+          >Ideal pick up time *
+        </label>
+        <span
+          aria-live="polite"
+          class="bump-left"
+        ></span>
+        <input
+          required
+          type="time"
+          id="pickupTime"
+          name="pickupTime"
+          aria-label="Ideal pickup time from first location"
+          aria-labelledby="pickupTimeLabel"
+        />
+        <span aria-live="polite"></span>
+      </div>
+      <div>
+        <label
+          id="passengersLabel"
+          for="passengers"
+          >No. of passengers *</label
+        >
+        <span
+          aria-live="polite"
+          class="bump-left"
+        ></span>
+        <input
+          type="number"
+          id="passengers"
+          name="passengers"
+          aria-label="Number of passengers"
+          aria-labelledby="passengersLabel"
+          required
+        />
+        <span aria-live="polite"></span>
+      </div>
+    </div>
+    <div class="form-item">
+      <div>
+        <label
+          id="departureTimeLabel"
+          for="departureTime"
+          >Time you would like to leave the last location *
+        </label>
+        <span
+          aria-live="polite"
+          class="bump-left"
+        ></span>
+        <input
+          required
+          type="time"
+          id="departureTime"
+          name="departureTime"
+          aria-label="Ideal departure time from last location"
+          aria-labelledby="departureTimeLabel"
+        />
+        <span aria-live="polite"></span>
+      </div>
+    </div>
+  </fieldset>
+  <fieldset>
+    <div>
+      <label
+        id="itineraryLabel"
+        for="itinerary"
+        >Itinerary information *</label
+      >
+      <span
+        aria-live="polite"
+        class="bump-up"
+      ></span>
+      <textarea
+        id="itinerary"
+        name="itinerary"
+        rows="5"
+        aria-label="Itinerary"
+        aria-labelledby="itineraryLabel"
+        required
+        minlength="10"
+        maxlength="600"
+      ></textarea>
+      <span aria-live="polite"></span>
+    </div>
+  </fieldset>
+  <fieldset>
+    <div class="flex-col">
+      <label
+        id="referralSourceLabel"
+        for="referralSource"
+        >How did you hear about us? *
+      </label>
+      <span
+        aria-live="polite"
+        class="bump-left"
+      ></span>
+      <select
+        id="referralSource"
+        name="referralSource"
+        aria-label="How did you hear about us"
+        aria-labelledby="referralSourceLabel"
+        required
+      >
+        <option
+          value=""
+          disabled
+          selected
+        >
+          Select an option
+        </option>
+        <option value="referral">Referral</option>
+        <option value="cinema">Cinema ad</option>
+        <option value="instagram">Instagram</option>
+        <option value="facebook">Facebook</option>
+        <option value="google">Google</option>
+      </select>
+      <span aria-live="polite"></span>
+    </div>
+  </fieldset>
+  <span class="required">* Required fields</span>
+  <div class="widget">
+    <div data-netlify-recaptcha="true"></div>
+    <!-- <div
+      id="cf-turnstile"
+      data-sitekey="1x00000000000000000000AA"
+    ></div> -->
+  </div>
+  <button
+    type="submit"
+    id="formSubmitBtn"
+    class="btn btn-primary"
+  >
+    Submit
+  </button>
+</form>

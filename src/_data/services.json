@@ -166,9 +166,9 @@
     },
     {
       "id": "tours",
-      "name": "Scenic tours",
+      "name": "Tours",
       "icon": "image",
-      "text": "Explore Victoria’s iconic landscapes with our scenic tours, including options for winery, brewery, and Great Ocean Road tours.",
+      "text": "Explore Victoria’s iconic landscapes with our tours, including options for winery, brewery, and Great Ocean Road tours.",
       "image": {
         "src": "/assets/img/ev-tours-wine-tour.webp",
         "alt": "A scenic view of a winery."

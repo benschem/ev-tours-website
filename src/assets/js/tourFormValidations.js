@@ -5,7 +5,9 @@
 /* ------------------------ Listen to all form fields ----------------------- */
 
 document.addEventListener("DOMContentLoaded", () => {
-  const inputs = document.querySelectorAll("#fullName, #people, #email, #phone, #date, #pickup #tour, #itinerary");
+  const inputs = document.querySelectorAll(
+    "#firstName, #lastName, #email, #mobile, #tour, #date, #pickup, #dropoff, #passengers, #departureTime, #pickupTime, #itinerary, #referralSource"
+  );
 
   inputs.forEach((input) => {
     input.addEventListener("blur", () => {
@@ -78,17 +80,24 @@ const applyInvalidStyling = (input) => {
 
 const setValidityMessage = (input) => {
   switch (input.id) {
-    case "fullName":
+    case "firstName":
+    case "lastName":
       setCustomMessage(input, "name");
       break;
     case "email":
       setCustomMessage(input, "email");
       break;
-    case "phone":
-      setCustomMessage(input, "phone");
+    case "mobile":
+      setCustomMessage(input, "mobile");
+      break;
+    case "date":
+      setCustomMessage(input, "date");
       break;
     case "pickup":
       setCustomMessage(input, "pickup");
+      break;
+    case "dropoff":
+      setCustomMessage(input, "dropoff");
       break;
     case "itinerary":
       setCustomMessage(input, "itinerary");
@@ -113,13 +122,6 @@ const setCustomMessage = (input, type) => {
         input.setCustomValidity("");
       }
       break;
-    case "pickup":
-      if (userInput.tooShort) {
-        input.setCustomValidity("The pickup location looks too short");
-      } else {
-        input.setCustomValidity("");
-      }
-      break;
     case "email":
       if (userInput.tooShort) {
         input.setCustomValidity("Your email looks too short");
@@ -129,11 +131,32 @@ const setCustomMessage = (input, type) => {
         input.setCustomValidity("");
       }
       break;
-    case "phone":
+    case "mobile":
       if (userInput.patternMismatch) {
-        input.setCustomValidity("That doesn't look like a phone number");
+        input.setCustomValidity("That doesn't look like a mobile");
       } else if (userInput.tooShort) {
-        input.setCustomValidity("Your phone number looks too short");
+        input.setCustomValidity("Your mobile looks too short");
+      } else {
+        input.setCustomValidity("");
+      }
+      break;
+    case "date":
+      if (userInput.rangeUnderflow) {
+        input.setCustomValidity("Date can't be in the past");
+      } else {
+        input.setCustomValidity("");
+      }
+      break;
+    case "pickup":
+      if (userInput.tooShort) {
+        input.setCustomValidity("That doesn't look like a location");
+      } else {
+        input.setCustomValidity("");
+      }
+      break;
+    case "dropoff":
+      if (userInput.tooShort) {
+        input.setCustomValidity("That doesn't look like a location");
       } else {
         input.setCustomValidity("");
       }
@@ -172,7 +195,9 @@ function checkBeforeSubmit(event) {
 
   let allValid = true;
 
-  const inputs = document.querySelectorAll("#fullName, #school, #email, #phone, #serviceType, #itinerary");
+  const inputs = document.querySelectorAll(
+    "#firstName, #lastName, #email, #mobile, #tour, #date, #pickup, #dropoff, #passengers, #departureTime, #pickupTime, #itinerary, #referralSource"
+  );
 
   inputs.forEach((input) => {
     const isValid = input.checkValidity();
