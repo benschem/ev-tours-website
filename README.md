@@ -2,22 +2,49 @@
 
 A fast, modern static site built by [Rocketzip](https://rocketzip.com.au)
 
-## 🚀 Features
+## 🎯 Goals
 
-- JSON-based content
-- Clean and minimal design
-- Template support with Liquid
-- Responsive and accessible
-- SEO-friendly
-- Fast build times
+- Small footprint - no page builder bloat
+- No ongoing maintenance or costs
+- Fast and accessible - score highly on Google Lighthouse
+- No vendor lock-in - switch between services freely
+- Optimised for SEO
 
-## 🛠 Tech Stack
+## 🛠 Tech stack choices
 
-- Static Site Generator: [Eleventy](https://www.11ty.dev/) (11ty)
-- JSON-based content
-- Templating Language: Liquid
-- Styling: Vanilla CSS
-- [Netlify](https://www.netlify.com/) for deployment
+- #### Building the site
+  - Static Site Generator: [Eleventy](https://www.11ty.dev/) (11ty) with Liquid templating language
+  - CSS bundled by PostCSS with prefixing and minification
+  - Minimal client side Javascript
+
+- #### The data
+  - JSON-based content that lives in the repository
+
+- #### CMS
+  - [Decap CMS](https://decapcms.org/docs/intro/) - a client side CMS that lives in the repository
+  - Decap CMS needs to authenticate to Github with OAuth. Github needs a server to talk to during the authentication process. If you’re hosting at Netlify, they take care of that. If not, you’re on your own.
+
+- #### Hosting
+  - [Netlify](https://www.netlify.com/) for deployment
+
+- #### Form submissions
+  - Netlify's [Serverless form handling](https://docs.netlify.com/forms/setup/)
+
+- #### Analytics
+  - [Plasuible Analytics](https://plausible.io) - hosted by Rocketzip
+
+## 🚫 No running process or database = no worries
+
+Eleventy runs a build process on command that compiles the site and generates static files to be served directly. The hosting providor (Netlify or other) handles form submissions. The CMS runs completely on the client.
+
+When the content is updated via the CMS, a commit is pushed to the main branch of the repository on Github which triggers Netlify to run Eleventy's build command and deploy the new files. Developers can manually edit the code and push a commit to the main branch to also trigger a build and deploy.
+
+Benefits:
+
+- Nothing to hack
+- No software updates needed
+- Website won't crash or break
+- Static files are cheap or free to host
 
 ## 📦 Getting Started
 
