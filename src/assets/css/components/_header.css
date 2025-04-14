@@ -41,11 +41,21 @@ nav .nav-socials {
   border-radius: 50%;
   padding-inline: 0.78rem;
   padding-block: 0.6rem;
-  margin-inline: var(--space-sm);
 }
 nav .mobile-menu-socials {
   display: flex;
+  gap: 1rem;
   justify-content: center;
+}
+
+nav .mobile-menu-book-btn {
+  margin-block-end: 2rem;
+  width: unset;
+  padding-inline: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-self: center;
 }
 
 @media screen and (width < 1120px) {
@@ -184,14 +194,23 @@ nav .mobile-menu-socials {
   display: none;
   z-index: 2;
   position: fixed;
+  top: 85px;
   width: 100vw;
+  max-width: 430px;
   height: 100%;
   background-color: var(--color-secondary);
   overflow: hidden;
+  padding-block-start: var(--space-lg);
+}
+
+.mobile-menu > div.stick-to-bottom {
+  width: 100%;
+  max-width: 400px;
+  position: absolute;
+  bottom: 8rem;
 }
 
 .mobile-menu > ul {
-  /* height: 80%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -201,7 +220,7 @@ nav .mobile-menu-socials {
 
 .mobile-menu > ul > li {
   width: 100%;
-  padding: var(--space-sm);
+  padding: var(--space-xs);
   display: grid;
 }
 
@@ -235,7 +254,7 @@ nav .mobile-menu-socials {
 
 .mobile-menu .submenu {
   padding-inline-start: 20px;
-  margin-block-start: var(--space-sm);
+  margin-block-start: var(--space-xs);
   list-style-type: none;
   /* width: max-content; */
   background-color: var(--color-secondary);
@@ -246,7 +265,7 @@ nav .mobile-menu-socials {
 }
 
 .mobile-menu .sublink {
-  margin-block-start: var(--space-sm);
+  margin-block-start: var(--space-xs);
   padding: var(--space-xs);
 }
 

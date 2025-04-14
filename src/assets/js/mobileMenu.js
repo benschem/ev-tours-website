@@ -9,37 +9,46 @@ const mobileMenu = document.querySelector("#mobile-menu");
 const openMenuIcon = document.querySelector("#open-menu-icon");
 const closeMenuIcon = document.querySelector("#close-menu-icon");
 
-const mainElement = document.querySelector("body");
+const bodyElement = document.querySelector("body");
+const mainElement = document.querySelector("main");
 const backToTopButton = document.querySelector("#back-to-top");
 
 /* ---------------------- Show or hide the mobile menu ---------------------- */
 
 const toggleMenu = () => {
   if (menuIsOpen) {
-    mobileMenu.style.animation = "nav-slide-out 0.2s ease-in-out forwards";
-    setTimeout(() => {
-      console.log("click");
-
-      mobileMenu.classList.toggle("show");
-      backToTopButton.classList.toggle("hide");
-    }, 200);
-    setTimeout(() => {
-      styleMenuIconsForOpen();
-    }, 150);
+    closeMenu();
   } else {
-    backToTopButton.classList.toggle("hide");
-
-    setTimeout(() => {
-      styleMenuIconsForClosed();
-    }, 150);
-    mobileMenu.style.animation = "nav-slide-in 0.2s ease-in-out";
-    mobileMenu.classList.toggle("show");
+    openMenu();
   }
 
   menuIsOpen = !menuIsOpen;
   openMenuIcon.classList.toggle("hide");
   closeMenuIcon.classList.toggle("hide");
   menuIsOpen ? disableScroll() : enableScroll();
+};
+
+const closeMenu = () => {
+  mobileMenu.style.animation = "nav-slide-out 0.2s ease-in-out forwards";
+  mainElement.style.filter = "blur(0px)";
+  setTimeout(() => {
+    mobileMenu.classList.toggle("show");
+    backToTopButton.classList.toggle("hide");
+  }, 200);
+  setTimeout(() => {
+    styleMenuIconsForOpen();
+  }, 150);
+};
+
+const openMenu = () => {
+  backToTopButton.classList.toggle("hide");
+  mainElement.style.filter = "blur(4px)";
+
+  setTimeout(() => {
+    styleMenuIconsForClosed();
+  }, 150);
+  mobileMenu.style.animation = "nav-slide-in 0.2s ease-in-out";
+  mobileMenu.classList.toggle("show");
 };
 
 /* ---------------------- Style icons when menu is open --------------------- */
@@ -60,13 +69,13 @@ const styleMenuIconsForClosed = () => {
 
 const disableScroll = () => {
   window.scrollTo(0, 0);
-  mainElement.style.height = "100%";
-  mainElement.style.overflow = "hidden";
+  bodyElement.style.height = "100%";
+  bodyElement.style.overflow = "hidden";
 };
 
 const enableScroll = () => {
-  mainElement.style.height = "";
-  mainElement.style.overflow = "";
+  bodyElement.style.height = "";
+  bodyElement.style.overflow = "";
 };
 
 /* ------------------- Listen for click of the menu button ------------------ */
@@ -81,6 +90,19 @@ const mobileMenuP = document.querySelector(".mobile-menu p");
 
 mobileMenuP.addEventListener("click", () => {
   window.location.href = "/services";
+});
+
+/* -------------- Listen for click on background when menu open ------------- */
+
+mainElement.addEventListener("click", () => {
+  if (menuIsOpen) {
+    closeMenu();
+
+    menuIsOpen = false;
+    openMenuIcon.classList.toggle("hide");
+    closeMenuIcon.classList.toggle("hide");
+    enableScroll();
+  }
 });
 
 /* -------------------------------------------------------------------------- */
