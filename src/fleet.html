@@ -58,21 +58,33 @@ description: Our fleet of buses offers comfort, safety, and reliability for your
       <div
         class="image-hover hover-target"
         tabindex="0"
+        role="button"
+        aria-pressed="false"
+        aria-label="Toggle interior view"
       >
         {% include "icon.liquid", name: "hand-pointer", class: "icon icon-sm pink", aria_hidden: true %}
-        <img
-          src="{{ bus.exterior-image.src }}"
-          alt="{{ bus.exterior-image.alt }}"
-          sizes="100vw"
-          loading="lazy"
-        />
-        <img
-          src="{{ bus.interior-image.src }}"
-          alt="{{ bus.interior-image.alt }}"
-          sizes="100vw"
-          loading="lazy"
+        <div
+          class="exterior"
+          aria-hidden="false"
+        >
+          <img
+            src="{{ bus.exterior-image.src }}"
+            alt="Exterior of {{ bus.model }}"
+            sizes="100vw"
+            loading="lazy"
+          />
+        </div>
+        <div
+          class="interior"
           aria-hidden="true"
-        />
+        >
+          <img
+            src="{{ bus.interior-image.src }}"
+            alt="Interior of {{ bus.model }}"
+            sizes="100vw"
+            loading="lazy"
+          />
+        </div>
       </div>
       <div class="heading">
         <h3>{{ bus.model }}</h3>

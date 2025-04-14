@@ -1,28 +1,22 @@
-// Images that swap on hover need to be accessible
-document.addEventListener("DOMContentLoaded", () => {
-  const hoverElements = document.querySelectorAll(".hover-target");
+document.querySelectorAll(".image-hover").forEach((el) => {
+  const exterior = el.querySelector(".exterior");
+  const interior = el.querySelector(".interior");
 
-  hoverElements.forEach((hoverElement) => {
-    const images = hoverElement.querySelectorAll("img");
+  const toggle = () => {
+    const isToggled = el.classList.toggle("toggled");
+    el.setAttribute("aria-pressed", isToggled ? "true" : "false");
 
-    hoverElement.addEventListener("mouseenter", () => {
-      images[0].setAttribute("aria-hidden", "true");
-      images[1].removeAttribute("aria-hidden");
-    });
+    // Accessibility: show/hide correct image
+    exterior.setAttribute("aria-hidden", isToggled ? "true" : "false");
+    interior.setAttribute("aria-hidden", isToggled ? "false" : "true");
+  };
 
-    hoverElement.addEventListener("mouseleave", () => {
-      images[0].removeAttribute("aria-hidden");
-      images[1].setAttribute("aria-hidden", "true");
-    });
+  el.addEventListener("click", toggle);
 
-    hoverElement.addEventListener("focus", () => {
-      images[0].setAttribute("aria-hidden", "true");
-      images[1].removeAttribute("aria-hidden");
-    });
-
-    hoverElement.addEventListener("blur", () => {
-      images[0].removeAttribute("aria-hidden");
-      images[1].setAttribute("aria-hidden", "true");
-    });
+  el.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" || e.key === " ") {
+      e.preventDefault();
+      toggle();
+    }
   });
 });
