@@ -119,26 +119,23 @@
     {% endfor %}
   </ul>
 
-  <div class="stick-to-bottom">
-    <div class="mobile-menu-socials">
-      <a
-        href="/contact#enquiry"
-        class="btn btn-primary mobile-menu-book-btn"
-      >
-        BOOK NOW {% include "icon.liquid", name: "calendar", class: "icon icon-sm", aria_hidden: true %}
-      </a>
-    </div>
-    <div class="mobile-menu-socials">
-      {% for social in business.socials %}
-      <a
-        href="{{ social.link }}"
-        target="_blank"
-        class="btn btn-primary nav-socials"
-        id="{{ social.icon }}-icon"
-      >
-        {% include "icon.liquid", name: social.icon, class: "icon icon-sm ", aria_hidden: true %}
-      </a>
-      {% endfor %}
-    </div>
+  <a
+    href="/contact#enquiry"
+    class="btn btn-primary mobile-menu-book-btn"
+  >
+    BOOK NOW {% include "icon.liquid", name: "calendar", class: "icon icon-sm", aria_hidden: true %}
+  </a>
+
+  <div class="mobile-menu-socials">
+    {% for social in business.socials %}
+    <a
+      href="{{ social.link }}"
+      target="_blank"
+      class="btn btn-primary nav-socials"
+      id="{{ social.icon }}-icon"
+    >
+      {% include "icon.liquid", name: social.icon, class: "icon icon-sm ", aria_hidden: true %}
+    </a>
+    {% endfor %}
   </div>
 </nav>

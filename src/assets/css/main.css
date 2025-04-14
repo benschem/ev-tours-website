@@ -34,7 +34,7 @@
 @import "./pages/_404.css";
 
 .show {
-  display: inline-block;
+  display: inline-flex;
 }
 .hide {
   display: none;
