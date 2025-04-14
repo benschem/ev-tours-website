@@ -23,6 +23,7 @@
   "packages": [
     {
       "heading": "MORNINGTON PENINSULA TOUR #1",
+      "location": "Mornington Peninsula",
       "people": "4+ people",
       "price": "$250 + GST per person",
       "stops": [
@@ -54,7 +55,8 @@
       ]
     },
     {
-      "heading": "MORNINGTON PENINSULA TOUR #2",
+      "heading": "GRANDMA PAULIE'S TOUR",
+      "location": "Mornington Peninsula",
       "people": "5 - 7 people",
       "price": "$230 + GST per person",
       "stops": [
@@ -87,6 +89,7 @@
     },
     {
       "heading": "AUNTY EVE’S TOUR",
+      "location": "Mornington Peninsula",
       "people": "8 - 10 people",
       "price": "$180 + GST per person",
       "stops": [

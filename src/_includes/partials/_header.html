@@ -120,12 +120,14 @@
   </ul>
 
   <div class="stick-to-bottom">
-    <a
-      href="/contact#enquire"
-      class="btn btn-primary mobile-menu-book-btn"
-    >
-      BOOK NOW {% include "icon.liquid", name: "calendar", class: "icon icon-sm", aria_hidden: true %}
-    </a>
+    <div class="mobile-menu-socials">
+      <a
+        href="/contact#enquire"
+        class="btn btn-primary mobile-menu-book-btn"
+      >
+        BOOK NOW {% include "icon.liquid", name: "calendar", class: "icon icon-sm", aria_hidden: true %}
+      </a>
+    </div>
     <div class="mobile-menu-socials">
       {% for social in business.socials %}
       <a

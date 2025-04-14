@@ -119,7 +119,10 @@
             Select a service
           </option>
           <option value="charter">Charter hire</option>
-          <option value="wineryTour">Wine tour</option>
+          <option value="wineryTour">Winery tour</option>
+          {% for package in tours.packages %}
+          <option value="{{ package.heading }}">{{ package.heading }}</option>
+          {% endfor %}
           <option value="breweryTour">Brewery tour</option>
           <option value="airport">Airport transfer</option>
           <option value="wedding">Wedding transfer</option>
