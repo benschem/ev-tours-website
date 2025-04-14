@@ -16,6 +16,11 @@
       "icon": "instagram",
       "platform": "Instagram",
       "link": "https://www.instagram.com/evtours_charter"
+    },
+    {
+      "icon": "phone",
+      "platform": "Phone",
+      "link": "tel:1800668371"
     }
   ]
 }
