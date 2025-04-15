@@ -52,7 +52,7 @@
   display: flex;
   justify-content: center;
   justify-self: center;
-  gap: var(--space-xs);
+  /* gap: var(--space-xs); */
   margin-block-start: var(--space-sm);
   width: fit-content;
   max-width: 200px;
@@ -68,6 +68,11 @@
   border: none;
   cursor: pointer;
   transition: background 0.3s;
+}
+
+/* fallback spacing for Safari < 14 */
+.carousel-indicators > .dot + .dot {
+  margin-left: var(--space-xs);
 }
 
 .carousel-indicators > .dot.active {
