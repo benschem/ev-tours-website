@@ -90,7 +90,7 @@
 .buses > li .image-hover .exterior,
 .buses > li .image-hover .interior {
   grid-area: 1 / 1;
-  transition: oapcity 400ms linear;
+  /* transition: opacity 200ms linear; */
 }
 .image-hover .exterior {
   opacity: 1;
