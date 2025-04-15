@@ -51,21 +51,18 @@
 .carousel-indicators {
   display: flex;
   justify-content: center;
-  gap: var(--space-xs);
-  margin-top: var(--space-sm);
-  margin-left: auto;
-  margin-right: auto;
-  width: fit-content;
-  max-width: 100%;
-  padding-left: var(--space-xs);
-  padding-right: var(--space-xs);
+  align-content: center;
+  gap: 0.5rem;
+  margin: 1rem auto 0 auto;
+  padding: 0 1rem;
   overflow-x: hidden;
+  max-width: 100%;
+  box-sizing: border-box; /* IMPORTANT for Safari */
 }
 
 .carousel-indicators > .dot {
   width: 10px;
   height: 10px;
-  flex-grow: 0;
   flex-shrink: 0;
   border-radius: 50%;
   background: var(--zinc-300);
