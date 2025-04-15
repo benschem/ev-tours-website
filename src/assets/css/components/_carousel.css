@@ -62,12 +62,17 @@
 }
 
 .carousel-indicators > .dot {
+  all: unset;
+  display: block;
   width: 10px;
   height: 10px;
   flex-shrink: 0;
+  aspect-ratio: 1 / 1;
   border-radius: 50%;
   background: var(--zinc-300);
   border: none;
+  margin: 0;
+  line-height: 0;
   cursor: pointer;
   transition: background 0.3s;
   box-sizing: border-box;
