@@ -90,7 +90,7 @@ description: Ready to book your bus tour or charter? Get in touch with EV Tours 
     <h2>{{ contact.socials.heading }}</h2>
     <p>{{ contact.socials.text }}</p>
     <ul role="list">
-      {% for social in business.socials %}
+      {% for social in business.socials limit:2 %}
       <li>
         {% include "icon.liquid", name: social.icon, class: "icon icon-lg pink", aria_hidden: true %}
         <a href="{{ social.link }}" target="_blank"> {{ social.platform }} </a>
