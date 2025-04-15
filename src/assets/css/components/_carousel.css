@@ -51,10 +51,12 @@
 .carousel-indicators {
   display: flex;
   justify-content: center;
+  justify-self: center;
   gap: var(--space-xs);
   margin-block-start: var(--space-sm);
   width: fit-content;
-  margin-inline: auto;
+  max-width: 100%;
+  margin-inline: var(--space-sm);
 }
 
 .carousel-indicators > .dot {
