@@ -32,6 +32,7 @@
     src="/pa-stats/js/script.js"
     ></script> {% endcomment %}
     {% if page.url == '/' %}
+      {% include "partials/_schema-home.liquid" %}
       <script defer src="/assets/js/ticker.js"></script>
       <script defer src="/assets/js/carousel.js"></script>
     {% endif %}
@@ -42,12 +43,15 @@
       <script defer src="/assets/js/contactFormValidations.js"></script>
     {% endif %}
     {% if page.url == '/services/corporate/' %}
+      {% include "partials/_schema-corporate.liquid" %}
       <script defer src="/assets/js/corporateFormValidations.js"></script>
     {% endif %}
     {% if page.url == '/services/schools/' %}
+      {% include "partials/_schema-schools.liquid" %}
       <script defer src="/assets/js/schoolFormValidations.js"></script>
     {% endif %}
     {% if page.url == '/services/tours/' %}
+      {% include "partials/_schema-tours.liquid" %}
       <script defer src="/assets/js/tourFormValidations.js"></script>
     {% endif %}
     <script defer src="/assets/js/lazyImages.js"></script>
