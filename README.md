@@ -13,25 +13,34 @@ A fast, modern static site built by [Rocketzip](https://rocketzip.com.au)
 ## 🛠 Tech stack choices
 
 - #### Building the site
+
   - Static Site Generator: [Eleventy](https://www.11ty.dev/) (11ty) with Liquid templating language
   - CSS bundled by PostCSS with prefixing and minification
   - Minimal client side Javascript
 
 - #### The data
+
   - JSON-based content that lives in the repository
 
 - #### CMS
+
   - [Decap CMS](https://decapcms.org/docs/intro/) - a client side CMS that lives in the repository
   - Decap CMS needs to authenticate to Github with OAuth. Github needs a server to talk to during the authentication process. If you’re hosting at Netlify, they take care of that. If not, you’re on your own.
 
 - #### Hosting
+
   - [Netlify](https://www.netlify.com/) for deployment
 
 - #### Form submissions
+
   - Netlify's [Serverless form handling](https://docs.netlify.com/forms/setup/)
 
 - #### Analytics
   - [Plasuible Analytics](https://plausible.io) - hosted by Rocketzip
+  - To switch services:
+    - Remove the 2 redirects for `/pa-stats` in the `/src/_redirects` file
+    - Remove the `script` tag with the `src=/pa-stats` from the `/src/_includes/layouts/base.liquid`
+      > </script>
 
 ## 🚫 No running process or database = no worries
 
@@ -76,6 +85,8 @@ npm run build
 
 The site will be built and output to the `public` folder.
 
+To see what's happening in the build step, check out `/eleventy.config.js`
+
 ## 📤 Deployment
 
 You can deploy to any static hosting provider. Here's how to deploy with Netlify:
@@ -83,6 +94,8 @@ You can deploy to any static hosting provider. Here's how to deploy with Netlify
 - Connect your GitHub repo to Netlify
 - Set the build command to: `npm run build`
 - Set the publish directory to: `\public`
+
+Alternatively, drop the built `public` folder into your static hosting service manually.
 
 ## 📝 License
 

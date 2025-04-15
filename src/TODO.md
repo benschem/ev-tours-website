@@ -1,12 +1,13 @@
 DEPLOYMENT
 [ ] Decap CMS
-[ ] uncomment Plausible scripts and user setup in my admin
-[ ] Deployment instructions and documentation
+[X] Uncomment Plausible scripts and user setup in my admin
+[X] Deployment instructions and documentation
 [ ] Netlify TOML file
 [X] Readme
-[ ] Update readme to mention plausible and decap and auth-0
+[ ] Update readme to mention plausible
+[ ] Update readme to mention decap and auth
 
 SEO
-[ ] Schema.org
-[ ] Check all metadata
-[X] redirect old website urls
+[X] Schema.org
+[X] Check all metadata
+[X] Redirect old website urls
