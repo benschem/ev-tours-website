@@ -91,8 +91,9 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/_headers");
   eleventyConfig.addPassthroughCopy("./src/_redirects");
   eleventyConfig.addPassthroughCopy("./src/favicon.ico");
-  eleventyConfig.addPassthroughCopy("src/robots.txt.liquid");
-  eleventyConfig.addPassthroughCopy("src/sitemap.xml.liquid");
+  eleventyConfig.addPassthroughCopy("./src/robots.txt.liquid");
+  eleventyConfig.addPassthroughCopy("./src/sitemap.xml.liquid");
+  eleventyConfig.addPassthroughCopy("./netlify/functions");
 
   // Images
   eleventyConfig.addPlugin(eleventyImageTransformPlugin, {

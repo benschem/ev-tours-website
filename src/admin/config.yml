@@ -1,0 +1,9 @@
+backend:
+name: github
+repo: "your-github-repo-name"
+branch: main
+auth: github
+apiHost: https://api.github.com
+login:
+  url: https://evtours.com.au/.netlify/functions/auth/authorize
+  callbackUrl: https://evtours.com.au/.netlify/functions/auth/callback
