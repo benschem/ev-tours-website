@@ -1,6 +1,6 @@
 backend:
 name: github
-repo: "your-github-repo-name"
+repo: "ev-tours"
 branch: main
 auth: github
 apiHost: https://api.github.com

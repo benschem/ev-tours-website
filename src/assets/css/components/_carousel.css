@@ -53,7 +53,7 @@
   justify-content: center;
   gap: var(--space-xs);
   margin-block-start: var(--space-sm);
-  max-width: max-content;
+  width: fit-content;
   margin-inline: auto;
 }
 
