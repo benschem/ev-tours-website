@@ -52,12 +52,13 @@
   display: flex;
   justify-content: center;
   align-content: center;
-  gap: 0.5rem;
-  margin: 1rem auto 0 auto;
-  padding: 0 1rem;
-  overflow-x: hidden;
-  max-width: 100%;
-  box-sizing: border-box; /* IMPORTANT for Safari */
+  gap: var(--space-xs);
+  margin-block-start: var(--space-sm);
+  padding-inline: var(--space-sm);
+  overflow: hidden;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 100vw;
 }
 
 .carousel-indicators > .dot {
@@ -69,11 +70,7 @@
   border: none;
   cursor: pointer;
   transition: background 0.3s;
-}
-
-/* fallback spacing for Safari < 14 */
-.carousel-indicators > .dot + .dot {
-  margin-left: var(--space-xs);
+  box-sizing: border-box;
 }
 
 .carousel-indicators > .dot.active {
